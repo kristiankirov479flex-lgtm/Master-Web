@@ -74,8 +74,11 @@ window.VILA = {
       en: { name: "Devin Museum", text: "Shows finds from excavations in the town and region, plus tools and exhibits about everyday Rhodope life. Good for a rainy day." } }
   ],
 
+  /* Обобщение от Google Карти – обновявайте тези два реда, когато се променят. */
+  rating: { score: 5.0, count: 17 },
+
   /*
-   * Отзиви от Google Карти (оценка 5,0 от 17 отзива).
+   * Отзиви от Google Карти.
    * Текстовете са дословни. За да добавите отзив, копирайте блок и сменете текста.
    *  featured – показва се в цяла ширина
    *  bg/en    – оригиналът е на български; английският е превод

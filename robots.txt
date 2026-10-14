@@ -1,0 +1,9 @@
+# Replace https://YOUR-DOMAIN with the real address of the site.
+# Note: search engines only read robots.txt at the root of a domain
+# (https://example.com/robots.txt). On a GitHub Pages "project" address such as
+# https://USERNAME.github.io/Master-Web/ it has no effect, but it works with a custom domain.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR-DOMAIN/sitemap.xml

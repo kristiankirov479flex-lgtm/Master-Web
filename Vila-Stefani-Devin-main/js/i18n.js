@@ -4,11 +4,11 @@
  */
 window.VILA_I18N = {
   en: {
-    title: "Vila Stefani – guest rooms in Devin",
-    desc: "A mountain villa with open views of the peaks and the village. A room with a balcony, a living room, a yard kitchen and forest trails.",
+    title: "Vila Stefani – guest rooms in Devin, Rhodopes, Bulgaria",
+    desc: "A guest room with a balcony and panoramic views in Nastan, Devin. Yard kitchen, living room and forest trails nearby. Call us to check free dates.",
 
     logo: "Vila Stefani",
-    menu: "Menu",
+    menu: "Menu", navlabel: "Main navigation", skip: "Skip to content",
     "n.home": "Home", "n.room": "The room", "n.kitchen": "Kitchen", "n.around": "Nearby",
     "n.gallery": "Gallery", "n.reviews": "Reviews", "n.contact": "Contact", "n.call": "Call us",
 
@@ -52,7 +52,6 @@ window.VILA_I18N = {
 
     "v.title": "What guests say",
     "v.stars": "5 out of 5",
-    "v.count": "17 reviews on Google Maps",
     "v.all": "All reviews on Google Maps",
 
     "c.title": "Location and contact",
@@ -63,14 +62,23 @@ window.VILA_I18N = {
 
     "b.title": "Want to check availability?",
     "b.text": "Call or write to us. We'll tell you which dates are free.",
-    "b.call": "Call us", "b.mail": "Email us"
+    "b.call": "Call us", "b.mail": "Email us",
+
+    "m.text": "The map is from OpenStreetMap and loads only with your consent.",
+    "m.load": "Show the map",
+    "cb.label": "Privacy",
+    "cb.text": "This site does not use tracking or advertising cookies. It only remembers the language you choose. The map in the Contact section comes from OpenStreetMap and loads only if you agree.",
+    "cb.accept": "I agree", "cb.decline": "No, thanks",
+    "cb.settings": "Privacy settings",
+    "cb.more": "Privacy notice",
+    "f.privacy": "Privacy notice"
   },
 
   /* Текстове за частите, които се рисуват от data.js (само интерфейс). */
   ui: {
-    bg: { km: "около {n} км по пътя", more: "Покажи всички ({n})", less: "Покажи по-малко", info: "Научете повече (на английски)",
+    bg: { rating: "{n} отзива в Google Карти", shown: "Показани места: {n}", rmore: "Прочети целия отзив", rless: "Покажи по-малко", km: "около {n} км по пътя", more: "Покажи всички ({n})", less: "Покажи по-малко", info: "Научете повече (на английски)",
           route: "Маршрут от вилата", route_aria: "Маршрут от вилата до {name}", noteTr: "" },
-    en: { km: "about {n} km by road", more: "Show all ({n})", less: "Show fewer", info: "Learn more",
+    en: { rating: "{n} reviews on Google Maps", shown: "Places shown: {n}", rmore: "Read the full review", rless: "Show less", km: "about {n} km by road", more: "Show all ({n})", less: "Show fewer", info: "Learn more",
           route: "Directions from the villa", route_aria: "Directions from the villa to {name}",
           noteTr: "Translated from Bulgarian." }
   }

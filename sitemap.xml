@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Replace https://YOUR-DOMAIN with the real address of the site (no trailing slash),
+  e.g. https://example.com  or  https://USERNAME.github.io/Master-Web
+  When you add a project folder, add one more <url> block for it.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://YOUR-DOMAIN/</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vila-Stefani-Devin-main/</loc>
+    <lastmod>2026-10-14</lastmod>
+  </url>
+</urlset>

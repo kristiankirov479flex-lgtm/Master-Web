@@ -89,6 +89,8 @@
     langBtn.textContent = en ? "БГ" : "EN";
     langBtn.lang = en ? "bg" : "en";
     langBtn.setAttribute("aria-label", en ? "Превключи на български" : "Switch to English");
+    var mf = $("mapWrap").querySelector("iframe");
+    if (mf) mf.title = en ? I18N.en["c.maptitle"] : $("mapWrap").dataset.title;
   }
 
   function setLang(next) {
@@ -136,6 +138,7 @@
         "</div></article>";
     }).join("");
     checkImages($("pois"));
+    $("poiStatus").textContent = fmt(ui.shown, { n: shown.length });
 
     var more = $("more");
     more.hidden = hidden === 0;
@@ -155,16 +158,30 @@
 
   /* ---------- Отзиви ---------- */
   function renderReviews() {
-    $("revs").innerHTML = DATA.reviews.map(function (r) {
-      return '<figure class="rev' + (r.featured ? " feat" : "") + '">' +
+    var ui = I18N.ui[lang];
+    $("revs").innerHTML = DATA.reviews.map(function (r, i) {
+      var long = r[lang].length > 260;
+      return '<figure class="review' + (long ? " clamp" : "") + '">' +
         '<div class="stars" role="img" aria-label="' + (lang === "bg" ? "5 от 5" : I18N.en["v.stars"]) + '">★★★★★</div>' +
         "<blockquote>" + esc(r[lang]) + "</blockquote>" +
+        (long ? '<button class="rmore" type="button" aria-expanded="false">' + esc(ui.rmore) + "</button>" : "") +
         "<footer><b>" + esc(r.name[lang]) + "</b> · Google Maps</footer></figure>";
     }).join("");
+    var score = DATA.rating.score.toFixed(1);
+    $("ratingNum").textContent = lang === "bg" ? score.replace(".", ",") : score;
+    $("ratingCount").textContent = fmt(ui.rating, { n: DATA.rating.count });
     var note = $("revnote");
-    note.textContent = I18N.ui[lang].noteTr;
-    note.hidden = !I18N.ui[lang].noteTr;
+    note.textContent = ui.noteTr;
+    note.hidden = !ui.noteTr;
   }
+  $("revs").addEventListener("click", function (e) {
+    var btn = e.target.closest(".rmore");
+    if (!btn) return;
+    var card = btn.closest(".review");
+    var open = card.classList.toggle("clamp") === false;
+    btn.setAttribute("aria-expanded", open);
+    btn.textContent = I18N.ui[lang][open ? "rless" : "rmore"];
+  });
 
   /* ---------- Галерия (увеличаване) ---------- */
   var box = $("lightbox"), lbImg = $("lbImg"), lbCap = $("lbCap");
@@ -176,7 +193,7 @@
     current = (i + list.length) % list.length;
     var fig = list[current];
     lbImg.src = fig.querySelector("img").currentSrc || fig.querySelector("img").src;
-    lbImg.alt = fig.querySelector("img").alt;
+    lbImg.alt = fig.querySelector("span").textContent;
     lbCap.textContent = fig.querySelector("span").textContent;
   }
   $("gal").addEventListener("click", function (e) {
@@ -201,6 +218,57 @@
     if (e.key === "ArrowLeft") show(current - 1);
     if (e.key === "ArrowRight") show(current + 1);
   });
+
+  /* ---------- Появяване при превъртане ---------- */
+  if (document.documentElement.classList.contains("js-reveal")) {
+    var groups = [
+      ["#nachalo h2", ""], ["#nachalo .lead", ""], ["#nachalo .amen a", ""],
+      ["#staya .txt > *", ""], ["#staya .tiles .ph", "rv-r"],
+      ["#kuhnya .txt > *", ""], ["#kuhnya .tiles .ph", "rv-l"]
+    ];
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        io.unobserve(en.target);
+        en.target.classList.add("in");
+        /* След края на анимацията се връщат нормалните стилове (напр. ефектите при посочване). */
+        setTimeout(function () { en.target.classList.remove("rv", "rv-l", "rv-r", "in"); en.target.style.removeProperty("--d"); }, 1200);
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -6% 0px" });
+    groups.forEach(function (g) {
+      document.querySelectorAll(g[0]).forEach(function (el, i) {
+        el.classList.add("rv");
+        if (g[1]) el.classList.add(g[1]);
+        el.style.setProperty("--d", (i * 0.08).toFixed(2) + "s");
+        io.observe(el);
+      });
+    });
+  }
+
+  /* ---------- Поверителност: външната карта се зарежда само със съгласие ---------- */
+  var consentBox = $("consent"), mapWrap = $("mapWrap");
+  function getConsent() { try { return localStorage.getItem("consent"); } catch (e) { return null; } }
+  function setConsent(v) { try { localStorage.setItem("consent", v); } catch (e) {} }
+  function loadMap() {
+    if (mapWrap.querySelector("iframe")) return;
+    var f = document.createElement("iframe");
+    f.className = "map";
+    f.src = mapWrap.dataset.src;
+    f.title = lang === "en" ? I18N.en["c.maptitle"] : mapWrap.dataset.title;
+    f.loading = "lazy";
+    mapWrap.textContent = "";
+    mapWrap.appendChild(f);
+  }
+  function showBanner() { consentBox.hidden = false; $("cbAccept").focus({ preventScroll: true }); }
+  $("cbAccept").addEventListener("click", function () { setConsent("granted"); consentBox.hidden = true; loadMap(); });
+  $("cbDecline").addEventListener("click", function () { setConsent("denied"); consentBox.hidden = true; });
+  $("privacyBtn").addEventListener("click", showBanner);
+  /* Бутонът на мястото на картата зарежда само нея, без да запазва избор. */
+  $("mapLoad").addEventListener("click", loadMap);
+  var savedConsent = getConsent();
+  if (savedConsent === "granted") loadMap();
+  /* Не показваме банера, когато сайтът е във вградена преглед-рамка (напр. в портфолиото). */
+  else if (savedConsent === null && window.self === window.top) consentBox.hidden = false;
 
   /* ---------- Старт ---------- */
   var saved = null;
