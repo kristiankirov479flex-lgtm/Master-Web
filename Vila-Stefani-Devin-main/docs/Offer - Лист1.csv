@@ -1,0 +1,19 @@
+,Service ,Description,Hours (min),Hours (max),Min Price,Max Price,Rate
+Base Offer,Website,,10,20,"€200,00","€400,00",20
+,Domain,,1,2,"€20,00","€40,00",
+,Deployment ,,1,4,"€20,00","€80,00",
+,30-day support,,5,10,"€100,00","€200,00",
+,SEO,,1,4,"€20,00","€80,00",
+,,,18,40,"€360,00","€800,00",
+,,,,,,,
+Add-on,Google AI search optimization,,,,,,15
+,Booking system,"Availability calendar plus an enquiry form, with calendar sync to Booking.com and Airbnb to avoid double bookings.",10,20,"€150,00","€300,00",
+,"Editable text and images, admin panel","A simple editor (for example Decap CMS or Sanity). Both languages double the fields. Includes image upload and resizing, and limits so the layout can’t be broken.",15,25,"€225,00","€375,00",
+,Automated emails and reminders,"Confirmation, pre-arrival reminder with check-in info, and a thank-you with a review request, in both languages. Reminders need booking dates, so this only works fully with add-on 1.",8,15,"€120,00","€225,00",
+,Email marketing and Wi-Fi password page,"A signup list, a double opt-in welcome email, and the password page.",12,20,"€180,00","€300,00",
+,Photo shoot,"A photographer for the interior, the view and the yard. About 25–30 edited photos plus a licence for web and social use.",10,20,"€150,00","€300,00",
+,Photo shoot and staging,"The same, plus styling the rooms with linens, flowers and props, and half a day of styling.",12,22,"€180,00","€330,00",
+,Digital guest guide,"QR code in the room opens a page with Wi-Fi, house rules, check-out and local tips. It’s friendlier than a password gate, and the email signup can sit at the bottom.",5,10,"€75,00","€150,00",
+,Local search setup,"Optimise the Google Business Profile and add structured data. The villa already has a 5.0 rating, so this could pay off quickly.",1,3,"€15,00","€45,00",
+,Listing help,"Photos, text and calendar sync for Booking.com and Airbnb.",0,5,"€0,00","€75,00",
+,More languages,"Such as Romanian or German, if their guests come from there",1,3,"€15,00","€45,00",

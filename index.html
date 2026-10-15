@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0E4A42">
 <title>Master Web – freelance web developer for local businesses</title>
 <meta name="description" id="meta-desc" content="Freelance web developer building fast, reliable websites and web apps for barber shops, salons, rental homes and other local businesses.">
 <meta property="og:type" content="website">
@@ -14,92 +15,201 @@
 <link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-<header class="wrap top">
+<header class="top">
   <a class="brand" href="./">Master Web</a>
   <nav aria-label="Main">
+    <a href="#services" data-i18n="nav.services">Services</a>
     <a href="#work" data-i18n="nav.work">Work</a>
-    <a href="#approach" data-i18n="nav.approach">How I work</a>
-    <a class="btn btn-primary" href="#contact" data-i18n="nav.contact">Get in touch</a>
+    <a href="#process" data-i18n="nav.process">Process</a>
+    <a href="#faq" data-i18n="nav.faq">Questions</a>
+    <a class="btn btn-amber" href="#contact" data-i18n="nav.contact">Get in touch</a>
     <button class="lang" id="lang" type="button" lang="bg" aria-label="Превключи на български">БГ</button>
   </nav>
 </header>
 
 <main id="main">
-  <section class="wrap hero">
-    <h1 data-i18n="hero.title">Websites that bring local customers through the door.</h1>
-    <p data-i18n="hero.text">I'm a freelance web developer. I build fast, clear, easy-to-maintain websites and web apps for barber shops, salons, rental homes and other small businesses.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="#work" data-i18n="hero.work">See my work</a>
-      <a class="btn btn-quiet" href="#contact" data-i18n="hero.start">Start a project</a>
-    </div>
-  </section>
 
-  <section class="block" id="work" aria-labelledby="work-h">
-    <div class="wrap">
-      <h2 id="work-h" data-i18n="work.title">Recent work</h2>
-      <p class="lead" data-i18n="work.lead">Each site below is live. Open it to try it yourself.</p>
+  <!-- ============ Hero ============ -->
+  <section class="hero on-dark">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 data-i18n="hero.title">Websites that bring local customers through the door.</h1>
+        <p data-i18n="hero.text">I'm a freelance web developer. I build fast, clear, easy-to-maintain websites and web apps for barber shops, salons, rental homes and other small businesses.</p>
+        <div class="actions">
+          <a class="btn btn-amber" href="#work" data-i18n="hero.work">See my work</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.start">Start a project</a>
+        </div>
+      </div>
 
-      <div class="work-list">
-        <!--
-          To add a project: copy one <article class="project"> block,
-          change the folder in both the href and the iframe src, and edit the text.
-          The folder only needs an index.html inside it.
-        -->
-        <article class="project">
-          <a class="shot" href="Vila-Stefani-Devin-main/index.html" data-i18n-attr="aria-label:vila.open_label" aria-label="Open the Vila Stefani website">
+      <div class="stage-col">
+        <div class="stage">
+          <div class="win desktop">
             <div class="chrome">
               <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
               <span>Vila-Stefani-Devin-main</span>
             </div>
             <div class="screen">
-              <iframe src="Vila-Stefani-Devin-main/index.html" data-i18n-attr="title:vila.preview" title="Preview of the Vila Stefani website" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:1440px;height:900px" data-i18n-attr="title:stage.preview" title="Preview of the Vila Stefani website on a computer" tabindex="-1" aria-hidden="true"></iframe>
             </div>
-          </a>
-          <div>
-            <p class="kind" data-i18n="vila.kind">Guest house, Devin</p>
-            <h3 data-i18n="vila.name">Vila Stefani</h3>
-            <p data-i18n="vila.desc">A website for a mountain guest house. Guests see the room, the garden kitchen and what to visit nearby, then call or write to ask about dates.</p>
-            <ul>
-              <li data-i18n="vila.f1">Photo gallery and guest reviews</li>
-              <li data-i18n="vila.f2">Works on phones</li>
-              <li data-i18n="vila.f3">Bulgarian and English</li>
-            </ul>
-            <a class="btn btn-quiet" href="Vila-Stefani-Devin-main/index.html" data-i18n="vila.open">Open the site</a>
           </div>
-        </article>
+          <div class="win phone">
+            <div class="screen">
+              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:390px;height:780px" data-i18n-attr="title:stage.preview_m" title="Preview of the Vila Stefani website on a phone" tabindex="-1" aria-hidden="true"></iframe>
+            </div>
+          </div>
+          <a class="stage-link" href="Vila-Stefani-Devin-main/index.html" data-i18n-attr="aria-label:stage.label" aria-label="Open the Vila Stefani website"></a>
+        </div>
+        <p class="stage-cap"><span data-i18n="stage.cap">Live example: Vila Stefani, a guest house in Devin</span> <a href="Vila-Stefani-Devin-main/index.html" data-i18n="stage.open">Open the site</a></p>
       </div>
     </div>
   </section>
 
-  <section class="block" id="approach" aria-labelledby="approach-h">
+  <!-- ============ Included with every site ============ -->
+  <section class="included" aria-labelledby="inc-h">
     <div class="wrap">
-      <h2 id="approach-h" data-i18n="approach.title">How I work</h2>
-      <div class="points">
-        <div>
-          <h3 data-i18n="approach.1t">One person, start to finish</h3>
-          <p data-i18n="approach.1p">You talk to the person who builds your site. No account managers, no hand-offs.</p>
+      <h2 class="sr-only" id="inc-h" data-i18n="inc.title">Included with every site</h2>
+      <ul>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span data-i18n="inc.1">Bulgarian and English</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg><span data-i18n="inc.2">Built for phones first</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg><span data-i18n="inc.3">Accessibility checked</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/></svg><span data-i18n="inc.4">No unnecessary trackers</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/></svg><span data-i18n="inc.5">You own the domain and files</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Services ============ -->
+  <section class="block" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="svc-h" data-i18n="svc.title">What I can build for you</h2>
+        <p data-i18n="svc.lead">Start with a simple website and add only what your business needs.</p>
+      </div>
+      <ul class="svc">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+          <h3 data-i18n="svc.1t">A website</h3>
+          <p data-i18n="svc.1p">A clear site in Bulgarian and English: your rooms or services, photos, reviews, location and contact details.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          <h3 data-i18n="svc.2t">Booking calendar</h3>
+          <p data-i18n="svc.2p">Guests pick dates and send a request. Your availability stays in sync with Booking.com and Airbnb.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16z"/><path d="M14 6l3 3"/></svg>
+          <h3 data-i18n="svc.3t">Edit it yourself</h3>
+          <p data-i18n="svc.3p">A simple login page where you change texts and photos without touching any code.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <h3 data-i18n="svc.4t">Automatic guest emails</h3>
+          <p data-i18n="svc.4p">Confirmations, reminders before arrival, and a thank-you with a request for a review.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <h3 data-i18n="svc.5t">Photos</h3>
+          <p data-i18n="svc.5p">A professional photo shoot, and styling of the rooms, arranged for you.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
+          <h3 data-i18n="svc.6t">Found on Google</h3>
+          <p data-i18n="svc.6p">Your Google Business Profile, search basics and fast pages, so people nearby can find you.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Work ============ -->
+  <section class="block work" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="work-h" data-i18n="work.title">Recent work</h2>
+        <p data-i18n="work.lead">Each site is live. Open it and try it yourself.</p>
+      </div>
+
+      <!--
+        To add a project: copy one <article class="proj"> block, change the link and the text.
+        The project folder only needs an index.html inside it.
+      -->
+      <article class="proj">
+        <div class="proj-text">
+          <h3 data-i18n="vila.name">Vila Stefani</h3>
+          <p class="where" data-i18n="vila.kind">Guest house, Devin</p>
+          <p class="desc" data-i18n="vila.desc">A website for a mountain guest house. Guests see the room, the garden kitchen and what to visit nearby, then call or write to ask about dates.</p>
+          <dl class="facts">
+            <dt data-i18n="f.type">Type</dt><dd data-i18n="vila.type">Accommodation site</dd>
+            <dt data-i18n="f.lang">Languages</dt><dd data-i18n="vila.lang">Bulgarian and English</dd>
+          </dl>
+          <a class="btn btn-primary" href="Vila-Stefani-Devin-main/index.html" data-i18n="vila.open">Open Vila Stefani</a>
         </div>
-        <div>
-          <h3 data-i18n="approach.2t">Built for phones first</h3>
-          <p data-i18n="approach.2p">Most of your customers will find you on their phone, so every site is designed and tested there first.</p>
+        <div class="proj-shot">
+          <div class="win desktop">
+            <div class="chrome">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>Vila-Stefani-Devin-main</span>
+            </div>
+            <div class="screen">
+              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:1440px;height:900px" data-i18n-attr="title:stage.preview" title="Preview of the Vila Stefani website on a computer" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
+            </div>
+          </div>
+          <a class="stage-link" href="Vila-Stefani-Devin-main/index.html" data-i18n-attr="aria-label:stage.label" aria-label="Open the Vila Stefani website"></a>
         </div>
+      </article>
+
+      <div class="next">
         <div>
-          <h3 data-i18n="approach.3t">You own it</h3>
-          <p data-i18n="approach.3p">Your site, your domain, your content. If you ever want to move on, you take everything with you.</p>
+          <h3 data-i18n="next.title">Your business could be next</h3>
+          <p data-i18n="next.text">Tell me what you do and I'll tell you what a website can do for you.</p>
         </div>
+        <a class="btn btn-quiet" href="#contact" data-i18n="next.cta">Start a project</a>
       </div>
     </div>
   </section>
 
-  <section class="block contact" id="contact" aria-labelledby="contact-h">
+  <!-- ============ Process ============ -->
+  <section class="block" id="process" aria-labelledby="proc-h">
     <div class="wrap">
-      <h2 id="contact-h" data-i18n="contact.title">Need a website for your business?</h2>
-      <p class="lead" data-i18n="contact.lead">Tell me what you do and what you need. I'll reply with a clear plan and a fixed price.</p>
-      <!-- TODO: replace with your real email address -->
-      <a class="btn btn-primary" href="mailto:hello@example.com" data-i18n="contact.cta">Email me</a>
+      <div class="head">
+        <h2 id="proc-h" data-i18n="proc.title">How a project works</h2>
+      </div>
+      <ol class="steps">
+        <li><h3 data-i18n="p.1t">We talk</h3><p data-i18n="p.1p">Tell me about your business and what you need.</p></li>
+        <li><h3 data-i18n="p.2t">A fixed price</h3><p data-i18n="p.2p">You get a written offer with a fixed price and a clear list of what's included.</p></li>
+        <li><h3 data-i18n="p.3t">I build it</h3><p data-i18n="p.3p">You see a working preview and tell me what to change.</p></li>
+        <li><h3 data-i18n="p.4t">Launch</h3><p data-i18n="p.4p">I connect your domain, put the site online and show you how it works.</p></li>
+        <li><h3 data-i18n="p.5t">Support</h3><p data-i18n="p.5p">For 30 days after launch I fix problems and make small changes.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block faq" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="faq-h" data-i18n="faq.title">Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="q1">Who owns the website?</summary><p data-i18n="a1">You do. The domain is registered in your name and you receive all the files.</p></details>
+        <details><summary data-i18n="q2">What do I need to provide?</summary><p data-i18n="a2">Your texts and photos. If you don't have photos, I can arrange a photographer.</p></details>
+        <details><summary data-i18n="q3">How much does it cost?</summary><p data-i18n="a3">It depends on what you need. After a short conversation you get a fixed price in writing.</p></details>
+        <details><summary data-i18n="q4">Are there monthly fees?</summary><p data-i18n="a4">A simple site can be hosted for free. You pay for the domain, usually around €10–20 a year, and for any extra services you choose.</p></details>
+        <details><summary data-i18n="q5">Can I change things later?</summary><p data-i18n="a5">Yes. Small changes are included for 30 days after launch, and I can add features or an editor so you can update the site yourself.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="contact on-dark" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 id="contact-h" data-i18n="contact.title">Let's talk about your website.</h2>
+      <p data-i18n="contact.text">Tell me what you do and what you need. I'll reply with a clear plan and a fixed price.</p>
+      <!-- TODO: replace with your real email address (twice) -->
+      <a class="mail" href="mailto:hello@example.com">hello@example.com</a>
+      <div><a class="btn btn-amber" href="mailto:hello@example.com" data-i18n="contact.cta">Email me</a></div>
     </div>
   </section>
 </main>
@@ -112,10 +222,10 @@
 </footer>
 
 <script>
-  // Scale each 1440px-wide preview to fit its frame.
+  // Scale each preview (a full-size page) down to fit its frame.
   const fit = el => {
     const frame = el.querySelector('iframe');
-    if (frame) frame.style.transform = 'scale(' + el.clientWidth / 1440 + ')';
+    if (frame) frame.style.transform = 'scale(' + el.clientWidth / parseInt(frame.style.width, 10) + ')';
   };
   const ro = new ResizeObserver(entries => entries.forEach(e => fit(e.target)));
   document.querySelectorAll('.screen').forEach(s => { fit(s); ro.observe(s); });
@@ -127,33 +237,57 @@
     desc: "Свободен уеб разработчик, който прави бързи и надеждни уебсайтове и уеб приложения за бръснарници, салони, къщи под наем и други местни бизнеси.",
     "skip": "Към съдържанието",
     "f.privacy": "Политика за поверителност",
-    "nav.work": "Проекти",
-    "nav.approach": "Как работя",
-    "nav.contact": "Свържете се с мен",
+    "nav.services": "Услуги", "nav.work": "Проекти", "nav.process": "Процес", "nav.faq": "Въпроси", "nav.contact": "Свържете се с мен",
+
     "hero.title": "Уебсайтове, които водят местните клиенти до вратата ви.",
     "hero.text": "Аз съм свободен уеб разработчик. Правя бързи, ясни и лесни за поддръжка уебсайтове и уеб приложения за бръснарници, салони, къщи под наем и други малки бизнеси.",
-    "hero.work": "Вижте проектите ми",
-    "hero.start": "Започнете проект",
+    "hero.work": "Вижте проектите ми", "hero.start": "Започнете проект",
+    "stage.preview": "Преглед на уебсайта на Вила Стефани на компютър",
+    "stage.preview_m": "Преглед на уебсайта на Вила Стефани на телефон",
+    "stage.label": "Отвори уебсайта на Вила Стефани",
+    "stage.cap": "Действащ пример: Вила Стефани, къща за гости в Девин",
+    "stage.open": "Отворете сайта",
+
+    "inc.title": "Включено във всеки сайт",
+    "inc.1": "На български и английски", "inc.2": "Първо за телефони", "inc.3": "Проверен за достъпност",
+    "inc.4": "Без излишни тракери", "inc.5": "Домейнът и файловете са ваши",
+
+    "svc.title": "Какво мога да изградя за вас",
+    "svc.lead": "Започнете с прост уебсайт и добавяйте само това, от което бизнесът ви има нужда.",
+    "svc.1t": "Уебсайт", "svc.1p": "Ясен сайт на български и английски: стаите или услугите ви, снимки, отзиви, адрес и контакти.",
+    "svc.2t": "Календар за резервации", "svc.2p": "Гостите избират дати и изпращат запитване. Заетостта ви се синхронизира с Booking.com и Airbnb.",
+    "svc.3t": "Редактирайте сами", "svc.3p": "Лесна страница за вход, през която променяте текстове и снимки, без да пипате код.",
+    "svc.4t": "Автоматични имейли до гостите", "svc.4p": "Потвърждения, напомняния преди пристигане и благодарствено писмо със заявка за отзив.",
+    "svc.5t": "Снимки", "svc.5p": "Професионална фотосесия и подредба на помещенията, организирани за вас.",
+    "svc.6t": "Да ви намират в Google", "svc.6p": "Профилът ви в Google Бизнес, основи на търсенето и бързи страници, за да ви откриват хората наблизо.",
+
     "work.title": "Последни проекти",
-    "work.lead": "Всеки сайт по-долу е действащ. Отворете го и го разгледайте сами.",
-    "vila.open_label": "Отвори уебсайта на Вила Стефани",
-    "vila.preview": "Преглед на уебсайта на Вила Стефани",
-    "vila.kind": "Къща за гости, Девин",
-    "vila.name": "Вила Стефани",
+    "work.lead": "Всеки сайт е действащ. Отворете го и го разгледайте сами.",
+    "vila.name": "Вила Стефани", "vila.kind": "Къща за гости, Девин",
     "vila.desc": "Уебсайт на планинска къща за гости. Гостите виждат стаята, кухнята в двора и какво да посетят наоколо, след което се обаждат или пишат за свободни дати.",
-    "vila.f1": "Галерия и отзиви от гости",
-    "vila.f2": "Работи на телефони",
-    "vila.f3": "На български и английски",
-    "vila.open": "Отворете сайта",
-    "approach.title": "Как работя",
-    "approach.1t": "Един човек от начало до край",
-    "approach.1p": "Говорите директно с човека, който прави сайта ви. Без посредници и без предаване на работата от ръка на ръка.",
-    "approach.2t": "Първо за телефони",
-    "approach.2p": "Повечето ваши клиенти ще ви намерят през телефона си, затова всеки сайт е проектиран и тестван първо там.",
-    "approach.3t": "Вие го притежавате",
-    "approach.3p": "Вашият сайт, вашият домейн, вашето съдържание. Ако някога решите да смените разработчика, взимате всичко със себе си.",
-    "contact.title": "Трябва ли ви уебсайт за вашия бизнес?",
-    "contact.lead": "Разкажете ми с какво се занимавате и какво ви трябва. Ще ви отговоря с ясен план и твърда цена.",
+    "f.type": "Вид", "vila.type": "Сайт за настаняване",
+    "f.lang": "Езици", "vila.lang": "Български и английски",
+    "vila.open": "Отворете Вила Стефани",
+    "next.title": "Следващият може да е вашият бизнес",
+    "next.text": "Разкажете ми с какво се занимавате и ще ви кажа какво може да направи един сайт за вас.",
+    "next.cta": "Започнете проект",
+
+    "proc.title": "Как върви един проект",
+    "p.1t": "Говорим", "p.1p": "Разкажете ми за бизнеса си и какво ви трябва.",
+    "p.2t": "Твърда цена", "p.2p": "Получавате писмена оферта с твърда цена и ясно описание какво е включено.",
+    "p.3t": "Изграждам го", "p.3p": "Виждате работещ преглед и ми казвате какво да променя.",
+    "p.4t": "Пускане", "p.4p": "Свързвам домейна ви, качвам сайта и ви показвам как работи.",
+    "p.5t": "Поддръжка", "p.5p": "30 дни след пускането отстранявам проблеми и правя малки промени.",
+
+    "faq.title": "Често задавани въпроси",
+    "q1": "Чий е сайтът?", "a1": "Ваш е. Домейнът се регистрира на ваше име и получавате всички файлове.",
+    "q2": "Какво трябва да предоставя аз?", "a2": "Текстовете и снимките си. Ако нямате снимки, мога да организирам фотограф.",
+    "q3": "Колко струва?", "a3": "Зависи от нуждите ви. След кратък разговор получавате твърда цена в писмен вид.",
+    "q4": "Има ли месечни такси?", "a4": "Прост сайт може да се хоства безплатно. Плащате за домейна, обикновено около 10–20 € годишно, и за допълнителните услуги, които изберете.",
+    "q5": "Мога ли да променям нещо по-късно?", "a5": "Да. Малките промени са включени 30 дни след пускането, а мога да добавя функции или редактор, за да обновявате сайта сами.",
+
+    "contact.title": "Да поговорим за вашия сайт.",
+    "contact.text": "Разкажете ми с какво се занимавате и какво ви трябва. Ще ви отговоря с ясен план и твърда цена.",
     "contact.cta": "Пишете ми"
   };
 
