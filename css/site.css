@@ -209,3 +209,31 @@ footer :focus-visible { outline-color: #fff; }
   html { scroll-behavior: auto; }
   .btn, .faq summary::after { transition: none; }
 }
+
+/* ---------- Showcase on phones: pick type, see the site, pick design, open ---------- */
+@media (max-width: 640px) {
+  .sc-tabs { grid-template-columns: 1fr 1fr; gap: 8px; padding: 6px 0 0; border-bottom: 0; }
+  .sc-tab { min-height: 64px; padding: 10px 14px; border: 1.5px solid var(--ink); border-radius: 14px; align-content: center; background: transparent; color: var(--ink); }
+  .sc-tab[aria-selected="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+  .sc-tab small { opacity: .85; }
+  .sc-name { font-size: 1.05rem; }
+  .sc-panel { display: flex; flex-direction: column; align-items: stretch; gap: 0; padding-top: 14px; }
+  .sc-info { display: contents; }
+  .sc-info h3 { order: 1; font-size: 1.7rem; margin-bottom: 10px; text-align: left; }
+  .sc-shot { order: 2; }
+  .sc-design { order: 3; margin-top: 16px; display: grid; gap: 8px; }
+  .sc-design > div { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .seg { min-height: 46px; padding: 8px 10px; border-radius: 12px; line-height: 1.2; }
+  .sc-note { order: 4; min-height: 0; margin-top: 12px; }
+  .sc-actions { order: 5; display: grid; grid-template-columns: 1fr; margin-top: 14px; }
+  .sc-actions .btn { width: 100%; justify-content: center; text-align: center; }
+  .sc-info .desc { order: 6; margin-top: 26px; }
+  .sc-info .chips { order: 7; }
+}
+
+.sc-step { display: none; margin: 0 0 4px; font-size: .95rem; font-weight: 700; color: var(--ink); }
+@media (max-width: 640px) {
+  .sc-step { display: block; }
+  .sc-label { font-weight: 700; color: var(--ink); font-size: .95rem; }
+  .sc-actions .btn-primary { min-height: 52px; }
+}

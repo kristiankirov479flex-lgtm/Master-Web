@@ -379,3 +379,22 @@ legend { font-family: var(--serif); font-size: 1.5rem; padding: 0; margin-bottom
 
 /* tap targets: contact and privacy links are at least 24px tall */
 .info dd a, .hint a, .foot-links a { display: inline-block; min-height: 24px; padding: 2px 0; }
+
+/* ---------- Hero on phones and tablets: centred text, photo exactly in the column ---------- */
+@media (max-width: 999px) {
+  .hero-grid > div:first-child { text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .hero .kicker { justify-content: center; }
+  .hero-lead { margin-inline: auto; }
+  .hero-actions { justify-content: center; width: 100%; }
+  .hero-photo { padding: 0; width: 100%; max-width: 560px; margin-inline: auto; }
+  .hero-photo::before { display: none; }
+  .hero-photo img { aspect-ratio: 4 / 3.6; }
+}
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; justify-content: center; text-align: center; }
+}
+@media (max-width: 999px) {
+  .hero .kicker::before { content: ""; flex: 0 0 28px; height: 1.5px; background: currentColor; }
+  .hero .kicker::after { flex-basis: 28px; }
+}
