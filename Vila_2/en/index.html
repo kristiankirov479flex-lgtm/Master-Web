@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F6F1E7">
+<title>Linden House – a mountain guest house with a wood stove</title>
+<meta name="description" content="Three rooms, a long breakfast table and a wood stove in a quiet mountain house. See the rooms, check free dates and send an enquiry.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Linden House – a mountain guest house with a wood stove">
+<meta property="og:description" content="Three rooms, a long breakfast table and a wood stove in a quiet mountain house. See the rooms, check free dates and send an enquiry.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/house-mountain.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Linden House","inLanguage":"en",
+ "telephone":"+359000000000","email":"email@example.com","checkinTime":"14:00","checkoutTime":"11:00",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Rhodope Mountains","addressCountry":"BG"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Small screens: a slim top bar. On wide screens the side bar below is always visible. -->
+<header class="topbar">
+  <a class="logo" href="index.html"><b>Linden House</b></a>
+  <div class="topbar-r">
+    <button class="btn btn-main btn-sm" type="button" data-goto="book">Book</button>
+    <button class="burger" id="burger" type="button" aria-controls="side" aria-expanded="false" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<aside class="side" id="side" aria-label="Site menu">
+  <a class="logo" href="index.html"><b>Linden House</b><span>mountain guest house</span></a>
+  <nav aria-label="Main navigation">
+    <ol class="side-nav">
+      <li><a href="#stay"><i>01</i>Stay</a></li>
+      <li><a href="#rooms"><i>02</i>Rooms</a></li>
+      <li><a href="#day"><i>03</i>A day here</a></li>
+      <li><a href="#around"><i>04</i>Around</a></li>
+      <li><a href="#gallery"><i>05</i>Gallery</a></li>
+      <li><a href="#reviews"><i>06</i>Reviews</a></li>
+      <li><a href="#book"><i>07</i>Book</a></li>
+      <li><a href="#visit"><i>08</i>Visit</a></li>
+    </ol>
+  </nav>
+  <div class="side-foot">
+    <a class="side-tel" href="tel:+359000000000">+359 000 000 000</a>
+    <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+  </div>
+</aside>
+
+<main id="main">
+
+  <!-- ============ Stay ============ -->
+  <section class="sec hero" id="stay" aria-labelledby="stay-h">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Mountain guest house</p>
+          <h1 id="stay-h">A quiet house, a warm stove, a <em>long</em> breakfast.</h1>
+          <p class="hero-lead">Three rooms, a garden terrace and a wood stove. Come for a weekend or stay the week, and wake up to the mountain.</p>
+          <div class="hero-actions">
+            <a class="btn btn-main" href="#rooms">See the rooms</a>
+            <a class="btn btn-line" href="#book">Check dates</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="../images/stock/house-mountain-800.jpg" srcset="../images/stock/house-mountain-800.jpg 800w, ../images/stock/house-mountain.jpg 1600w" sizes="(min-width: 1100px) 42vw, 92vw" width="1600" height="1067" alt="A wooden house on a mountain meadow with peaks behind it" fetchpriority="high" decoding="async">
+          <figcaption class="postcard"><b>Good to know</b><span>Check-in from 14:00</span><span>Check-out until 11:00</span></figcaption>
+        </figure>
+      </div>
+      <form class="avail" id="quickForm" aria-label="Check free dates">
+        <div class="field"><label for="q-in">Arrival</label><input id="q-in" type="date"></div>
+        <div class="field"><label for="q-out">Departure</label><input id="q-out" type="date"></div>
+        <div class="field"><label for="q-guests">Guests</label><select id="q-guests"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option></select></div>
+        <button class="btn btn-main" type="submit">Check free rooms</button>
+      </form>
+    </div>
+  </section>
+
+  <ul class="facts" aria-label="The house in numbers">
+    <li><b>3</b><span>rooms</span></li>
+    <li><b>8</b><span>guests at most</span></li>
+    <li><b>8 €</b><span>breakfast, per person</span></li>
+    <li><b>Free</b><span>parking at the door</span></li>
+  </ul>
+
+  <!-- ============ Rooms ============ -->
+  <section class="sec" id="rooms" aria-labelledby="rooms-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>02</b> Rooms</p>
+        <h2 id="rooms-h">Three rooms, three moods</h2>
+        <p>Each room has its own bathroom. The prices below are per night for the whole room.</p>
+      </header>
+      <article class="room"><figure><img src="../images/stock/bedroom-large-window-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"><span class="room-no" aria-hidden="true">01</span></figure><div class="room-body"><h3>Garden Room</h3><ul class="meta"><li>22 m²</li><li>Up to 2 guests</li><li>1 double bed</li></ul><p>A bright double room with a deep window over the garden. Linen curtains, a reading chair and soft morning light.</p><ul class="am"><li>Garden view</li><li>Private bathroom</li><li>Wi-Fi</li><li>Heating</li></ul><p class="room-price">from <b>65 €</b> per night</p><button class="btn btn-main" type="button" data-room="orchard">Book this room</button></div></article>
+      <article class="room rev"><figure><img src="../images/stock/vintage-bedroom-800.jpg" width="800" height="600" alt="" loading="lazy" decoding="async"><span class="room-no" aria-hidden="true">02</span></figure><div class="room-body"><h3>The Attic</h3><ul class="meta"><li>18 m²</li><li>Up to 2 guests</li><li>1 iron-frame bed</li></ul><p>A cosy room under the roof, with a sloping ceiling, an old iron bed and a small window full of treetops.</p><ul class="am"><li>Treetop view</li><li>Shower room</li><li>Wi-Fi</li><li>Quiet floor</li></ul><p class="room-price">from <b>55 €</b> per night</p><button class="btn btn-main" type="button" data-room="attic">Book this room</button></div></article>
+      <article class="room"><figure><img src="../images/stock/cozy-bedroom-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><span class="room-no" aria-hidden="true">03</span></figure><div class="room-body"><h3>The Blue Room (family)</h3><ul class="meta"><li>30 m²</li><li>Up to 4 guests</li><li>1 double bed and a sofa bed</li></ul><p>Our largest room, with deep blue panelling, a round table by the window and space for a family of four.</p><ul class="am"><li>Sleeps four</li><li>Private bathroom</li><li>Wi-Fi</li><li>Table for two</li></ul><p class="room-price">from <b>95 €</b> per night</p><button class="btn btn-main" type="button" data-room="blue">Book this room</button></div></article>
+    </div>
+  </section>
+
+  <!-- ============ A day here ============ -->
+  <section class="sec soft" id="day" aria-labelledby="day-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>03</b> A day here</p>
+        <h2 id="day-h">How a day goes</h2>
+        <p>No schedule, but this is how most guests spend it.</p>
+      </header>
+      <ol class="day-grid">
+        <li><img src="../images/stock/pastries-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><div><time>08:30</time><h3>Breakfast</h3><p>Pastries, jam, eggs and fruit on the long table. Coffee as long as you like.</p></div></li>
+        <li><img src="../images/stock/patio-vines-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><div><time>14:00</time><h3>Arrive and unwind</h3><p>Check in, leave your bags and take a coffee on the terrace under the vines.</p></div></li>
+        <li><img src="../images/stock/stove-cabin-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><div><time>19:00</time><h3>By the stove</h3><p>A wood fire in the lounge, tea and a board game while the valley goes dark.</p></div></li>
+      </ol>
+
+      <div class="seasons" id="seasons">
+        <div class="season-tabs" role="tablist" aria-label="Seasons">
+          <button class="stab" type="button" role="tab" id="st-summer" aria-controls="sp-summer" aria-selected="true">Summer</button>
+          <button class="stab" type="button" role="tab" id="st-winter" aria-controls="sp-winter" aria-selected="false" tabindex="-1">Winter</button>
+        </div>
+        <div class="spanel" id="sp-summer" role="tabpanel" aria-labelledby="st-summer"><img src="../images/stock/hills-fences-800.jpg" width="800" height="600" alt="" loading="lazy" decoding="async"><ul><li>Meadow walks from the front door</li><li>Cool evenings on the terrace</li><li>Berries and honey at breakfast</li></ul></div>
+        <div class="spanel" id="sp-winter" role="tabpanel" aria-labelledby="st-winter" hidden><img src="../images/stock/snow-cabin-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><ul><li>The wood stove is lit all day</li><li>Snow trails, with a ski lift a short drive away</li><li>Hot tea and thick blankets</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Around ============ -->
+  <section class="sec" id="around" aria-labelledby="around-h">
+    <div class="wrap around">
+      <div>
+        <header class="sec-head">
+          <p class="kicker"><b>04</b> Around</p>
+          <h2 id="around-h">What is close</h2>
+          <p>The distance ladder: the shorter the line, the closer the place.</p>
+        </header>
+        <div class="chips" role="group" aria-label="Filter by how you get there">
+          <button class="chip" type="button" data-mode="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-mode="foot" aria-pressed="false">On foot</button>
+          <button class="chip" type="button" data-mode="car" aria-pressed="false">By car</button>
+        </div>
+        <ul class="ladder" id="ladder">
+          <li data-mode="foot" style="--w:9%"><span class="pl-name">Village square and bakery</span><span class="pl-time">4 min on foot</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="foot" style="--w:27%"><span class="pl-name">Old stone bridge</span><span class="pl-time">12 min on foot</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="foot" style="--w:56%"><span class="pl-name">Forest trail to the waterfall</span><span class="pl-time">25 min on foot</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="foot" style="--w:89%"><span class="pl-name">Meadow viewpoint</span><span class="pl-time">40 min on foot</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="car" style="--w:27%"><span class="pl-name">Ski lift</span><span class="pl-time">12 min by car</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="car" style="--w:56%"><span class="pl-name">Thermal spa</span><span class="pl-time">25 min by car</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="car" style="--w:78%"><span class="pl-name">Monastery</span><span class="pl-time">35 min by car</span><span class="bar" aria-hidden="true"><i></i></span></li>
+        </ul>
+        <p class="note">Example places and times. Replace them with your own.</p>
+      </div>
+      <figure class="around-photo">
+        <img src="../images/stock/forest-path-800.jpg" width="800" height="1200" alt="A forest path with tall trees" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="sec soft" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>05</b> Gallery</p>
+        <h2 id="gal-h">The house in pictures</h2>
+        <p>Press a picture to see it larger.</p>
+      </header>
+      <div class="mosaic">
+        <button class="g g1" type="button" data-full="../images/stock/cabin-trees.jpg" data-cap="The house, early morning" aria-label="Open photo: The house, early morning"><img src="../images/stock/cabin-trees-800.jpg" width="800" height="1000" alt="The house, early morning" loading="lazy" decoding="async"></button>
+        <button class="g g2" type="button" data-full="../images/stock/rustic-bed.jpg" data-cap="A bed made of branches" aria-label="Open photo: A bed made of branches"><img src="../images/stock/rustic-bed-800.jpg" width="800" height="1200" alt="A bed made of branches" loading="lazy" decoding="async"></button>
+        <button class="g g3" type="button" data-full="../images/stock/breakfast-spread.jpg" data-cap="Breakfast for everyone" aria-label="Open photo: Breakfast for everyone"><img src="../images/stock/breakfast-spread-800.jpg" width="800" height="534" alt="Breakfast for everyone" loading="lazy" decoding="async"></button>
+        <button class="g g4" type="button" data-full="../images/stock/wooden-houses-valley.jpg" data-cap="The valley from the trail" aria-label="Open photo: The valley from the trail"><img src="../images/stock/wooden-houses-valley-800.jpg" width="800" height="532" alt="The valley from the trail" loading="lazy" decoding="async"></button>
+        <button class="g g5" type="button" data-full="../images/stock/coffee-cups.jpg" data-cap="Coffee on the terrace" aria-label="Open photo: Coffee on the terrace"><img src="../images/stock/coffee-cups-800.jpg" width="800" height="532" alt="Coffee on the terrace" loading="lazy" decoding="async"></button>
+        <button class="g g6" type="button" data-full="../images/stock/cabin-night-snow.jpg" data-cap="Winter evening" aria-label="Open photo: Winter evening"><img src="../images/stock/cabin-night-snow-800.jpg" width="800" height="600" alt="Winter evening" loading="lazy" decoding="async"></button>
+        <button class="g g7" type="button" data-full="../images/stock/pergola.jpg" data-cap="The pergola in the garden" aria-label="Open photo: The pergola in the garden"><img src="../images/stock/pergola-800.jpg" width="800" height="1200" alt="The pergola in the garden" loading="lazy" decoding="async"></button>
+        <button class="g g8" type="button" data-full="../images/stock/stone-houses-valley.jpg" data-cap="Stone houses in autumn" aria-label="Open photo: Stone houses in autumn"><img src="../images/stock/stone-houses-valley-800.jpg" width="800" height="1066" alt="Stone houses in autumn" loading="lazy" decoding="async"></button>
+        <button class="g g9" type="button" data-full="../images/stock/room-table-windows.jpg" data-cap="A reading corner" aria-label="Open photo: A reading corner"><img src="../images/stock/room-table-windows-800.jpg" width="800" height="534" alt="A reading corner" loading="lazy" decoding="async"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="sec dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>06</b> Reviews</p>
+        <h2 id="rev-h">What guests say</h2>
+      </header>
+      <div class="rev-box">
+        <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span>Example rating. Replace it with your real rating.</span></div>
+        <div class="slides" id="slides" aria-live="polite">
+          <figure class="slide"><blockquote>Warm, quiet and the breakfast was a feast. We slept with the window open and woke to birdsong.</blockquote><figcaption><b>Maria and Ivo</b> · Stayed in June</figcaption></figure>
+          <figure class="slide" hidden><blockquote>The wood stove, the blankets, the snow outside. We did not want to leave.</blockquote><figcaption><b>Desi</b> · Stayed in January</figcaption></figure>
+          <figure class="slide" hidden><blockquote>Our kids ran around the garden all day. The Blue Room was spacious and spotless.</blockquote><figcaption><b>The Petrov family</b> · Stayed in August</figcaption></figure>
+          <figure class="slide" hidden><blockquote>Easy to book, a quick answer, and a host who told us the best trails.</blockquote><figcaption><b>Georgi</b> · Stayed in October</figcaption></figure>
+        </div>
+        <div class="rev-ctl">
+          <button class="rail-btn" type="button" id="revPrev" aria-label="Previous review">‹</button>
+          <span class="dots" id="revDots" aria-hidden="true"></span>
+          <button class="rail-btn" type="button" id="revNext" aria-label="Next review">›</button>
+        </div>
+      </div>
+      <p class="rev-note">Example reviews. Replace them with real guest reviews.</p>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="sec book" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>07</b> Book</p>
+        <h2 id="book-h">Tell us when you would like to come</h2>
+        <p>Pick your dates and a free room. We reply to confirm; nothing is charged online.</p>
+      </header>
+      <form class="stay-form" id="stayForm" novalidate>
+        <div class="stay-left">
+          <fieldset class="dates">
+            <legend>Your dates</legend>
+            <div class="field"><label for="b-in">Arrival</label><input id="b-in" name="checkin" type="date" required></div>
+            <div class="field"><label for="b-out">Departure</label><input id="b-out" name="checkout" type="date" required></div>
+            <div class="field"><label for="b-guests">Guests</label><select id="b-guests" name="guests"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option><option value="7">7 guests</option><option value="8">8 guests</option></select></div>
+          </fieldset>
+          <p class="hint" id="nightsHint" role="status">Pick your arrival and departure dates to see which rooms are free.</p>
+          <fieldset class="rooms-pick" id="roomsPick">
+            <legend>Choose a room</legend>
+            <label class="rc" data-room="orchard"><input type="radio" name="room" value="orchard" data-price="65" data-cap="2" data-name="Garden Room"><img src="../images/stock/bedroom-large-window-800.jpg" alt="" width="96" height="80" loading="lazy"><span class="rc-main"><b>Garden Room</b><small>22 m² · Up to 2 guests</small></span><span class="rc-price"><b>65 €</b> <small>per night</small></span><span class="tag" data-tag></span></label>
+            <label class="rc" data-room="attic"><input type="radio" name="room" value="attic" data-price="55" data-cap="2" data-name="The Attic"><img src="../images/stock/vintage-bedroom-800.jpg" alt="" width="96" height="80" loading="lazy"><span class="rc-main"><b>The Attic</b><small>18 m² · Up to 2 guests</small></span><span class="rc-price"><b>55 €</b> <small>per night</small></span><span class="tag" data-tag></span></label>
+            <label class="rc" data-room="blue"><input type="radio" name="room" value="blue" data-price="95" data-cap="4" data-name="The Blue Room (family)"><img src="../images/stock/cozy-bedroom-800.jpg" alt="" width="96" height="80" loading="lazy"><span class="rc-main"><b>The Blue Room (family)</b><small>30 m² · Up to 4 guests</small></span><span class="rc-price"><b>95 €</b> <small>per night</small></span><span class="tag" data-tag></span></label>
+          </fieldset>
+        </div>
+        <div class="stay-right">
+          <div class="summary" id="summary" aria-live="polite">
+            <h3>Your stay</h3>
+            <dl id="sumList"></dl>
+            <p class="sum-total" id="sumTotal"></p>
+            <p class="hint">Estimated total at the example prices above. We confirm the final price when we reply.</p>
+          </div>
+          <div class="field"><label for="b-name">Your name</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field-row">
+            <div class="field"><label for="b-phone">Phone</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="b-email">Email (optional)</label><input id="b-email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="b-msg">Message (optional)</label><textarea id="b-msg" name="msg"></textarea></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-main" type="submit" id="submitBtn"><span class="btn-label">Send enquiry</span></button>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <small class="hint">We use your details only to answer your enquiry. <a href="privacy.html">Privacy notice</a></small>
+        </div>
+      </form>
+      <div class="done" id="stayDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit">
+      <div>
+        <p class="kicker"><b>08</b> Visit</p>
+        <h2 id="visit-h">Find the house</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and times. -->
+        <dl class="info">
+          <dt>Address</dt><dd>Primer St. 1, Rhodope Mountains</dd>
+          <dt>Check-in and check-out</dt><dd>Check-in from 14:00, check-out until 11:00</dd>
+          <dt>Phone</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.4107%2C41.7065%2C24.4267%2C41.7165&amp;layer=mapnik&amp;marker=41.7115%2C24.4187">
+          <div class="map-ph">
+            <p>The map is from OpenStreetMap and loads only if you choose.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="faq-h">Good to know</h3>
+        <div class="faq-list">
+          <details><summary>What time is check-in and check-out?</summary><p>Check-in is from 14:00 and check-out until 11:00. If you arrive early, we will keep your bags.</p></details>
+          <details><summary>Is breakfast included?</summary><p>Breakfast is served from 08:30 and costs 8 € per person. Tell us about allergies when you book.</p></details>
+          <details><summary>Do you accept children and pets?</summary><p>Children are very welcome. Small dogs can stay in the Attic on request.</p></details>
+          <details><summary>Is there parking?</summary><p>Yes, free parking at the door for up to three cars.</p></details>
+          <details><summary>How do I pay, and what if my plans change?</summary><p>You pay on arrival, by cash or card. Tell us at least three days ahead if you need to change or cancel, and there is no charge.</p></details>
+          <details><summary>How do I get there?</summary><p>We send exact directions when we confirm. The last part of the road is a short gravel track.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Linden House</span>
+    <span class="foot-links"><a href="privacy.html">Privacy notice</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+359000000000">Call</a>
+  <a href="#book">Book</a>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Close">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Previous photo">‹</button>
+    <figure><img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-next" type="button" id="lbNext" aria-label="Next photo">›</button>
+  </div>
+</dialog>
+
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="[[lang]]" data-skin="brass">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0F0F0F">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/beard-trim.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="[[root]]fonts/oswald-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("foundrySkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"[[brand]] Barbers","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":[[[hours_ld]]]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="[[home_href]]"><i aria-hidden="true"></i><b>[[brand]]</b><span>[[tagline]]</span></a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="[[menu_btn]]"><span></span></button>
+    <nav class="nav" id="nav" aria-label="[[nav_label]]">
+      <div class="nav-l">
+        [[nav_links]]
+      </div>
+      <div class="nav-r">
+        <a class="tel" href="tel:[[phone_href]]">[[phone]]</a>
+        <button class="btn btn-main" type="button" data-book>[[cta]]</button>
+        <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker"><b>[[hero_est]]</b> [[hero_kicker]]</p>
+        <h1>[[h1]]</h1>
+        <p class="hero-lead">[[lead]]</p>
+        <div class="hero-actions">
+          <button class="btn btn-main" type="button" data-book>[[cta]]</button>
+          <a class="btn btn-line" href="#services">[[hero_cta2]]</a>
+        </div>
+        <div class="live">
+          <p id="openNow" class="off">[[open_loading]]</p>
+          <p id="nextFree" hidden></p>
+        </div>
+      </div>
+      <div class="tri">
+        <img class="t1" src="[[root]]images/stock/beard-trim-800.jpg" width="800" height="1200" alt="[[tri_a]]" fetchpriority="high" decoding="async">
+        <img class="t2" src="[[root]]images/stock/bearded-man-800.jpg" width="800" height="1200" alt="[[tri_b]]" decoding="async">
+        <img class="t3" src="[[root]]images/stock/haircut-focus-800.jpg" width="800" height="1200" alt="[[tri_c]]" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <ul>[[marquee]]</ul>
+      <ul>[[marquee]]</ul>
+    </div>
+  </div>
+
+  <!-- ============ Services ============ -->
+  <section class="block" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker"><b>01</b> [[k_services]]</p>
+          <h2 id="svc-h">[[svc_h]]</h2>
+          <p>[[svc_p]]</p>
+        </div>
+      </div>
+      <div class="tabs" role="tablist" aria-label="[[svc_h]]">
+        [[tabs]]
+      </div>
+      [[panels]]
+      <p class="svc-note">[[price_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Barbers ============ -->
+  <section class="block soft" id="barbers" aria-labelledby="team-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker"><b>02</b> [[k_team]]</p>
+          <h2 id="team-h">[[team_h]]</h2>
+          <p>[[team_p]]</p>
+        </div>
+      </div>
+      <div class="team">
+        [[team]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Work ============ -->
+  <section class="block" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker"><b>03</b> [[k_work]]</p>
+          <h2 id="work-h">[[work_h]]</h2>
+          <p>[[work_p]]</p>
+        </div>
+        <div class="rail-bar">
+          <button class="rail-btn" type="button" id="railPrev" aria-label="[[rail_prev]]">‹</button>
+          <button class="rail-btn" type="button" id="railNext" aria-label="[[rail_next]]">›</button>
+        </div>
+      </div>
+      <div class="rail" id="rail" role="group" aria-label="[[work_h]]">
+        [[rail]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Plans ============ -->
+  <section class="block soft" id="plans" aria-labelledby="plans-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker"><b>04</b> [[k_plans]]</p>
+          <h2 id="plans-h">[[plans_h]]</h2>
+          <p>[[plans_p]]</p>
+        </div>
+      </div>
+      <div class="plans">
+        [[plans]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="kicker"><b>05</b> [[k_rev]]</p>
+          <h2 id="rev-h">[[rev_h]]</h2>
+        </div>
+      </div>
+      <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span>[[rev_p]]</span></div>
+      <div class="rev-grid">
+        [[reviews]]
+      </div>
+      <p class="rev-note">[[rev_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit and questions ============ -->
+  <section class="block visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker"><b>06</b> [[k_visit]]</p>
+        <h2 id="visit-h">[[visit_h]]</h2>
+        <p class="status off" id="statusBox">[[open_loading]]</p>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+          <dt>[[hours_l]]</dt><dd>[[hours]]</dd>
+          <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+          <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>[[map_t]]</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">[[map_btn]]</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker"><b>07</b> [[k_faq]]</p>
+        <h2 id="faq-h" style="margin-bottom:28px;font-size:clamp(2.4rem,5vw,4rem)">[[faq_h]]</h2>
+        <div class="faq-list">
+          [[faq]]
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">[[brand]]</span>
+    <span>© <span id="year">[[year]]</span> [[brand]] Barbers · [[foot_tag]]</span>
+    <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="[[dock_label]]">
+  <div class="dock-label"><small>[[dock_label]]</small><b id="skinName">[[skin_name]]</b></div>
+  <div class="swatches">
+        [[swatches]]
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="[[quick_label]]">
+  <a href="tel:[[phone_href]]">[[q_call]]</a>
+  <button type="button" data-book>[[q_book]]</button>
+</nav>
+
+<!-- ============ Booking drawer: service, barber, day and time, details ============ -->
+<dialog class="drawer" id="drawer" aria-labelledby="dr-title">
+  <div class="dr-head">
+    <h2 id="dr-title">[[dr_title]]</h2>
+    <button class="dr-x" type="button" id="drClose" aria-label="[[lb_close]]">×</button>
+  </div>
+  <ol class="dr-steps" id="drSteps" aria-label="[[dr_steps]]">
+    <li class="on">[[s1]]</li><li>[[s2]]</li><li>[[s3]]</li><li>[[s4]]</li>
+  </ol>
+  <form id="bookForm" novalidate>
+    <div class="dr-body" id="drBody">
+      <fieldset class="dr-panel" data-panel="1">
+        <legend>[[p1_h]]</legend>
+        [[svc_options]]
+        <p class="dr-group">[[extras_h]]</p>
+        [[extra_options]]
+      </fieldset>
+      <fieldset class="dr-panel" data-panel="2" hidden>
+        <legend>[[p2_h]]</legend>
+        [[barber_options]]
+      </fieldset>
+      <fieldset class="dr-panel" data-panel="3" hidden>
+        <legend>[[p3_h]]</legend>
+        <div class="field"><label for="b-date">[[f_date]]</label><input id="b-date" name="date" type="date"></div>
+        <p class="hint" id="slotHint" role="status">[[slot_pick_date]]</p>
+        <div class="slots" id="slots" role="radiogroup" aria-label="[[f_time]]"></div>
+      </fieldset>
+      <fieldset class="dr-panel" data-panel="4" hidden>
+        <legend>[[p4_h]]</legend>
+        <div class="chosen" id="lookChip" hidden>
+          <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+          <div><b>[[chip_look]]</b><span id="lookText"></span></div>
+          <button type="button" id="lookRemove" aria-label="[[chip_remove]]">×</button>
+        </div>
+        <div class="field"><label for="b-name">[[f_name]]</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="b-phone">[[f_phone]]</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field"><label for="b-msg">[[f_msg]]</label><textarea id="b-msg" name="msg"></textarea></div>
+        <dl class="sum" id="sum"></dl>
+        <p class="demo-note" id="demoNote" hidden></p>
+        <small class="hint">[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+      </fieldset>
+      <p class="form-error" id="drError" role="alert" hidden></p>
+      <p class="sr-only" id="drLive" role="status"></p>
+    </div>
+    <div class="dr-foot">
+      <div class="dr-total"><b id="drTotal">0 €</b><small id="drTime"></small></div>
+      <button class="btn btn-line" type="button" id="drBack" hidden>[[b_back]]</button>
+      <button class="btn btn-main" type="button" id="drNext">[[b_next]]</button>
+    </div>
+  </form>
+  <div class="dr-done" id="drDone" hidden tabindex="-1"></div>
+</dialog>
+
+<dialog class="lightbox" id="lightbox" aria-label="[[lb_label]]">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="[[lb_close]]">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="[[lb_prev]]">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="[[lb_next]]">›</button>
+    <button class="lb-act" type="button" id="lbRequest">[[lb_request]]</button>
+  </div>
+</dialog>
+
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>

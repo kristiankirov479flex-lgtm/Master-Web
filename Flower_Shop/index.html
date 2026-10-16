@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="bg" data-skin="sage">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5F3EC">
+<title>Mimosa – цветарница в Пловдив: свежи букети и доставка</title>
+<meta name="description" content="Свежи букети, рози и аранжировки по поръчка в Пловдив. Разгледайте снимките и цените и изпратете поръчка за вземане от магазина или доставка.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mimosa – цветарница в Пловдив: свежи букети и доставка">
+<meta property="og:description" content="Свежи букети, рози и аранжировки по поръчка в Пловдив. Разгледайте снимките и цените и изпратете поръчка за вземане от магазина или доставка.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/beige-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-600-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("flowerSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Mimosa Flowers","inLanguage":"bg",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-19:00", "Sa-Su 09:00-16:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="index.html"><b>Mimosa</b><span>цветарница</span></a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Основна навигация">
+      <a href="#prices">Цени</a>
+      <a href="#gallery">Галерия</a>
+      <a href="#reviews">Отзиви</a>
+      <a href="#faq">Въпроси</a>
+      <a href="#contact">Контакти</a>
+      <a class="btn btn-main" href="#contact">Поръчай цветя</a>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Кажи го със свежи цветя.</h1>
+        <p class="hero-lead">Букети, рози и аранжировки по поръчка в Пловдив. Разгледай работата, избери букет и изпрати поръчка за вземане от магазина или доставка.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#contact">Поръчай цветя</a>
+          <a class="btn btn-line" href="#prices">Виж букетите и цените</a>
+        </div>
+        <p class="cutoff" id="cutoff" hidden></p>
+        <p class="hero-meta">Пловдив · работим всеки ден</p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-main">
+          <img src="images/stock/beige-bouquet-800.jpg" srcset="images/stock/beige-bouquet-800.jpg 800w, images/stock/beige-bouquet.jpg 1600w" sizes="(min-width: 900px) 46vw, 92vw" width="1600" height="2133" alt="Ръка държи букет от бели рози, увит в бежова хартия" fetchpriority="high" decoding="async">
+        </div>
+        <div class="hero-side">
+          <img src="images/stock/shop-entrance-flowers-800.jpg" width="800" height="1200" alt="Витрина на цветарница с панделки и цветя отпред" decoding="async">
+        </div>
+        <p class="hero-chip">Букети · Рози · Подаръци</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Promise ============ -->
+  <section class="promise">
+    <div class="wrap">
+      <h2 class="sr-only">Какво да очакваш</h2>
+      <ul>
+        <li><h3>Направен, когато го поръчаш</h3><p>Всеки букет се подрежда на ръка след поръчката, от цветята, с които разполагаме този ден.</p></li>
+        <li><h3>Доставка навреме</h3><p>Избери ден и час. Поръчай преди крайния час, за да получиш цветята още днес.</p></li>
+        <li><h3>Ясни цени</h3><p>До всеки артикул има цена и време за приготвяне, а таксата за доставка се вижда преди да изпратиш.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="block" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="gal-h">Нашите цветя</h2>
+          <p>Букети, вази и магазинът. Филтрирай по вид и натисни снимка, за да поискаш нещо подобно.</p>
+        </div>
+        <div class="chips" role="group" aria-label="Филтър на снимките">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Всички</button>
+          <button class="chip" type="button" data-filter="bouquets" aria-pressed="false">Букети</button>
+          <button class="chip" type="button" data-filter="vases" aria-pressed="false">Във ваза</button>
+          <button class="chip" type="button" data-filter="shop" aria-pressed="false">Магазинът</button>
+        </div>
+      </div>
+      <p class="sr-only" id="galStatus" role="status">Показани снимки: 22</p>
+      <div class="gal">
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/beige-bouquet.jpg" aria-label="Отвори снимката: Ръка държи букет от бели рози, увит в бежова хартия"><img src="images/stock/beige-bouquet-800.jpg" srcset="images/stock/beige-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1066" alt="Ръка държи букет от бели рози, увит в бежова хартия" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="images/stock/mixed-glass-vase.jpg" aria-label="Отвори снимката: Прасковен и оранжев букет в стъклена ваза"><img src="images/stock/mixed-glass-vase-800.jpg" srcset="images/stock/mixed-glass-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Прасковен и оранжев букет в стъклена ваза" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="images/stock/shop-entrance-flowers.jpg" aria-label="Отвори снимката: Витрина на цветарница с панделки и цветя отпред"><img src="images/stock/shop-entrance-flowers-800.jpg" srcset="images/stock/shop-entrance-flowers-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Витрина на цветарница с панделки и цветя отпред" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/hand-colorful-bouquet.jpg" aria-label="Отвори снимката: Ръка държи цветен букет с ранункулуси и рози"><img src="images/stock/hand-colorful-bouquet-800.jpg" srcset="images/stock/hand-colorful-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="800" alt="Ръка държи цветен букет с ранункулуси и рози" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="images/stock/pink-grey-vase.jpg" aria-label="Отвори снимката: Розови божури в каменна ваза"><img src="images/stock/pink-grey-vase-800.jpg" srcset="images/stock/pink-grey-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Розови божури в каменна ваза" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/holding-bouquet.jpg" aria-label="Отвори снимката: Ръка държи малък букет в амбалажна хартия със слънчоглед"><img src="images/stock/holding-bouquet-800.jpg" srcset="images/stock/holding-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Ръка държи малък букет в амбалажна хартия със слънчоглед" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="images/stock/tulips.jpg" aria-label="Отвори снимката: Китки розови, жълти и лилави лалета, готови за продажба"><img src="images/stock/tulips-800.jpg" srcset="images/stock/tulips-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="534" alt="Китки розови, жълти и лилави лалета, готови за продажба" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/pink-white-roses.jpg" aria-label="Отвори снимката: Букет от розови рози и дребни цветя в бяла хартия"><img src="images/stock/pink-white-roses-800.jpg" srcset="images/stock/pink-white-roses-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1066" alt="Букет от розови рози и дребни цветя в бяла хартия" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="images/stock/poppies-amber-vase.jpg" aria-label="Отвори снимката: Бели макове в кехлибарена стъклена ваза"><img src="images/stock/poppies-amber-vase-800.jpg" srcset="images/stock/poppies-amber-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Бели макове в кехлибарена стъклена ваза" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/roses-hydrangeas.jpg" aria-label="Отвори снимката: Букет от оранжеви и розови рози с хортензии"><img src="images/stock/roses-hydrangeas-800.jpg" srcset="images/stock/roses-hydrangeas-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1066" alt="Букет от оранжеви и розови рози с хортензии" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="images/stock/arranging-in-shop.jpg" aria-label="Отвори снимката: Флорист аранжира цветя на щанда в магазина"><img src="images/stock/arranging-in-shop-800.jpg" srcset="images/stock/arranging-in-shop-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Флорист аранжира цветя на щанда в магазина" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="images/stock/red-arrangement.jpg" aria-label="Отвори снимката: Червен и оранжев букет в стъклен буркан"><img src="images/stock/red-arrangement-800.jpg" srcset="images/stock/red-arrangement-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Червен и оранжев букет в стъклен буркан" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/vibrant-bouquet.jpg" aria-label="Отвори снимката: Пастелен пролетен букет с лъвски зев и маргаритки"><img src="images/stock/vibrant-bouquet-800.jpg" srcset="images/stock/vibrant-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="546" alt="Пастелен пролетен букет с лъвски зев и маргаритки" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="images/stock/white-purple-black-vase.jpg" aria-label="Отвори снимката: Диви градински цветя в черна ваза"><img src="images/stock/white-purple-black-vase-800.jpg" srcset="images/stock/white-purple-black-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Диви градински цветя в черна ваза" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/rose-bouquet.jpg" aria-label="Отвори снимката: Голям букет от рози, горски плодове и евкалипт"><img src="images/stock/rose-bouquet-800.jpg" srcset="images/stock/rose-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="800" alt="Голям букет от рози, горски плодове и евкалипт" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="images/stock/shop-facade.jpg" aria-label="Отвори снимката: Фасада на цветарница с растения и щайги отпред"><img src="images/stock/shop-facade-800.jpg" srcset="images/stock/shop-facade-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1049" alt="Фасада на цветарница с растения и щайги отпред" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="images/stock/pink-glass-vase.jpg" aria-label="Отвори снимката: Розови лалета в стъклена ваза"><img src="images/stock/pink-glass-vase-800.jpg" srcset="images/stock/pink-glass-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Розови лалета в стъклена ваза" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/red-white-bouquet.jpg" aria-label="Отвори снимката: Флорист държи смесен букет от рози и полски цветя"><img src="images/stock/red-white-bouquet-800.jpg" srcset="images/stock/red-white-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Флорист държи смесен букет от рози и полски цветя" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/dried-peach-paper.jpg" aria-label="Отвори снимката: Малък букет от сухи цветя в прасковена хартия"><img src="images/stock/dried-peach-paper-800.jpg" srcset="images/stock/dried-peach-paper-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Малък букет от сухи цветя в прасковена хартия" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="images/stock/arranging-vase.jpg" aria-label="Отвори снимката: Флорист аранжира хортензии и божури във ваза"><img src="images/stock/arranging-vase-800.jpg" srcset="images/stock/arranging-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="534" alt="Флорист аранжира хортензии и божури във ваза" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="images/stock/pink-roses.jpg" aria-label="Отвори снимката: Close-up на розови градински рози"><img src="images/stock/pink-roses-800.jpg" srcset="images/stock/pink-roses-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1422" alt="Close-up на розови градински рози" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="images/stock/shop-entrance-blooms.jpg" aria-label="Отвори снимката: Вход на цветарница вечер, пълен с цветя"><img src="images/stock/shop-entrance-blooms-800.jpg" srcset="images/stock/shop-entrance-blooms-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1316" alt="Вход на цветарница вечер, пълен с цветя" loading="lazy" decoding="async"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Prices ============ -->
+  <section class="block soft" id="prices" aria-labelledby="price-h">
+    <div class="wrap menu-wrap">
+      <div class="menu-side">
+        <h2 id="price-h">Букети и цени</h2>
+        <p>До всеки артикул има цена и време за приготвяне. Ако не си сигурен какво да избереш, кажи ни повода и бюджета и ще ти предложим.</p>
+        <p class="menu-cta"><a class="btn btn-line" href="#plan">Събери поръчката</a></p>
+        <div class="menu-photo"><img src="images/stock/holding-bouquet-800.jpg" width="800" height="1200" alt="Ръка държи малък букет, увит в амбалажна хартия" loading="lazy" decoding="async"></div>
+      </div>
+      <div>
+        <div class="menu-group"><h3>Букети</h3>
+          <div class="menu-row"><span class="menu-name">Рози, 5 стръка<small>20 мин</small></span><span class="menu-price">20 €</span></div>
+          <div class="menu-row"><span class="menu-name">Рози, 7 стръка<small>20 мин</small></span><span class="menu-price">26 €</span></div>
+          <div class="menu-row"><span class="menu-name">Рози, 11 стръка<small>25 мин</small></span><span class="menu-price">38 €</span></div>
+          <div class="menu-row"><span class="menu-name">Рози, 21 стръка<small>30 мин</small></span><span class="menu-price">70 €</span></div>
+          <div class="menu-row"><span class="menu-name">Сезонен микс букет<small>30 – 40 мин</small></span><span class="menu-price">30 – 55 €</span></div>
+          <div class="menu-row"><span class="menu-name">Букет от лалета, 15 стръка<small>20 мин</small></span><span class="menu-price">28 €</span></div>
+          <div class="menu-row"><span class="menu-name">Букет от сухи цветя<small>30 мин</small></span><span class="menu-price">35 €</span></div>
+        </div>
+        <div class="menu-group"><h3>Аранжировки</h3>
+          <div class="menu-row"><span class="menu-name">Кошница с цветя<small>40 – 60 мин</small></span><span class="menu-price">от 45 €</span></div>
+          <div class="menu-row"><span class="menu-name">Кутия с цветя<small>30 мин</small></span><span class="menu-price">40 €</span></div>
+          <div class="menu-row"><span class="menu-name">Орхидея в саксия<small>10 мин</small></span><span class="menu-price">30 €</span></div>
+          <div class="menu-row"><span class="menu-name">Цветя за сватби и събития<small>консултация</small></span><span class="menu-price">по запитване</span></div>
+        </div>
+        <div class="menu-group"><h3>Допълнения</h3>
+          <div class="menu-row"><span class="menu-name">Ваза</span><span class="menu-price">от 8 €</span></div>
+          <div class="menu-row"><span class="menu-name">Шоколад или малък подарък</span><span class="menu-price">от 6 €</span></div>
+          <div class="menu-row"><span class="menu-name">Подаръчна опаковка</span><span class="menu-price">3 €</span></div>
+        </div>
+        <div class="menu-group"><h3>Доставка в Пловдив</h3>
+          <div class="menu-row"><span class="menu-name">Вземане от магазина</span><span class="menu-price">безплатно</span></div>
+          <div class="menu-row"><span class="menu-name">Доставка в избран ден</span><span class="menu-price">7 €</span></div>
+          <div class="menu-row"><span class="menu-name">Експресна доставка до 2 часа</span><span class="menu-price">12 €</span></div>
+        </div>
+        <p class="menu-note">Примерни цени в евро, по цветарници в Пловдив. Цветята се сменят със сезона, така че букетът може леко да се различава от снимката.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Plan your visit ============ -->
+  <section class="block" id="plan" aria-labelledby="plan-h">
+    <div class="wrap plan-grid">
+      <div class="plan-intro">
+        <h2 id="plan-h">Събери поръчката</h2>
+        <p>Избери букет и допълнения и виж ориентировъчна цена и време за приготвяне. После го добави към поръчката си и ще ти предложим само часове, които се събират преди затваряне.</p>
+      </div>
+      <div class="plan-card" id="planCard">
+        <fieldset class="opts"><legend>Какво искаш?</legend>
+                  <span class="opt-gl">Букети</span><div class="opt-row">
+            <label class="opt"><input type="radio" name="svc" value="roses"><span>Рози</span></label>
+            <label class="opt"><input type="radio" name="svc" value="mixed"><span>Сезонен микс букет</span></label>
+            <label class="opt"><input type="radio" name="svc" value="tulips"><span>Букет от лалета</span></label>
+            <label class="opt"><input type="radio" name="svc" value="dried"><span>Букет от сухи цветя</span></label>
+          </div>
+                  <span class="opt-gl">Аранжировки</span><div class="opt-row">
+            <label class="opt"><input type="radio" name="svc" value="basket"><span>Кошница с цветя</span></label>
+            <label class="opt"><input type="radio" name="svc" value="box"><span>Кутия с цветя</span></label>
+            <label class="opt"><input type="radio" name="svc" value="orchid"><span>Орхидея в саксия</span></label>
+          </div>
+                </fieldset>
+                <fieldset class="opts" id="planLength" hidden><legend>Брой рози</legend><div class="opt-row">
+          <label class="opt"><input type="radio" name="len" value="r5" checked><span>5 стръка</span></label>
+          <label class="opt"><input type="radio" name="len" value="r7"><span>7 стръка</span></label>
+          <label class="opt"><input type="radio" name="len" value="r11"><span>11 стръка</span></label>
+          <label class="opt"><input type="radio" name="len" value="r21"><span>21 стръка</span></label>
+        </div></fieldset>
+                <fieldset class="opts" id="planAddons" hidden><legend>Добави нещо</legend><div class="opt-row">
+          <label class="opt" data-for="roses mixed tulips"><input type="checkbox" name="addon" value="vase"><span>Ваза <em>+10 €</em></span></label>
+          <label class="opt" data-for="roses mixed tulips dried basket box orchid"><input type="checkbox" name="addon" value="choc"><span>Шоколад или малък подарък <em>+6 €</em></span></label>
+          <label class="opt" data-for="roses mixed orchid"><input type="checkbox" name="addon" value="wrap"><span>Подаръчна опаковка <em>+3 €</em></span></label>
+        </div></fieldset>
+        <div class="plan-result" aria-live="polite" aria-atomic="true">
+          <p id="planEmpty">Избери букет, за да видиш оценка.</p>
+          <dl class="plan-out" id="planOut" hidden>
+            <div><dt>Ориентировъчна цена</dt><dd id="planPrice"></dd></div>
+            <div><dt>Време за приготвяне</dt><dd id="planTime"></dd></div>
+          </dl>
+          <p class="plan-note" id="planNote" hidden></p>
+          <div><button class="btn btn-main" type="button" id="planAdd" disabled>Добави към поръчката</button></div>
+          <p class="plan-fine">Примерни цени. Доставката (7 €) се добавя, когато потвърдим поръчката.</p>
+        </div>
+      </div>
+      <script type="application/json" id="planData">{"services": [{"id": "roses", "label": "Рози", "addons": ["vase", "choc", "wrap"], "lengths": [{"id": "r5", "price": 20, "minutes": 20, "label": "5 стръка", "opt": "Рози, 5 стръка"}, {"id": "r7", "price": 26, "minutes": 20, "label": "7 стръка", "opt": "Рози, 7 стръка"}, {"id": "r11", "price": 38, "minutes": 25, "label": "11 стръка", "opt": "Рози, 11 стръка"}, {"id": "r21", "price": 70, "minutes": 30, "label": "21 стръка", "opt": "Рози, 21 стръка"}]}, {"id": "mixed", "label": "Сезонен микс букет", "addons": ["vase", "choc", "wrap"], "pmin": 30, "pmax": 55, "mmin": 30, "mmax": 40, "opt": "Сезонен микс букет"}, {"id": "tulips", "label": "Букет от лалета", "addons": ["vase", "choc"], "pmin": 28, "pmax": 28, "mmin": 20, "mmax": 20, "opt": "Букет от лалета, 15 стръка"}, {"id": "dried", "label": "Букет от сухи цветя", "addons": ["choc"], "pmin": 35, "pmax": 35, "mmin": 30, "mmax": 30, "opt": "Букет от сухи цветя"}, {"id": "basket", "label": "Кошница с цветя", "addons": ["choc"], "pmin": 45, "pmax": 60, "mmin": 40, "mmax": 60, "opt": "Кошница с цветя"}, {"id": "box", "label": "Кутия с цветя", "addons": ["choc"], "pmin": 40, "pmax": 40, "mmin": 30, "mmax": 30, "opt": "Кутия с цветя"}, {"id": "orchid", "label": "Орхидея в саксия", "addons": ["choc", "wrap"], "pmin": 30, "pmax": 30, "mmin": 10, "mmax": 10, "opt": "Орхидея в саксия"}], "addons": [{"id": "vase", "price": 10, "minutes": 5, "label": "Ваза"}, {"id": "choc", "price": 6, "minutes": 5, "label": "Шоколад или малък подарък"}, {"id": "wrap", "price": 3, "minutes": 5, "label": "Подаръчна опаковка"}], "names": {"req": "Плюс допълнения, цена по запитване."}}</script>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="rev-h">Какво казват клиентите</h2>
+          <p>Кратки бележки от хора, които поръчват от нас.</p>
+        </div>
+      </div>
+      <div class="rev-grid">
+        <figure class="rev"><blockquote>Букетът беше точно какъвто го описах и пристигна навреме за рождения ден.</blockquote><figcaption><b>Микс букет</b> · Примерен клиент</figcaption></figure>
+        <figure class="rev"><blockquote>Красиви рози, хубаво опаковани. Останаха свежи повече от седмица.</blockquote><figcaption><b>Рози</b> · Примерен клиент</figcaption></figure>
+        <figure class="rev"><blockquote>Лесна поръчка, ясна цена и мило послание на картичката.</blockquote><figcaption><b>Доставка</b> · Примерен клиент</figcaption></figure>
+      </div>
+      <p class="rev-note">Примерни отзиви. Заменете ги с истински отзиви от Google.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <h2 id="faq-h">Добре е да знаеш</h2>
+      <div class="faq-list">
+          <details><summary>Мога ли да поръчам за днес?</summary><p>Да, ако поръчаш преди крайния час, показан най-горе на страницата. По-късните поръчки се доставят на следващия ден.</p></details>
+          <details><summary>Колко струва доставката?</summary><p>Доставката в Пловдив е 7 € в избран ден и 12 € за експресна доставка до два часа. Вземането от магазина е безплатно.</p></details>
+          <details><summary>Мога ли да избера точните цветя и цветове?</summary><p>Да. Напиши желанията си в бележките и ще потвърдим какво е възможно. Някои цветя се сменят със сезона.</p></details>
+          <details><summary>Можете ли да добавите картичка с моето послание?</summary><p>Да. Напиши текста във формата и ще го добавим към букета.</p></details>
+          <details><summary>Какво става, ако човекът не е вкъщи?</summary><p>Куриерът ни ще се обади на телефона, който посочиш. Ако никой не отговори, ще се обадим на теб.</p></details>
+          <details><summary>Правите ли цветя за сватби и събития?</summary><p>Да. Изпрати запитване с датата и няколко идеи и ще уговорим консултация.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="block soft" id="contact" aria-labelledby="contact-h">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <h2 id="contact-h">Поръчай цветя</h2>
+        <p>Кажи ни какво искаш и кога. Ще ти отговорим, за да потвърдим поръчката.</p>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Адрес</dt><dd>ул. Примерна 1, Пловдив</dd>
+          <dt>Работно време</dt><dd>Пон – Пет 09:00 – 19:00 · Съб – Нед 09:00 – 16:00</dd>
+          <dt>Телефон</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Имейл</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата е от OpenStreetMap и се зарежда само ако поискаш.</p>
+            <button class="btn btn-line" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="request-col">
+        <form class="form" id="requestForm">
+          <h3>Изпрати поръчка</h3>
+          <div class="chosen" id="planChip" hidden>
+            <div><b>Твоят избор</b><span id="planChipText"></span></div>
+            <button type="button" id="planRemove" aria-label="Премахни">×</button>
+          </div>
+          <div class="chosen" id="lookChip" hidden>
+            <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+            <div><b>Снимка, която ти харесва</b><span id="lookText"></span></div>
+            <button type="button" id="lookRemove" aria-label="Премахни">×</button>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="f-name">Твоето име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="f-service">Букет</label>
+            <select id="f-service" name="service" required>
+            <option value="" selected disabled>Избери букет</option>
+            <option data-min="20" data-max="20">Рози, 5 стръка</option>
+          <option data-min="20" data-max="20">Рози, 7 стръка</option>
+          <option data-min="25" data-max="25">Рози, 11 стръка</option>
+          <option data-min="30" data-max="30">Рози, 21 стръка</option>
+          <option data-min="30" data-max="40">Сезонен микс букет</option>
+          <option data-min="20" data-max="20">Букет от лалета, 15 стръка</option>
+          <option data-min="30" data-max="30">Букет от сухи цветя</option>
+          <option data-min="40" data-max="60">Кошница с цветя</option>
+          <option data-min="30" data-max="30">Кутия с цветя</option>
+          <option data-min="10" data-max="10">Орхидея в саксия</option>
+          <option data-min="30" data-max="60">Цветя за сватби и събития</option>
+            </select>
+          </div>
+          <fieldset class="field-set"><legend>Как искаш да го получиш?</legend>
+            <div class="opt-row">
+              <label class="opt"><input type="radio" name="fulfil" value="pickup" checked><span>Вземане от магазина</span></label>
+              <label class="opt"><input type="radio" name="fulfil" value="delivery"><span>Доставка в Пловдив</span></label>
+            </div>
+          </fieldset>
+          <div class="field" id="addrField" hidden><label for="f-addr">Адрес за доставка и получател</label><input id="f-addr" name="addr" type="text" autocomplete="street-address"></div>
+          <div class="field-row">
+            <div class="field"><label for="f-date">Дата</label><input id="f-date" name="date" type="date" required></div>
+            <div class="field"><label for="f-time">Час</label><select id="f-time" name="time" required aria-describedby="timeHint"><option value="" selected>Избери час</option></select></div>
+          </div>
+          <small id="timeHint" role="status">Показани са часовете за делнични дни. Избери дата, за да видиш часовете за конкретния ден.</small>
+          <div class="field card"><label for="f-card">Послание за картичката (по желание)</label><textarea id="f-card" name="card"></textarea></div>
+          <div class="field"><label for="f-msg">Бележки за флориста (по желание)</label><textarea id="f-msg" name="msg"></textarea></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-main" type="submit" id="submitBtn"><span class="btn-label">Изпрати поръчката</span></button>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="sr-only" id="formLive" role="status"></p>
+          <small>Ползваме данните ти само за да отговорим на поръчката ти. <a href="privacy.html">Политика за поверителност</a></small>
+        </form>
+        <div class="form done" id="formDone" hidden tabindex="-1"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Mimosa Flowers</span>
+    <span class="foot-links"><a href="privacy.html">Политика за поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Шалфей и лен</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="sage" data-name="Шалфей и лен" aria-label="Цветова схема: Шалфей и лен" title="Шалфей и лен" aria-pressed="true" style="--s1:#F5F3EC;--s2:#4A6B54"></button>
+        <button class="sw" type="button" data-skin="rose" data-name="Розова вода и сметана" aria-label="Цветова схема: Розова вода и сметана" title="Розова вода и сметана" aria-pressed="false" style="--s1:#FBF5F2;--s2:#A23A5B"></button>
+        <button class="sw" type="button" data-skin="terracotta" data-name="Теракота и лен" aria-label="Цветова схема: Теракота и лен" title="Теракота и лен" aria-pressed="false" style="--s1:#F6F0E7;--s2:#97402A"></button>
+        <button class="sw" type="button" data-skin="lavender" data-name="Лавандула и мъгла" aria-label="Цветова схема: Лавандула и мъгла" title="Лавандула и мъгла" aria-pressed="false" style="--s1:#F5F3F9;--s2:#6A4C9C"></button>
+        <button class="sw" type="button" data-skin="botanical" data-name="Вечерна ботаника" aria-label="Цветова схема: Вечерна ботаника" title="Вечерна ботаника" aria-pressed="false" style="--s1:#14201A;--s2:#EDA9B6"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Бърза връзка">
+  <a href="tel:+359000000000">Обади се</a>
+  <a href="#contact">Поръчай цветя</a>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Снимка">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Затвори">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Предишна снимка">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="Следваща снимка">›</button>
+    <button class="lb-act" type="button" id="lbRequest">Поръчай нещо подобно</button>
+  </div>
+</dialog>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

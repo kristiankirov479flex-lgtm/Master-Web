@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="bg" data-skin="rose">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F4F2EE">
+<title>Демо админ панел – Lumi</title>
+<!-- Demo page for showing customers what a back office could look like. Not for search engines. -->
+<meta name="robots" content="noindex">
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-600-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("lumiSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main" id="skip">Към съдържанието</a>
+<header class="pillbar">
+  <div class="pillnav static">
+    <a class="logo" href="index.html" id="logo"><b>Lumi</b><span id="tagline">студио за нокти</span></a>
+    <nav class="nav nav-static" aria-label="Навигация" id="nav">
+      <a href="index.html" id="backLink">← Към сайта</a>
+      <a class="lang" id="langLink" href="admin.html?lang=en" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="adm">
+  <div class="wrap">
+    <h1 id="h1">Демо админ панел</h1>
+    <p class="adm-note" id="note"></p>
+    <div class="adm-bar">
+      <div class="chips" role="group" id="filters"></div>
+      <div class="adm-tools">
+        <button class="btn btn-line" type="button" id="seedBtn"></button>
+        <button class="btn btn-line" type="button" id="resetBtn"></button>
+      </div>
+    </div>
+    <p class="sr-only" id="status" role="status"></p>
+    <div id="list"></div>
+  </div>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Lumi Nail Studio</span>
+    <a href="index.html" id="footBack">← Към сайта</a>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="[[lang]]" data-skin="sage">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5F3EC">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/beige-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="[[root]]fonts/cormorant-garamond-600-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("flowerSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"[[brand]] Flowers","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":[[[hours_ld]]]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="[[home_href]]"><b>[[brand]]</b><span>[[tagline]]</span></a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="[[menu_btn]]"><span></span></button>
+    <nav class="nav" id="nav" aria-label="[[nav_label]]">
+      [[nav_links]]
+      <a class="btn btn-main" href="#contact">[[cta]]</a>
+      <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>[[h1]]</h1>
+        <p class="hero-lead">[[lead]]</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#contact">[[cta]]</a>
+          <a class="btn btn-line" href="#prices">[[hero_cta2]]</a>
+        </div>
+        <p class="cutoff" id="cutoff" hidden></p>
+        <p class="hero-meta">[[hero_meta]]</p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-main">
+          <img src="[[root]]images/stock/beige-bouquet-800.jpg" srcset="[[root]]images/stock/beige-bouquet-800.jpg 800w, [[root]]images/stock/beige-bouquet.jpg 1600w" sizes="(min-width: 900px) 46vw, 92vw" width="1600" height="2133" alt="[[hero_alt]]" fetchpriority="high" decoding="async">
+        </div>
+        <div class="hero-side">
+          <img src="[[root]]images/stock/shop-entrance-flowers-800.jpg" width="800" height="1200" alt="[[hero_side_alt]]" decoding="async">
+        </div>
+        <p class="hero-chip">[[hero_chip]]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Promise ============ -->
+  <section class="promise">
+    <div class="wrap">
+      <h2 class="sr-only">[[promise_h]]</h2>
+      <ul>
+        [[promise]]
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="block" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="gal-h">[[gal_h]]</h2>
+          <p>[[gal_p]]</p>
+        </div>
+        <div class="chips" role="group" aria-label="[[gal_filter]]">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">[[f_all]]</button>
+          <button class="chip" type="button" data-filter="bouquets" aria-pressed="false">[[f_bouquets]]</button>
+          <button class="chip" type="button" data-filter="vases" aria-pressed="false">[[f_vases]]</button>
+          <button class="chip" type="button" data-filter="shop" aria-pressed="false">[[f_shop]]</button>
+        </div>
+      </div>
+      <p class="sr-only" id="galStatus" role="status">[[shown]]</p>
+      <div class="gal">
+        [[gallery]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Prices ============ -->
+  <section class="block soft" id="prices" aria-labelledby="price-h">
+    <div class="wrap menu-wrap">
+      <div class="menu-side">
+        <h2 id="price-h">[[price_h]]</h2>
+        <p>[[price_p]]</p>
+        <p class="menu-cta"><a class="btn btn-line" href="#plan">[[price_cta]]</a></p>
+        <div class="menu-photo"><img src="[[root]]images/stock/holding-bouquet-800.jpg" width="800" height="1200" alt="[[menu_alt]]" loading="lazy" decoding="async"></div>
+      </div>
+      <div>
+        [[menu]]
+        <p class="menu-note">[[price_note]]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Plan your visit ============ -->
+  <section class="block" id="plan" aria-labelledby="plan-h">
+    <div class="wrap plan-grid">
+      <div class="plan-intro">
+        <h2 id="plan-h">[[plan_h]]</h2>
+        <p>[[plan_p]]</p>
+      </div>
+      <div class="plan-card" id="planCard">
+        [[plan_card]]
+        <div class="plan-result" aria-live="polite" aria-atomic="true">
+          <p id="planEmpty">[[plan_empty]]</p>
+          <dl class="plan-out" id="planOut" hidden>
+            <div><dt>[[plan_price]]</dt><dd id="planPrice"></dd></div>
+            <div><dt>[[plan_time]]</dt><dd id="planTime"></dd></div>
+          </dl>
+          <p class="plan-note" id="planNote" hidden></p>
+          <div><button class="btn btn-main" type="button" id="planAdd" disabled>[[plan_add]]</button></div>
+          <p class="plan-fine">[[plan_fine]]</p>
+        </div>
+      </div>
+      <script type="application/json" id="planData">[[plan_json]]</script>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="rev-h">[[rev_h]]</h2>
+          <p>[[rev_p]]</p>
+        </div>
+      </div>
+      <div class="rev-grid">
+        [[reviews]]
+      </div>
+      <p class="rev-note">[[rev_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <h2 id="faq-h">[[faq_h]]</h2>
+      <div class="faq-list">
+          [[faq]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="block soft" id="contact" aria-labelledby="contact-h">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <h2 id="contact-h">[[contact_h]]</h2>
+        <p>[[contact_p]]</p>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+          <dt>[[hours_l]]</dt><dd>[[hours]]</dd>
+          <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+          <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>[[map_t]]</p>
+            <button class="btn btn-line" type="button" id="mapLoad">[[map_btn]]</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="request-col">
+        <form class="form" id="requestForm">
+          <h3>[[form_h]]</h3>
+          <div class="chosen" id="planChip" hidden>
+            <div><b>[[chip_plan]]</b><span id="planChipText"></span></div>
+            <button type="button" id="planRemove" aria-label="[[chip_remove]]">×</button>
+          </div>
+          <div class="chosen" id="lookChip" hidden>
+            <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+            <div><b>[[chip_look]]</b><span id="lookText"></span></div>
+            <button type="button" id="lookRemove" aria-label="[[chip_remove]]">×</button>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="f-name">[[f_name]]</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">[[f_phone]]</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="f-service">[[f_service]]</label>
+            <select id="f-service" name="service" required>
+            <option value="" selected disabled>[[f_pick]]</option>
+            [[service_options]]
+            </select>
+          </div>
+          <fieldset class="field-set"><legend>[[f_fulfil]]</legend>
+            <div class="opt-row">
+              <label class="opt"><input type="radio" name="fulfil" value="pickup" checked><span>[[f_pickup]]</span></label>
+              <label class="opt"><input type="radio" name="fulfil" value="delivery"><span>[[f_delivery]]</span></label>
+            </div>
+          </fieldset>
+          <div class="field" id="addrField" hidden><label for="f-addr">[[f_addr]]</label><input id="f-addr" name="addr" type="text" autocomplete="street-address"></div>
+          <div class="field-row">
+            <div class="field"><label for="f-date">[[f_date]]</label><input id="f-date" name="date" type="date" required></div>
+            <div class="field"><label for="f-time">[[f_time]]</label><select id="f-time" name="time" required aria-describedby="timeHint"><option value="" selected>[[f_time_pick]]</option></select></div>
+          </div>
+          <small id="timeHint" role="status">[[f_hint]]</small>
+          <div class="field card"><label for="f-card">[[f_card]]</label><textarea id="f-card" name="card"></textarea></div>
+          <div class="field"><label for="f-msg">[[f_msg]]</label><textarea id="f-msg" name="msg"></textarea></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-main" type="submit" id="submitBtn"><span class="btn-label">[[f_send]]</span></button>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="sr-only" id="formLive" role="status"></p>
+          <small>[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+        </form>
+        <div class="form done" id="formDone" hidden tabindex="-1"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span>© <span id="year">[[year]]</span> [[brand]] Flowers</span>
+    <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="[[dock_label]]">
+  <div class="dock-label"><small>[[dock_label]]</small><b id="skinName">[[skin_name]]</b></div>
+  <div class="swatches">
+        [[swatches]]
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="[[quick_label]]">
+  <a href="tel:[[phone_href]]">[[q_call]]</a>
+  <a href="#contact">[[q_book]]</a>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="[[lb_label]]">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="[[lb_close]]">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="[[lb_prev]]">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="[[lb_next]]">›</button>
+    <button class="lb-act" type="button" id="lbRequest">[[lb_request]]</button>
+  </div>
+</dialog>
+
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>

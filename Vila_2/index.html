@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F6F1E7">
+<title>Къща Липа – планинска къща за гости с печка на дърва</title>
+<meta name="description" content="Три стаи, дълга маса за закуска и печка на дърва в тиха планинска къща. Разгледайте стаите, проверете свободните дати и изпратете запитване.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Къща Липа – планинска къща за гости с печка на дърва">
+<meta property="og:description" content="Три стаи, дълга маса за закуска и печка на дърва в тиха планинска къща. Разгледайте стаите, проверете свободните дати и изпратете запитване.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/house-mountain.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Къща Липа","inLanguage":"bg",
+ "telephone":"+359000000000","email":"email@example.com","checkinTime":"14:00","checkoutTime":"11:00",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Rhodope Mountains","addressCountry":"BG"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<!-- Small screens: a slim top bar. On wide screens the side bar below is always visible. -->
+<header class="topbar">
+  <a class="logo" href="index.html"><b>Къща Липа</b></a>
+  <div class="topbar-r">
+    <button class="btn btn-main btn-sm" type="button" data-goto="book">Резервирайте</button>
+    <button class="burger" id="burger" type="button" aria-controls="side" aria-expanded="false" aria-label="Меню"><span></span></button>
+  </div>
+</header>
+
+<aside class="side" id="side" aria-label="Меню на сайта">
+  <a class="logo" href="index.html"><b>Къща Липа</b><span>планинска къща за гости</span></a>
+  <nav aria-label="Основна навигация">
+    <ol class="side-nav">
+      <li><a href="#stay"><i>01</i>Настаняване</a></li>
+      <li><a href="#rooms"><i>02</i>Стаи</a></li>
+      <li><a href="#day"><i>03</i>Един ден тук</a></li>
+      <li><a href="#around"><i>04</i>Наоколо</a></li>
+      <li><a href="#gallery"><i>05</i>Галерия</a></li>
+      <li><a href="#reviews"><i>06</i>Отзиви</a></li>
+      <li><a href="#book"><i>07</i>Резервация</a></li>
+      <li><a href="#visit"><i>08</i>Посетете ни</a></li>
+    </ol>
+  </nav>
+  <div class="side-foot">
+    <a class="side-tel" href="tel:+359000000000">+359 000 000 000</a>
+    <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  </div>
+</aside>
+
+<main id="main">
+
+  <!-- ============ Stay ============ -->
+  <section class="sec hero" id="stay" aria-labelledby="stay-h">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Планинска къща за гости</p>
+          <h1 id="stay-h">Тиха къща, топла печка и <em>дълга</em> закуска.</h1>
+          <p class="hero-lead">Три стаи, градинска тераса и печка на дърва. Елате за уикенд или останете цяла седмица и се събудете с планината.</p>
+          <div class="hero-actions">
+            <a class="btn btn-main" href="#rooms">Вижте стаите</a>
+            <a class="btn btn-line" href="#book">Проверете дати</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/stock/house-mountain-800.jpg" srcset="images/stock/house-mountain-800.jpg 800w, images/stock/house-mountain.jpg 1600w" sizes="(min-width: 1100px) 42vw, 92vw" width="1600" height="1067" alt="Дървена къща на планинска поляна с върхове зад нея" fetchpriority="high" decoding="async">
+          <figcaption class="postcard"><b>Добре е да знаете</b><span>Настаняване от 14:00</span><span>Освобождаване до 11:00</span></figcaption>
+        </figure>
+      </div>
+      <form class="avail" id="quickForm" aria-label="Проверете свободни дати">
+        <div class="field"><label for="q-in">Пристигане</label><input id="q-in" type="date"></div>
+        <div class="field"><label for="q-out">Заминаване</label><input id="q-out" type="date"></div>
+        <div class="field"><label for="q-guests">Гости</label><select id="q-guests"><option value="1">1 гост</option><option value="2" selected>2 гости</option><option value="3">3 гости</option><option value="4">4 гости</option><option value="5">5 гости</option><option value="6">6 гости</option><option value="7">7 гости</option><option value="8">8 гости</option></select></div>
+        <button class="btn btn-main" type="submit">Проверете свободните стаи</button>
+      </form>
+    </div>
+  </section>
+
+  <ul class="facts" aria-label="Къщата в числа">
+    <li><b>3</b><span>стаи</span></li>
+    <li><b>8</b><span>гости най-много</span></li>
+    <li><b>8 €</b><span>закуска, на човек</span></li>
+    <li><b>Безплатен</b><span>паркинг пред вратата</span></li>
+  </ul>
+
+  <!-- ============ Rooms ============ -->
+  <section class="sec" id="rooms" aria-labelledby="rooms-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>02</b> Стаи</p>
+        <h2 id="rooms-h">Три стаи, три настроения</h2>
+        <p>Всяка стая има собствена баня. Цените по-долу са на нощ за цялата стая.</p>
+      </header>
+      <article class="room"><figure><img src="images/stock/bedroom-large-window-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"><span class="room-no" aria-hidden="true">01</span></figure><div class="room-body"><h3>Стая „Градина“</h3><ul class="meta"><li>22 m²</li><li>До 2 гости</li><li>1 двойно легло</li></ul><p>Светла двойна стая с дълбок прозорец към градината. Ленени завеси, кресло за четене и мека сутрешна светлина.</p><ul class="am"><li>Гледка към градината</li><li>Собствена баня</li><li>Wi-Fi</li><li>Отопление</li></ul><p class="room-price">от <b>65 €</b> на нощ</p><button class="btn btn-main" type="button" data-room="orchard">Резервирайте тази стая</button></div></article>
+      <article class="room rev"><figure><img src="images/stock/vintage-bedroom-800.jpg" width="800" height="600" alt="" loading="lazy" decoding="async"><span class="room-no" aria-hidden="true">02</span></figure><div class="room-body"><h3>Мансардата</h3><ul class="meta"><li>18 m²</li><li>До 2 гости</li><li>1 легло с метална рамка</li></ul><p>Уютна стая под покрива, със скосен таван, старо желязно легло и малък прозорец, пълен с корони на дървета.</p><ul class="am"><li>Гледка към дърветата</li><li>Баня с душ</li><li>Wi-Fi</li><li>Тих етаж</li></ul><p class="room-price">от <b>55 €</b> на нощ</p><button class="btn btn-main" type="button" data-room="attic">Резервирайте тази стая</button></div></article>
+      <article class="room"><figure><img src="images/stock/cozy-bedroom-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><span class="room-no" aria-hidden="true">03</span></figure><div class="room-body"><h3>Синята стая (семейна)</h3><ul class="meta"><li>30 m²</li><li>До 4 гости</li><li>1 двойно легло и разтегателен диван</li></ul><p>Най-голямата ни стая, с тъмносиня ламперия, кръгла маса и място за семейство от четирима.</p><ul class="am"><li>За четирима</li><li>Собствена баня</li><li>Wi-Fi</li><li>Маса за двама</li></ul><p class="room-price">от <b>95 €</b> на нощ</p><button class="btn btn-main" type="button" data-room="blue">Резервирайте тази стая</button></div></article>
+    </div>
+  </section>
+
+  <!-- ============ A day here ============ -->
+  <section class="sec soft" id="day" aria-labelledby="day-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>03</b> Един ден тук</p>
+        <h2 id="day-h">Как минава денят</h2>
+        <p>Без график, но така го прекарват повечето гости.</p>
+      </header>
+      <ol class="day-grid">
+        <li><img src="images/stock/pastries-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><div><time>08:30</time><h3>Закуска</h3><p>Питки, сладко, яйца и плодове на дългата маса. Кафе, докато поискате.</p></div></li>
+        <li><img src="images/stock/patio-vines-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><div><time>14:00</time><h3>Пристигане и почивка</h3><p>Настанявате се, оставяте багажа и пиете кафе на терасата под лозницата.</p></div></li>
+        <li><img src="images/stock/stove-cabin-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><div><time>19:00</time><h3>До печката</h3><p>Огън в камината, чай и настолна игра, докато долината притъмнява.</p></div></li>
+      </ol>
+
+      <div class="seasons" id="seasons">
+        <div class="season-tabs" role="tablist" aria-label="Сезони">
+          <button class="stab" type="button" role="tab" id="st-summer" aria-controls="sp-summer" aria-selected="true">Лято</button>
+          <button class="stab" type="button" role="tab" id="st-winter" aria-controls="sp-winter" aria-selected="false" tabindex="-1">Зима</button>
+        </div>
+        <div class="spanel" id="sp-summer" role="tabpanel" aria-labelledby="st-summer"><img src="images/stock/hills-fences-800.jpg" width="800" height="600" alt="" loading="lazy" decoding="async"><ul><li>Разходки по поляните от входната врата</li><li>Прохладни вечери на терасата</li><li>Горски плодове и мед на закуска</li></ul></div>
+        <div class="spanel" id="sp-winter" role="tabpanel" aria-labelledby="st-winter" hidden><img src="images/stock/snow-cabin-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><ul><li>Печката гори през целия ден</li><li>Пътеки в снега и ски лифт на няколко минути с кола</li><li>Горещ чай и дебели одеяла</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Around ============ -->
+  <section class="sec" id="around" aria-labelledby="around-h">
+    <div class="wrap around">
+      <div>
+        <header class="sec-head">
+          <p class="kicker"><b>04</b> Наоколо</p>
+          <h2 id="around-h">Какво е близо</h2>
+          <p>Стълбата на разстоянията: колкото по-къса е линията, толкова по-близо е мястото.</p>
+        </header>
+        <div class="chips" role="group" aria-label="Филтър по начин на придвижване">
+          <button class="chip" type="button" data-mode="all" aria-pressed="true">Всички</button>
+          <button class="chip" type="button" data-mode="foot" aria-pressed="false">Пеша</button>
+          <button class="chip" type="button" data-mode="car" aria-pressed="false">С кола</button>
+        </div>
+        <ul class="ladder" id="ladder">
+          <li data-mode="foot" style="--w:9%"><span class="pl-name">Селски площад и пекарна</span><span class="pl-time">4 мин пеша</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="foot" style="--w:27%"><span class="pl-name">Старият каменен мост</span><span class="pl-time">12 мин пеша</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="foot" style="--w:56%"><span class="pl-name">Горска пътека до водопада</span><span class="pl-time">25 мин пеша</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="foot" style="--w:89%"><span class="pl-name">Поляна с гледка</span><span class="pl-time">40 мин пеша</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="car" style="--w:27%"><span class="pl-name">Ски лифт</span><span class="pl-time">12 мин с кола</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="car" style="--w:56%"><span class="pl-name">Термален спа център</span><span class="pl-time">25 мин с кола</span><span class="bar" aria-hidden="true"><i></i></span></li>
+          <li data-mode="car" style="--w:78%"><span class="pl-name">Манастир</span><span class="pl-time">35 мин с кола</span><span class="bar" aria-hidden="true"><i></i></span></li>
+        </ul>
+        <p class="note">Примерни места и времена. Заменете ги със свои.</p>
+      </div>
+      <figure class="around-photo">
+        <img src="images/stock/forest-path-800.jpg" width="800" height="1200" alt="Горска пътека с високи дървета" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="sec soft" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>05</b> Галерия</p>
+        <h2 id="gal-h">Къщата в снимки</h2>
+        <p>Натиснете снимка, за да я видите по-голяма.</p>
+      </header>
+      <div class="mosaic">
+        <button class="g g1" type="button" data-full="images/stock/cabin-trees.jpg" data-cap="Къщата, рано сутринта" aria-label="Отвори снимката: Къщата, рано сутринта"><img src="images/stock/cabin-trees-800.jpg" width="800" height="1000" alt="Къщата, рано сутринта" loading="lazy" decoding="async"></button>
+        <button class="g g2" type="button" data-full="images/stock/rustic-bed.jpg" data-cap="Легло от клони" aria-label="Отвори снимката: Легло от клони"><img src="images/stock/rustic-bed-800.jpg" width="800" height="1200" alt="Легло от клони" loading="lazy" decoding="async"></button>
+        <button class="g g3" type="button" data-full="images/stock/breakfast-spread.jpg" data-cap="Закуска за всички" aria-label="Отвори снимката: Закуска за всички"><img src="images/stock/breakfast-spread-800.jpg" width="800" height="534" alt="Закуска за всички" loading="lazy" decoding="async"></button>
+        <button class="g g4" type="button" data-full="images/stock/wooden-houses-valley.jpg" data-cap="Долината от пътеката" aria-label="Отвори снимката: Долината от пътеката"><img src="images/stock/wooden-houses-valley-800.jpg" width="800" height="532" alt="Долината от пътеката" loading="lazy" decoding="async"></button>
+        <button class="g g5" type="button" data-full="images/stock/coffee-cups.jpg" data-cap="Кафе на терасата" aria-label="Отвори снимката: Кафе на терасата"><img src="images/stock/coffee-cups-800.jpg" width="800" height="532" alt="Кафе на терасата" loading="lazy" decoding="async"></button>
+        <button class="g g6" type="button" data-full="images/stock/cabin-night-snow.jpg" data-cap="Зимна вечер" aria-label="Отвори снимката: Зимна вечер"><img src="images/stock/cabin-night-snow-800.jpg" width="800" height="600" alt="Зимна вечер" loading="lazy" decoding="async"></button>
+        <button class="g g7" type="button" data-full="images/stock/pergola.jpg" data-cap="Асмата в градината" aria-label="Отвори снимката: Асмата в градината"><img src="images/stock/pergola-800.jpg" width="800" height="1200" alt="Асмата в градината" loading="lazy" decoding="async"></button>
+        <button class="g g8" type="button" data-full="images/stock/stone-houses-valley.jpg" data-cap="Каменни къщи наесен" aria-label="Отвори снимката: Каменни къщи наесен"><img src="images/stock/stone-houses-valley-800.jpg" width="800" height="1066" alt="Каменни къщи наесен" loading="lazy" decoding="async"></button>
+        <button class="g g9" type="button" data-full="images/stock/room-table-windows.jpg" data-cap="Кът за четене" aria-label="Отвори снимката: Кът за четене"><img src="images/stock/room-table-windows-800.jpg" width="800" height="534" alt="Кът за четене" loading="lazy" decoding="async"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="sec dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>06</b> Отзиви</p>
+        <h2 id="rev-h">Какво казват гостите</h2>
+      </header>
+      <div class="rev-box">
+        <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span>Примерна оценка. Заменете я с истинската.</span></div>
+        <div class="slides" id="slides" aria-live="polite">
+          <figure class="slide"><blockquote>Топло, тихо, а закуската беше истински пир. Спахме с отворен прозорец и се събудихме с птичи песни.</blockquote><figcaption><b>Мария и Иво</b> · Отседнали през юни</figcaption></figure>
+          <figure class="slide" hidden><blockquote>Печката, одеялата, снегът навън. Не ни се тръгваше.</blockquote><figcaption><b>Деси</b> · Отседнала през януари</figcaption></figure>
+          <figure class="slide" hidden><blockquote>Децата тичаха из градината цял ден. Синята стая беше просторна и безупречна.</blockquote><figcaption><b>Семейство Петрови</b> · Отседнали през август</figcaption></figure>
+          <figure class="slide" hidden><blockquote>Лесно запазване, бърз отговор и домакин, който ни показа най-хубавите пътеки.</blockquote><figcaption><b>Георги</b> · Отседнал през октомври</figcaption></figure>
+        </div>
+        <div class="rev-ctl">
+          <button class="rail-btn" type="button" id="revPrev" aria-label="Предишен отзив">‹</button>
+          <span class="dots" id="revDots" aria-hidden="true"></span>
+          <button class="rail-btn" type="button" id="revNext" aria-label="Следващ отзив">›</button>
+        </div>
+      </div>
+      <p class="rev-note">Примерни отзиви. Заменете ги с истински отзиви от гости.</p>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="sec book" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>07</b> Резервация</p>
+        <h2 id="book-h">Кажете ни кога искате да дойдете</h2>
+        <p>Изберете дати и свободна стая. Ще ви отговорим, за да потвърдим; онлайн нищо не се плаща.</p>
+      </header>
+      <form class="stay-form" id="stayForm" novalidate>
+        <div class="stay-left">
+          <fieldset class="dates">
+            <legend>Вашите дати</legend>
+            <div class="field"><label for="b-in">Пристигане</label><input id="b-in" name="checkin" type="date" required></div>
+            <div class="field"><label for="b-out">Заминаване</label><input id="b-out" name="checkout" type="date" required></div>
+            <div class="field"><label for="b-guests">Гости</label><select id="b-guests" name="guests"><option value="1">1 гост</option><option value="2" selected>2 гости</option><option value="3">3 гости</option><option value="4">4 гости</option><option value="5">5 гости</option><option value="6">6 гости</option><option value="7">7 гости</option><option value="8">8 гости</option></select></div>
+          </fieldset>
+          <p class="hint" id="nightsHint" role="status">Изберете дати на пристигане и заминаване, за да видите кои стаи са свободни.</p>
+          <fieldset class="rooms-pick" id="roomsPick">
+            <legend>Изберете стая</legend>
+            <label class="rc" data-room="orchard"><input type="radio" name="room" value="orchard" data-price="65" data-cap="2" data-name="Стая „Градина“"><img src="images/stock/bedroom-large-window-800.jpg" alt="" width="96" height="80" loading="lazy"><span class="rc-main"><b>Стая „Градина“</b><small>22 m² · До 2 гости</small></span><span class="rc-price"><b>65 €</b> <small>на нощ</small></span><span class="tag" data-tag></span></label>
+            <label class="rc" data-room="attic"><input type="radio" name="room" value="attic" data-price="55" data-cap="2" data-name="Мансардата"><img src="images/stock/vintage-bedroom-800.jpg" alt="" width="96" height="80" loading="lazy"><span class="rc-main"><b>Мансардата</b><small>18 m² · До 2 гости</small></span><span class="rc-price"><b>55 €</b> <small>на нощ</small></span><span class="tag" data-tag></span></label>
+            <label class="rc" data-room="blue"><input type="radio" name="room" value="blue" data-price="95" data-cap="4" data-name="Синята стая (семейна)"><img src="images/stock/cozy-bedroom-800.jpg" alt="" width="96" height="80" loading="lazy"><span class="rc-main"><b>Синята стая (семейна)</b><small>30 m² · До 4 гости</small></span><span class="rc-price"><b>95 €</b> <small>на нощ</small></span><span class="tag" data-tag></span></label>
+          </fieldset>
+        </div>
+        <div class="stay-right">
+          <div class="summary" id="summary" aria-live="polite">
+            <h3>Вашият престой</h3>
+            <dl id="sumList"></dl>
+            <p class="sum-total" id="sumTotal"></p>
+            <p class="hint">Ориентировъчна обща сума по примерните цени. Крайната цена потвърждаваме, когато ви отговорим.</p>
+          </div>
+          <div class="field"><label for="b-name">Вашето име</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field-row">
+            <div class="field"><label for="b-phone">Телефон</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="b-email">Имейл (по желание)</label><input id="b-email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="b-msg">Съобщение (по желание)</label><textarea id="b-msg" name="msg"></textarea></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-main" type="submit" id="submitBtn"><span class="btn-label">Изпрати запитване</span></button>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <small class="hint">Ползваме данните ви само за да отговорим на запитването. <a href="privacy.html">Политика за поверителност</a></small>
+        </div>
+      </form>
+      <div class="done" id="stayDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit">
+      <div>
+        <p class="kicker"><b>08</b> Посетете ни</p>
+        <h2 id="visit-h">Намерете къщата</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and times. -->
+        <dl class="info">
+          <dt>Адрес</dt><dd>ул. Примерна 1, Родопите</dd>
+          <dt>Настаняване и освобождаване</dt><dd>Настаняване от 14:00, освобождаване до 11:00</dd>
+          <dt>Телефон</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Имейл</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.4107%2C41.7065%2C24.4267%2C41.7165&amp;layer=mapnik&amp;marker=41.7115%2C24.4187">
+          <div class="map-ph">
+            <p>Картата е от OpenStreetMap и се зарежда само ако поискате.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="faq-h">Добре е да знаете</h3>
+        <div class="faq-list">
+          <details><summary>Кога е настаняването и освобождаването?</summary><p>Настаняване от 14:00 и освобождаване до 11:00. Ако пристигнете по-рано, ще пазим багажа ви.</p></details>
+          <details><summary>Включена ли е закуската?</summary><p>Закуската е от 08:30 и струва 8 € на човек. Кажете ни за алергии при резервацията.</p></details>
+          <details><summary>Приемате ли деца и домашни любимци?</summary><p>Децата са много добре дошли. Малки кучета могат да отседнат в Мансардата по заявка.</p></details>
+          <details><summary>Има ли паркинг?</summary><p>Да, безплатен паркинг пред вратата за до три коли.</p></details>
+          <details><summary>Как се плаща и какво ако плановете ми се променят?</summary><p>Плаща се на място, в брой или с карта. Кажете ни поне три дни по-рано, ако трябва да промените или отмените, и няма такса.</p></details>
+          <details><summary>Как да стигна?</summary><p>Изпращаме точни упътвания при потвърждението. Последният участък е кратък чакълен път.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Къща Липа</span>
+    <span class="foot-links"><a href="privacy.html">Политика за поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Бърза връзка">
+  <a href="tel:+359000000000">Обадете се</a>
+  <a href="#book">Резервирайте</a>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Снимка">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Затвори">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Предишна снимка">‹</button>
+    <figure><img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-next" type="button" id="lbNext" aria-label="Следваща снимка">›</button>
+  </div>
+</dialog>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

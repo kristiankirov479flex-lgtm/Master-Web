@@ -4,7 +4,7 @@
   e.g. https://example.com  or  https://USERNAME.github.io/Master-Web
   When you add a project folder, add one more <url> block for it.
 -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://YOUR-DOMAIN/</loc>
     <lastmod>2026-10-14</lastmod>
@@ -12,5 +12,113 @@
   <url>
     <loc>https://YOUR-DOMAIN/Vila-Stefani-Devin-main/</loc>
     <lastmod>2026-10-14</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_1/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_1/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop_2/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop_2/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop_2/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop_2/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_2/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_2/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vila_2/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vila_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vila_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vila_2/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vila_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vila_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vila_3/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vila_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vila_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vila_3/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vila_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vila_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vila_4/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vila_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vila_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vila_4/en/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vila_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vila_4/en/"/>
   </url>
 </urlset>

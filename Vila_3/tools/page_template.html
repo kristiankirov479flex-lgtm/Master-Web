@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="[[lang]]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1B1411">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/stone-house-tree.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="[[root]]fonts/alegreya-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"[[brand]]","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]","checkinTime":"15:00","checkoutTime":"11:00",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Wine country","addressCountry":"BG"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<header class="hud" id="hud">
+  <a class="brand" href="[[home_href]]">[[brand]]</a>
+  <div class="hud-r">
+    <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-haspopup="dialog" aria-controls="menu"><span>[[menu_btn]]</span><i aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<dialog class="menu" id="menu" aria-label="[[nav_label]]">
+  <div class="menu-in">
+    <button class="menu-x" id="menuClose" type="button" aria-label="[[lb_close]]">×</button>
+    <nav aria-label="[[nav_label]]">
+      <ol>
+        [[nav_links]]
+      </ol>
+    </nav>
+    <div class="menu-foot">
+      <a href="tel:[[phone_href]]">[[phone]]</a>
+      <a href="mailto:[[email]]">[[email]]</a>
+    </div>
+  </div>
+</dialog>
+
+<main id="main">
+
+  <!-- ============ Cover ============ -->
+  <section class="cover" id="top" aria-labelledby="top-h">
+    <img class="cover-bg" src="[[root]]images/stock/stone-house-tree-800.jpg" srcset="[[root]]images/stock/stone-house-tree-800.jpg 800w, [[root]]images/stock/stone-house-tree.jpg 1600w" sizes="(orientation: portrait) 300vw, 100vw" width="1600" height="1067" alt="[[cover_alt]]" fetchpriority="high" decoding="async">
+    <div class="cover-in">
+      <p class="kicker">[[cover_kicker]]</p>
+      <h1 id="top-h">[[h1]]</h1>
+      <p class="lead">[[lead]]</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#book">[[cta1]]</a>
+        <a class="btn btn-ghost" href="#stay">[[cta2]]</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#story"><span>[[scroll]]</span><i aria-hidden="true"></i></a>
+  </section>
+
+  <!-- ============ Story ============ -->
+  <section class="ch ch-cream" id="story" aria-labelledby="story-h">
+    <div class="wrap story">
+      <div class="story-text">
+        <p class="kicker"><b>01</b> [[k_story]]</p>
+        <h2 id="story-h">[[story_h]]</h2>
+        <p class="dropcap">[[story_p1]]</p>
+        <p>[[story_p2]]</p>
+        <ul class="stats">
+          [[stats]]
+        </ul>
+        <p class="note">[[story_note]]</p>
+      </div>
+      <figure class="story-photo">
+        <img src="[[root]]images/stock/old-wooden-bed-800.jpg" width="800" height="533" alt="[[story_alt]]" loading="lazy" decoding="async">
+        <figcaption>[[story_cap]]</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ Stay: four places, stacked ============ -->
+  <section class="ch ch-night" id="stay" aria-labelledby="stay-h">
+    <div class="wrap">
+      <header class="ch-head">
+        <p class="kicker"><b>02</b> [[k_stay]]</p>
+        <h2 id="stay-h">[[stay_h]]</h2>
+        <p>[[stay_p]]</p>
+      </header>
+      <div class="stack">
+        [[units]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="ch ch-cream book" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="ch-head">
+        <p class="kicker"><b>03</b> [[k_book]]</p>
+        <h2 id="book-h">[[book_h]]</h2>
+        <p>[[book_p]]</p>
+      </header>
+      <form class="booking" id="stayForm" novalidate>
+        <div class="cal" id="cal">
+          <div class="cal-bar">
+            <button class="cal-nav" type="button" id="calPrev" aria-label="[[cal_prev]]">‹</button>
+            <span class="cal-sel" id="calSel" role="status" aria-live="polite">[[cal_pick]]</span>
+            <button class="cal-nav" type="button" id="calNext" aria-label="[[cal_next]]">›</button>
+          </div>
+          <div class="months" id="months"></div>
+          <ul class="legend" aria-hidden="true">
+            <li><i class="d free"></i>[[lg_free]]</li><li><i class="d part"></i>[[lg_part]]</li><li><i class="d full"></i>[[lg_full]]</li><li><i class="d sel"></i>[[lg_sel]]</li>
+          </ul>
+          <div class="field guests"><label for="b-guests">[[f_guests]]</label><select id="b-guests" name="guests">[[guest_options]]</select></div>
+        </div>
+        <div class="pick">
+          <p class="hint" id="nightsHint" role="status">[[pick_dates]]</p>
+          <fieldset class="units-pick" id="roomsPick">
+            <legend>[[b_room]]</legend>
+            [[unit_options]]
+          </fieldset>
+          <div class="summary" id="summary" aria-live="polite">
+            <h3>[[sum_h]]</h3>
+            <dl id="sumList"></dl>
+            <p class="sum-total" id="sumTotal"></p>
+            <p class="hint">[[sum_note]]</p>
+          </div>
+          <div class="field"><label for="b-name">[[f_name]]</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field-row">
+            <div class="field"><label for="b-phone">[[f_phone]]</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="b-email">[[f_email]]</label><input id="b-email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="b-msg">[[f_msg]]</label><textarea id="b-msg" name="msg"></textarea></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-wine" type="submit" id="submitBtn"><span class="btn-label">[[f_send]]</span></button>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <small class="hint">[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+        </div>
+      </form>
+      <div class="done" id="stayDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Do ============ -->
+  <section class="ch ch-night" id="do" aria-labelledby="do-h">
+    <div class="wrap">
+      <header class="ch-head">
+        <p class="kicker"><b>04</b> [[k_do]]</p>
+        <h2 id="do-h">[[do_h]]</h2>
+        <p>[[do_p]]</p>
+      </header>
+      <ul class="do-grid">
+        [[todo]]
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="ch ch-cream" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <header class="ch-head">
+        <p class="kicker"><b>05</b> [[k_gallery]]</p>
+        <h2 id="gal-h">[[gal_h]]</h2>
+        <p>[[gal_p]]</p>
+      </header>
+      <div class="sheet">
+        [[gallery]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Guestbook ============ -->
+  <section class="ch ch-wine" id="guests" aria-labelledby="gb-h">
+    <div class="wrap">
+      <header class="ch-head">
+        <p class="kicker"><b>06</b> [[k_guests]]</p>
+        <h2 id="gb-h">[[gb_h]]</h2>
+        <p>[[gb_p]]</p>
+      </header>
+      <ul class="notes">
+        [[notes]]
+      </ul>
+      <p class="rev-note">[[rev_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="ch ch-cream" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit">
+      <div>
+        <p class="kicker"><b>07</b> [[k_visit]]</p>
+        <h2 id="visit-h">[[visit_h]]</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and times. -->
+        <dl class="info">
+          <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+          <dt>[[times_l]]</dt><dd>[[times]]</dd>
+          <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+          <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>[[map_t]]</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">[[map_btn]]</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="faq-h">[[faq_h]]</h3>
+        <div class="faq-list">
+          [[faq]]
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="foot-brand">[[brand]]</span>
+    <span>© <span id="year">[[year]]</span> · [[tagline]]</span>
+    <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+  </div>
+</footer>
+
+<!-- Always-there booking bar (hides while the booking section is on screen) -->
+<aside class="bar" id="bar" aria-label="[[bar_label]]">
+  <p><span>[[bar_from]]</span> <b>[[bar_price]]</b> <span>[[per_night]]</span></p>
+  <a class="btn btn-gold btn-sm" href="#book">[[cta1]]</a>
+</aside>
+
+<dialog class="lightbox" id="lightbox" aria-label="[[lb_label]]">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="[[lb_close]]">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="[[lb_prev]]">‹</button>
+    <figure><img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-next" type="button" id="lbNext" aria-label="[[lb_next]]">›</button>
+  </div>
+</dialog>
+
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1F3A2E">
+<title>Демо админ панел – Каменната изба</title>
+<!-- Demo page for showing customers what a back office could look like. Not for search engines. -->
+<meta name="robots" content="noindex">
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main" id="skip">Към съдържанието</a>
+<header class="simple-top">
+  <div class="wrap">
+    <a class="logo" href="index.html" id="logo"><b>Каменната изба</b></a>
+    <nav aria-label="Навигация" id="nav">
+      <a href="index.html" id="backLink">← Към сайта</a>
+      <a class="lang" id="langLink" href="admin.html?lang=en" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="adm">
+  <div class="wrap">
+    <h1 id="h1">Демо админ панел</h1>
+    <p class="adm-note" id="note"></p>
+    <div class="adm-bar">
+      <div class="adm-filters" role="group" id="filters"></div>
+      <div class="adm-tools">
+        <button class="btn btn-line btn-sm" type="button" id="seedBtn"></button>
+        <button class="btn btn-line btn-sm" type="button" id="resetBtn"></button>
+      </div>
+    </div>
+    <p class="sr-only" id="live" role="status"></p>
+    <div id="out"></div>
+  </div>
+</main>
+
+<footer class="foot page-foot">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Каменната изба</span>
+    <a href="index.html" id="footBack">← Към сайта</a>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

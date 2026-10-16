@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en" data-skin="sage">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5F3EC">
+<title>Mimosa Flowers – fresh bouquets and delivery in Plovdiv</title>
+<meta name="description" content="Fresh bouquets, roses and flower arrangements made to order in Plovdiv. See the photos and prices, and send an order for pick-up or delivery.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mimosa Flowers – fresh bouquets and delivery in Plovdiv">
+<meta property="og:description" content="Fresh bouquets, roses and flower arrangements made to order in Plovdiv. See the photos and prices, and send an order for pick-up or delivery.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/beige-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("flowerSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Mimosa Flowers","inLanguage":"en",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-19:00", "Sa-Su 09:00-16:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="index.html"><b>Mimosa</b><span>flower shop</span></a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#prices">Prices</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">Questions</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-main" href="#contact">Order flowers</a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Say it with fresh flowers.</h1>
+        <p class="hero-lead">Bouquets, roses and arrangements made to order in Plovdiv. See the work, choose a bouquet, and send an order for pick-up or delivery.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#contact">Order flowers</a>
+          <a class="btn btn-line" href="#prices">See bouquets and prices</a>
+        </div>
+        <p class="cutoff" id="cutoff" hidden></p>
+        <p class="hero-meta">Plovdiv · open every day</p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-main">
+          <img src="../images/stock/beige-bouquet-800.jpg" srcset="../images/stock/beige-bouquet-800.jpg 800w, ../images/stock/beige-bouquet.jpg 1600w" sizes="(min-width: 900px) 46vw, 92vw" width="1600" height="2133" alt="A hand holding a bouquet of white roses wrapped in beige paper" fetchpriority="high" decoding="async">
+        </div>
+        <div class="hero-side">
+          <img src="../images/stock/shop-entrance-flowers-800.jpg" width="800" height="1200" alt="A flower shop front with ribbons and flowers outside" decoding="async">
+        </div>
+        <p class="hero-chip">Bouquets · Roses · Gifts</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Promise ============ -->
+  <section class="promise">
+    <div class="wrap">
+      <h2 class="sr-only">What to expect</h2>
+      <ul>
+        <li><h3>Made when you order</h3><p>Every bouquet is arranged by hand after you order, from the flowers we have that day.</p></li>
+        <li><h3>Delivery on time</h3><p>Choose a day and a time. Order before the cut-off to get your flowers the same day.</p></li>
+        <li><h3>Clear prices</h3><p>Every item has a price and a preparation time, and the delivery fee is shown before you send.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="block" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="gal-h">Our flowers</h2>
+          <p>Bouquets, vases and the shop. Filter by type, and press a photo to ask for something like it.</p>
+        </div>
+        <div class="chips" role="group" aria-label="Filter photos">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" type="button" data-filter="bouquets" aria-pressed="false">Bouquets</button>
+          <button class="chip" type="button" data-filter="vases" aria-pressed="false">In a vase</button>
+          <button class="chip" type="button" data-filter="shop" aria-pressed="false">The shop</button>
+        </div>
+      </div>
+      <p class="sr-only" id="galStatus" role="status">Photos shown: 22</p>
+      <div class="gal">
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/beige-bouquet.jpg" aria-label="Open photo: A hand holding a bouquet of white roses wrapped in beige paper"><img src="../images/stock/beige-bouquet-800.jpg" srcset="../images/stock/beige-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1066" alt="A hand holding a bouquet of white roses wrapped in beige paper" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="../images/stock/mixed-glass-vase.jpg" aria-label="Open photo: A peach and orange bouquet in a glass vase"><img src="../images/stock/mixed-glass-vase-800.jpg" srcset="../images/stock/mixed-glass-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="A peach and orange bouquet in a glass vase" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="../images/stock/shop-entrance-flowers.jpg" aria-label="Open photo: A flower shop front with ribbons and flowers outside"><img src="../images/stock/shop-entrance-flowers-800.jpg" srcset="../images/stock/shop-entrance-flowers-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="A flower shop front with ribbons and flowers outside" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/hand-colorful-bouquet.jpg" aria-label="Open photo: A hand holding a colourful bouquet with ranunculus and roses"><img src="../images/stock/hand-colorful-bouquet-800.jpg" srcset="../images/stock/hand-colorful-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="800" alt="A hand holding a colourful bouquet with ranunculus and roses" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="../images/stock/pink-grey-vase.jpg" aria-label="Open photo: Pink peonies in a stone vase"><img src="../images/stock/pink-grey-vase-800.jpg" srcset="../images/stock/pink-grey-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Pink peonies in a stone vase" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/holding-bouquet.jpg" aria-label="Open photo: A hand holding a small bouquet in kraft paper with a sunflower"><img src="../images/stock/holding-bouquet-800.jpg" srcset="../images/stock/holding-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="A hand holding a small bouquet in kraft paper with a sunflower" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="../images/stock/tulips.jpg" aria-label="Open photo: Bunches of pink, yellow and purple tulips ready to sell"><img src="../images/stock/tulips-800.jpg" srcset="../images/stock/tulips-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="534" alt="Bunches of pink, yellow and purple tulips ready to sell" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/pink-white-roses.jpg" aria-label="Open photo: A bouquet of pink roses and small flowers in white paper"><img src="../images/stock/pink-white-roses-800.jpg" srcset="../images/stock/pink-white-roses-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1066" alt="A bouquet of pink roses and small flowers in white paper" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="../images/stock/poppies-amber-vase.jpg" aria-label="Open photo: White poppies in an amber glass vase"><img src="../images/stock/poppies-amber-vase-800.jpg" srcset="../images/stock/poppies-amber-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="White poppies in an amber glass vase" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/roses-hydrangeas.jpg" aria-label="Open photo: A bouquet of orange and pink roses with hydrangeas"><img src="../images/stock/roses-hydrangeas-800.jpg" srcset="../images/stock/roses-hydrangeas-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1066" alt="A bouquet of orange and pink roses with hydrangeas" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="../images/stock/arranging-in-shop.jpg" aria-label="Open photo: A florist arranging flowers at the shop counter"><img src="../images/stock/arranging-in-shop-800.jpg" srcset="../images/stock/arranging-in-shop-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="A florist arranging flowers at the shop counter" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="../images/stock/red-arrangement.jpg" aria-label="Open photo: A red and orange bouquet in a glass jar"><img src="../images/stock/red-arrangement-800.jpg" srcset="../images/stock/red-arrangement-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="A red and orange bouquet in a glass jar" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/vibrant-bouquet.jpg" aria-label="Open photo: A pastel spring bouquet with snapdragons and daisies"><img src="../images/stock/vibrant-bouquet-800.jpg" srcset="../images/stock/vibrant-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="546" alt="A pastel spring bouquet with snapdragons and daisies" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="../images/stock/white-purple-black-vase.jpg" aria-label="Open photo: Wild garden flowers in a black vase"><img src="../images/stock/white-purple-black-vase-800.jpg" srcset="../images/stock/white-purple-black-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Wild garden flowers in a black vase" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/rose-bouquet.jpg" aria-label="Open photo: A large bouquet of roses, berries and eucalyptus"><img src="../images/stock/rose-bouquet-800.jpg" srcset="../images/stock/rose-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="800" alt="A large bouquet of roses, berries and eucalyptus" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="../images/stock/shop-facade.jpg" aria-label="Open photo: The front of a flower shop with plants and crates outside"><img src="../images/stock/shop-facade-800.jpg" srcset="../images/stock/shop-facade-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1049" alt="The front of a flower shop with plants and crates outside" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="../images/stock/pink-glass-vase.jpg" aria-label="Open photo: Pink tulips in a glass vase"><img src="../images/stock/pink-glass-vase-800.jpg" srcset="../images/stock/pink-glass-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="Pink tulips in a glass vase" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/red-white-bouquet.jpg" aria-label="Open photo: A florist holding a mixed bouquet of roses and wildflowers"><img src="../images/stock/red-white-bouquet-800.jpg" srcset="../images/stock/red-white-bouquet-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="A florist holding a mixed bouquet of roses and wildflowers" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/dried-peach-paper.jpg" aria-label="Open photo: A small dried flower bouquet in peach paper"><img src="../images/stock/dried-peach-paper-800.jpg" srcset="../images/stock/dried-peach-paper-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1200" alt="A small dried flower bouquet in peach paper" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="vases" data-full="../images/stock/arranging-vase.jpg" aria-label="Open photo: A florist arranging hydrangeas and peonies in a vase"><img src="../images/stock/arranging-vase-800.jpg" srcset="../images/stock/arranging-vase-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="534" alt="A florist arranging hydrangeas and peonies in a vase" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="bouquets" data-full="../images/stock/pink-roses.jpg" aria-label="Open photo: Close-up of pink garden roses"><img src="../images/stock/pink-roses-800.jpg" srcset="../images/stock/pink-roses-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1422" alt="Close-up of pink garden roses" loading="lazy" decoding="async"></button>
+        <button class="gal-item" type="button" data-cat="shop" data-full="../images/stock/shop-entrance-blooms.jpg" aria-label="Open photo: A flower shop entrance in the evening, full of blooms"><img src="../images/stock/shop-entrance-blooms-800.jpg" srcset="../images/stock/shop-entrance-blooms-800.jpg 800w" sizes="(min-width: 900px) 30vw, 46vw" width="800" height="1316" alt="A flower shop entrance in the evening, full of blooms" loading="lazy" decoding="async"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Prices ============ -->
+  <section class="block soft" id="prices" aria-labelledby="price-h">
+    <div class="wrap menu-wrap">
+      <div class="menu-side">
+        <h2 id="price-h">Bouquets and prices</h2>
+        <p>Every item has a price and a preparation time. Not sure what to choose? Tell us the occasion and your budget, and we will suggest.</p>
+        <p class="menu-cta"><a class="btn btn-line" href="#plan">Build your order</a></p>
+        <div class="menu-photo"><img src="../images/stock/holding-bouquet-800.jpg" width="800" height="1200" alt="A hand holding a small bouquet wrapped in kraft paper" loading="lazy" decoding="async"></div>
+      </div>
+      <div>
+        <div class="menu-group"><h3>Bouquets</h3>
+          <div class="menu-row"><span class="menu-name">Roses, 5 stems<small>20 min</small></span><span class="menu-price">20 €</span></div>
+          <div class="menu-row"><span class="menu-name">Roses, 7 stems<small>20 min</small></span><span class="menu-price">26 €</span></div>
+          <div class="menu-row"><span class="menu-name">Roses, 11 stems<small>25 min</small></span><span class="menu-price">38 €</span></div>
+          <div class="menu-row"><span class="menu-name">Roses, 21 stems<small>30 min</small></span><span class="menu-price">70 €</span></div>
+          <div class="menu-row"><span class="menu-name">Seasonal mixed bouquet<small>30 – 40 min</small></span><span class="menu-price">30 – 55 €</span></div>
+          <div class="menu-row"><span class="menu-name">Tulip bouquet, 15 stems<small>20 min</small></span><span class="menu-price">28 €</span></div>
+          <div class="menu-row"><span class="menu-name">Dried flower bouquet<small>30 min</small></span><span class="menu-price">35 €</span></div>
+        </div>
+        <div class="menu-group"><h3>Arrangements</h3>
+          <div class="menu-row"><span class="menu-name">Flower basket<small>40 – 60 min</small></span><span class="menu-price">from 45 €</span></div>
+          <div class="menu-row"><span class="menu-name">Flower box<small>30 min</small></span><span class="menu-price">40 €</span></div>
+          <div class="menu-row"><span class="menu-name">Orchid in a pot<small>10 min</small></span><span class="menu-price">30 €</span></div>
+          <div class="menu-row"><span class="menu-name">Wedding and event flowers<small>consultation</small></span><span class="menu-price">on request</span></div>
+        </div>
+        <div class="menu-group"><h3>Extras</h3>
+          <div class="menu-row"><span class="menu-name">Vase</span><span class="menu-price">from 8 €</span></div>
+          <div class="menu-row"><span class="menu-name">Chocolates or a small gift</span><span class="menu-price">from 6 €</span></div>
+          <div class="menu-row"><span class="menu-name">Gift wrapping</span><span class="menu-price">3 €</span></div>
+        </div>
+        <div class="menu-group"><h3>Delivery in Plovdiv</h3>
+          <div class="menu-row"><span class="menu-name">Pick up in the shop</span><span class="menu-price">free</span></div>
+          <div class="menu-row"><span class="menu-name">Delivery on a chosen day</span><span class="menu-price">7 €</span></div>
+          <div class="menu-row"><span class="menu-name">Express delivery within 2 hours</span><span class="menu-price">12 €</span></div>
+        </div>
+        <p class="menu-note">Sample prices in euro, based on florists in Plovdiv. Flowers change with the season, so a bouquet may differ a little from the photo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Plan your visit ============ -->
+  <section class="block" id="plan" aria-labelledby="plan-h">
+    <div class="wrap plan-grid">
+      <div class="plan-intro">
+        <h2 id="plan-h">Build your order</h2>
+        <p>Choose a bouquet and extras to see an estimated price and how long it takes to prepare. Then add it to your order, and we will only offer times that fit before closing.</p>
+      </div>
+      <div class="plan-card" id="planCard">
+        <fieldset class="opts"><legend>What would you like?</legend>
+                  <span class="opt-gl">Bouquets</span><div class="opt-row">
+            <label class="opt"><input type="radio" name="svc" value="roses"><span>Roses</span></label>
+            <label class="opt"><input type="radio" name="svc" value="mixed"><span>Seasonal mixed bouquet</span></label>
+            <label class="opt"><input type="radio" name="svc" value="tulips"><span>Tulip bouquet</span></label>
+            <label class="opt"><input type="radio" name="svc" value="dried"><span>Dried flower bouquet</span></label>
+          </div>
+                  <span class="opt-gl">Arrangements</span><div class="opt-row">
+            <label class="opt"><input type="radio" name="svc" value="basket"><span>Flower basket</span></label>
+            <label class="opt"><input type="radio" name="svc" value="box"><span>Flower box</span></label>
+            <label class="opt"><input type="radio" name="svc" value="orchid"><span>Orchid in a pot</span></label>
+          </div>
+                </fieldset>
+                <fieldset class="opts" id="planLength" hidden><legend>Number of roses</legend><div class="opt-row">
+          <label class="opt"><input type="radio" name="len" value="r5" checked><span>5 stems</span></label>
+          <label class="opt"><input type="radio" name="len" value="r7"><span>7 stems</span></label>
+          <label class="opt"><input type="radio" name="len" value="r11"><span>11 stems</span></label>
+          <label class="opt"><input type="radio" name="len" value="r21"><span>21 stems</span></label>
+        </div></fieldset>
+                <fieldset class="opts" id="planAddons" hidden><legend>Add something</legend><div class="opt-row">
+          <label class="opt" data-for="roses mixed tulips"><input type="checkbox" name="addon" value="vase"><span>Add a vase <em>+10 €</em></span></label>
+          <label class="opt" data-for="roses mixed tulips dried basket box orchid"><input type="checkbox" name="addon" value="choc"><span>Chocolates or a small gift <em>+6 €</em></span></label>
+          <label class="opt" data-for="roses mixed orchid"><input type="checkbox" name="addon" value="wrap"><span>Gift wrapping <em>+3 €</em></span></label>
+        </div></fieldset>
+        <div class="plan-result" aria-live="polite" aria-atomic="true">
+          <p id="planEmpty">Choose a bouquet to see the estimate.</p>
+          <dl class="plan-out" id="planOut" hidden>
+            <div><dt>Estimated price</dt><dd id="planPrice"></dd></div>
+            <div><dt>Preparation time</dt><dd id="planTime"></dd></div>
+          </dl>
+          <p class="plan-note" id="planNote" hidden></p>
+          <div><button class="btn btn-main" type="button" id="planAdd" disabled>Add to my order</button></div>
+          <p class="plan-fine">Sample prices. Delivery (7 €) is added when we confirm your order.</p>
+        </div>
+      </div>
+      <script type="application/json" id="planData">{"services": [{"id": "roses", "label": "Roses", "addons": ["vase", "choc", "wrap"], "lengths": [{"id": "r5", "price": 20, "minutes": 20, "label": "5 stems", "opt": "Roses, 5 stems"}, {"id": "r7", "price": 26, "minutes": 20, "label": "7 stems", "opt": "Roses, 7 stems"}, {"id": "r11", "price": 38, "minutes": 25, "label": "11 stems", "opt": "Roses, 11 stems"}, {"id": "r21", "price": 70, "minutes": 30, "label": "21 stems", "opt": "Roses, 21 stems"}]}, {"id": "mixed", "label": "Seasonal mixed bouquet", "addons": ["vase", "choc", "wrap"], "pmin": 30, "pmax": 55, "mmin": 30, "mmax": 40, "opt": "Seasonal mixed bouquet"}, {"id": "tulips", "label": "Tulip bouquet", "addons": ["vase", "choc"], "pmin": 28, "pmax": 28, "mmin": 20, "mmax": 20, "opt": "Tulip bouquet, 15 stems"}, {"id": "dried", "label": "Dried flower bouquet", "addons": ["choc"], "pmin": 35, "pmax": 35, "mmin": 30, "mmax": 30, "opt": "Dried flower bouquet"}, {"id": "basket", "label": "Flower basket", "addons": ["choc"], "pmin": 45, "pmax": 60, "mmin": 40, "mmax": 60, "opt": "Flower basket"}, {"id": "box", "label": "Flower box", "addons": ["choc"], "pmin": 40, "pmax": 40, "mmin": 30, "mmax": 30, "opt": "Flower box"}, {"id": "orchid", "label": "Orchid in a pot", "addons": ["choc", "wrap"], "pmin": 30, "pmax": 30, "mmin": 10, "mmax": 10, "opt": "Orchid in a pot"}], "addons": [{"id": "vase", "price": 10, "minutes": 5, "label": "Add a vase"}, {"id": "choc", "price": 6, "minutes": 5, "label": "Chocolates or a small gift"}, {"id": "wrap", "price": 3, "minutes": 5, "label": "Gift wrapping"}], "names": {"req": "Plus extras priced on request."}}</script>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="rev-h">What customers say</h2>
+          <p>Short notes from people who order from us.</p>
+        </div>
+      </div>
+      <div class="rev-grid">
+        <figure class="rev"><blockquote>The bouquet was exactly what I described, and it arrived on time for the birthday.</blockquote><figcaption><b>Mixed bouquet</b> · Example customer</figcaption></figure>
+        <figure class="rev"><blockquote>Beautiful roses, nicely wrapped. They stayed fresh for more than a week.</blockquote><figcaption><b>Roses</b> · Example customer</figcaption></figure>
+        <figure class="rev"><blockquote>Easy to order, a clear price, and a kind message on the card.</blockquote><figcaption><b>Delivery</b> · Example customer</figcaption></figure>
+      </div>
+      <p class="rev-note">Example reviews. Replace them with real Google reviews.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block" id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq-grid">
+      <h2 id="faq-h">Good to know</h2>
+      <div class="faq-list">
+          <details><summary>Can I order for today?</summary><p>Yes, if you order before the cut-off time shown at the top of the page. Later orders are delivered the next day.</p></details>
+          <details><summary>How much is delivery?</summary><p>Delivery inside Plovdiv is 7 € on a chosen day and 12 € for express delivery within two hours. Picking up in the shop is free.</p></details>
+          <details><summary>Can I choose the exact flowers and colours?</summary><p>Yes. Write your wishes in the notes and we will confirm what is possible. Some flowers change with the season.</p></details>
+          <details><summary>Can you add a card with my message?</summary><p>Yes. Write the text in the form and we will add it to the bouquet.</p></details>
+          <details><summary>What if the person is not at home?</summary><p>Our courier will call the phone number you give. If nobody answers, we will call you.</p></details>
+          <details><summary>Do you make wedding and event flowers?</summary><p>Yes. Send a request with the date and a few ideas, and we will arrange a consultation.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="block soft" id="contact" aria-labelledby="contact-h">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <h2 id="contact-h">Order flowers</h2>
+        <p>Tell us what you would like and when. We will reply to confirm your order.</p>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Address</dt><dd>Primer St. 1, Plovdiv</dd>
+          <dt>Hours</dt><dd>Mon – Fri 09:00 – 19:00 · Sat – Sun 09:00 – 16:00</dd>
+          <dt>Phone</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map is from OpenStreetMap and loads only if you choose.</p>
+            <button class="btn btn-line" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="request-col">
+        <form class="form" id="requestForm">
+          <h3>Send an order</h3>
+          <div class="chosen" id="planChip" hidden>
+            <div><b>Your choice</b><span id="planChipText"></span></div>
+            <button type="button" id="planRemove" aria-label="Remove">×</button>
+          </div>
+          <div class="chosen" id="lookChip" hidden>
+            <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+            <div><b>Photo you like</b><span id="lookText"></span></div>
+            <button type="button" id="lookRemove" aria-label="Remove">×</button>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="f-service">Bouquet</label>
+            <select id="f-service" name="service" required>
+            <option value="" selected disabled>Choose a bouquet</option>
+            <option data-min="20" data-max="20">Roses, 5 stems</option>
+          <option data-min="20" data-max="20">Roses, 7 stems</option>
+          <option data-min="25" data-max="25">Roses, 11 stems</option>
+          <option data-min="30" data-max="30">Roses, 21 stems</option>
+          <option data-min="30" data-max="40">Seasonal mixed bouquet</option>
+          <option data-min="20" data-max="20">Tulip bouquet, 15 stems</option>
+          <option data-min="30" data-max="30">Dried flower bouquet</option>
+          <option data-min="40" data-max="60">Flower basket</option>
+          <option data-min="30" data-max="30">Flower box</option>
+          <option data-min="10" data-max="10">Orchid in a pot</option>
+          <option data-min="30" data-max="60">Wedding and event flowers</option>
+            </select>
+          </div>
+          <fieldset class="field-set"><legend>How do you want to receive it?</legend>
+            <div class="opt-row">
+              <label class="opt"><input type="radio" name="fulfil" value="pickup" checked><span>Pick up in the shop</span></label>
+              <label class="opt"><input type="radio" name="fulfil" value="delivery"><span>Delivery in Plovdiv</span></label>
+            </div>
+          </fieldset>
+          <div class="field" id="addrField" hidden><label for="f-addr">Delivery address and recipient</label><input id="f-addr" name="addr" type="text" autocomplete="street-address"></div>
+          <div class="field-row">
+            <div class="field"><label for="f-date">Date</label><input id="f-date" name="date" type="date" required></div>
+            <div class="field"><label for="f-time">Time</label><select id="f-time" name="time" required aria-describedby="timeHint"><option value="" selected>Choose a time</option></select></div>
+          </div>
+          <small id="timeHint" role="status">Weekday times are shown. Pick a date to see the times for that day.</small>
+          <div class="field card"><label for="f-card">Card message (optional)</label><textarea id="f-card" name="card"></textarea></div>
+          <div class="field"><label for="f-msg">Notes for the florist (optional)</label><textarea id="f-msg" name="msg"></textarea></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-main" type="submit" id="submitBtn"><span class="btn-label">Send order</span></button>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="sr-only" id="formLive" role="status"></p>
+          <small>We use your details only to answer your order. <a href="privacy.html">Privacy notice</a></small>
+        </form>
+        <div class="form done" id="formDone" hidden tabindex="-1"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Mimosa Flowers</span>
+    <span class="foot-links"><a href="privacy.html">Privacy notice</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Sage &amp; Linen</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="sage" data-name="Sage &amp; Linen" aria-label="Colour scheme: Sage &amp; Linen" title="Sage &amp; Linen" aria-pressed="true" style="--s1:#F5F3EC;--s2:#4A6B54"></button>
+        <button class="sw" type="button" data-skin="rose" data-name="Rosewater &amp; Cream" aria-label="Colour scheme: Rosewater &amp; Cream" title="Rosewater &amp; Cream" aria-pressed="false" style="--s1:#FBF5F2;--s2:#A23A5B"></button>
+        <button class="sw" type="button" data-skin="terracotta" data-name="Terracotta &amp; Linen" aria-label="Colour scheme: Terracotta &amp; Linen" title="Terracotta &amp; Linen" aria-pressed="false" style="--s1:#F6F0E7;--s2:#97402A"></button>
+        <button class="sw" type="button" data-skin="lavender" data-name="Lavender &amp; Mist" aria-label="Colour scheme: Lavender &amp; Mist" title="Lavender &amp; Mist" aria-pressed="false" style="--s1:#F5F3F9;--s2:#6A4C9C"></button>
+        <button class="sw" type="button" data-skin="botanical" data-name="Evening Botanical" aria-label="Colour scheme: Evening Botanical" title="Evening Botanical" aria-pressed="false" style="--s1:#14201A;--s2:#EDA9B6"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+359000000000">Call</a>
+  <a href="#contact">Order flowers</a>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Close">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Previous photo">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="Next photo">›</button>
+    <button class="lb-act" type="button" id="lbRequest">Order something like this</button>
+  </div>
+</dialog>
+
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

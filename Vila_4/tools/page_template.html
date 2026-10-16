@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="[[lang]]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#DDEFF3">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/house-lake-white.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/nunito-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"[[brand]]","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]","checkinTime":"15:00","checkoutTime":"11:00",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Lake shore","addressCountry":"BG"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<header class="float">
+  <a class="logo" href="[[home_href]]"><i aria-hidden="true"></i><b>[[brand]]</b></a>
+  <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+</header>
+
+<nav class="dock" id="dock" aria-label="[[nav_label]]">
+  <ul>
+    [[nav_links]]
+  </ul>
+</nav>
+
+<main id="main">
+
+  <!-- ============ Top ============ -->
+  <section class="top" id="top" aria-labelledby="top-h">
+    <div class="wrap top-grid">
+      <div class="top-text">
+        <p class="kicker">[[kicker]]</p>
+        <h1 id="top-h">[[h1]]</h1>
+        <p class="lead">[[lead]]</p>
+        <div class="cta-row">
+          <a class="btn btn-coral" href="#book">[[cta1]]</a>
+          <a class="btn btn-line" href="#grounds">[[cta2]]</a>
+        </div>
+        <p class="sun" id="sun" aria-live="polite"></p>
+      </div>
+      <figure class="blob">
+        <img src="[[root]]images/stock/house-lake-white-800.jpg" srcset="[[root]]images/stock/house-lake-white-800.jpg 800w, [[root]]images/stock/house-lake-white.jpg 1600w" sizes="(min-width: 960px) 58vw, 100vw" width="1600" height="1067" alt="[[top_alt]]" fetchpriority="high" decoding="async">
+        <figcaption class="badge"><b>[[badge_t]]</b><span>[[badge_l]]</span></figcaption>
+      </figure>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 180 90 360 0 540 30 S 900 90 1080 40 S 1320 10 1440 40 V90 H0 Z"/></svg>
+  </section>
+
+  <!-- ============ Grounds: the map ============ -->
+  <section class="sec sand" id="grounds" aria-labelledby="grounds-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>01</b> [[k_grounds]]</p>
+        <h2 id="grounds-h">[[grounds_h]]</h2>
+        <p>[[grounds_p]]</p>
+      </header>
+      <div class="explore">
+        <div class="map">
+          <svg viewBox="0 0 800 520" role="img" aria-label="[[map_alt]]" preserveAspectRatio="xMidYMid slice">
+            <rect width="800" height="520" fill="#D9ECC0"/>
+            <path d="M0 330 C 120 300 220 380 340 360 S 560 300 800 340 V520 H0 Z" fill="#8FC5D6"/>
+            <path d="M0 330 C 120 300 220 380 340 360 S 560 300 800 340" fill="none" stroke="#F1E3BC" stroke-width="16"/>
+            <path d="M600 330 C 640 280 700 260 800 270 V340 C 700 300 650 330 600 340 Z" fill="#C9E4A6"/>
+            <g fill="#7FB36A"><circle cx="60" cy="70" r="26"/><circle cx="110" cy="110" r="20"/><circle cx="40" cy="160" r="22"/><circle cx="700" cy="60" r="28"/><circle cx="745" cy="115" r="20"/><circle cx="650" cy="150" r="18"/><circle cx="470" cy="60" r="18"/><circle cx="520" cy="90" r="14"/></g>
+            <path d="M120 220 C 200 230 260 200 330 205 S 440 230 520 240" fill="none" stroke="#F1E3BC" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 16"/>
+            <g><rect x="250" y="130" width="130" height="85" rx="6" fill="#FFFFFF"/><path d="M240 134 L315 88 L390 134 Z" fill="#C44A33"/><rect x="300" y="165" width="26" height="50" fill="#8FC5D6"/></g>
+            <g><rect x="470" y="190" width="70" height="46" rx="4" fill="#B98B5E"/><path d="M462 194 L505 166 L548 194 Z" fill="#6A4A32"/></g>
+            <g><rect x="150" y="262" width="58" height="40" rx="4" fill="#E9EEF0"/><path d="M144 266 L179 242 L214 266 Z" fill="#0F4C5C"/></g>
+            <g fill="#B98B5E"><rect x="395" y="350" width="22" height="120" rx="3"/><rect x="383" y="440" width="46" height="30" rx="3"/></g>
+            <g><rect x="80" y="130" width="100" height="62" rx="30" fill="#BFE0A0"/><circle cx="100" cy="150" r="6" fill="#F3B23C"/><circle cx="130" cy="165" r="6" fill="#E8708A"/><circle cx="155" cy="148" r="6" fill="#F3B23C"/></g>
+            <g><rect x="40" y="30" width="46" height="30" rx="6" fill="#5C7A85"/><text x="63" y="52" text-anchor="middle" font-size="22" font-weight="800" fill="#fff" font-family="sans-serif">P</text></g>
+          </svg>
+          [[hotspots]]
+        </div>
+        <div class="panel" id="panel" aria-live="polite">
+          <img id="panelImg" src="[[root]]images/stock/house-lake-white-800.jpg" width="800" height="533" alt="" decoding="async">
+          <div class="panel-body">
+            <p class="panel-no" id="panelNo" aria-hidden="true">1</p>
+            <h3 id="panelH">[[first_h]]</h3>
+            <p id="panelP">[[first_p]]</p>
+          </div>
+        </div>
+      </div>
+      <ul class="places" id="places">
+        [[place_list]]
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Rooms ============ -->
+  <section class="sec" id="rooms" aria-labelledby="rooms-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>02</b> [[k_rooms]]</p>
+        <h2 id="rooms-h">[[rooms_h]]</h2>
+        <p>[[rooms_p]]</p>
+      </header>
+      <div class="rooms" id="rooms-row">
+        [[rooms]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Book: a timeline ============ -->
+  <section class="sec sky book" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>03</b> [[k_book]]</p>
+        <h2 id="book-h">[[book_h]]</h2>
+        <p>[[book_p]]</p>
+      </header>
+      <form class="stay" id="stayForm" novalidate>
+        <div class="board-wrap">
+          <div class="board-bar">
+            <div class="field g"><label for="b-guests">[[f_guests]]</label><select id="b-guests" name="guests">[[guest_options]]</select></div>
+            <div class="board-nav">
+              <button class="nav-btn" type="button" id="boardPrev" aria-label="[[board_prev]]">‹</button>
+              <span class="board-sel" id="boardSel" role="status" aria-live="polite">[[board_pick]]</span>
+              <button class="nav-btn" type="button" id="boardNext" aria-label="[[board_next]]">›</button>
+            </div>
+          </div>
+          <div class="board-scroll" id="boardScroll" tabindex="0" role="region" aria-label="[[board_label]]">
+            <div class="board" id="board"></div>
+          </div>
+          <ul class="legend" aria-hidden="true">
+            <li><i class="lg free"></i>[[lg_free]]</li><li><i class="lg taken"></i>[[lg_taken]]</li><li><i class="lg sel"></i>[[lg_sel]]</li>
+          </ul>
+          <p class="hint" id="boardHint" role="status">[[board_hint]]</p>
+        </div>
+        <div class="form-side">
+          <div class="summary" id="summary" aria-live="polite">
+            <h3>[[sum_h]]</h3>
+            <dl id="sumList"></dl>
+            <p class="sum-total" id="sumTotal"></p>
+            <p class="hint">[[sum_note]]</p>
+          </div>
+          <div class="field"><label for="b-name">[[f_name]]</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field-row">
+            <div class="field"><label for="b-phone">[[f_phone]]</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="b-email">[[f_email]]</label><input id="b-email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="b-msg">[[f_msg]]</label><textarea id="b-msg" name="msg"></textarea></div>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-coral" type="submit" id="submitBtn"><span class="btn-label">[[f_send]]</span></button>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <small class="hint">[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+        </div>
+      </form>
+      <div class="done" id="stayDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Plan your days ============ -->
+  <section class="sec" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>04</b> [[k_plan]]</p>
+        <h2 id="plan-h">[[plan_h]]</h2>
+        <p>[[plan_p]]</p>
+      </header>
+      <div class="persona-tabs" role="tablist" aria-label="[[plan_h]]">
+        [[ptabs]]
+      </div>
+      [[ppanels]]
+    </div>
+  </section>
+
+  <!-- ============ Talk ============ -->
+  <section class="sec sand" id="talk" aria-labelledby="talk-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker"><b>05</b> [[k_talk]]</p>
+        <h2 id="talk-h">[[talk_h]]</h2>
+        <p>[[talk_p]]</p>
+      </header>
+      <ul class="bubbles">
+        [[bubbles]]
+      </ul>
+      <p class="note">[[rev_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit">
+      <div>
+        <p class="kicker"><b>06</b> [[k_visit]]</p>
+        <h2 id="visit-h">[[visit_h]]</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and times. -->
+        <dl class="info">
+          <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+          <dt>[[times_l]]</dt><dd>[[times]]</dd>
+          <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+          <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+        </dl>
+        <ul class="routes">
+          [[routes]]
+        </ul>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>[[map_t]]</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">[[map_btn]]</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 class="faq-h">[[faq_h]]</h3>
+        <div class="faq-list">
+          [[faq]]
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="foot-brand">[[brand]]</span>
+    <span>© <span id="year">[[year]]</span> · [[tagline]]</span>
+    <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+  </div>
+</footer>
+
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>
