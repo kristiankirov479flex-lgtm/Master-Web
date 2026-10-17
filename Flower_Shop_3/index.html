@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="bg" data-skin="tulip">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF6EE">
+<title>Sunday Stems – свежи цветя всяка седмица в Пловдив</title>
+<meta name="description" content="Абонамент за цветя в Пловдив: избери размер и ритъм и свежи сезонни цветя пристигат до вратата ти всяка седмица, на две седмици или веднъж месечно.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sunday Stems – свежи цветя всяка седмица в Пловдив">
+<meta property="og:description" content="Абонамент за цветя в Пловдив: избери размер и ритъм и свежи сезонни цветя пристигат до вратата ти всяка седмица, на две седмици или веднъж месечно.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/vibrant-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("sundaySkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Sunday Stems","inLanguage":"bg",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-19:00", "Sa-Su 10:00-16:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><i aria-hidden="true"></i><b>Sunday Stems</b></a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Основна навигация">
+      <a href="#week">Тази седмица</a>
+      <a href="#plan">Абонамент</a>
+      <a href="#season">Сезони</a>
+      <a href="#visit">Адрес</a>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <a class="btn btn-main btn-sm" href="#plan">Започни с цветя</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero: two colour blocks ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-a">
+      <p class="tag">Абонамент за цветя · Пловдив</p>
+      <h1 id="h1">Свежи цветя. <em>Всяка седмица.</em></h1>
+      <p class="lead">Избери размер и ритъм. Нов сезонен букет пристига до вратата ти, опакован същата сутрин. Спри го или пропусни, когато поискаш.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#plan">Подреди абонамента</a>
+        <a class="btn btn-line" href="#week">Виж букета за седмицата</a>
+      </div>
+      <ul class="perks">
+        <li>Безплатна доставка в Пловдив</li>
+        <li>Пауза или пропускане по всяко време</li>
+        <li>Сезонни и свежи</li>
+      </ul>
+    </div>
+    <figure class="hero-b">
+      <div class="orb orb-main"><img src="images/stock/vibrant-bouquet.jpg" srcset="images/stock/vibrant-bouquet-800.jpg 800w, images/stock/vibrant-bouquet.jpg 1600w" sizes="(min-width: 960px) 44vw, 90vw" width="1600" height="1093" alt="Ярък смесен букет" fetchpriority="high" decoding="async"></div>
+      <div class="orb orb-a" aria-hidden="true"><img src="images/stock/tulips-800.jpg" width="400" height="400" alt="" loading="lazy" decoding="async"></div>
+      <div class="orb orb-b" aria-hidden="true"><img src="images/stock/pink-roses-800.jpg" width="400" height="400" alt="" loading="lazy" decoding="async"></div>
+      <figcaption class="sticker"><small>Тази седмица</small><b id="stickName"></b><span id="stickCut"></span></figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ This week ============ -->
+  <section class="block soft" id="week" aria-labelledby="week-h">
+    <div class="wrap week">
+      <div class="week-pic"><img id="weekImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="800" height="1000" loading="lazy"></div>
+      <div class="week-text">
+        <p class="kicker">Тази седмица</p>
+        <h2 id="week-h">Какво цъфти сега.</h2>
+        <p class="week-name" id="weekName"></p>
+        <p class="week-stems" id="weekStems"></p>
+        <p class="cut" id="cutLine" role="status"></p>
+        <div class="up">
+          <b>Предстои</b>
+          <ul id="upNext"></ul>
+        </div>
+        <a class="btn btn-main" href="#plan">Подреди абонамента</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Build your subscription ============ -->
+  <section class="block dark" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Абонамент</p>
+        <h2 id="plan-h">Подреди своя абонамент.</h2>
+        <p>Пет избора, една цена на доставка. Виждаш месечната сума, преди да изпратиш заявката.</p>
+      </header>
+      <form class="sub" id="subForm" novalidate>
+        <div class="sub-steps">
+          <fieldset class="st">
+            <legend><b>1</b> Избери размер</legend>
+            <div class="sizes"><label class="sz"><input type="radio" name="size" value="petite" data-price="18" data-name="Малък"><img src="images/stock/pink-glass-vase-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span class="sz-t"><b>Малък</b><small>Около 12 стръка в малка опаковка</small></span><span class="sz-p">18 €</span></label><label class="sz"><input type="radio" name="size" value="classic" data-price="28" data-name="Класик" checked><img src="images/stock/hand-colorful-bouquet-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span class="sz-t"><b>Класик</b><small>Около 20 стръка, нашият всекидневен букет</small></span><span class="sz-p">28 €</span></label><label class="sz"><input type="radio" name="size" value="grand" data-price="42" data-name="Голям"><img src="images/stock/roses-hydrangeas-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span class="sz-t"><b>Голям</b><small>Около 35 стръка за впечатляващ ефект</small></span><span class="sz-p">42 €</span></label></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>2</b> Колко често?</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="freq" value="weekly" data-days="7" data-pm="4.33" data-name="Всяка седмица" checked><span>Всяка седмица</span></label><label class="pl"><input type="radio" name="freq" value="biweekly" data-days="14" data-pm="2.17" data-name="На 2 седмици"><span>На 2 седмици</span></label><label class="pl"><input type="radio" name="freq" value="monthly" data-days="28" data-pm="1.0" data-name="Веднъж месечно"><span>Веднъж месечно</span></label></div>
+            <p class="st-sub">За колко време?</p>
+            <div class="pills"><label class="pl"><input type="radio" name="len" value="4" data-n="4" data-off="0" data-name="Пробвай с 4 доставки"><span>Пробвай с 4 доставки<small>&nbsp;</small></span></label><label class="pl"><input type="radio" name="len" value="12" data-n="12" data-off="10" data-name="12 доставки" checked><span>12 доставки<small>−10 %</small></span></label><label class="pl"><input type="radio" name="len" value="open" data-n="0" data-off="5" data-name="Докато спра"><span>Докато спра<small>−5 %</small></span></label></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>3</b> Допълнения</legend>
+            <div class="pills">
+              <label class="pl"><input type="checkbox" name="vase" value="1"><span>Добави ваза<small>+ 12 € веднъж</small></span></label>
+              <label class="pl"><input type="checkbox" name="gift" value="1"><span>Това е подарък<small>Добавяме картичка</small></span></label>
+            </div>
+            <div class="field" id="giftBox" hidden><label for="f-to">За кого е?</label><input id="f-to" name="to" type="text" autocomplete="off"></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>4</b> Кога и къде?</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="fulfil" value="delivery" checked><span>Доставете ми</span></label><label class="pl"><input type="radio" name="fulfil" value="pickup"><span>Ще си го взимам</span></label></div>
+            <div class="pills" id="dayOpts"><label class="pl"><input type="radio" name="day" value="5" checked><span>В петък</span></label><label class="pl"><input type="radio" name="day" value="6"><span>В събота</span></label></div>
+            <p class="st-sub">Първа доставка</p>
+            <div class="dchips" id="dates" role="radiogroup" aria-label="Първа доставка"></div>
+            <p class="st-sub">Доставката започва в</p>
+            <p class="hint" id="slotHint" role="status">Избери първа доставка, за да видиш часовете.</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Доставката започва в"></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>5</b> Твоите данни</legend>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">Твоето име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field" id="addrBox"><label for="f-addr">Адрес за доставка</label><input id="f-addr" name="addr" type="text" autocomplete="street-address"></div>
+            <div class="field"><label for="f-card">Текст на картичката (по желание)</label><textarea id="f-card" name="card"></textarea></div>
+            <div class="field"><label for="f-msg">Нещо друго? (по желание)</label><textarea id="f-msg" name="msg"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="slip" aria-labelledby="slip-h">
+          <h3 id="slip-h">Твоят абонамент</h3>
+          <p class="slip-name" id="slipName"></p>
+          <dl class="slip-rows" id="slipRows"></dl>
+          <p class="slip-big"><span>На доставка</span><b id="slipPer"></b></p>
+          <p class="slip-line"><span>Около на месец</span><b id="slipMonth"></b></p>
+          <p class="slip-line"><span id="slipTotalL">Общо за 12 доставки</span><b id="slipTotal"></b></p>
+          <p class="slip-save" id="slipSave"></p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-light" type="submit" id="bkSend">Започни абонамента</button>
+          <small class="fine">Ползваме данните ти само за да отговорим на заявката ти. <a href="privacy.html">Политика за поверителност</a></small>
+        </section>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Season calendar ============ -->
+  <section class="block" id="season" aria-labelledby="season-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Сезони</p>
+        <h2 id="season-h">Какво е в сезон – месец по месец.</h2>
+        <p>Букетът ти следва цветния календар, така че винаги е свеж и не е пътувал през половин свят.</p>
+      </header>
+      <ol class="months">
+        <li class="mo" data-m="0"><b>Януари</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#F4B6C2"></i>Анемонии</li><li><i style="--c:#E8D9F5"></i>Хелебори</li><li><i style="--c:#FFD08A"></i>Ранункулуси</li></ul></li>
+        <li class="mo" data-m="1"><b>Февруари</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#FF8A7A"></i>Лалета</li><li><i style="--c:#FFE066"></i>Нарциси</li><li><i style="--c:#C9A7F5"></i>Анемонии</li></ul></li>
+        <li class="mo" data-m="2"><b>Март</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#FFE066"></i>Нарциси</li><li><i style="--c:#9EC9FF"></i>Зюмбюли</li><li><i style="--c:#FF9CC4"></i>Лалета</li></ul></li>
+        <li class="mo" data-m="3"><b>Април</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#FF6F61"></i>Лалета</li><li><i style="--c:#C9A7F5"></i>Люляк</li><li><i style="--c:#FFB3C7"></i>Божури</li></ul></li>
+        <li class="mo" data-m="4"><b>Май</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#FF9CC4"></i>Божури</li><li><i style="--c:#C9A7F5"></i>Люляк</li><li><i style="--c:#FFD3E0"></i>Сладък грах</li></ul></li>
+        <li class="mo" data-m="5"><b>Юни</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#E5446D"></i>Рози</li><li><i style="--c:#6C8CFF"></i>Делфиниум</li><li><i style="--c:#FFB3C7"></i>Божури</li></ul></li>
+        <li class="mo" data-m="6"><b>Юли</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#FFC21A"></i>Слънчогледи</li><li><i style="--c:#FF7A59"></i>Цинии</li><li><i style="--c:#9B7BD8"></i>Лавандула</li></ul></li>
+        <li class="mo" data-m="7"><b>Август</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#E5446D"></i>Далии</li><li><i style="--c:#FF9A3D"></i>Цинии</li><li><i style="--c:#FF9CC4"></i>Гладиоли</li></ul></li>
+        <li class="mo" data-m="8"><b>Септември</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#B3261E"></i>Далии</li><li><i style="--c:#9B7BD8"></i>Астри</li><li><i style="--c:#FFC21A"></i>Хризантеми</li></ul></li>
+        <li class="mo" data-m="9"><b>Октомври</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#FF9A3D"></i>Хризантеми</li><li><i style="--c:#E5446D"></i>Шипки</li><li><i style="--c:#D9C7A0"></i>Сухи треви</li></ul></li>
+        <li class="mo" data-m="10"><b>Ноември</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#FFFFFF"></i>Хризантеми</li><li><i style="--c:#8FB8A0"></i>Евкалипт</li><li><i style="--c:#B3261E"></i>Горски плодове</li></ul></li>
+        <li class="mo" data-m="11"><b>Декември</b><span class="now" hidden>Сега</span><ul><li><i style="--c:#C8102E"></i>Амарилис</li><li><i style="--c:#2F6B3F"></i>Бор</li><li><i style="--c:#8FB8A0"></i>Евкалипт</li></ul></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ How it works ============ -->
+  <section class="block accent" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <h2 id="how-h">Как работи</h2>
+      <ol class="steps">
+        <li><h3>Избираш</h3><p>Избери размер, ритъм и ден. Виждаш цената на доставка и на месец.</p></li>
+        <li><h3>Подреждаме</h3><p>Сутринта на доставката избираме най-доброто от седмицата и го опаковаме.</p></li>
+        <li><h3>Пристига</h3><p>До вратата ти в Пловдив, безплатно. Пауза или пропускане по всяко време.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Доволни абонати</p>
+        <h2 id="rev-h">Какво казват абонатите</h2>
+      </header>
+      <div class="revs">
+        <figure class="rev"><blockquote>Всяка събота вече е малък празник. Цветята издържат повече от седмица.</blockquote><figcaption><b>Класик, всяка седмица</b> · Примерен абонат</figcaption></figure>
+        <figure class="rev"><blockquote>Подарих го на мама за рождения ден и тя още говори за него.</blockquote><figcaption><b>Подаръчен абонамент</b> · Примерен абонат</figcaption></figure>
+        <figure class="rev"><blockquote>Най-лесният начин да оживя дома си.</blockquote><figcaption><b>Малък, на 2 седмици</b> · Примерен абонат</figcaption></figure>
+      </div>
+      <p class="rev-note">Примерни отзиви. Заменете ги с истински.</p>
+    </div>
+  </section>
+
+  <!-- ============ Questions and visit ============ -->
+  <section class="block soft" id="visit" aria-labelledby="faq-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">Въпроси</p>
+        <h2 id="faq-h">Добре е да знаеш</h2>
+        <div class="faq-list">
+          <details><summary>Мога ли да спра или пропусна доставка?</summary><p>Да. Кажи ни по телефона или в съобщение поне два дни преди доставката и я пропускаме.</p></details>
+          <details><summary>Какви цветя ще получавам?</summary><p>Най-хубавото за седмицата. На страницата виждаш букета за тази седмица, а календарът показва какво е в сезон.</p></details>
+          <details><summary>Включена ли е доставката?</summary><p>Доставката в Пловдив е безплатна. Доставяме и наблизо срещу малка такса; попитай ни.</p></details>
+          <details><summary>Как се плаща?</summary><p>Плащаш при първата доставка, в брой или с карта. После при всяка доставка или всеки месец, както предпочиташ.</p></details>
+          <details><summary>Мога ли да го подаря?</summary><p>Да. Отбележи „Това е подарък“, кажи ни за кого е и добавяме картичка с твоето послание.</p></details>
+        </div>
+      </div>
+      <div class="shopcard">
+        <p class="kicker">Посети ни</p>
+        <h2>Магазинът</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Адрес</dt><dd>ул. Примерна 1, Пловдив</dd>
+          <dt>Работно време</dt><dd>Пон – Пет 09:00 – 19:00 · Съб – Нед 10:00 – 16:00</dd>
+          <dt>Телефон</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Имейл</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата е от OpenStreetMap и се зарежда само ако поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">Sunday Stems</span>
+    <span>© <span id="year">2026</span> Sunday Stems · Абонаменти за цветя в Пловдив</span>
+    <span class="foot-links"><a href="privacy.html">Политика за поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Лале червено</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="tulip" data-name="Лале червено" aria-label="Цветова схема: Лале червено" title="Лале червено" aria-pressed="true" style="--s1:#FFF6EE;--s2:#C93A1F"></button>
+        <button class="sw" type="button" data-skin="lemon" data-name="Лимон и листо" aria-label="Цветова схема: Лимон и листо" title="Лимон и листо" aria-pressed="false" style="--s1:#FFFBE6;--s2:#1B6B45"></button>
+        <button class="sw" type="button" data-skin="peony" data-name="Божур розово" aria-label="Цветова схема: Божур розово" title="Божур розово" aria-pressed="false" style="--s1:#FFF1F5;--s2:#B8236B"></button>
+        <button class="sw" type="button" data-skin="iris" data-name="Ирис лилаво" aria-label="Цветова схема: Ирис лилаво" title="Ирис лилаво" aria-pressed="false" style="--s1:#F3F0FF;--s2:#5A33C9"></button>
+        <button class="sw" type="button" data-skin="sage" data-name="Шалфей зелено" aria-label="Цветова схема: Шалфей зелено" title="Шалфей зелено" aria-pressed="false" style="--s1:#F1F5EC;--s2:#2F6B3F"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Бърза връзка">
+  <a href="tel:+359000000000">Обади се</a>
+  <a href="#plan">Абонамент · <b id="qTotal"></b></a>
+</nav>
+
+<script type="application/json" id="sundayData">{"weekly": [{"name": "Прасковен парад", "stems": "Ранункулуси, дребни рози, евкалипт", "src": "images/stock/pink-roses-800.jpg"}, {"name": "Разходка в градината", "stems": "Сладък грах, лъвски зев, зелена папрат", "src": "images/stock/mixed-glass-vase-800.jpg"}, {"name": "Лалета във вторник", "stems": "Лалета, ранункулуси, листа от лале", "src": "images/stock/tulips-800.jpg"}, {"name": "Макови поля", "stems": "Макове, диви треви, лайка", "src": "images/stock/poppies-amber-vase-800.jpg"}, {"name": "Роза и хортензия", "stems": "Рози, хортензия, лизиантус", "src": "images/stock/roses-hydrangeas-800.jpg"}, {"name": "Сухо и нежно", "stems": "Сухи треви, сламено цвете, консервиран евкалипт", "src": "images/stock/beige-bouquet-800.jpg"}], "cutBy": "Поръчай до {d} {t} за доставка в {s}", "cutIn": "Поръчай до {x} за доставка в {s}", "hUnit": "ч", "mUnit": "мин", "totalL": "Общо за {n} доставки", "totalOpen": "Докато спреш", "vase": 12}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="bg" data-skin="evergreen">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0F1F19">
+<title>Atelier Aubade – цветарка за сватби и събития в Пловдив</title>
+<meta name="description" content="Цветарка за сватби и събития в Пловдив. Планирай цветята си онлайн, виж ценови диапазон и запази безплатна консултация.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atelier Aubade – цветарка за сватби и събития в Пловдив">
+<meta property="og:description" content="Цветарка за сватби и събития в Пловдив. Планирай цветята си онлайн, виж ценови диапазон и запази безплатна консултация.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/red-white-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/alegreya-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("aubadeSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Atelier Aubade","inLanguage":"bg",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 10:00-18:00", "Sa-Su 10:00-14:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <nav class="nav nav-l" id="nav" aria-label="Основна навигация">
+      <a href="#stories">Истории</a>
+      <a href="#packages">Пакети</a>
+      <a href="#plan">Планиране</a>
+      <a href="#process">Процес</a>
+      <a href="#contact">Ателие</a>
+    </nav>
+    <a class="logo" href="index.html"><b>Atelier Aubade</b><span>цветарка за сватби и събития</span></a>
+    <div class="top-r">
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <a class="btn btn-main btn-sm" href="#plan">Запази консултация</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero: a contact sheet of photos ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="sheet" aria-hidden="true">
+      <img class="s1" src="images/stock/red-white-bouquet-800.jpg" width="800" height="1200" alt="" loading="eager" decoding="async">
+      <img class="s2" src="images/stock/rose-bouquet-800.jpg" width="800" height="800" alt="" loading="lazy" decoding="async">
+      <img class="s3" src="images/stock/pink-white-roses-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async">
+      <img class="s4" src="images/stock/holding-bouquet.jpg" width="1600" height="2400" alt="" loading="lazy" decoding="async">
+      <img class="s5" src="images/stock/arranging-vase.jpg" width="1600" height="1067" alt="" loading="lazy" decoding="async">
+      <img class="s6" src="images/stock/roses-hydrangeas-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async">
+    </div>
+    <div class="hero-card">
+      <p class="eyebrow">Пловдив · сватби и събития</p>
+      <h1 id="h1">Цветя за деня, <em>който ще помните.</em></h1>
+      <p class="lead">Проектираме и подреждаме цветя за сватби, рождени дни и фирмени вечери. Планирай своите по-долу, виж ценови диапазон и говори с нас безплатно.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#plan">Планирай цветята ми</a>
+        <a class="btn btn-line" href="#stories">Виж историите ни</a>
+      </div>
+      <ul class="kinds"><li>Сватби</li><li>Рождени дни</li><li>Фирмени събития</li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Stories: a rail of past events ============ -->
+  <section class="block" id="stories" aria-labelledby="st-h">
+    <div class="wrap">
+      <div class="rail-head">
+        <header class="sec-head">
+          <p class="kicker">Истории</p>
+          <h2 id="st-h">Дни, които облякохме в цветя.</h2>
+          <p>Няколко скорошни събития със стила, който избрахме заедно. Плъзни или ползвай стрелките.</p>
+        </header>
+        <div class="rail-btns">
+          <button class="rail-btn" type="button" id="railPrev" aria-label="Предишни истории">‹</button>
+          <button class="rail-btn" type="button" id="railNext" aria-label="Следващи истории">›</button>
+        </div>
+      </div>
+    </div>
+    <div class="rail" id="rail" role="group" aria-label="Дни, които облякохме в цветя." tabindex="0">
+      <figure class="story"><img src="images/stock/beige-bouquet-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"><figcaption><b>Сватба, Старият Пловдив</b><span>Нежно и неутрално</span></figcaption></figure>
+      <figure class="story"><img src="images/stock/pink-grey-vase-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Рожден ден, Хисаря</b><span>Пастелна мечта</span></figcaption></figure>
+      <figure class="story"><img src="images/stock/poppies-amber-vase-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Градинска сватба, Брестовица</b><span>Градинско и диво</span></figcaption></figure>
+      <figure class="story"><img src="images/stock/red-arrangement-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Годишнина, Пловдив</b><span>Романтично</span></figcaption></figure>
+      <figure class="story"><img src="images/stock/white-purple-black-vase-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Фирмена вечер, София</b><span>Тъмно и драматично</span></figcaption></figure>
+      <figure class="story"><img src="images/stock/tulips-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><figcaption><b>Пролетен брънч, Пловдив</b><span>Семпло</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ Packages ============ -->
+  <section class="block soft" id="packages" aria-labelledby="pk-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Пакети</p>
+        <h2 id="pk-h">Три места, от които да тръгнеш.</h2>
+        <p>Всяко събитие е различно, затова това са отправни точки. Натисни един и планерът по-долу се попълва сам.</p>
+      </header>
+      <div class="packs">
+        <article class="pack"><h3>Букетът</h3><p class="pack-t">За малки церемонии или за граждански брак.</p><ul><li>Основен букет</li><li>2 бутониери</li><li>Доставка до мястото</li></ul><p class="pack-p"><small>от</small> <b>106 €</b></p><button class="btn btn-line" type="button" data-pack="bridal">Започни с този</button></article>
+        <article class="pack"><h3>Церемонията</h3><p class="pack-t">Церемонията, облечена в цветя.</p><ul><li>Основен букет и 3 по-малки</li><li>4 бутониери</li><li>Арка или фон при входа</li><li>4 аранжировки за пътеката</li><li>Подреждане на мястото</li></ul><p class="pack-p"><small>от</small> <b>612 €</b></p><button class="btn btn-line" type="button" data-pack="ceremony">Започни с този</button></article>
+        <article class="pack"><h3>Целият ден</h3><p class="pack-t">От първия букет до последната маса.</p><ul><li>Всичко от „Церемонията“, плюс</li><li>10 центъра за маси</li><li>Цветя за торта и украса за кола</li><li>Оглед на мястото</li></ul><p class="pack-p"><small>от</small> <b>1098 €</b></p><button class="btn btn-line" type="button" data-pack="full">Започни с този</button></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Plan your flowers ============ -->
+  <section class="block" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Планер</p>
+        <h2 id="plan-h">Планирай цветята си. Виж колко струва.</h2>
+        <p>Избери събитието, стила и елементите. Получаваш ценови диапазон веднага и безплатна консултация, за да го направим истински.</p>
+      </header>
+      <form class="plan-form" id="planForm" novalidate>
+        <div class="pl-steps">
+          <fieldset class="step">
+            <legend><b>1</b> Какво празнуваме?</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="event" value="wedding" data-name="Сватба" checked><span>Сватба</span></label><label class="pl"><input type="radio" name="event" value="birthday" data-name="Рожден ден"><span>Рожден ден</span></label><label class="pl"><input type="radio" name="event" value="corporate" data-name="Фирмено събитие"><span>Фирмено събитие</span></label><label class="pl"><input type="radio" name="event" value="other" data-name="Нещо друго"><span>Нещо друго</span></label></div>
+            <div class="guests">
+              <label for="guests">Гости: <b id="guestsOut">80</b></label>
+              <input id="guests" name="guests" type="range" min="10" max="250" step="5" value="80">
+              <p class="hint" id="tablesHint"></p>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Твоят стил</legend>
+            <p class="hint">Избери до три, които ти приличат.</p>
+            <div class="styles"><label class="sty"><input type="checkbox" name="style" value="romantic" data-name="Романтично"><img src="images/stock/pink-roses-800.jpg" alt="" width="400" height="711" loading="lazy" decoding="async"><span>Романтично</span></label><label class="sty"><input type="checkbox" name="style" value="wild" data-name="Градинско и диво"><img src="images/stock/hand-colorful-bouquet-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span>Градинско и диво</span></label><label class="sty"><input type="checkbox" name="style" value="minimal" data-name="Семпло"><img src="images/stock/beige-bouquet-800.jpg" alt="" width="400" height="533" loading="lazy" decoding="async"><span>Семпло</span></label><label class="sty"><input type="checkbox" name="style" value="rustic" data-name="Селско"><img src="images/stock/dried-peach-paper-800.jpg" alt="" width="400" height="600" loading="lazy" decoding="async"><span>Селско</span></label><label class="sty"><input type="checkbox" name="style" value="moody" data-name="Тъмно и драматично"><img src="images/stock/white-purple-black-vase-800.jpg" alt="" width="400" height="600" loading="lazy" decoding="async"><span>Тъмно и драматично</span></label><label class="sty"><input type="checkbox" name="style" value="pastel" data-name="Пастелна мечта"><img src="images/stock/pink-glass-vase-800.jpg" alt="" width="400" height="600" loading="lazy" decoding="async"><span>Пастелна мечта</span></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> Какво ти трябва?</legend>
+            <ul class="pieces" id="pieces"></ul>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>4</b> Запази безплатна консултация</legend>
+            <p class="hint">Четиридесет и пет минути в ателието. Носи снимки, мостри от плат и въпроси.</p>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Запази безплатна консултация"></div>
+            <p class="hint" id="slotHint" role="status">Избери ден, за да видиш свободните часове.</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Час"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>5</b> За теб и за деня</legend>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">Твоето име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              <div class="field"><label for="f-date">Дата на събитието</label><input id="f-date" name="edate" type="date"></div>
+              <div class="field"><label for="f-venue">Място (ако го знаеш)</label><input id="f-venue" name="venue" type="text"></div>
+            </div>
+            <div class="field"><label for="f-msg">Нещо друго? (по желание)</label><textarea id="f-msg" name="msg"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="brief" aria-labelledby="brief-h">
+          <h3 id="brief-h">Твоят план</h3>
+          <p class="brief-sub" id="briefSub"></p>
+          <ul class="brief-lines" id="briefLines"></ul>
+          <p class="brief-range"><span>Приблизителен диапазон</span><b id="briefRange"></b></p>
+          <p class="brief-fine">Първа оценка по примерни цени. Истинското предложение идва след консултацията.</p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-main" type="submit" id="bkSend">Запази консултацията</button>
+          <small class="brief-fine">Ползваме данните ти само за да отговорим на заявката ти. <a href="privacy.html">Политика за поверителност</a></small>
+        </section>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Process ============ -->
+  <section class="block soft" id="process" aria-labelledby="pr-h">
+    <div class="wrap process">
+      <header class="sec-head">
+        <p class="kicker">Процес</p>
+        <h2 id="pr-h">От първия разговор до последното венчелистче.</h2>
+        <p>Ясни стъпки, за да не остава нищо на случайността.</p>
+      </header>
+      <ol class="timeline">
+        <li><h3>Безплатна консултация</h3><p>45 минути в ателието. Чуваме историята, мястото и бюджета.</p></li>
+        <li><h3>Предложение и мудборд</h3><p>До три дни получаваш писмено предложение с мудборд.</p></li>
+        <li><h3>Запазена дата</h3><p>Депозит потвърждава датата ти. Примерно: 30% от предложението.</p></li>
+        <li><h3>Денят</h3><p>Подреждаме, доставяме и монтираме на мястото и се грижим за детайлите.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Добри думи</p>
+        <h2 id="rev-h">Какво казват младоженците и домакините</h2>
+      </header>
+      <div class="revs">
+        <figure class="rev"><blockquote>Изслушаха ни и направиха нещо по-хубаво от картинката в главата ми.</blockquote><figcaption><b>Сватба, 90 гости</b> · Примерен клиент</figcaption></figure>
+        <figure class="rev"><blockquote>Всяка маса изглеждаше различно и всяка беше красива. Гостите питаха кой е правил цветята.</blockquote><figcaption><b>Вечеря за рожден ден</b> · Примерен клиент</figcaption></figure>
+        <figure class="rev"><blockquote>Спокойни, точни и подредени. Управителят на залата поиска телефона им.</blockquote><figcaption><b>Фирмена вечер</b> · Примерен клиент</figcaption></figure>
+      </div>
+      <p class="rev-note">Примерни отзиви. Заменете ги с истински.</p>
+    </div>
+  </section>
+
+  <!-- ============ Questions and studio ============ -->
+  <section class="block soft" id="contact" aria-labelledby="faq-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">Въпроси</p>
+        <h2 id="faq-h">Добре е да знаеш</h2>
+        <div class="faq-list">
+          <details><summary>Колко рано да запазя?</summary><p>За сватби е удобно три до шест месеца напред, а най-търсените събота и неделя си отиват първи. За по-малки събития обикновено стигат няколко седмици.</p></details>
+          <details><summary>Наистина ли е безплатна консултацията?</summary><p>Да. Отнема 45 минути в ателието и не те задължава за нищо.</p></details>
+          <details><summary>Доставяте ли и подреждате ли на мястото?</summary><p>Да. Доставката и подреждането на мястото са част от предложението. Пътуване извън Пловдив се оценява отделно.</p></details>
+          <details><summary>Как работи депозитът?</summary><p>Депозит (примерно 30%) запазва датата ти и се приспада от крайната цена.</p></details>
+          <details><summary>Мога ли да видя цветята, преди да реша?</summary><p>На консултацията показваме сезонни цветя и примерни аранжировки.</p></details>
+        </div>
+      </div>
+      <div class="studio">
+        <p class="kicker">Ателие</p>
+        <h2>Посети ателието</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Адрес</dt><dd>ул. Примерна 1, Пловдив</dd>
+          <dt>Консултации</dt><dd>Пон – Пет 10:00 – 18:00 · Съб – Нед 10:00 – 14:00</dd>
+          <dt>Телефон</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Имейл</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата е от OpenStreetMap и се зарежда само ако поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">Atelier Aubade</span>
+    <span>© <span id="year">2026</span> Atelier Aubade · Цветарка за сватби и събития в Пловдив</span>
+    <span class="foot-links"><a href="privacy.html">Политика за поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Горско зелено и злато</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="evergreen" data-name="Горско зелено и злато" aria-label="Цветова схема: Горско зелено и злато" title="Горско зелено и злато" aria-pressed="true" style="--s1:#0F1F19;--s2:#D8B56A"></button>
+        <button class="sw" type="button" data-skin="ivory" data-name="Слонова кост и глина" aria-label="Цветова схема: Слонова кост и глина" title="Слонова кост и глина" aria-pressed="false" style="--s1:#F8F3EA;--s2:#8A5A44"></button>
+        <button class="sw" type="button" data-skin="blush" data-name="Руж и пудра" aria-label="Цветова схема: Руж и пудра" title="Руж и пудра" aria-pressed="false" style="--s1:#F9ECEA;--s2:#9A3F55"></button>
+        <button class="sw" type="button" data-skin="midnight" data-name="Полунощ и розово злато" aria-label="Цветова схема: Полунощ и розово злато" title="Полунощ и розово злато" aria-pressed="false" style="--s1:#0E1426;--s2:#E3B7A0"></button>
+        <button class="sw" type="button" data-skin="plum" data-name="Слива и венчелистче" aria-label="Цветова схема: Слива и венчелистче" title="Слива и венчелистче" aria-pressed="false" style="--s1:#1E0F1F;--s2:#E6A9C5"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Бърза връзка">
+  <a href="tel:+359000000000">Обади се</a>
+  <a href="#plan">Планирай</a>
+</nav>
+
+<script type="application/json" id="aubadeData">{"pieces": [{"id": "bouquet", "name": "Основен букет", "min": 90, "max": 160, "per": false, "cap": 1, "def": 1}, {"id": "small", "name": "По-малки букети", "min": 40, "max": 65, "per": true, "cap": 8, "def": 0}, {"id": "button", "name": "Бутониери", "min": 8, "max": 12, "per": true, "cap": 12, "def": 0}, {"id": "arch", "name": "Арка или фон при входа", "min": 250, "max": 650, "per": false, "cap": 1, "def": 0}, {"id": "aisle", "name": "Аранжировки за пътеката или входа", "min": 30, "max": 55, "per": true, "cap": 10, "def": 0}, {"id": "tables", "name": "Центрове за маси", "min": 30, "max": 65, "per": true, "cap": 30, "def": 0}, {"id": "cake", "name": "Цветя за торта", "min": 25, "max": 45, "per": false, "cap": 1, "def": 0}, {"id": "car", "name": "Украса за кола", "min": 45, "max": 80, "per": false, "cap": 1, "def": 0}], "packs": {"bridal": {"bouquet": 1, "button": 2}, "ceremony": {"bouquet": 1, "small": 3, "button": 4, "arch": 1, "aisle": 4}, "full": {"bouquet": 1, "small": 4, "button": 6, "arch": 1, "aisle": 6, "tables": 10, "cake": 1, "car": 1}}, "consult": 45, "tablesHint": "Около {n} маси по 8", "noneYet": "Избери елементите, от които имаш нужда.", "stylesNone": "Още няма избран стил", "each": "всеки"}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

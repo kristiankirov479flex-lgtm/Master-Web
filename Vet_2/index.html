@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="bg" data-skin="forest">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F3F8F5">
+<title>VetDoma – ветеринарен лекар у дома в Пловдив. Заяви посещение онлайн</title>
+<meta name="description" content="VetDoma: лицензирани ветеринарни лекари, които идват у дома в Пловдив и района. Преглед, ваксини, кръвни проби и грижа за възрастни животни. Цената е известна предварително.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VetDoma – ветеринарен лекар у дома в Пловдив. Заяви посещение онлайн">
+<meta property="og:description" content="VetDoma: лицензирани ветеринарни лекари, които идват у дома в Пловдив и района. Преглед, ваксини, кръвни проби и грижа за възрастни животни. Цената е известна предварително.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/cat-home.jpg is a placeholder) -->
+<link rel="preload" href="fonts/source-sans-3-400-600-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("vetdomaSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VeterinaryCare","name":"VetDoma","inLanguage":"bg","telephone":"+359880000000","email":"vet@example.com",
+ "areaServed":"Plovdiv","address":{"@type":"PostalAddress","streetAddress":"Primer St. 7","addressLocality":"Plovdiv","addressCountry":"BG"},"openingHours":["Mo-Fr 09:00-18:00","Sa-Su 10:00-14:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<aside class="topbar" aria-label="Работно време и спешни случаи">
+  <ul class="wrap topbar-in">
+    <li><b>Посещения днес</b> <span id="todayHours">09:00 – 18:00</span></li>
+    <li><b>Район</b> <span>Пловдив и до 25 км</span></li>
+    <li><b>Нощем:</b> <a href="tel:+359880000001">+359 88 000 0001</a></li>
+  </ul>
+</aside>
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html">Vet<span>Doma</span></a>
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#team">Лекари</a><a href="#how">Как става</a><a href="#prices">Цени</a><a href="#book">Заяви посещение</a><a href="#visit">Контакти</a></nav>
+    <div class="top-r">
+      <a class="call" href="tel:+359880000000"><span class="call-l">Обади се</span> <b>+359 88 000 0000</b></a>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-in">
+      <figure class="hero-ph"><img src="images/stock/cat-home-800.jpg" srcset="images/stock/cat-home-800.jpg 800w, images/stock/cat-home.jpg 1600w" sizes="(min-width: 900px) 540px, calc(100vw - 40px)" width="1600" height="1067" alt="Ветеринарка гали котка у дома до прозорец" loading="eager" fetchpriority="high"></figure>
+      <div class="hero-copy">
+        <p class="eyebrow">Ветеринарен лекар у дома · Пловдив</p>
+        <h1 id="h1">Лекар за животното ти, у дома, без стрес</h1>
+        <p class="lead">Лицензирани ветеринарни лекари идват при теб в Пловдив и района. Мобилен кабинет, цена с пътуването предварително и писмено резюме след посещението.</p>
+        <p class="hero-links"><a class="btn btn-main" href="#book">Заяви посещение</a> <a class="btn btn-line" href="tel:+359880000000">Обади се</a></p>
+        <p class="hero-note">Не сме денонощна служба. При спешен случай през нощта се обади на денонощната клиника.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Why trust us ============ -->
+  <section class="trustbar" aria-labelledby="tr-h">
+    <div class="wrap">
+      <h2 id="tr-h" class="sr-only">Защо ни се доверяват</h2>
+      <ul class="trust"><li><h3>Лицензирани лекари</h3><p>Двама ветеринарни лекари с регистрация и застраховка. Идва лекар, не помощник.</p></li><li><h3>Мобилен кабинет</h3><p>Носим ваксини в хладилна чанта, оборудване за кръвни проби, превръзки и стерилни инструменти.</p></li><li><h3>Цена предварително</h3><p>Преглед плюс пътуване: сумата е известна преди да дойдем. Ако трябва още нещо, питаме първо.</p></li><li><h3>Резюме и план</h3><p>След посещението получаваш писмено резюме и кога да се обадиш отново.</p></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Vets ============ -->
+  <section class="block" id="team" aria-labelledby="tm-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="tm-h">Лекарите, които ще дойдат при теб</h2>
+        <p>Два лица, една практика. Знаеш кой ще почука на вратата и какъв е опитът му.</p>
+      </header>
+      <ul class="vets"><li><figure><img src="images/stock/vet-woman-800.jpg" srcset="images/stock/vet-woman-800.jpg 800w, images/stock/vet-woman.jpg 1600w" sizes="(min-width: 521px) 170px, calc(100vw - 82px)" width="1600" height="2250" alt="Д-р Теодора Маринова" loading="lazy" decoding="async"></figure><div><h3>Д-р Теодора Маринова</h3><p class="role">Ветеринарен лекар, 12 години опит</p><p>Работи с възрастни и уплашени животни. Идва без бързане и казва какво и защо прави.</p><ul class="creds"><li>Магистър по ветеринарна медицина, 2012 г.</li><li>Член на ветеринарната колегия, рег. № 0000</li><li>Обучение по грижа за възрастни животни</li></ul></div></li><li><figure><img src="images/stock/vet-man-800.jpg" srcset="images/stock/vet-man-800.jpg 800w, images/stock/vet-man.jpg 1600w" sizes="(min-width: 521px) 170px, calc(100vw - 82px)" width="1600" height="1067" alt="Д-р Борис Андонов" loading="lazy" decoding="async"></figure><div><h3>Д-р Борис Андонов</h3><p class="role">Ветеринарен лекар, 10 години опит</p><p>Ваксини, превръзки, кръвни проби и лечение у дома. Преди това е работил в клиника за спешни случаи.</p><ul class="creds"><li>Магистър по ветеринарна медицина, 2014 г.</li><li>Член на ветеринарната колегия, рег. № 0000</li><li>Застраховка „професионална отговорност“</li></ul></div></li></ul>
+      <p class="p-note">Имена, дипломи и регистрационни номера са примерни.</p>
+    </div>
+  </section>
+
+  <!-- ============ Who ============ -->
+  <section class="block soft" id="who" aria-labelledby="wh-h">
+    <div class="wrap">
+      <header class="sec-head"><h2 id="wh-h">Кога посещението у дома е най-добро</h2><p>Не за всяко животно е добре да пътува. Ето кога да ни повикаш.</p></header>
+      <ul class="who"><li><h3>Възрастни животни</h3><p>Пътуването е уморително и болезнено. Прегледът у дома е по-кратък за тях.</p></li><li><h3>Уплашени животни</h3><p>Кабинетът е шумен и непознат. У дома животното е спокойно и лекуването е по-безопасно.</p></li><li><h3>Много животни</h3><p>Три котки или две кучета? Идваме веднъж и ги преглеждаме всички.</p></li><li><h3>Стопани без кола</h3><p>Или с малко дете, или в болест. Не е нужно да мислиш как да пътуваш.</p></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Kit ============ -->
+  <section class="block" aria-labelledby="kt-h">
+    <div class="wrap kit">
+      <div>
+        <header class="sec-head"><h2 id="kt-h">Какво носим</h2><p>Повечето неща, които се правят в кабинета, можем да направим и у вас.</p></header>
+        <ul class="ticks"><li>Стетоскоп, отоскоп и термометър</li><li>Ваксини в хладилна чанта</li><li>Оборудване за кръвни проби, резултат на следващия ден</li><li>Превръзки, шевове и стерилни инструменти</li><li>Ръкавици, игли и подложки за еднократна употреба</li><li>Лекарства за най-честите случаи</li></ul>
+      </div>
+      <figure class="kit-ph"><img src="images/stock/corgi-800.jpg" srcset="images/stock/corgi-800.jpg 800w, images/stock/corgi.jpg 1600w" sizes="(min-width: 900px) 530px, calc(100vw - 40px)" width="1600" height="1200" alt="Ветеринарен лекар с маска до коргито" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <!-- ============ How ============ -->
+  <section class="block soft" id="how" aria-labelledby="hw-h">
+    <div class="wrap how">
+      <div>
+        <header class="sec-head"><h2 id="hw-h">Как става</h2><p>Три стъпки, без чакалня.</p></header>
+        <ol class="steps3"><li><b>1</b><div><h3>Обаждаш се или заявяваш</h3><p>Казваш какво се е случило и къде живееш. Получаваш цена с пътуването.</p></div></li><li><b>2</b><div><h3>Идваме в уговорения час</h3><p>Идва лекарят, който си избрал или който е свободен. Носи всичко необходимо.</p></div></li><li><b>3</b><div><h3>Оставаме колкото трябва</h3><p>Обясняваме, показваме как да даваш лекарството и казваме кога да се обадиш пак.</p></div></li></ol>
+      </div>
+      <figure class="how-ph"><img src="images/stock/puppy-floor-800.jpg" srcset="images/stock/puppy-floor-800.jpg 800w, images/stock/puppy-floor.jpg 1600w" sizes="(min-width: 900px) 460px, calc(100vw - 40px)" width="1600" height="1067" alt="Кученце лежи на пода, а ръка му дава лакомство" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <!-- ============ Prices ============ -->
+  <section class="block" id="prices" aria-labelledby="pr-h">
+    <div class="wrap">
+      <header class="sec-head"><h2 id="pr-h">Цени</h2><p>Цената е посещението плюс пътуването според района. Всичко е в евро. Ако не си сигурен къде си, питай по телефона.</p></header>
+      <div class="prices">
+        <div>
+          <h3>Пътуване</h3>
+          <table class="plist zones"><caption class="sr-only">Пътуване</caption><tbody><tr><th scope="row">Пловдив<small>В рамките на града</small></th><td>15 €</td><td><a class="zlink" href="#book" data-zone="z1">Избери</a></td></tr><tr><th scope="row">До 10 км от града<small>Марково, Брестник, Кукленско шосе</small></th><td>25 €</td><td><a class="zlink" href="#book" data-zone="z2">Избери</a></td></tr><tr><th scope="row">До 25 км от града<small>Раковски, Първомай по уговорка</small></th><td>40 €</td><td><a class="zlink" href="#book" data-zone="z3">Избери</a></td></tr></tbody></table>
+        </div>
+        <div>
+          <h3>Посещения</h3>
+          <table class="plist"><caption class="sr-only">Посещения</caption><tbody><tr><th scope="row">Преглед у дома<small>Преглед, съвет и план за лечение · 45 мин</small></th><td>30 €</td></tr><tr><th scope="row">Ваксина у дома<small>За едно животно. Второто е 15 € · 40 мин</small></th><td>20 €</td></tr><tr><th scope="row">Преглед на възрастно животно<small>По-дълъг, без бързане, с разговор · 60 мин</small></th><td>50 €</td></tr><tr><th scope="row">Кръвна проба<small>Взимаме у дома, резултат на следващия ден · 30 мин</small></th><td>25 €</td></tr><tr><th scope="row">Превръзка и рани<small>Почистване, шев или превръзка · 45 мин</small></th><td>от 20 €</td></tr><tr><th scope="row">Инфузия и лечение у дома<small>Когато е трудно да се пътува · 60 мин</small></th><td>от 40 €</td></tr><tr><th scope="row">Сбогуване у дома<small>Спокойно и без бързане, на любимото място · 60 мин</small></th><td>от 60 €</td></tr><tr><th scope="row">Друго / не съм сигурен<small>Опиши в бележката и ще се обадим · 45 мин</small></th><td>по уговорка</td></tr></tbody></table>
+          <p class="p-note sv-note">Плащане в брой или с карта след посещението. Лекарствата се плащат отделно.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="block soft" id="book" aria-labelledby="bk-h">
+    <div class="wrap narrow">
+      <header class="sec-head">
+        <h2 id="bk-h">Заяви посещение</h2>
+        <p>Избери животно, повод, район, ден и час. Виждаш ориентировъчна цена. Ще ти се обадим, за да потвърдим.</p>
+      </header>
+      <form class="res" id="apptForm" novalidate>
+        <fieldset class="group"><legend>Кое животно?</legend>
+          <div class="opts"><label class="opt"><input type="radio" name="species" value="dog" checked><span>Куче</span></label><label class="opt"><input type="radio" name="species" value="cat"><span>Котка</span></label><label class="opt"><input type="radio" name="species" value="other"><span>Друго (заек, птица…)</span></label></div>
+        </fieldset>
+        <div class="row2">
+          <div class="field"><label for="f-pet">Име на животното</label><input id="f-pet" name="pet" type="text" autocomplete="off"></div>
+          <div class="field"><label for="f-service">Повод</label><select id="f-service" name="service"><option value="exam" data-min="45" data-price="30" data-from="0">Преглед у дома</option><option value="vacc" data-min="40" data-price="20" data-from="0">Ваксина у дома</option><option value="senior" data-min="60" data-price="50" data-from="0">Преглед на възрастно животно</option><option value="blood" data-min="30" data-price="25" data-from="0">Кръвна проба</option><option value="wound" data-min="45" data-price="20" data-from="1">Превръзка и рани</option><option value="drip" data-min="60" data-price="40" data-from="1">Инфузия и лечение у дома</option><option value="goodbye" data-min="60" data-price="60" data-from="1">Сбогуване у дома</option><option value="other" data-min="45" data-price="0" data-from="1">Друго / не съм сигурен</option></select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-zone">Район</label><select id="f-zone" name="zone"><option value="z1" data-fee="15">Пловдив · 15 €</option><option value="z2" data-fee="25">До 10 км от града · 25 €</option><option value="z3" data-fee="40">До 25 км от града · 40 €</option></select></div>
+          <div class="field"><label for="f-address">Адрес</label><input id="f-address" name="address" type="text" autocomplete="street-address" required></div>
+        </div>
+        <p class="estimate" id="estimate" role="status"></p>
+        <div class="row2">
+          <div class="field"><label for="f-date">Дата</label><input id="f-date" name="date" type="date" required></div>
+          <div class="field"><label for="f-time">Час</label><select id="f-time" name="time" required></select></div>
+        </div>
+        <p class="hint" id="timeHint" role="status">Избери повод и дата, за да видиш свободните часове.</p>
+        <div class="row2">
+          <div class="field"><label for="f-name">Твоето име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="3"></textarea><p class="hint">Например: възраст, от кога е проблемът, етаж, вход, кодът на входа.</p></div>
+        <p class="demo-note" id="demoNote" hidden></p>
+        <p class="form-error" id="aError" role="alert" hidden></p>
+        <button class="btn btn-main" type="submit" id="aSend">Заяви посещение</button>
+        <small class="fine">Не е нужно да плащаш предварително. <a href="privacy.html">Поверителност</a></small>
+      </form>
+      <div class="done" id="aDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block" aria-labelledby="fq-h">
+    <div class="wrap narrow">
+      <header class="sec-head"><h2 id="fq-h">Често задавани въпроси</h2></header>
+      <div class="qas"><details class="qa"><summary>Идвате ли при спешен случай?</summary><p>Не сме денонощна служба. През деня се опитваме да дойдем възможно най-бързо, ако се обадиш. През нощта се обади на денонощната клиника, чийто телефон е в горната част на страницата.</p></details><details class="qa"><summary>Колко струва, ако не знам какво е?</summary><p>Цената на прегледа и пътуването е известна предварително. Ако е нужно още нещо, казваме цената преди да го направим.</p></details><details class="qa"><summary>Има ли неща, които не може да се направят у дома?</summary><p>Да: ехография, рентген, операции. Тогава те насочваме към клиника и казваме на кого да се обадиш.</p></details><details class="qa"><summary>Имате ли селскостопански животни?</summary><p>Не по правило. Обади се и ще те насочим към ветеринар за селскостопански животни в твоя район.</p></details></div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <h2 id="vs-h">Контакти</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>09:00 – 18:00</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>10:00 – 14:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Кабинет</b><span>ул. Примерна 7, Пловдив (кабинет, само по уговорка)</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Денонощна клиника</b><a href="tel:+359880000001">+359 88 000 0001</a></li>
+          <li><b>Имейл</b><a href="mailto:vet@example.com">vet@example.com</a></li>
+        </ul>
+        <p class="visit-note">Приемаме заявки всеки ден. Посещения: делнични дни 09:00 – 18:00, събота и неделя 10:00 – 14:00.</p>
+      </div>
+      <div class="visit-side">
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> VetDoma. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Гора</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="forest" style="--s1:#F3F8F5;--s2:#2F6B4F" aria-pressed="false" aria-label="Гора"></button><button class="sw" type="button" data-skin="navy" style="--s1:#F4F6FA;--s2:#1F3F73" aria-pressed="false" aria-label="Синьо"></button><button class="sw" type="button" data-skin="copper" style="--s1:#FBF6F1;--s2:#8F4A22" aria-pressed="false" aria-label="Мед"></button><button class="sw" type="button" data-skin="plum" style="--s1:#FAF6FA;--s2:#6F3A78" aria-pressed="false" aria-label="Слива"></button><button class="sw" type="button" data-skin="night" style="--s1:#101612;--s2:#86D1A6" aria-pressed="false" aria-label="Нощ"></button></div>
+</aside>
+
+<script type="application/json" id="vetdomaData">{"services": {"exam": "Преглед у дома", "vacc": "Ваксина у дома", "senior": "Преглед на възрастно животно", "blood": "Кръвна проба", "wound": "Превръзка и рани", "drip": "Инфузия и лечение у дома", "goodbye": "Сбогуване у дома", "other": "Друго / не съм сигурен"}, "species": {"dog": "куче", "cat": "котка", "other": "друго"}, "zones": {"z1": "Пловдив", "z2": "До 10 км от града", "z3": "До 25 км от града"}}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="bg" data-skin="oak">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F6EFE2">
+<title>Bashta – традиционна механа в Пловдив. Поръчай за вкъщи</title>
+<meta name="description" content="Bashta е семейна механа в Пловдив с гювеч, кавърма, скара и шопска салата. Хапни при нас или поръчай за доставка или за вземане.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bashta – традиционна механа в Пловдив. Поръчай за вкъщи">
+<meta property="og:description" content="Bashta е семейна механа в Пловдив с гювеч, кавърма, скара и шопска салата. Хапни при нас или поръчай за доставка или за вземане.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/table-feast.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("bashtaSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Bashta","inLanguage":"bg","telephone":"+359880000000","email":"hello@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 8","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Bulgarian","openingHours":["Mo-Fr 11:30-21:30","Sa-Su 12:00-21:30"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html">Bashta</a>
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#order">Меню и поръчка</a><a href="#about">За нас</a><a href="#gallery">Снимки</a><a href="#visit">Контакти</a></nav>
+    <div class="top-r">
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="images/stock/table-feast-800.jpg" srcset="images/stock/table-feast-800.jpg 800w, images/stock/table-feast.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="Маса, пълна с традиционни български ястия" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Механа · Пловдив</p>
+      <h1 id="h1">Традиционна българска кухня, сготвена бавно</h1>
+      <p class="lead">Гювеч, кавърма и скара, както ги правеше баба. Хапни при нас или поръчай за вкъщи.</p>
+      <p class="hero-links"><a class="btn btn-main" href="#order">Поръчай онлайн</a> <a class="btn btn-light" href="#visit">Как да ни намериш</a></p>
+    </div>
+  </section>
+  <div class="cloth" aria-hidden="true"></div>
+  <div class="info-bar">
+    <ul class="wrap info-row">
+      <li><b>Днес</b> <span id="todayHours">11:30 – 21:30</span></li>
+      <li><b>Доставка</b> <span>В Пловдив, 2 € · безплатна над 25 €</span></li>
+      <li><b>Маси</b> <a href="tel:+359880000000">+359 88 000 0000</a></li>
+    </ul>
+  </div>
+
+  <!-- ============ Menu and order ============ -->
+  <section class="block" id="order" aria-labelledby="or-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="or-h">Меню и поръчка</h2>
+        <p>Натисни „+“ до ястията, които искаш. Вдясно избираш доставка или вземане и час. Плащаш при получаване. За маса при нас се обади по телефона.</p>
+      </header>
+      <div class="order-grid">
+        <div class="menu"><section class="m-group" aria-labelledby="mg-salads"><h3 id="mg-salads">Салати</h3><figure class="g-ph"><img src="images/stock/salad-greek-800.jpg" srcset="images/stock/salad-greek-800.jpg 800w, images/stock/salad-greek.jpg 1600w" sizes="(min-width: 960px) 600px, calc(100vw - 40px)" width="1600" height="1067" alt="Салата с домати, краставици, маслини и сирене" loading="lazy" decoding="async"></figure><ul class="items"><li class="item"><div class="item-t"><h4>Шопска салата <span class="tag" title="Вегетарианско">V</span></h4><p>Домати, краставици, чушки, сирене</p></div><b class="price">6,50 €</b><button class="add" type="button" data-id="shopska" aria-label="Добави Шопска салата"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Снежанка <span class="tag" title="Вегетарианско">V</span></h4><p>Кисело мляко, краставици, орехи, копър</p></div><b class="price">6,00 €</b><button class="add" type="button" data-id="snezhanka" aria-label="Добави Снежанка"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Печени чушки с чесън <span class="tag" title="Вегетарианско">V</span></h4><p>С орехи и магданоз</p></div><b class="price">7,00 €</b><button class="add" type="button" data-id="peppers" aria-label="Добави Печени чушки с чесън"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Таратор <span class="tag" title="Вегетарианско">V</span></h4><p>Студена супа от кисело мляко и краставици</p></div><b class="price">5,00 €</b><button class="add" type="button" data-id="tarator" aria-label="Добави Таратор"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-soups"><h3 id="mg-soups">Супи</h3><ul class="items"><li class="item"><div class="item-t"><h4>Пилешка супа </h4><p>По домашна рецепта</p></div><b class="price">4,50 €</b><button class="add" type="button" data-id="chicken" aria-label="Добави Пилешка супа"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Боб чорба <span class="tag" title="Вегетарианско">V</span></h4><p>С чубрица и сушена чушка</p></div><b class="price">4,50 €</b><button class="add" type="button" data-id="beans" aria-label="Добави Боб чорба"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-grill"><h3 id="mg-grill">От скарата</h3><figure class="g-ph"><img src="images/stock/grill-platter-800.jpg" srcset="images/stock/grill-platter-800.jpg 800w, images/stock/grill-platter.jpg 1600w" sizes="(min-width: 960px) 600px, calc(100vw - 40px)" width="1600" height="1067" alt="Голяма чиния със скара и гарнитури" loading="lazy" decoding="async"></figure><ul class="items"><li class="item"><div class="item-t"><h4>Кебапче (2 бр.) </h4></div><b class="price">4,00 €</b><button class="add" type="button" data-id="kebapche" aria-label="Добави Кебапче (2 бр.)"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Кюфте (2 бр.) </h4></div><b class="price">4,40 €</b><button class="add" type="button" data-id="kyufte" aria-label="Добави Кюфте (2 бр.)"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Свински котлет </h4><p>С печен лук</p></div><b class="price">9,50 €</b><button class="add" type="button" data-id="chop" aria-label="Добави Свински котлет"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Пилешки шиш </h4><p>С чушка и лук</p></div><b class="price">8,50 €</b><button class="add" type="button" data-id="skewer" aria-label="Добави Пилешки шиш"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Агнешки ребра </h4><p>Четири парчета</p></div><b class="price">16,00 €</b><button class="add" type="button" data-id="lamb" aria-label="Добави Агнешки ребра"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Скара за двама </h4><p>Кебапче, кюфте, котлет, шиш, гарнитура</p></div><b class="price">24,00 €</b><button class="add" type="button" data-id="grill2" aria-label="Добави Скара за двама"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-pots"><h3 id="mg-pots">Ястия от гювеч</h3><figure class="g-ph"><img src="images/stock/clay-pot-800.jpg" srcset="images/stock/clay-pot-800.jpg 800w, images/stock/clay-pot.jpg 1600w" sizes="(min-width: 960px) 600px, calc(100vw - 40px)" width="1600" height="1067" alt="Ястие в глинен гювеч със капаче" loading="lazy" decoding="async"></figure><ul class="items"><li class="item"><div class="item-t"><h4>Гювеч </h4><p>Свинско, зеленчуци, яйце, сирене</p></div><b class="price">9,50 €</b><button class="add" type="button" data-id="gyuvech" aria-label="Добави Гювеч"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Кавърма </h4><p>Бавно готвено свинско с лук и вино</p></div><b class="price">10,50 €</b><button class="add" type="button" data-id="kavarma" aria-label="Добави Кавърма"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Сарми </h4><p>Зелеви листа с кайма и ориз</p></div><b class="price">9,00 €</b><button class="add" type="button" data-id="sarmi" aria-label="Добави Сарми"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Мусака </h4><p>С картофи и кайма, запечена</p></div><b class="price">8,50 €</b><button class="add" type="button" data-id="moussaka" aria-label="Добави Мусака"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Агнешко с ориз </h4><p>Печено в гювеч</p></div><b class="price">12,50 €</b><button class="add" type="button" data-id="lambrice" aria-label="Добави Агнешко с ориз"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-sides"><h3 id="mg-sides">Гарнитури</h3><ul class="items"><li class="item"><div class="item-t"><h4>Пържени картофи <span class="tag" title="Вегетарианско">V</span></h4></div><b class="price">3,50 €</b><button class="add" type="button" data-id="fries" aria-label="Добави Пържени картофи"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Печени картофи с чубрица <span class="tag" title="Вегетарианско">V</span></h4></div><b class="price">4,00 €</b><button class="add" type="button" data-id="baked" aria-label="Добави Печени картофи с чубрица"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Туршия <span class="tag" title="Вегетарианско">V</span></h4></div><b class="price">4,50 €</b><button class="add" type="button" data-id="pickles" aria-label="Добави Туршия"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Хляб <span class="tag" title="Вегетарианско">V</span></h4></div><b class="price">1,00 €</b><button class="add" type="button" data-id="bread" aria-label="Добави Хляб"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-desserts"><h3 id="mg-desserts">Десерти</h3><ul class="items"><li class="item"><div class="item-t"><h4>Баклава <span class="tag" title="Вегетарианско">V</span></h4><p>С орехи и сироп</p></div><b class="price">4,50 €</b><button class="add" type="button" data-id="baklava" aria-label="Добави Баклава"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Тиквеник <span class="tag" title="Вегетарианско">V</span></h4><p>С орехи и канела</p></div><b class="price">4,00 €</b><button class="add" type="button" data-id="pumpkin" aria-label="Добави Тиквеник"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Кисело мляко с мед и орехи <span class="tag" title="Вегетарианско">V</span></h4></div><b class="price">4,00 €</b><button class="add" type="button" data-id="honey" aria-label="Добави Кисело мляко с мед и орехи"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-drinks"><h3 id="mg-drinks">Напитки</h3><ul class="items"><li class="item"><div class="item-t"><h4>Айрян <span class="tag" title="Вегетарианско">V</span></h4></div><b class="price">2,50 €</b><button class="add" type="button" data-id="ayran" aria-label="Добави Айрян"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Домашна лимонада <span class="tag" title="Вегетарианско">V</span></h4></div><b class="price">3,50 €</b><button class="add" type="button" data-id="lemonade" aria-label="Добави Домашна лимонада"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Минерална вода <span class="tag" title="Вегетарианско">V</span></h4><p>0,5 л</p></div><b class="price">2,00 €</b><button class="add" type="button" data-id="water" aria-label="Добави Минерална вода"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Бира <span class="tag" title="Вегетарианско">V</span></h4><p>Местна, 0,5 л</p></div><b class="price">3,50 €</b><button class="add" type="button" data-id="beer" aria-label="Добави Бира"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Вино на чаша <span class="tag" title="Вегетарианско">V</span></h4><p>Червено или бяло</p></div><b class="price">4,00 €</b><button class="add" type="button" data-id="wine" aria-label="Добави Вино на чаша"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section>
+          <p class="legend"><span class="tag">V</span> вегетарианско</p>
+        </div>
+
+        <section class="tray" id="tray" aria-labelledby="tray-h">
+          <form id="orderForm" novalidate>
+            <h3 id="tray-h">Твоята поръчка</h3>
+            <p class="tray-empty" id="trayEmpty">Още няма нищо тук. Добави ястия от менюто.</p>
+            <ul class="lines" id="lines"></ul>
+            <dl class="sums" id="sums" hidden>
+              <div><dt>Ястия</dt><dd id="sumSub">0,00 €</dd></div>
+              <div id="feeRow"><dt>Доставка</dt><dd id="sumFee">0,00 €</dd></div>
+              <div class="grand"><dt>Общо</dt><dd id="sumTotal">0,00 €</dd></div>
+            </dl>
+            <fieldset class="group"><legend>Как да го получиш?</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="fulfil" value="delivery" checked><span>Доставка</span></label>
+                <label class="opt"><input type="radio" name="fulfil" value="pickup"><span>Вземане от механата</span></label>
+              </div>
+              <p class="hint" id="howHint"></p>
+            </fieldset>
+            <div class="field" id="addrRow"><label for="f-addr">Адрес за доставка</label><input id="f-addr" name="address" type="text" autocomplete="street-address"></div>
+            <div class="row2">
+              <div class="field"><label for="f-date">Ден</label><select id="f-date" name="date"></select></div>
+              <div class="field"><label for="f-time">Час</label><select id="f-time" name="time"></select></div>
+            </div>
+            <p class="hint" id="timeHint" role="status">Проверяваме свободните часове…</p>
+            <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="2"></textarea></div>
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="orError" role="alert" hidden></p>
+            <button class="btn btn-main btn-block" type="submit" id="send">Изпрати поръчката</button>
+            <small class="fine">Плащаш в брой или с карта при получаване. <a href="privacy.html">Поверителност</a></small>
+          </form>
+          <div class="done" id="done" hidden tabindex="-1"></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ About ============ -->
+  <section class="block soft" id="about" aria-labelledby="ab-h">
+    <div class="wrap about">
+      <div class="about-text">
+        <h2 id="ab-h">За нас</h2>
+        <p>Бащата на Иван, който държи механата, строи къщата преди повече от седемдесет години. Днес в нея има две зали с дървен таван и двор с асма.</p>
+        <p>Готвим по рецептите на семейството: гювечът се пече в глинени съдове, кавърмата се готви два часа, а месото за скарата идва от месар в града.</p>
+        <ul class="ticks"><li>Глинени гювечи, печени на фурна</li><li>Зеленчуци от пазара всяка сутрин</li><li>Доставка и вземане до 21:30</li></ul>
+      </div>
+      <figure class="about-ph"><img src="images/stock/table-friends-800.jpg" srcset="images/stock/table-friends-800.jpg 800w, images/stock/table-friends.jpg 1600w" sizes="(min-width: 900px) 500px, calc(100vw - 40px)" width="1600" height="1067" alt="Приятели около маса с много ястия" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <!-- ============ Photos ============ -->
+  <section class="block" id="gallery" aria-labelledby="gl-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="gl-h">В механата</h2>
+        <p>Двете зали, дворът и част от кухнята.</p>
+      </header>
+      <div class="gallery">
+        <figure><img src="images/stock/room-checkered-800.jpg" srcset="images/stock/room-checkered-800.jpg 800w, images/stock/room-checkered.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2400" alt="Зала с дървен таван и червено-бели покривки" loading="lazy" decoding="async"></figure><figure><img src="images/stock/room-wood-800.jpg" srcset="images/stock/room-wood-800.jpg 800w, images/stock/room-wood.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2000" alt="Дървена зала с маси" loading="lazy" decoding="async"></figure><figure><img src="images/stock/room-garden-800.jpg" srcset="images/stock/room-garden-800.jpg 800w, images/stock/room-garden.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="1067" alt="Двор с растения и маси" loading="lazy" decoding="async"></figure>
+        <figure><img src="images/stock/lamb-chops-800.jpg" srcset="images/stock/lamb-chops-800.jpg 800w, images/stock/lamb-chops.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2397" alt="Агнешки ребра с колбаси" loading="lazy" decoding="async"></figure><figure><img src="images/stock/kebabs-800.jpg" srcset="images/stock/kebabs-800.jpg 800w, images/stock/kebabs.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2400" alt="Шишчета и сосове" loading="lazy" decoding="async"></figure><figure><img src="images/stock/easter-table-800.jpg" srcset="images/stock/easter-table-800.jpg 800w, images/stock/easter-table.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="1200" alt="Празнична трапеза" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <h2 id="vs-h">Контакти</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>11:30 – 21:30</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>12:00 – 21:30</dd></div></dl>
+        <ul class="info">
+          <li><b>Адрес</b><span>ул. Примерна 8, Пловдив</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Имейл</b><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+        <p class="visit-note">Резервации за маса приемаме само по телефона. За групи над 10 души се обадете поне ден по-рано.</p>
+      </div>
+      <div class="visit-side">
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Bashta. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar" hidden>
+  <span id="barTxt"></span>
+  <a class="btn btn-main btn-sm" href="#tray">Виж поръчката</a>
+</div>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Дъб</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="oak" style="--s1:#F6EFE2;--s2:#8E2A1F" aria-pressed="false" aria-label="Дъб"></button><button class="sw" type="button" data-skin="olive" style="--s1:#F3F1E4;--s2:#4A5A2A" aria-pressed="false" aria-label="Маслина"></button><button class="sw" type="button" data-skin="indigo" style="--s1:#F2F3F7;--s2:#243B6B" aria-pressed="false" aria-label="Индиго"></button><button class="sw" type="button" data-skin="night" style="--s1:#1E1712;--s2:#E0A458" aria-pressed="false" aria-label="Нощ"></button><button class="sw" type="button" data-skin="pomegranate" style="--s1:#FBF1F2;--s2:#8A1F44" aria-pressed="false" aria-label="Нар"></button></div>
+</aside>
+
+<script type="application/json" id="bashtaData">{"menu": [{"id": "shopska", "price": 6.5, "name": "Шопска салата"}, {"id": "snezhanka", "price": 6.0, "name": "Снежанка"}, {"id": "peppers", "price": 7.0, "name": "Печени чушки с чесън"}, {"id": "tarator", "price": 5.0, "name": "Таратор"}, {"id": "chicken", "price": 4.5, "name": "Пилешка супа"}, {"id": "beans", "price": 4.5, "name": "Боб чорба"}, {"id": "kebapche", "price": 4.0, "name": "Кебапче (2 бр.)"}, {"id": "kyufte", "price": 4.4, "name": "Кюфте (2 бр.)"}, {"id": "chop", "price": 9.5, "name": "Свински котлет"}, {"id": "skewer", "price": 8.5, "name": "Пилешки шиш"}, {"id": "lamb", "price": 16.0, "name": "Агнешки ребра"}, {"id": "grill2", "price": 24.0, "name": "Скара за двама"}, {"id": "gyuvech", "price": 9.5, "name": "Гювеч"}, {"id": "kavarma", "price": 10.5, "name": "Кавърма"}, {"id": "sarmi", "price": 9.0, "name": "Сарми"}, {"id": "moussaka", "price": 8.5, "name": "Мусака"}, {"id": "lambrice", "price": 12.5, "name": "Агнешко с ориз"}, {"id": "fries", "price": 3.5, "name": "Пържени картофи"}, {"id": "baked", "price": 4.0, "name": "Печени картофи с чубрица"}, {"id": "pickles", "price": 4.5, "name": "Туршия"}, {"id": "bread", "price": 1.0, "name": "Хляб"}, {"id": "baklava", "price": 4.5, "name": "Баклава"}, {"id": "pumpkin", "price": 4.0, "name": "Тиквеник"}, {"id": "honey", "price": 4.0, "name": "Кисело мляко с мед и орехи"}, {"id": "ayran", "price": 2.5, "name": "Айрян"}, {"id": "lemonade", "price": 3.5, "name": "Домашна лимонада"}, {"id": "water", "price": 2.0, "name": "Минерална вода"}, {"id": "beer", "price": 3.5, "name": "Бира"}, {"id": "wine", "price": 4.0, "name": "Вино на чаша"}], "min": 12, "fee": 2.0, "free": 25}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

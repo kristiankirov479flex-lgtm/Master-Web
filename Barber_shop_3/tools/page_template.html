@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="[[lang]]" data-skin="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F2ECDD">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/chair-man.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="[[root]]fonts/playfair-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("hollisSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"[[brand_json]] Barbers","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":[[[hours_ld]]]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<!-- Masthead: a newspaper title block, then a sticky bar with the links -->
+<header class="mast" id="top">
+  <div class="wrap mast-top">
+    <span class="mast-date" id="mastDate">[[mast_edition]]</span>
+    <span class="mast-motto">[[mast_motto]]</span>
+    <span class="mast-r">
+      <a class="tel" href="tel:[[phone_href]]">[[phone]]</a>
+      <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+    </span>
+  </div>
+  <div class="wrap mast-title">
+    <a class="logo" href="[[home_href]]">[[brand]]</a>
+    <p class="mast-sub">[[tagline]]</p>
+  </div>
+</header>
+<div class="navbar">
+  <div class="wrap navbar-in">
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="[[menu_btn]]"><span></span></button>
+    <nav class="nav" id="nav" aria-label="[[nav_label]]">
+      [[nav_links]]
+    </nav>
+    <button class="btn btn-main btn-sm" type="button" data-book>[[cta]]</button>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ Front page ============ -->
+  <section class="front wrap" aria-labelledby="h1">
+    <div class="front-main">
+      <p class="kicker">[[hero_kicker]]</p>
+      <h1 id="h1">[[h1]]</h1>
+      <p class="deck">[[lead]]</p>
+      <div class="front-actions">
+        <button class="btn btn-main" type="button" data-book>[[cta]]</button>
+        <a class="btn btn-line" href="#services">[[hero_cta2]]</a>
+      </div>
+    </div>
+    <figure class="front-photo">
+      <img src="[[root]]images/stock/chair-man.jpg" srcset="[[root]]images/stock/chair-man-800.jpg 800w, [[root]]images/stock/chair-man.jpg 1600w" sizes="(min-width: 1000px) 40vw, 92vw" width="1600" height="1067" alt="[[photo_alt]]" fetchpriority="high" decoding="async">
+      <figcaption>[[photo_cap]]</figcaption>
+    </figure>
+    <section class="front-side" aria-labelledby="today-h">
+      <h2 id="today-h">[[today_h]]</h2>
+      <p class="status off" id="openNow">[[open_loading]]</p>
+      <p class="nextfree" id="nextFree" hidden></p>
+      <h3>[[popular_h]]</h3>
+      <ul class="mini">
+        [[mini_prices]]
+      </ul>
+      <p class="side-note">[[hours]]</p>
+    </section>
+  </section>
+
+  <!-- ============ Price list ============ -->
+  <section class="block" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_services]]</p>
+        <h2 id="svc-h">[[svc_h]]</h2>
+        <p>[[svc_p]]</p>
+      </header>
+      <div class="pricelist">
+        [[pricelist]]
+      </div>
+      <p class="svc-note">[[price_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Staff ============ -->
+  <section class="block tint" id="barbers" aria-labelledby="team-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_team]]</p>
+        <h2 id="team-h">[[team_h]]</h2>
+        <p>[[team_p]]</p>
+      </header>
+      <div class="staff">
+        [[team]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Booking: the chair board ============ -->
+  <section class="block" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_book]]</p>
+        <h2 id="book-h">[[book_h]]</h2>
+        <p>[[book_p]]</p>
+      </header>
+      <form class="bk" id="bookForm" novalidate>
+        <div class="bk-ctl">
+          <div class="bk-step">
+            <p class="bk-n"><b>1</b> [[s1]]</p>
+            <div class="field"><label for="b-svc">[[f_service]]</label>
+              <select id="b-svc" name="service">
+                [[svc_options]]
+              </select>
+            </div>
+            <fieldset class="extras"><legend>[[extras_h]]</legend>
+              [[extra_options]]
+            </fieldset>
+            <p class="bk-total" id="bkTotal" aria-live="polite"></p>
+          </div>
+          <div class="bk-step">
+            <p class="bk-n"><b>2</b> [[s2]]</p>
+            <div class="days">
+              <button class="rail-btn" type="button" id="dayPrev" aria-label="[[day_prev]]">‹</button>
+              <div class="day-strip" id="dayStrip" role="group" aria-label="[[s2]]"></div>
+              <button class="rail-btn" type="button" id="dayNext" aria-label="[[day_next]]">›</button>
+            </div>
+            <p class="hint" id="boardHint" role="status">[[checking]]</p>
+          </div>
+        </div>
+        <div class="board-wrap">
+          <p class="bk-n"><b>3</b> [[s3]]</p>
+          <div class="board" id="board" role="group" aria-label="[[board_label]]" aria-busy="true"></div>
+          <p class="legend"><span><i class="lg free"></i>[[lg_free]]</span><span><i class="lg taken"></i>[[lg_taken]]</span><span><i class="lg sel"></i>[[lg_sel]]</span></p>
+        </div>
+        <div class="bk-me" id="bkMe">
+          <p class="bk-n"><b>4</b> [[s4]]</p>
+          <div class="chosen-slot" id="chosen" aria-live="polite">[[pick_slot]]</div>
+          <div class="chosen" id="lookChip" hidden>
+            <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+            <div><b>[[chip_look]]</b><span id="lookText"></span></div>
+            <button type="button" id="lookRemove" aria-label="[[chip_remove]]">×</button>
+          </div>
+          <div class="me-grid">
+            <div class="field"><label for="b-name">[[f_name]]</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="b-phone">[[f_phone]]</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="b-msg">[[f_msg]]</label><textarea id="b-msg" name="msg"></textarea></div>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <div class="me-foot">
+            <button class="btn btn-main" type="submit" id="bkSend">[[b_send]]</button>
+            <small class="hint">[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+          </div>
+        </div>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Work ============ -->
+  <section class="block tint" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_work]]</p>
+        <h2 id="work-h">[[work_h]]</h2>
+        <p>[[work_p]]</p>
+      </header>
+      <div class="clip">
+        [[rail]]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Letters ============ -->
+  <section class="block dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_rev]]</p>
+        <h2 id="rev-h">[[rev_h]]</h2>
+      </header>
+      <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span>[[rev_p]]</span></div>
+      <div class="letters">
+        [[reviews]]
+      </div>
+      <p class="rev-note">[[rev_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit and questions ============ -->
+  <section class="block" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">[[k_visit]]</p>
+        <h2 id="visit-h">[[visit_h]]</h2>
+        <p class="status off" id="statusBox">[[open_loading]]</p>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+          <dt>[[hours_l]]</dt><dd>[[hours]]</dd>
+          <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+          <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>[[map_t]]</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">[[map_btn]]</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">[[k_faq]]</p>
+        <h2 id="faq-h">[[faq_h]]</h2>
+        <div class="faq-list">
+          [[faq]]
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">[[brand]]</span>
+    <span>© <span id="year">[[year]]</span> [[brand]] Barbers · [[foot_tag]]</span>
+    <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="[[dock_label]]">
+  <div class="dock-label"><small>[[dock_label]]</small><b id="skinName">[[skin_name]]</b></div>
+  <div class="swatches">
+        [[swatches]]
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="[[quick_label]]">
+  <a href="tel:[[phone_href]]">[[q_call]]</a>
+  <button type="button" data-book>[[q_book]]</button>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="[[lb_label]]">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="[[lb_close]]">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="[[lb_prev]]">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="[[lb_next]]">›</button>
+    <button class="lb-act" type="button" id="lbRequest">[[lb_request]]</button>
+  </div>
+</dialog>
+
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>

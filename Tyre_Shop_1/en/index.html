@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" data-skin="hazard">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#15171A">
+<title>Gripline – tyres and service in Plovdiv. Tyre swaps with a booked time and a clear price</title>
+<meta name="description" content="Gripline is a tyre and service workshop in Plovdiv: swaps and balancing, repairs, alignment and storage. Enter your tyre size, see the price and book a time online.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gripline – tyres and service in Plovdiv. Tyre swaps with a booked time and a clear price">
+<meta property="og:description" content="Gripline is a tyre and service workshop in Plovdiv: swaps and balancing, repairs, alignment and storage. Enter your tyre size, see the price and book a time online.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/workshop-lift.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("griplineSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Gripline","inLanguage":"en","telephone":"+359880000000","email":"service@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 40","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 08:00-18:00","Sa-Su 09:00-14:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="ribbon" aria-label="Notice">Winter tyres: book your swap before 15 November. Walk-ins welcome when a bay is free.</aside>
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="5 2.5"/><circle cx="16" cy="16" r="5" fill="currentColor"/></svg><b>Gripline</b></a>
+    <nav class="nav" id="nav" aria-label="Navigation"><a href="#services">Prices</a><a href="#book">Book</a><a href="#guide">Tyre guide</a><a href="#faq">FAQ</a><a href="#visit">Visit</a></nav>
+    <div class="top-r">
+      <a class="phone-btn" href="tel:+359880000000" aria-label="Call us"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span>+359 88 000 0000</span></a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="../images/stock/workshop-lift-800.jpg" srcset="../images/stock/workshop-lift-800.jpg 800w, ../images/stock/workshop-lift.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="Inside the workshop: a car on a lift and a wall of tools" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Tyres and service · Plovdiv</p>
+        <h1 id="h1">Tyres. <em>Fast.</em> Fair.</h1>
+        <p class="lead">Swaps, balancing, repairs and storage. Tell us your size and the job, and you see the price and a free time straight away, without calling.</p>
+        <form class="finder" id="finder" aria-labelledby="fnd-h">
+          <h2 id="fnd-h">What is your tyre size?</h2>
+          <div class="sidewall">
+            <label class="sw-f"><span>Width</span><select id="h-width" aria-label="Width"><option value="155">155</option><option value="165">165</option><option value="175">175</option><option value="185">185</option><option value="195">195</option><option value="205" selected>205</option><option value="215">215</option><option value="225">225</option><option value="235">235</option><option value="245">245</option><option value="255">255</option><option value="265">265</option><option value="275">275</option><option value="285">285</option><option value="295">295</option></select></label>
+            <i aria-hidden="true">/</i>
+            <label class="sw-f"><span>Profile</span><select id="h-profile" aria-label="Profile"><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55" selected>55</option><option value="60">60</option><option value="65">65</option><option value="70">70</option><option value="75">75</option></select></label>
+            <i aria-hidden="true">R</i>
+            <label class="sw-f"><span>Rim</span><select id="h-rim" aria-label="Rim"><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16" selected>16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option></select></label>
+          </div>
+          <p class="fnd-out" id="fndOut" role="status"></p>
+          <div class="fnd-actions"><a class="btn btn-main" href="#book" id="fndGo">Book a time for this size</a><span class="fnd-hint">The size is printed on the side of the tyre.</span></div>
+        </form>
+      </div>
+      <section class="live" aria-labelledby="lv-h">
+        <h2 id="lv-h" class="live-h">In the workshop now</h2>
+        <p class="live-state" id="liveState" data-state="unknown"><i aria-hidden="true"></i><span id="liveText">Checking…</span></p>
+        <dl class="live-list">
+          <div><dt>First free time</dt><dd id="liveNext">–</dd></div>
+          <div><dt>Free times today</dt><dd id="liveFree">–</dd></div>
+          <div><dt>Hours today</dt><dd id="liveHours">–</dd></div>
+        </dl>
+        <a class="btn btn-main btn-block" href="#book">Book a time</a>
+        <p class="live-fine">The data is an example and comes from the demo server.</p>
+      </section>
+    </div>
+  </section>
+
+  <!-- ============ Promises ============ -->
+  <section class="promises" aria-label="What we promise">
+    <ul class="wrap prom">
+      <li><b>Price before work</b><span>We tell you up front</span></li>
+      <li><b>About 45 minutes</b><span>to swap 4 wheels</span></li>
+      <li><b>15-minute times</b><span>Two working bays</span></li>
+      <li><b>Storage</b><span>Stacked and labelled</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ Price board ============ -->
+  <section class="block" id="services" aria-labelledby="sv-h">
+    <div class="wrap services">
+      <header class="sec-head">
+        <p class="kicker">Prices</p>
+        <h2 id="sv-h">Price board</h2>
+        <p>Estimated prices for a car. SUVs and vans cost a little more. We confirm the exact amount before we start.</p>
+        <figure class="sv-photo"><img src="../images/stock/wheel-wrench-800.jpg" srcset="../images/stock/wheel-wrench-800.jpg 800w, ../images/stock/wheel-wrench.jpg 1600w" sizes="(min-width: 900px) 520px, 92vw" width="1600" height="1067" alt="An impact wrench on the wheel nuts" loading="lazy" decoding="async"></figure>
+      </header>
+      <ul class="board" aria-label="Price board"><li><div><b>Swap of 4 wheels, up to 15″</b><small>with balancing</small></div><span class="bp">from 28 €</span></li><li><div><b>Swap of 4 wheels, 16″</b><small>with balancing</small></div><span class="bp">from 32 €</span></li><li><div><b>Swap of 4 wheels, 17″</b><small>with balancing</small></div><span class="bp">from 36 €</span></li><li><div><b>Swap of 4 wheels, 18″ and up</b><small>with balancing</small></div><span class="bp">from 40 €</span></li><li><div><b>Puncture repair</b><small>per tyre</small></div><span class="bp">from 10 €</span></li><li><div><b>Wheel alignment</b><small>computer</small></div><span class="bp">from 35 €</span></li><li><div><b>Tyre storage, set</b><small>one season</small></div><span class="bp">from 30 €</span></li><li><div><b>Pressure and tread check</b><small>always</small></div><span class="bp">free</span></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Book a visit ============ -->
+  <section class="block book" id="book" aria-labelledby="bk-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Book a time</p>
+        <h2 id="bk-h">Book your car in</h2>
+        <p>Five short steps. The price slip on the right updates as you choose and shows how long it will take.</p>
+      </header>
+      <form class="book-form" id="bookForm" novalidate>
+        <div class="steps">
+          <fieldset class="step">
+            <legend><b>1</b> Your car</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-make">Make</label><select id="f-make" name="make"><option value="">Choose a make</option><option>Audi</option><option>BMW</option><option>Citroën</option><option>Dacia</option><option>Fiat</option><option>Ford</option><option>Honda</option><option>Hyundai</option><option>Kia</option><option>Mazda</option><option>Mercedes-Benz</option><option>Nissan</option><option>Opel</option><option>Peugeot</option><option>Renault</option><option>Seat</option><option>Škoda</option><option>Toyota</option><option>Volkswagen</option><option>Volvo</option><option value="other">Other</option></select></div>
+              <div class="field"><label for="f-model">Model</label><input id="f-model" name="model" type="text" autocomplete="off" placeholder="e.g. Golf"></div>
+            </div>
+            <div class="vehicle" role="radiogroup" aria-label="Vehicle type"><label class="opt"><input type="radio" name="veh" value="car" checked><span>Car</span></label><label class="opt"><input type="radio" name="veh" value="suv"><span>SUV / 4x4</span></label><label class="opt"><input type="radio" name="veh" value="van"><span>Van</span></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Tyre size</legend>
+            <p class="hint">As on the tyre sidewall: width / profile R rim.</p>
+            <div class="sidewall sidewall-form">
+              <label class="sw-f"><span>Width</span><select id="s-width" name="width"><option value="155">155</option><option value="165">165</option><option value="175">175</option><option value="185">185</option><option value="195">195</option><option value="205" selected>205</option><option value="215">215</option><option value="225">225</option><option value="235">235</option><option value="245">245</option><option value="255">255</option><option value="265">265</option><option value="275">275</option><option value="285">285</option><option value="295">295</option></select></label>
+              <i aria-hidden="true">/</i>
+              <label class="sw-f"><span>Profile</span><select id="s-profile" name="profile"><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55" selected>55</option><option value="60">60</option><option value="65">65</option><option value="70">70</option><option value="75">75</option></select></label>
+              <i aria-hidden="true">R</i>
+              <label class="sw-f"><span>Rim</span><select id="s-rim" name="rim"><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16" selected>16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option></select></label>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> What needs doing?</legend>
+            <div class="opts" role="radiogroup" aria-label="What needs doing?"><label class="opt opt-card"><input type="radio" name="job" value="swap" checked><span><b>Seasonal tyre swap</b><small>Remove, fit and balance 4 of your own wheels</small></span><em class="opt-p" data-price="swap"></em></label><label class="opt opt-card"><input type="radio" name="job" value="new"><span><b>New tyres</b><small>Mounting and balancing 4 new tyres (tyres quoted separately)</small></span><em class="opt-p" data-price="new"></em></label><label class="opt opt-card"><input type="radio" name="job" value="repair"><span><b>Puncture repair</b><small>Inspection, internal repair and balance of 1 tyre</small></span><em class="opt-p" data-price="repair"></em></label><label class="opt opt-card"><input type="radio" name="job" value="check"><span><b>Check-up and advice</b><small>Free tread and pressure check</small></span><em class="opt-p" data-price="check"></em></label></div>
+            <p class="sub-h">Add to the visit</p>
+            <div class="opts"><label class="opt opt-card"><input type="checkbox" name="addon" value="align"><span><b>Wheel alignment</b><small>Computer check and adjustment</small></span><em class="opt-p" data-price="align"></em></label><label class="opt opt-card"><input type="checkbox" name="addon" value="storage"><span><b>Tyre storage</b><small>One season, stacked and labelled</small></span><em class="opt-p" data-price="storage"></em></label><label class="opt opt-card"><input type="checkbox" name="addon" value="tpms"><span><b>TPMS sensor check</b><small>Read and reset 4 sensors</small></span><em class="opt-p" data-price="tpms"></em></label><label class="opt opt-card"><input type="checkbox" name="addon" value="valves"><span><b>New valves</b><small>Set of 4 rubber valves</small></span><em class="opt-p" data-price="valves"></em></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>4</b> When?</legend>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Day"></div>
+            <p class="hint" id="slotHint" role="status">Checking free times…</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Time"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>5</b> Your details</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              <div class="field"><label for="f-plate">Number plate (optional)</label><input id="f-plate" name="plate" type="text" autocomplete="off" placeholder="PB 0000 XX"></div>
+            </div>
+            <div class="field"><label for="f-msg">Note (optional)</label><textarea id="f-msg" name="msg" rows="3"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="slip" aria-labelledby="slip-h">
+          <h3 id="slip-h">Price slip</h3>
+          <p class="slip-car" id="slipCar"></p>
+          <ul class="slip-lines" id="slipLines"></ul>
+          <p class="slip-total"><span>Estimated total</span><b id="slipTotal"></b></p>
+          <p class="slip-time"><span>Time</span><b id="slipTime"></b></p>
+          <p class="slip-fine" id="slipFine">An estimate. We confirm the final price before we start.</p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-main btn-block" type="submit" id="bkSend">Send the request</button>
+          <small class="fine">You pay on site. We only need your name, phone and your car. <a href="privacy.html">Privacy</a></small>
+        </section>
+      </form>
+      <div class="done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Guide ============ -->
+  <section class="block" id="guide" aria-labelledby="gd-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Tyre guide</p>
+        <h2 id="gd-h">Which tyres when</h2>
+        <p>The rule is simple: winter tyres below 7 °C, summer above. Here is the difference in a few words.</p>
+      </header>
+      <ul class="seasons"><li><h3>Summer</h3><p class="chip-t">above 7 °C</p><p>Best grip and shortest braking on dry and wet roads in warm weather.</p></li><li><h3>Winter</h3><p class="chip-t">below 7 °C</p><p>Soft rubber and sipes that hold in cold, snow and slush.</p></li><li><h3>All-season</h3><p class="chip-t">compromise</p><p>Convenient if you drive little in town. Not the best in summer or winter.</p></li></ul>
+      <div class="tread">
+        <div class="tread-copy"><h3>How much tread is enough?</h3><p>The legal minimum is 1.6 mm. Many drivers change summer tyres at 3 mm and winter tyres at 4 mm, because grip falls quickly. If in doubt, bring the car: the check is free.</p></div>
+        <figure class="tread-ph"><img src="../images/stock/tyre-tread-800.jpg" srcset="../images/stock/tyre-tread-800.jpg 800w, ../images/stock/tyre-tread.jpg 1600w" sizes="(min-width: 900px) 300px, 45vw" width="1600" height="1200" alt="A close-up of a tyre tread" loading="lazy" decoding="async"></figure>
+        <figure class="tread-ph tread-ph2"><img src="../images/stock/alloy-wheel-800.jpg" srcset="../images/stock/alloy-wheel-800.jpg 800w, ../images/stock/alloy-wheel.jpg 1600w" sizes="(min-width: 900px) 220px, 40vw" width="1600" height="2395" alt="An alloy wheel on a stack of tyres" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block soft" id="faq" aria-labelledby="fq-h">
+    <div class="wrap faq">
+      <header class="sec-head">
+        <p class="kicker">FAQ</p>
+        <h2 id="fq-h">Common questions</h2>
+      </header>
+      <div class="qas"><details class="qa"><summary>Do I need to book?</summary><p>Not required. We take walk-ins when a bay is free, but with a booking you do not wait. The busiest times are late October and early April.</p></details><details class="qa"><summary>How long does a swap take?</summary><p>About 45 minutes for four wheels. We show the expected time while you choose services.</p></details><details class="qa"><summary>Do you store our tyres?</summary><p>Yes. The set is stacked and labelled with your plate and handed back at the next swap.</p></details><details class="qa"><summary>How do I pay?</summary><p>On site, cash or card, when the work is done. The price you see here is an estimate; we confirm the final price before we start.</p></details><details class="qa"><summary>Do you handle run-flat tyres and sensors?</summary><p>Yes, with the right machine. Mention it in the note so we reserve extra time.</p></details></div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Visit</p>
+        <h2 id="vs-h">Find us</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Monday – Friday</dt><dd>08:00 – 18:00</dd></div><div data-hrs="we"><dt>Saturday and Sunday</dt><dd>09:00 – 14:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Address</b><span>40 Primer St., Plovdiv</span></li>
+          <li><b>Phone</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Email</b><a href="mailto:service@example.com">service@example.com</a></li>
+        </ul>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="../images/stock/garage-tyres-800.jpg" srcset="../images/stock/garage-tyres-800.jpg 800w, ../images/stock/garage-tyres.jpg 1600w" sizes="(min-width: 900px) 520px, 92vw" width="1600" height="1067" alt="Tyres and wheels stacked along the workshop wall" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map loads from OpenStreetMap only when you ask for it.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Gripline. Everything here is an example.</span>
+    <span class="foot-links"><a href="privacy.html">Privacy</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar">
+  <a class="btn btn-line btn-sm" href="tel:+359880000000">Call</a>
+  <a class="btn btn-main btn-sm" href="#book">Book</a>
+</div>
+
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Hazard</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="hazard" style="--s1:#15171A;--s2:#FFC400" aria-pressed="false" aria-label="Hazard"></button><button class="sw" type="button" data-skin="redline" style="--s1:#17110F;--s2:#FF4B3E" aria-pressed="false" aria-label="Redline"></button><button class="sw" type="button" data-skin="cobalt" style="--s1:#0E1626;--s2:#4DA3FF" aria-pressed="false" aria-label="Cobalt"></button><button class="sw" type="button" data-skin="forest" style="--s1:#0F1A14;--s2:#7BE08C" aria-pressed="false" aria-label="Forest"></button><button class="sw" type="button" data-skin="concrete" style="--s1:#ECEDEA;--s2:#FFC400" aria-pressed="false" aria-label="Concrete"></button></div>
+</aside>
+
+<script type="application/json" id="gripData">{"base": 28, "perInch": 4, "vehicles": [{"id": "car", "add": 0, "name": "Car"}, {"id": "suv", "add": 8, "name": "SUV / 4x4"}, {"id": "van", "add": 10, "name": "Van"}], "jobs": [{"id": "swap", "name": "Seasonal tyre swap", "kind": "size", "price": 28, "min": 45}, {"id": "new", "name": "New tyres", "kind": "size", "price": 40, "min": 60}, {"id": "repair", "name": "Puncture repair", "kind": "fixed", "price": 10, "min": 25}, {"id": "check", "name": "Check-up and advice", "kind": "fixed", "price": 0, "min": 15}], "addons": [{"id": "align", "name": "Wheel alignment", "kind": "fixed", "price": 35, "min": 40}, {"id": "storage", "name": "Tyre storage", "kind": "storage", "price": 30, "min": 10}, {"id": "tpms", "name": "TPMS sensor check", "kind": "fixed", "price": 12, "min": 10}, {"id": "valves", "name": "New valves", "kind": "fixed", "price": 8, "min": 5}]}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

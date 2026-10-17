@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="bg" data-skin="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F2ECDD">
+<title>Hollis &amp; Dane – бръснарница в Пловдив: подстригване, бръснене и брада</title>
+<meta name="description" content="Бръснарница в Пловдив. Виж таблото със столовете, избери бръснар и час и запази онлайн. Подстригване, преходи, брада и бръснене с гореща кърпа.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hollis &amp; Dane – бръснарница в Пловдив: подстригване, бръснене и брада">
+<meta property="og:description" content="Бръснарница в Пловдив. Виж таблото със столовете, избери бръснар и час и запази онлайн. Подстригване, преходи, брада и бръснене с гореща кърпа.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/chair-man.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("hollisSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"Hollis & Dane Barbers","inLanguage":"bg",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-20:00", "Sa-Su 10:00-18:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<!-- Masthead: a newspaper title block, then a sticky bar with the links -->
+<header class="mast" id="top">
+  <div class="wrap mast-top">
+    <span class="mast-date" id="mastDate">Пловдивско издание</span>
+    <span class="mast-motto">Остри прически от първия клиент</span>
+    <span class="mast-r">
+      <a class="tel" href="tel:+359000000000">+359 000 000 000</a>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+    </span>
+  </div>
+  <div class="wrap mast-title">
+    <a class="logo" href="index.html">Hollis &amp; Dane</a>
+    <p class="mast-sub">Бръснарница и бръснене с гореща кърпа</p>
+  </div>
+</header>
+<div class="navbar">
+  <div class="wrap navbar-in">
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Основна навигация">
+      <a href="#services">Цени</a>
+      <a href="#barbers">Бръснари</a>
+      <a href="#book">Час</a>
+      <a href="#work">Работи</a>
+      <a href="#reviews">Писма</a>
+      <a href="#visit">Адрес</a>
+    </nav>
+    <button class="btn btn-main btn-sm" type="button" data-book>Запази стол</button>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ Front page ============ -->
+  <section class="front wrap" aria-labelledby="h1">
+    <div class="front-main">
+      <p class="kicker">Първа страница · Новините от стола днес</p>
+      <h1 id="h1">Свежа прическа.<em> Добри новини.</em></h1>
+      <p class="deck">Квартална бръснарница с три стола. Виж кой е свободен на таблото, избери бръснар и час и седни.</p>
+      <div class="front-actions">
+        <button class="btn btn-main" type="button" data-book>Запази стол</button>
+        <a class="btn btn-line" href="#services">Виж цените</a>
+      </div>
+    </div>
+    <figure class="front-photo">
+      <img src="images/stock/chair-man.jpg" srcset="images/stock/chair-man-800.jpg 800w, images/stock/chair-man.jpg 1600w" sizes="(min-width: 1000px) 40vw, 92vw" width="1600" height="1067" alt="Клиент се е облегнал в бръснарския стол, докато му подрязват брадата" fetchpriority="high" decoding="async">
+      <figcaption>Оформяне на брада на втори стол. Снимка: пример.</figcaption>
+    </figure>
+    <section class="front-side" aria-labelledby="today-h">
+      <h2 id="today-h">Днес в салона</h2>
+      <p class="status off" id="openNow">Проверяваме работното време…</p>
+      <p class="nextfree" id="nextFree" hidden></p>
+      <h3>Най-търсени</h3>
+      <ul class="mini">
+        <li><span>Подстригване <small>40 мин</small></span><b>15 €</b></li>
+        <li><span>Бръснене с гореща кърпа и бръснач <small>40 мин</small></span><b>15 €</b></li>
+        <li><span>Подстригване и брада <small>1 ч</small></span><b>22 €</b></li>
+      </ul>
+      <p class="side-note">Пон – Пет 09:00 – 20:00 · Съб – Нед 10:00 – 18:00</p>
+    </section>
+  </section>
+
+  <!-- ============ Price list ============ -->
+  <section class="block" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Ценова листа</p>
+        <h2 id="svc-h">Колко струва едно посещение</h2>
+        <p>До всяка услуга има време и цена. Натисни Запази и таблото се отваря с избраната услуга.</p>
+      </header>
+      <div class="pricelist">
+        <section class="pl-col"><h3>Коса</h3><ul><li><span class="pl-name">Подстригване<small>40 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">15 €</b><button class="pl-book" type="button" data-book data-service="haircut" aria-label="Запази: Подстригване">Запази</button></li><li><span class="pl-name">Преход до кожа или детайлно оформяне<small>50 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">18 €</b><button class="pl-book" type="button" data-book data-service="fade" aria-label="Запази: Преход до кожа или детайлно оформяне">Запази</button></li><li><span class="pl-name">Машинка, една дължина<small>25 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">10 €</b><button class="pl-book" type="button" data-book data-service="buzz" aria-label="Запази: Машинка, една дължина">Запази</button></li><li><span class="pl-name">Детско подстригване, до 12 г.<small>30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">12 €</b><button class="pl-book" type="button" data-book data-service="kids" aria-label="Запази: Детско подстригване, до 12 г.">Запази</button></li></ul></section>
+        <section class="pl-col"><h3>Брада и бръснене</h3><ul><li><span class="pl-name">Подстригване и оформяне на брада<small>30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">10 €</b><button class="pl-book" type="button" data-book data-service="beard" aria-label="Запази: Подстригване и оформяне на брада">Запази</button></li><li><span class="pl-name">Бръснене с гореща кърпа и бръснач<small>40 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">15 €</b><button class="pl-book" type="button" data-book data-service="shave" aria-label="Запази: Бръснене с гореща кърпа и бръснач">Запази</button></li><li><span class="pl-name">Бръснене на глава<small>30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">15 €</b><button class="pl-book" type="button" data-book data-service="head" aria-label="Запази: Бръснене на глава">Запази</button></li></ul></section>
+        <section class="pl-col"><h3>Комбинации</h3><ul><li><span class="pl-name">Подстригване и брада<small>1 ч</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">22 €</b><button class="pl-book" type="button" data-book data-service="hair_beard" aria-label="Запази: Подстригване и брада">Запази</button></li><li><span class="pl-name">Преход до кожа и брада<small>1 ч 10 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">25 €</b><button class="pl-book" type="button" data-book data-service="fade_beard" aria-label="Запази: Преход до кожа и брада">Запази</button></li><li><span class="pl-name">Подстригване и бръснене с гореща кърпа<small>1 ч 15 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">28 €</b><button class="pl-book" type="button" data-book data-service="hair_shave" aria-label="Запази: Подстригване и бръснене с гореща кърпа">Запази</button></li></ul></section>
+        <section class="pl-col"><h3>Допълнения</h3><ul><li><span class="pl-name">Измиване и стилизиране<small>10 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">5 €</b></li><li><span class="pl-name">Вежди, уши и нос<small>10 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">5 €</b></li><li><span class="pl-name">Прикриване на бели коси<small>30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="pl-price">15 €</b></li></ul></section>
+      </div>
+      <p class="svc-note">Примерни цени в евро, по бръснарници в Пловдив.</p>
+    </div>
+  </section>
+
+  <!-- ============ Staff ============ -->
+  <section class="block tint" id="barbers" aria-labelledby="team-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Екипът</p>
+        <h2 id="team-h">Запознай се с бръснарите</h2>
+        <p>Имената и снимките са примерни. Запази при този, който ти харесва, или вземи първия свободен стол от таблото.</p>
+      </header>
+      <div class="staff">
+        <article class="bcard"><img src="images/stock/bearded-man-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><div class="bcard-body"><h3>Theo</h3><p class="role">Бради и бръснач</p><p>Бавна, внимателна работа по брадите и бръсненето с гореща кърпа. Запази повече време и се отпусни.</p><button class="btn btn-line btn-sm" type="button" data-book data-barber="theo">Запази при Theo</button></div></article>
+        <article class="bcard"><img src="images/stock/haircut-shop-2-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><div class="bcard-body"><h3>Ivan</h3><p class="role">Преходи до кожа и детайли</p><p>Чисти линии и остри краища. Носиш снимка? Ще я пресъздаде.</p><button class="btn btn-line btn-sm" type="button" data-book data-barber="ivan">Запази при Ivan</button></div></article>
+        <article class="bcard"><img src="images/stock/white-shirt-cut-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><div class="bcard-body"><h3>Marco</h3><p class="role">Класически прически и ножица</p><p>Работа с ножица, класическо късо отзад и отстрани и спокоен стол.</p><button class="btn btn-line btn-sm" type="button" data-book data-barber="marco">Запази при Marco</button></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Booking: the chair board ============ -->
+  <section class="block" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Табло със столове</p>
+        <h2 id="book-h">Избери стол и час</h2>
+        <p>Избери услуга и ден. Всяка колона е бръснар, всеки ред е начален час. Натисни свободно квадратче, за да го заемеш.</p>
+      </header>
+      <form class="bk" id="bookForm" novalidate>
+        <div class="bk-ctl">
+          <div class="bk-step">
+            <p class="bk-n"><b>1</b> Твоята услуга</p>
+            <div class="field"><label for="b-svc">Услуга</label>
+              <select id="b-svc" name="service">
+                <optgroup label="Коса"><option value="haircut" data-name="Подстригване" data-min="40" data-price="15" selected>Подстригване · 40 мин · 15 €</option><option value="fade" data-name="Преход до кожа или детайлно оформяне" data-min="50" data-price="18">Преход до кожа или детайлно оформяне · 50 мин · 18 €</option><option value="buzz" data-name="Машинка, една дължина" data-min="25" data-price="10">Машинка, една дължина · 25 мин · 10 €</option><option value="kids" data-name="Детско подстригване, до 12 г." data-min="30" data-price="12">Детско подстригване, до 12 г. · 30 мин · 12 €</option></optgroup>
+                <optgroup label="Брада и бръснене"><option value="beard" data-name="Подстригване и оформяне на брада" data-min="30" data-price="10">Подстригване и оформяне на брада · 30 мин · 10 €</option><option value="shave" data-name="Бръснене с гореща кърпа и бръснач" data-min="40" data-price="15">Бръснене с гореща кърпа и бръснач · 40 мин · 15 €</option><option value="head" data-name="Бръснене на глава" data-min="30" data-price="15">Бръснене на глава · 30 мин · 15 €</option></optgroup>
+                <optgroup label="Комбинации"><option value="hair_beard" data-name="Подстригване и брада" data-min="60" data-price="22">Подстригване и брада · 1 ч · 22 €</option><option value="fade_beard" data-name="Преход до кожа и брада" data-min="70" data-price="25">Преход до кожа и брада · 1 ч 10 мин · 25 €</option><option value="hair_shave" data-name="Подстригване и бръснене с гореща кърпа" data-min="75" data-price="28">Подстригване и бръснене с гореща кърпа · 1 ч 15 мин · 28 €</option></optgroup>
+              </select>
+            </div>
+            <fieldset class="extras"><legend>Добави допълнения</legend>
+              <label class="xc"><input type="checkbox" name="extra" value="wash" data-name="Измиване и стилизиране" data-min="10" data-price="5"><span>Измиване и стилизиране <small>+ 10 мин · + 5 €</small></span></label>
+              <label class="xc"><input type="checkbox" name="extra" value="trim" data-name="Вежди, уши и нос" data-min="10" data-price="5"><span>Вежди, уши и нос <small>+ 10 мин · + 5 €</small></span></label>
+              <label class="xc"><input type="checkbox" name="extra" value="grey" data-name="Прикриване на бели коси" data-min="30" data-price="15"><span>Прикриване на бели коси <small>+ 30 мин · + 15 €</small></span></label>
+            </fieldset>
+            <p class="bk-total" id="bkTotal" aria-live="polite"></p>
+          </div>
+          <div class="bk-step">
+            <p class="bk-n"><b>2</b> Твоят ден</p>
+            <div class="days">
+              <button class="rail-btn" type="button" id="dayPrev" aria-label="По-ранни дни">‹</button>
+              <div class="day-strip" id="dayStrip" role="group" aria-label="Твоят ден"></div>
+              <button class="rail-btn" type="button" id="dayNext" aria-label="По-късни дни">›</button>
+            </div>
+            <p class="hint" id="boardHint" role="status">Проверяваме свободните часове…</p>
+          </div>
+        </div>
+        <div class="board-wrap">
+          <p class="bk-n"><b>3</b> Свободни столове</p>
+          <div class="board" id="board" role="group" aria-label="Свободни столове по бръснар и час" aria-busy="true"></div>
+          <p class="legend"><span><i class="lg free"></i>Свободно</span><span><i class="lg taken"></i>Заето</span><span><i class="lg sel"></i>Твоят избор</span></p>
+        </div>
+        <div class="bk-me" id="bkMe">
+          <p class="bk-n"><b>4</b> Твоите данни</p>
+          <div class="chosen-slot" id="chosen" aria-live="polite">Натисни свободно квадратче на таблото, за да избереш стол.</div>
+          <div class="chosen" id="lookChip" hidden>
+            <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+            <div><b>Прическа, която ти харесва</b><span id="lookText"></span></div>
+            <button type="button" id="lookRemove" aria-label="Премахни">×</button>
+          </div>
+          <div class="me-grid">
+            <div class="field"><label for="b-name">Твоето име</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="b-phone">Телефон</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="b-msg">Съобщение (по желание)</label><textarea id="b-msg" name="msg"></textarea></div>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <div class="me-foot">
+            <button class="btn btn-main" type="submit" id="bkSend">Запази този стол</button>
+            <small class="hint">Ползваме данните ти само за да отговорим на заявката ти. <a href="privacy.html">Политика за поверителност</a></small>
+          </div>
+        </div>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Work ============ -->
+  <section class="block tint" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Стената</p>
+        <h2 id="work-h">Последни работи</h2>
+        <p>Стена от прически, бради и салона. Натисни снимка, за да я видиш по-голяма или да запазиш такава прическа.</p>
+      </header>
+      <div class="clip">
+        <button class="clip-item" type="button" data-cat="cut" data-full="images/stock/beard-scissors.jpg" aria-label="Отвори снимката: Черно-бяла снимка на бръснар, който подрязва брадата на татуиран клиент"><img src="images/stock/beard-scissors-800.jpg" width="800" height="1204" alt="Черно-бяла снимка на бръснар, който подрязва брадата на татуиран клиент" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="shop" data-full="images/stock/leather-chair-brick.jpg" aria-label="Отвори снимката: Кожени бръснарски столове пред тухлена стена и огледала"><img src="images/stock/leather-chair-brick-800.jpg" width="800" height="532" alt="Кожени бръснарски столове пред тухлена стена и огледала" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="cut" data-full="images/stock/haircut-focus.jpg" aria-label="Отвори снимката: Close-up на машинка, която оформя преход отзад на главата"><img src="images/stock/haircut-focus-800.jpg" width="800" height="1200" alt="Close-up на машинка, която оформя преход отзад на главата" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="cut" data-full="images/stock/shaving.jpg" aria-label="Отвори снимката: Черно-бяла снимка на клиент с пяна за бръснене по брадата"><img src="images/stock/shaving-800.jpg" width="800" height="534" alt="Черно-бяла снимка на клиент с пяна за бръснене по брадата" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="shop" data-full="images/stock/pendant-lamps.jpg" aria-label="Отвори снимката: Редица бръснарски столове под топли висящи лампи"><img src="images/stock/pendant-lamps-800.jpg" width="800" height="1200" alt="Редица бръснарски столове под топли висящи лампи" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="cut" data-full="images/stock/thinning-shears.jpg" aria-label="Отвори снимката: Бръснар изтънява тъмна коса с гребен и ножица"><img src="images/stock/thinning-shears-800.jpg" width="800" height="1200" alt="Бръснар изтънява тъмна коса с гребен и ножица" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="cut" data-full="images/stock/straight-razor.jpg" aria-label="Отвори снимката: Татуирана ръка почиства линията на врата с бръснач"><img src="images/stock/straight-razor-800.jpg" width="800" height="1198" alt="Татуирана ръка почиства линията на врата с бръснач" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="shop" data-full="images/stock/clippers-tools.jpg" aria-label="Отвори снимката: Машинки, ножици, гребен и продукти за грижа върху тъмна подложка"><img src="images/stock/clippers-tools-800.jpg" width="800" height="534" alt="Машинки, ножици, гребен и продукти за грижа върху тъмна подложка" loading="lazy" decoding="async"></button>
+        <button class="clip-item" type="button" data-cat="cut" data-full="images/stock/scissors-cut.jpg" aria-label="Отвори снимката: Бръснар подстригва клиент с ножица"><img src="images/stock/scissors-cut-800.jpg" width="800" height="1000" alt="Бръснар подстригва клиент с ножица" loading="lazy" decoding="async"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Letters ============ -->
+  <section class="block dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Писма</p>
+        <h2 id="rev-h">Писма до редактора</h2>
+      </header>
+      <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span>Примерна оценка. Заменете я с истинската си оценка в Google.</span></div>
+      <div class="letters">
+        <figure class="letter"><blockquote>Най-добрият преход от години. Чиста работа, а след три седмици още изглеждаше остро.</blockquote><figcaption><b>Преход до кожа</b> · Примерен клиент</figcaption></figure>
+        <figure class="letter"><blockquote>Дойдох със снимка и излязох точно с такава прическа. Приятелска атмосфера и без дълго чакане.</blockquote><figcaption><b>Подстригване и брада</b> · Примерен клиент</figcaption></figure>
+        <figure class="letter"><blockquote>Бръсненето с гореща кърпа си заслужава. Безупречен салон и цената беше ясна още преди да си запазя час.</blockquote><figcaption><b>Бръснене с гореща кърпа</b> · Примерен клиент</figcaption></figure>
+      </div>
+      <p class="rev-note">Примерни писма. Заменете ги с истински отзиви от Google.</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit and questions ============ -->
+  <section class="block" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">Адрес</p>
+        <h2 id="visit-h">Намери салона</h2>
+        <p class="status off" id="statusBox">Проверяваме работното време…</p>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Адрес</dt><dd>ул. Примерна 1, Пловдив</dd>
+          <dt>Работно време</dt><dd>Пон – Пет 09:00 – 20:00 · Съб – Нед 10:00 – 18:00</dd>
+          <dt>Телефон</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Имейл</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата е от OpenStreetMap и се зарежда само ако поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Въпроси</p>
+        <h2 id="faq-h">Добре е да знаеш</h2>
+        <div class="faq-list">
+          <details><summary>Нужен ли е час?</summary><p>Препоръчваме да запазиш час, за да не чакаш. Избери свободно квадратче на таблото. Приемаме и без час, когато има свободен стол.</p></details>
+          <details><summary>Колко време отнема посещението?</summary><p>Подстригването отнема около 40 минути, а подстригване с брада – около час. В ценовата листа е посочено времето за всяка услуга.</p></details>
+          <details><summary>Мога ли да донеса снимка на прическата, която искам?</summary><p>Да. Натисни снимка на стената, за да запазиш такава прическа, или покажи своя снимка на бръснаря.</p></details>
+          <details><summary>Подстригвате ли деца?</summary><p>Да. Децата до 12 години имат собствена цена.</p></details>
+          <details><summary>Какво става, ако трябва да отменя или закъснея?</summary><p>Предупреди ни възможно най-рано, за да предложим часа на друг клиент. При закъснение над 10 минути може да се наложи услугата да бъде съкратена.</p></details>
+          <details><summary>Мога ли да платя с карта?</summary><p>Да, приемаме плащане в брой и с карта.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">Hollis &amp; Dane</span>
+    <span>© <span id="year">2026</span> Hollis &amp; Dane Barbers · Бръснарница в Пловдив</span>
+    <span class="foot-links"><a href="privacy.html">Политика за поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Вестникарска хартия</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="paper" data-name="Вестникарска хартия" aria-label="Цветова схема: Вестникарска хартия" title="Вестникарска хартия" aria-pressed="true" style="--s1:#F2ECDD;--s2:#8C1D18"></button>
+        <button class="sw" type="button" data-skin="ink" data-name="Нощно издание" aria-label="Цветова схема: Нощно издание" title="Нощно издание" aria-pressed="false" style="--s1:#14161C;--s2:#E2B34B"></button>
+        <button class="sw" type="button" data-skin="sage" data-name="Градински зелен" aria-label="Цветова схема: Градински зелен" title="Градински зелен" aria-pressed="false" style="--s1:#E6ECE0;--s2:#2F6B4F"></button>
+        <button class="sw" type="button" data-skin="rose" data-name="Прашна роза" aria-label="Цветова схема: Прашна роза" title="Прашна роза" aria-pressed="false" style="--s1:#F5E4DF;--s2:#A33B55"></button>
+        <button class="sw" type="button" data-skin="cobalt" data-name="Кобалтово синьо" aria-label="Цветова схема: Кобалтово синьо" title="Кобалтово синьо" aria-pressed="false" style="--s1:#E4EBF7;--s2:#1F4BC2"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Бърза връзка">
+  <a href="tel:+359000000000">Обади се</a>
+  <button type="button" data-book>Запази</button>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Снимка">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Затвори">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Предишна снимка">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="Следваща снимка">›</button>
+    <button class="lb-act" type="button" id="lbRequest">Запази тази прическа</button>
+  </div>
+</dialog>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

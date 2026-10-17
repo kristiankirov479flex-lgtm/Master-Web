@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" data-skin="teal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F4F8F8">
+<title>Lapa Vet – veterinary clinic in Plovdiv. Book an appointment online</title>
+<meta name="description" content="Lapa Vet is a veterinary clinic for dogs and cats in Plovdiv: two experienced vets, with a lab, ultrasound and operating room on site. See the prices and book an appointment.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lapa Vet – veterinary clinic in Plovdiv. Book an appointment online">
+<meta property="og:description" content="Lapa Vet is a veterinary clinic for dogs and cats in Plovdiv: two experienced vets, with a lab, ultrasound and operating room on site. See the prices and book an appointment.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/dachshund.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/alegreya-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("lapaSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VeterinaryCare","name":"Lapa Vet","inLanguage":"en","telephone":"+359880000000","email":"clinic@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 21","addressLocality":"Plovdiv","addressCountry":"BG"},"openingHours":["Mo-Fr 09:00-19:00","Sa-Su 10:00-14:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="topbar" aria-label="Opening hours and emergencies">
+  <ul class="wrap topbar-in">
+    <li><b>Today</b> <span id="todayHours">09:00 – 19:00</span></li>
+    <li><span>21 Primer St., Plovdiv</span></li>
+    <li><b>24 hours:</b> <a href="tel:+359880000001">+359 88 000 0001</a></li>
+  </ul>
+</aside>
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html">Lapa <span>Vet</span></a>
+    <nav class="nav" id="nav" aria-label="Navigation"><a href="#team">Our vets</a><a href="#services">Services and prices</a><a href="#care">First visit</a><a href="#book">Book</a><a href="#visit">Contact</a></nav>
+    <div class="top-r">
+      <a class="call" href="tel:+359880000000"><span class="call-l">Call</span> <b>+359 88 000 0000</b></a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Veterinary clinic · Plovdiv</p>
+        <h1 id="h1">A veterinary clinic you can trust</h1>
+        <p class="lead">Two experienced vets, our own lab, ultrasound and operating room. We explain everything and tell you the price before we begin.</p>
+        <p class="hero-links"><a class="btn btn-main" href="#book">Book an appointment</a> <a class="btn btn-line" href="tel:+359880000000">Call us</a></p>
+        <p class="hero-note">We see dogs, cats and small pets.</p>
+      </div>
+      <figure class="hero-ph"><img src="../images/stock/dachshund-800.jpg" srcset="../images/stock/dachshund-800.jpg 800w, ../images/stock/dachshund.jpg 1600w" sizes="(min-width: 900px) 490px, calc(100vw - 40px)" width="1600" height="2400" alt="A veterinarian examining a dachshund" loading="eager" fetchpriority="high"></figure>
+    </div>
+  </section>
+
+  <!-- ============ Why trust us ============ -->
+  <section class="trustbar" aria-labelledby="tr-h">
+    <div class="wrap">
+      <h2 id="tr-h" class="sr-only">Why owners trust us</h2>
+      <ul class="trust"><li><h3>2 vets</h3><p>11 and 9 years of experience. At every visit you know who will see the animal.</p></li><li><h3>Everything on site</h3><p>A lab, an ultrasound machine and an operating room. We do not send you elsewhere for the basics.</p></li><li><h3>Price before treatment</h3><p>We tell you the price before we start and add nothing without your consent.</p></li><li><h3>A written summary</h3><p>After every visit you get a short summary: what we found and what to do.</p></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Emergency ============ -->
+  <section class="emerg" aria-labelledby="em-h">
+    <div class="wrap emerg-in">
+      <div>
+        <h2 id="em-h">An emergency?</h2>
+        <p>During opening hours call us and come right away. We are not a 24-hour clinic: at night and on Sundays call the clinic we recommend.</p>
+      </div>
+      <p class="emerg-tel"><a class="btn btn-main" href="tel:+359880000000">Clinic: +359 88 000 0000</a> <a class="btn btn-line" href="tel:+359880000001">24 hours: +359 88 000 0001</a></p>
+    </div>
+  </section>
+
+  <!-- ============ Vets ============ -->
+  <section class="block" id="team" aria-labelledby="tm-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="tm-h">The vets who will look after your animal</h2>
+        <p>A small team. You know who will see your animal and what experience they have.</p>
+      </header>
+      <ul class="vets"><li><figure><img src="../images/stock/vet-woman-800.jpg" srcset="../images/stock/vet-woman-800.jpg 800w, ../images/stock/vet-woman.jpg 1600w" sizes="(min-width: 521px) 150px, calc(100vw - 82px)" width="1600" height="2400" alt="Dr. Maria Georgieva" loading="lazy" decoding="async"></figure><div><h3>Dr. Maria Georgieva</h3><p class="role">Veterinarian, 11 years of experience</p><p>Cats, dogs, vaccines and prevention. She explains everything simply and never hurries.</p><ul class="creds"><li>Master of Veterinary Medicine, 2013</li><li>Member of the veterinary chamber, reg. no. 0000</li><li>Trained in calm, low-stress handling</li></ul></div></li><li><figure><img src="../images/stock/vet-man-800.jpg" srcset="../images/stock/vet-man-800.jpg 800w, ../images/stock/vet-man.jpg 1600w" sizes="(min-width: 521px) 150px, calc(100vw - 82px)" width="1600" height="2000" alt="Dr. Stefan Kolev" loading="lazy" decoding="async"></figure><div><h3>Dr. Stefan Kolev</h3><p class="role">Veterinary surgeon, 9 years of experience</p><p>Neutering, teeth, wounds and ultrasound. He works slowly and explains the plan before surgery.</p><ul class="creds"><li>Master of Veterinary Medicine, 2015</li><li>Member of the veterinary chamber, reg. no. 0000</li><li>Postgraduate training in soft tissue surgery</li></ul></div></li></ul>
+      <p class="p-note">Names, diplomas and registration numbers are examples.</p>
+    </div>
+  </section>
+
+  <!-- ============ Services and prices ============ -->
+  <section class="block soft" id="services" aria-labelledby="sv-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="sv-h">Services and prices</h2>
+        <p>Prices are in euros. “From” means the exact price depends on the animal and we tell you beforehand.</p>
+      </header>
+      <div class="sgroups"><div class="sgroup"><h3>Prevention</h3><table class="plist"><caption class="sr-only">Prevention</caption><tbody><tr><th scope="row">Check-up<small>Dog or cat, with a talk and advice · 30 min</small></th><td>€25</td></tr><tr><th scope="row">Dog vaccination<small>Combined vaccine and rabies vaccine · 30 min</small></th><td>€20</td></tr><tr><th scope="row">Cat vaccination<small>Combined vaccine, rabies on request · 30 min</small></th><td>€18</td></tr><tr><th scope="row">Microchip and passport<small>Chip implant and registration · 30 min</small></th><td>€15</td></tr><tr><th scope="row">Parasite treatment<small>A product chosen for the weight · 30 min</small></th><td>€12</td></tr></tbody></table></div><div class="sgroup"><h3>Diagnostics</h3><table class="plist"><caption class="sr-only">Diagnostics</caption><tbody><tr><th scope="row">Ultrasound scan<small>Abdomen, heart or pregnancy · 30 min</small></th><td>€30</td></tr><tr><th scope="row">Blood tests<small>Result the same day, in our own lab · 30 min</small></th><td>from €35</td></tr></tbody></table></div><div class="sgroup"><h3>Dental and surgery</h3><table class="plist"><caption class="sr-only">Dental and surgery</caption><tbody><tr><th scope="row">Dental cleaning<small>Under sedation, with an exam before · 60 min</small></th><td>from €60</td></tr><tr><th scope="row">Neutering<small>A pre-visit exam and blood tests · 60 min</small></th><td>from €70</td></tr></tbody></table></div></div>
+      <p class="p-note sv-note">Payment by cash or card after the visit. Medicines are paid separately.</p>
+    </div>
+  </section>
+
+  <!-- ============ Equipment ============ -->
+  <section class="block" aria-labelledby="eq-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="eq-h">What we have on site</h2>
+        <p>You do not need to go elsewhere for tests. We do most things here, on the day of the visit.</p>
+      </header>
+      <ul class="equip">
+        <li><figure><img src="../images/stock/surgery-800.jpg" srcset="../images/stock/surgery-800.jpg 800w, ../images/stock/surgery.jpg 1600w" sizes="(min-width: 900px) 364px, calc(100vw - 40px)" width="1600" height="900" alt="A bright operating room with a surgical table and lamp" loading="lazy" decoding="async"></figure><p>An operating room for neutering, teeth and wounds</p></li>
+        <li><figure><img src="../images/stock/lab-800.jpg" srcset="../images/stock/lab-800.jpg 800w, ../images/stock/lab.jpg 1600w" sizes="(min-width: 900px) 364px, calc(100vw - 40px)" width="1600" height="1067" alt="A laboratory with a microscope and equipment" loading="lazy" decoding="async"></figure><p>A lab: blood, urine and samples the same day</p></li>
+        <li><figure><img src="../images/stock/scan-room-800.jpg" srcset="../images/stock/scan-room-800.jpg 800w, ../images/stock/scan-room.jpg 1600w" sizes="(min-width: 900px) 364px, calc(100vw - 40px)" width="1600" height="2400" alt="A dog in the room with the ultrasound machine" loading="lazy" decoding="async"></figure><p>Ultrasound for abdomen, heart and pregnancy</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ First visit and care ============ -->
+  <section class="block soft" id="care" aria-labelledby="cr-h">
+    <div class="wrap care">
+      <div>
+        <header class="sec-head"><h2 id="cr-h">Your first visit</h2><p>You know what will happen and why. We do nothing without explaining.</p></header>
+        <ul class="care-list"><li><h3>A talk first</h3><p>We ask what you noticed and since when. Only then do we examine.</p></li><li><h3>Consent before a procedure</h3><p>We explain what we will do, what it costs and the risks. We begin when you say yes.</p></li><li><h3>Clean and sterile</h3><p>Single-use needles and gloves. The table is disinfected after every animal.</p></li><li><h3>Cats and dogs apart</h3><p>Cats have their own waiting time, away from barking dogs. Ask when you book.</p></li></ul>
+      </div>
+      <div class="bring">
+        <h3>What to bring</h3>
+        <ul class="ticks"><li>The vaccination booklet or passport</li><li>Old test results, if you have any</li><li>A fresh urine or stool sample, if it is for that</li><li>A lead for the dog, a carrier for the cat</li><li>When it last ate and drank</li></ul>
+        <figure><img src="../images/stock/kitten-800.jpg" srcset="../images/stock/kitten-800.jpg 800w, ../images/stock/kitten.jpg 1600w" sizes="(min-width: 900px) 400px, calc(100vw - 40px)" width="1600" height="1067" alt="A white kitten at a check-up" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Vaccines ============ -->
+  <section class="block" id="vaccines" aria-labelledby="vc-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="vc-h">Vaccines: when?</h2>
+        <p>This is only a guide. The vet sets the schedule for the animal, its earlier vaccines and where it lives.</p>
+      </header>
+      <div class="vgrid"><div class="vcard"><h3>Dog</h3><ol><li><b>6–8 weeks</b><span>First combined vaccine</span></li><li><b>10–12 weeks</b><span>Second combined vaccine</span></li><li><b>14–16 weeks</b><span>Third vaccine and rabies</span></li><li><b>Every year</b><span>Booster</span></li></ol></div><div class="vcard"><h3>Cat</h3><ol><li><b>8–9 weeks</b><span>First combined vaccine</span></li><li><b>12 weeks</b><span>Second vaccine, rabies on request</span></li><li><b>Every year</b><span>Booster</span></li></ol></div></div>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="block soft" id="book" aria-labelledby="bk-h">
+    <div class="wrap narrow">
+      <header class="sec-head">
+        <h2 id="bk-h">Book an appointment</h2>
+        <p>Choose the animal, the reason, a day and a time. We only call you if something has to change. In an emergency, please call.</p>
+      </header>
+      <form class="res" id="apptForm" novalidate>
+        <fieldset class="group"><legend>Which animal?</legend>
+          <div class="opts"><label class="opt"><input type="radio" name="species" value="dog" checked><span>Dog</span></label><label class="opt"><input type="radio" name="species" value="cat"><span>Cat</span></label><label class="opt"><input type="radio" name="species" value="other"><span>Other (rabbit, bird…)</span></label></div>
+        </fieldset>
+        <div class="row2">
+          <div class="field"><label for="f-pet">Animal’s name</label><input id="f-pet" name="pet" type="text" autocomplete="off" required></div>
+          <div class="field"><label for="f-service">Reason</label><select id="f-service" name="service"><option value="exam" data-min="30">Check-up</option><option value="vdog" data-min="30">Dog vaccination</option><option value="vcat" data-min="30">Cat vaccination</option><option value="chip" data-min="30">Microchip and passport</option><option value="worm" data-min="30">Parasite treatment</option><option value="scan" data-min="30">Ultrasound scan</option><option value="blood" data-min="30">Blood tests</option><option value="dental" data-min="60">Dental cleaning</option><option value="neuter" data-min="60">Neutering</option><option value="other" data-min="30">Something else / not sure</option></select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-date">Date</label><input id="f-date" name="date" type="date" required></div>
+          <div class="field"><label for="f-time">Time</label><select id="f-time" name="time" required></select></div>
+        </div>
+        <p class="hint" id="timeHint" role="status">Choose a reason and a date to see the free times.</p>
+        <div class="row2">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="f-msg">Note (optional)</label><textarea id="f-msg" name="msg" rows="3"></textarea><p class="hint">For example: age, breed, how long the problem has lasted.</p></div>
+        <p class="demo-note" id="demoNote" hidden></p>
+        <p class="form-error" id="aError" role="alert" hidden></p>
+        <button class="btn btn-main" type="submit" id="aSend">Request the appointment</button>
+        <small class="fine">You do not have to pay in advance. <a href="privacy.html">Privacy</a></small>
+      </form>
+      <div class="done" id="aDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="block" aria-labelledby="fq-h">
+    <div class="wrap narrow">
+      <header class="sec-head"><h2 id="fq-h">Common questions</h2></header>
+      <div class="qas"><details class="qa"><summary>Do you see animals without an appointment?</summary><p>Yes, if a vet is free. With an appointment you do not wait. In an emergency call us and we expect you.</p></details><details class="qa"><summary>How much is a first visit?</summary><p>€25. If something more is needed (a test, a medicine) we tell you the price before we do it.</p></details><details class="qa"><summary>Are you open at night?</summary><p>No. At night and on Sundays we send you to a 24-hour clinic whose phone number is at the top of the page.</p></details><details class="qa"><summary>Do you treat exotic animals?</summary><p>Rabbits and guinea pigs: yes. Birds and reptiles: please call first and we will say whether we can help.</p></details></div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <h2 id="vs-h">Contact</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Monday – Friday</dt><dd>09:00 – 19:00</dd></div><div data-hrs="we"><dt>Saturday and Sunday</dt><dd>10:00 – 14:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Address</b><span>21 Primer St., Plovdiv</span></li>
+          <li><b>Phone</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Email</b><a href="mailto:clinic@example.com">clinic@example.com</a></li>
+        </ul>
+        <p class="visit-note">On Saturday and Sunday we are open for fewer hours. Outside opening hours: the 24-hour clinic on +359 88 000 0001.</p>
+      </div>
+      <div class="visit-side">
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map loads from OpenStreetMap only when you ask for it.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Lapa Vet. Everything here is an example.</span>
+    <span class="foot-links"><a href="privacy.html">Privacy</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Teal</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="teal" style="--s1:#F4F8F8;--s2:#116466" aria-pressed="false" aria-label="Teal"></button><button class="sw" type="button" data-skin="navy" style="--s1:#F4F6FA;--s2:#1F3F73" aria-pressed="false" aria-label="Navy"></button><button class="sw" type="button" data-skin="forest" style="--s1:#F4F8F4;--s2:#2F6B4F" aria-pressed="false" aria-label="Forest"></button><button class="sw" type="button" data-skin="burgundy" style="--s1:#FAF5F5;--s2:#7A2433" aria-pressed="false" aria-label="Burgundy"></button><button class="sw" type="button" data-skin="night" style="--s1:#0F1A1B;--s2:#6FC9CB" aria-pressed="false" aria-label="Night"></button></div>
+</aside>
+
+<script type="application/json" id="lapaData">{"services": {"exam": "Check-up", "vdog": "Dog vaccination", "vcat": "Cat vaccination", "chip": "Microchip and passport", "worm": "Parasite treatment", "scan": "Ultrasound scan", "blood": "Blood tests", "dental": "Dental cleaning", "neuter": "Neutering", "other": "Something else / not sure"}, "species": {"dog": "dog", "cat": "cat", "other": "other"}}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

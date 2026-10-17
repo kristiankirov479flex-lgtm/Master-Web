@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="bg" data-skin="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F6F2EA">
+<title>Desk &amp; Drip – кафене за работа в Пловдив. Резервирай бюро на час или за деня</title>
+<meta name="description" content="Desk &amp; Drip е кафене за работа с бърз интернет, контакти и тиха зона. Избери място на плана, виж цената и резервирай час.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Desk &amp; Drip – кафене за работа в Пловдив. Резервирай бюро на час или за деня">
+<meta property="og:description" content="Desk &amp; Drip е кафене за работа с бърз интернет, контакти и тиха зона. Избери място на плана, виж цената и резервирай час.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/lounge-bright.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("deskSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Desk & Drip","inLanguage":"bg","telephone":"+359880000000","email":"hello@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 33","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Coffee","amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true}],"openingHours":["Mo-Fr 08:00-20:00","Sa-Su 09:00-17:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><rect x="3" y="3" width="11" height="11" rx="2" fill="currentColor"/><rect x="18" y="3" width="11" height="11" rx="5.500" fill="none" stroke="currentColor" stroke-width="2.500"/><rect x="3" y="18" width="11" height="11" rx="5.500" fill="none" stroke="currentColor" stroke-width="2.500"/><rect x="18" y="18" width="11" height="11" rx="2" fill="currentColor"/></svg><b>Desk & Drip</b></a>
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#plan">Места</a><a href="#prices">Цени</a><a href="#book">Резервирай</a><a href="#community">Общност</a><a href="#visit">Адрес</a></nav>
+    <div class="top-r">
+      <span class="open-pill" id="openPill" data-state="unknown"><i aria-hidden="true"></i><span id="openText">Работно време</span></span>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <a class="btn btn-main btn-sm top-cta" href="#book">Резервирай</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero with the floor plan ============ -->
+  <section class="hero" id="plan" aria-labelledby="h1">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Кафене и място за работа · Пловдив</p>
+        <h1 id="h1">Бюро за деня, <em>кафето е включено.</em></h1>
+        <p class="lead">Бърз интернет, контакт при всяко място и тиха зона. Избери място на плана, виж цената и резервирай за час или за целия ден.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#book">Резервирай място</a>
+          <a class="btn btn-line" href="#prices">Виж цените</a>
+        </div>
+        <ul class="facts">
+          <li><b>500</b><span>Mbit/s</span></li>
+          <li><b>13</b><span>контакта</span></li>
+          <li><b id="nextFree">–</b><span>първи свободен час</span></li>
+        </ul>
+      </div>
+      <div class="planbox">
+        <p class="plan-h">Планът на кафенето</p>
+        <div class="plan" role="group" aria-label="Планът на кафенето">
+          <span class="plan-door" aria-hidden="true">вход</span>
+          <span class="plan-bar" aria-hidden="true">бар</span>
+          <button class="zone zone-window" type="button" data-zone="window" aria-pressed="false"><b>Бар до прозореца</b><span>4 места</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u><u></u></i></button><button class="zone zone-long" type="button" data-zone="long" aria-pressed="false"><b>Дълга маса</b><span>6 места</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u><u></u><u></u><u></u></i></button><button class="zone zone-quiet" type="button" data-zone="quiet" aria-pressed="false"><b>Тиха зона</b><span>3 места</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u></i></button><button class="zone zone-meeting" type="button" data-zone="meeting" aria-pressed="false"><b>Маса за срещи</b><span>6 души</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u><u></u><u></u><u></u></i></button>
+        </div>
+        <div class="plan-cap" id="planCap" role="status">Натисни зона, за да видиш местата и цената.</div>
+        <a class="btn btn-main btn-sm plan-go" id="planGo" href="#book" hidden>Резервирай тази зона</a>
+      </div>
+    </div>
+  </section>
+  <figure class="strip"><img src="images/stock/lounge-bright-800.jpg" srcset="images/stock/lounge-bright-800.jpg 800w, images/stock/lounge-bright.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="Светъл салон с дълги маси, растения и големи прозорци" loading="lazy" decoding="async"></figure>
+
+  <!-- ============ Prices ============ -->
+  <section class="block" id="prices" aria-labelledby="pr-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Цени</p>
+        <h2 id="pr-h">На час или за деня</h2>
+        <p>Плащаш на място. Ако останеш повече, цената не надвишава дневната.</p>
+      </header>
+      <ul class="plans">
+        <li class="pl"><h3>На час</h3><p class="pl-p"><b>от 3 €</b><span>на час</span></p><p>За кратка работа. Напитка при 2 и повече часа.</p></li>
+        <li class="pl pl-main"><h3>За деня</h3><p class="pl-p"><b>от 14 €</b><span>до 8 часа</span></p><p>Най-изгодно. Кафе без дъно от 4 часа.</p></li>
+        <li class="pl"><h3>Седмица или месец</h3><p class="pl-p"><b>питай ни</b><span>постоянно място</span></p><p>Не се резервира онлайн. Пиши ни и ще ти предложим.</p></li>
+      </ul>
+      <p class="prices-note">Масата за срещи е цена за цялата маса, до 6 души.</p>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="block soft" id="book" aria-labelledby="bk-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Резервирай</p>
+        <h2 id="bk-h">Избери зона, ден и час</h2>
+        <p>Картата вдясно показва точната цена и кога свършваш.</p>
+      </header>
+      <form class="book-form" id="bookForm" novalidate>
+        <div class="steps">
+          <fieldset class="step">
+            <legend><b>1</b> Къде да седнеш</legend>
+            <div class="zcards" role="radiogroup" aria-label="Къде да седнеш"><label class="zcard"><input type="radio" name="zone" value="window" checked><figure><img src="images/stock/window-seat-800.jpg" srcset="images/stock/window-seat-800.jpg 800w, images/stock/window-seat.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1167" alt="Бар до прозореца" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Бар до прозореца</b><small>Светло, с гледка към улицата</small></span><em>3,50 € / час</em></label><label class="zcard"><input type="radio" name="zone" value="long"><figure><img src="images/stock/long-table-800.jpg" srcset="images/stock/long-table-800.jpg 800w, images/stock/long-table.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1067" alt="Дълга маса" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Дълга маса</b><small>Споделена маса, контакт при всяко място</small></span><em>3,00 € / час</em></label><label class="zcard"><input type="radio" name="zone" value="quiet"><figure><img src="images/stock/laptop-mug-800.jpg" srcset="images/stock/laptop-mug-800.jpg 800w, images/stock/laptop-mug.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1067" alt="Тиха зона" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Тиха зона</b><small>Без разговори и без обаждания</small></span><em>4,00 € / час</em></label><label class="zcard"><input type="radio" name="zone" value="meeting"><figure><img src="images/stock/talking-800.jpg" srcset="images/stock/talking-800.jpg 800w, images/stock/talking.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1067" alt="Маса за срещи" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Маса за срещи</b><small>Цяла маса за до 6 души, с екран</small></span><em>12,00 € / час</em></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Кога и за колко часа</legend>
+            <div class="hours-row">
+              <span class="qty-l" id="hrsL">Часове</span>
+              <div class="stepper" role="group" aria-labelledby="hrsL"><button type="button" id="hMinus" aria-label="Един час по-малко">−</button><output id="hOut">3</output><button type="button" id="hPlus" aria-label="Един час повече">+</button></div>
+              <span class="hint" id="hrsHint"></span>
+            </div>
+            <div class="field" id="peopleRow" hidden><label for="f-people">Колко души?</label><select id="f-people" name="people"></select></div>
+            <p class="sub-h">Ден</p>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Ден"></div>
+            <p class="sub-h">Начален час</p>
+            <p class="hint" id="slotHint" role="status">Проверяваме свободните часове…</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Начален час"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> Нужди и данни за връзка</legend>
+            <div class="opts"><label class="opt"><input type="checkbox" name="need" value="power" data-name="Контакт"><span>Контакт</span></label><label class="opt"><input type="checkbox" name="need" value="screen" data-name="Втори екран"><span>Втори екран</span></label><label class="opt"><input type="checkbox" name="need" value="calls" data-name="Ще говоря по телефона"><span>Ще говоря по телефона</span></label><label class="opt"><input type="checkbox" name="need" value="dog" data-name="Идвам с куче"><span>Идвам с куче</span></label></div>
+            <div class="grid2">
+              <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="2"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="slip" aria-labelledby="slip-h">
+          <h3 id="slip-h">Твоята резервация</h3>
+          <p class="slip-zone" id="slipZone"></p>
+          <dl class="slip-list">
+            <div><dt>Кога</dt><dd id="slWhen">–</dd></div>
+            <div><dt>Продължителност</dt><dd id="slLen">–</dd></div>
+            <div><dt>Цена</dt><dd id="slRate">–</dd></div>
+            <div><dt>Включено</dt><dd id="slExtra">–</dd></div>
+          </dl>
+          <p class="slip-total"><span>Общо</span><b id="slTotal">–</b></p>
+          <p class="slip-save" id="slSave" hidden></p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-main btn-block" type="submit" id="bkSend">Резервирай мястото</button>
+          <small class="fine">Плащаш на място. Безплатно отмяна до 2 часа преди. <a href="privacy.html">Поверителност</a></small>
+        </section>
+      </form>
+      <div class="done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Included ============ -->
+  <section class="block" id="included" aria-labelledby="in-h">
+    <div class="wrap included">
+      <header class="sec-head">
+        <p class="kicker">Включено</p>
+        <h2 id="in-h">Всичко, което ти трябва за работа</h2>
+        <p>Малко правила, за да е удобно на всички.</p>
+        <ul class="rules"><li>В тихата зона не се говори и не се звъни.</li><li>Купуваш напитка поне на два часа.</li><li>Не заемай място с чанта, ако не седиш.</li><li>Слушалки на разговорните маси, моля.</li></ul>
+      </header>
+      <ul class="amen"><li><b>Бърз интернет</b><span>500 Mbit/s, без парола за гости</span></li><li><b>Контакти</b><span>По един при всяко място</span></li><li><b>Печат и скенер</b><span>Първите 5 страници са безплатни</span></li><li><b>Телефонна кабина</b><span>За разговори, без да пречите</span></li><li><b>Парковка за велосипеди</b><span>Под наем зад кафенето</span></li><li><b>Кафе без дъно</b><span>От 4 часа нагоре</span></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Community ============ -->
+  <section class="block community" id="community" aria-labelledby="cm-h">
+    <div class="wrap comm">
+      <div>
+        <header class="sec-head">
+          <p class="kicker kicker-dark">Общност</p>
+          <h2 id="cm-h">Не само за работа</h2>
+          <p>Седмични срещи в кафенето. Свободни са за всички.</p>
+        </header>
+        <ul class="events"><li><span class="ev-d">Понеделник</span><span class="ev-t">18:30</span><div><h3>Кафе и код</h3><p>Свободна вечер за разработчици и всички, които учат.</p></div></li><li><span class="ev-d">Сряда</span><span class="ev-t">18:00</span><div><h3>Английски клуб</h3><p>Разговор на английски на чаша кафе. Всички нива.</p></div></li><li><span class="ev-d">Четвъртък</span><span class="ev-t">09:00</span><div><h3>Тиха сутрин</h3><p>Три часа без разговори. Само клавиатури.</p></div></li><li><span class="ev-d">Събота</span><span class="ev-t">11:00</span><div><h3>Работилница за латте арт</h3><p>Малка група, всеки прави свое сърце. 15 €.</p></div></li></ul>
+      </div>
+      <div class="comm-photos">
+        <figure class="cp cp-1"><img src="images/stock/notes-latte-800.jpg" srcset="images/stock/notes-latte-800.jpg 800w, images/stock/notes-latte.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1067" alt="Бележник, лаптоп и лате върху дървена маса" loading="lazy" decoding="async"></figure>
+        <figure class="cp cp-2"><img src="images/stock/sunlit-room-800.jpg" srcset="images/stock/sunlit-room-800.jpg 800w, images/stock/sunlit-room.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1201" alt="Слънчева стая с хора, които работят" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Адрес</p>
+        <h2 id="vs-h">Намери ни</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>08:00 – 20:00</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>09:00 – 17:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Адрес</b><span>ул. Примерна 33, Пловдив</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Имейл</b><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="images/stock/glass-hall-800.jpg" srcset="images/stock/glass-hall-800.jpg 800w, images/stock/glass-hall.jpg 1600w" sizes="(min-width: 900px) 520px, 90vw" width="1600" height="1068" alt="Салон със стъклени стени и дълга маса" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Desk &amp; Drip. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar">
+  <span id="barTxt">Работиш днес?</span>
+  <a class="btn btn-main btn-sm" href="#book">Резервирай място</a>
+</div>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Хартия</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="paper" style="--s1:#F6F2EA;--s2:#D2381E" aria-pressed="false" aria-label="Хартия"></button><button class="sw" type="button" data-skin="ultra" style="--s1:#EEF1FB;--s2:#2742C7" aria-pressed="false" aria-label="Ултрамарин"></button><button class="sw" type="button" data-skin="sage" style="--s1:#EEF2EA;--s2:#3F6B34" aria-pressed="false" aria-label="Градина"></button><button class="sw" type="button" data-skin="charcoal" style="--s1:#17181A;--s2:#FFB84D" aria-pressed="false" aria-label="Въглен"></button><button class="sw" type="button" data-skin="plum" style="--s1:#F8EFF3;--s2:#8A2D6B" aria-pressed="false" aria-label="Слива"></button></div>
+</aside>
+
+<script type="application/json" id="deskData">{"zones": [{"id": "window", "seats": 4, "rate": 3.5, "day": 16, "name": "Бар до прозореца"}, {"id": "long", "seats": 6, "rate": 3.0, "day": 14, "name": "Дълга маса"}, {"id": "quiet", "seats": 3, "rate": 4.0, "day": 18, "name": "Тиха зона"}, {"id": "meeting", "seats": 6, "rate": 12.0, "day": 70, "name": "Маса за срещи"}], "maxHours": 8, "coffeeFrom": 2, "needs": {"power": "Контакт", "screen": "Втори екран", "calls": "Ще говоря по телефона", "dog": "Идвам с куче"}}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

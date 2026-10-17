@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-skin="margherita">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF9F0">
+<title>Fornello – a wood-fired pizzeria in Plovdiv</title>
+<meta name="description" content="Fornello is a pizzeria in Plovdiv with a wood-fired oven and dough that rests for 48 hours. See the menu with prices for three sizes and reserve a table.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fornello – a wood-fired pizzeria in Plovdiv">
+<meta property="og:description" content="Fornello is a pizzeria in Plovdiv with a wood-fired oven and dough that rests for 48 hours. See the menu with prices for three sizes and reserve a table.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/oven-pizza.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("fornelloSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Fornello","inLanguage":"en","telephone":"+359880000000","email":"ciao@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 16","addressLocality":"Plovdiv","addressCountry":"BG"},"servesCuisine":"Pizza, Italian","acceptsReservations":"True","openingHours":["Mo-Fr 12:00-22:30","Sa-Su 12:00-23:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html">Fornello</a>
+    <nav class="nav" id="nav" aria-label="Navigation"><a href="#menu">Menu</a><a href="#oven">Our oven</a><a href="#reserve">Reservations</a><a href="#visit">Find us</a></nav>
+    <div class="top-r">
+      <a class="call" href="tel:+359880000000"><span class="call-l">Call</span> <b>+359 88 000 0000</b></a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="../images/stock/oven-pizza-800.jpg" srcset="../images/stock/oven-pizza-800.jpg 800w, ../images/stock/oven-pizza.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="A pizza coming out of a wood-fired oven with flames" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Pizzeria · Plovdiv</p>
+      <h1 id="h1">Pizza from a wood-fired oven</h1>
+      <p class="lead">The dough rests for 48 hours and the pizza bakes for 90 seconds at 450 degrees. Eat with us or call to collect.</p>
+      <p class="hero-links"><a class="btn btn-main" href="#menu">See the menu</a> <a class="btn btn-light" href="#reserve">Reserve a table</a></p>
+    </div>
+  </section>
+  <div class="info-bar">
+    <ul class="wrap info-row">
+      <li><b>Today</b> <span id="todayHours">12:00 – 22:30</span></li>
+      <li><b>Address</b> <span>16 Primer St., Plovdiv</span></li>
+      <li><b>Takeaway</b> <span>Call us and the pizza is ready in 20 minutes</span></li>
+    </ul>
+  </div>
+
+  <!-- ============ Menu ============ -->
+  <section class="block" id="menu" aria-labelledby="mn-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="mn-h">Menu</h2>
+        <p>Three sizes: small 25 cm, medium 32 cm and large 42 cm. Prices are in euros.</p>
+      </header>
+      <div class="pz-wrap"><table class="plist pz"><caption>Pizzas</caption><thead><tr><th scope="col">Pizza</th><th scope="col">25 cm</th><th scope="col">32 cm</th><th scope="col">42 cm</th></tr></thead><tbody><tr><th scope="row">Margherita <span class="tag" title="Vegetarian">V</span><small>tomato, mozzarella, basil</small></th><td>7.50 €</td><td>9.50 €</td><td>13.50 €</td></tr><tr><th scope="row">Pepperoni<small>tomato, mozzarella, spicy salami</small></th><td>9.00 €</td><td>11.50 €</td><td>16.00 €</td></tr><tr><th scope="row">Four cheeses <span class="tag" title="Vegetarian">V</span><small>mozzarella, gorgonzola, parmesan, kashkaval</small></th><td>10.00 €</td><td>13.00 €</td><td>18.00 €</td></tr><tr><th scope="row">Capricciosa<small>ham, mushrooms, artichoke, olives</small></th><td>10.00 €</td><td>13.00 €</td><td>18.00 €</td></tr><tr><th scope="row">Prosciutto and mushrooms<small>ham, mushrooms, mozzarella</small></th><td>9.50 €</td><td>12.50 €</td><td>17.00 €</td></tr><tr><th scope="row">Vegetariana <span class="tag" title="Vegetarian">V</span><small>peppers, mushrooms, sweetcorn, onion, olives</small></th><td>9.00 €</td><td>11.50 €</td><td>16.00 €</td></tr><tr><th scope="row">Diavola<small>hot pepper, salami, onion, mozzarella</small></th><td>9.50 €</td><td>12.50 €</td><td>17.00 €</td></tr><tr><th scope="row">Bulgarian <span class="tag" title="Vegetarian">V</span><small>kashkaval, white cheese, peppers, tomatoes</small></th><td>9.00 €</td><td>11.50 €</td><td>16.00 €</td></tr></tbody></table></div>
+      <p class="p-note"><span class="tag">V</span> vegetarian</p>
+      <div class="menu-cols"><section class="m-group"><h3>Pasta</h3><ul class="m-list"><li><div class="m-top"><h4>Spaghetti carbonara</h4><i aria-hidden="true"></i><b>9.50 €</b></div><p>pancetta, egg, parmesan</p></li><li><div class="m-top"><h4>Lasagne</h4><i aria-hidden="true"></i><b>10.00 €</b></div><p>with bolognese and béchamel</p></li><li><div class="m-top"><h4>Penne arrabbiata</h4><i aria-hidden="true"></i><b>8.50 €</b></div><p>hot tomato sauce</p></li><li><div class="m-top"><h4>Gnocchi with four cheeses</h4><i aria-hidden="true"></i><b>11.00 €</b></div></li></ul></section><section class="m-group"><h3>Salads</h3><ul class="m-list"><li><div class="m-top"><h4>Caprese</h4><i aria-hidden="true"></i><b>8.00 €</b></div><p>tomato, mozzarella, basil</p></li><li><div class="m-top"><h4>Rocket salad</h4><i aria-hidden="true"></i><b>8.00 €</b></div><p>parmesan and balsamic</p></li><li><div class="m-top"><h4>Greek salad</h4><i aria-hidden="true"></i><b>7.50 €</b></div></li></ul></section><section class="m-group"><h3>Desserts</h3><ul class="m-list"><li><div class="m-top"><h4>Tiramisu</h4><i aria-hidden="true"></i><b>5.50 €</b></div></li><li><div class="m-top"><h4>Panna cotta</h4><i aria-hidden="true"></i><b>5.00 €</b></div><p>with wild berries</p></li><li><div class="m-top"><h4>Gelato</h4><i aria-hidden="true"></i><b>4.00 €</b></div><p>two scoops</p></li></ul></section><section class="m-group"><h3>Drinks</h3><ul class="m-list"><li><div class="m-top"><h4>Soft drink</h4><i aria-hidden="true"></i><b>2.50 €</b></div><p>0.33 l</p></li><li><div class="m-top"><h4>Beer</h4><i aria-hidden="true"></i><b>3.50 €</b></div><p>Local, 0.5 l</p></li><li><div class="m-top"><h4>Wine by the glass</h4><i aria-hidden="true"></i><b>4.00 €</b></div><p>red or white</p></li><li><div class="m-top"><h4>Espresso</h4><i aria-hidden="true"></i><b>2.20 €</b></div></li></ul></section></div>
+      <div class="menu-ph"><figure><img src="../images/stock/slice-pull-800.jpg" srcset="../images/stock/slice-pull-800.jpg 800w, ../images/stock/slice-pull.jpg 1600w" sizes="(min-width: 900px) 352px, calc(100vw - 40px)" width="1600" height="1067" alt="A slice of pizza with stretching cheese" loading="lazy" decoding="async"></figure><figure><img src="../images/stock/pizza-board-800.jpg" srcset="../images/stock/pizza-board-800.jpg 800w, ../images/stock/pizza-board.jpg 1600w" sizes="(min-width: 900px) 352px, calc(100vw - 40px)" width="1600" height="1600" alt="A pizza on a wooden board" loading="lazy" decoding="async"></figure><figure><img src="../images/stock/slice-spatula-800.jpg" srcset="../images/stock/slice-spatula-800.jpg 800w, ../images/stock/slice-spatula.jpg 1600w" sizes="(min-width: 900px) 352px, calc(100vw - 40px)" width="1600" height="1067" alt="A slice of pizza lifted with a spatula" loading="lazy" decoding="async"></figure></div>
+    </div>
+  </section>
+
+  <!-- ============ Our oven ============ -->
+  <section class="block soft" id="oven" aria-labelledby="ov-h">
+    <div class="wrap oven">
+      <div class="oven-text">
+        <h2 id="ov-h">Our oven</h2>
+        <p>The oven was built nine years ago and is lit every morning at ten. We bake on oak wood, so the crust is thin and lightly smoky.</p>
+        <p>We knead the dough with very little yeast and let it rest for two days. That keeps the pizza light.</p>
+        <ul class="facts4"><li><b>48 h</b><span>the dough rests</span></li><li><b>450 °C</b><span>is the oven</span></li><li><b>90 sec</b><span>the pizza bakes</span></li></ul>
+      </div>
+      <div class="oven-ph"><figure><img src="../images/stock/dough-800.jpg" srcset="../images/stock/dough-800.jpg 800w, ../images/stock/dough.jpg 1600w" sizes="(min-width: 900px) 360px, calc(100vw - 40px)" width="1600" height="1067" alt="Hands kneading dough" loading="lazy" decoding="async"></figure><figure><img src="../images/stock/oven-fire-800.jpg" srcset="../images/stock/oven-fire-800.jpg 800w, ../images/stock/oven-fire.jpg 1600w" sizes="(min-width: 900px) 360px, calc(100vw - 40px)" width="1600" height="1281" alt="Fire in the wood-fired oven" loading="lazy" decoding="async"></figure></div>
+    </div>
+  </section>
+
+  <!-- ============ Reservations ============ -->
+  <section class="block" id="reserve" aria-labelledby="rs-h">
+    <div class="wrap narrow">
+      <header class="sec-head">
+        <h2 id="rs-h">Reserve a table</h2>
+        <p>We also take walk-ins, but on Friday and Saturday evenings it is wise to book. For more than 10 people please call us.</p>
+      </header>
+      <form class="res" id="resForm" novalidate>
+        <div class="row3">
+          <div class="field"><label for="f-people">How many people</label><select id="f-people" name="people"><option value="1">1 person</option><option value="2" selected>2 people</option><option value="3">3 people</option><option value="4">4 people</option><option value="5">5 people</option><option value="6">6 people</option><option value="7">7 people</option><option value="8">8 people</option><option value="9">9 people</option><option value="10">10 people</option></select></div>
+          <div class="field"><label for="f-date">Date</label><input id="f-date" name="date" type="date" required></div>
+          <div class="field"><label for="f-time">Time</label><select id="f-time" name="time" required></select></div>
+        </div>
+        <p class="hint" id="timeHint" role="status">Choose a date to see the free times.</p>
+        <fieldset class="group"><legend>Where to sit</legend><div class="opts"><label class="opt"><input type="radio" name="seat" value="any" checked><span>No preference</span></label><label class="opt"><input type="radio" name="seat" value="inside"><span>Inside</span></label><label class="opt"><input type="radio" name="seat" value="outside"><span>Outside</span></label></div></fieldset>
+        <div class="row2">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="f-msg">Note (optional)</label><textarea id="f-msg" name="msg" rows="3"></textarea></div>
+        <p class="demo-note" id="demoNote" hidden></p>
+        <p class="form-error" id="resError" role="alert" hidden></p>
+        <button class="btn btn-main" type="submit" id="resSend">Reserve the table</button>
+        <small class="fine">We only call you if something has to change. <a href="privacy.html">Privacy</a></small>
+      </form>
+      <div class="done" id="resDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Find us ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <h2 id="vs-h">Find us</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Monday – Friday</dt><dd>12:00 – 22:30</dd></div><div data-hrs="we"><dt>Saturday and Sunday</dt><dd>12:00 – 23:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Address</b><span>16 Primer St., Plovdiv</span></li>
+          <li><b>Phone</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Email</b><a href="mailto:ciao@example.com">ciao@example.com</a></li>
+        </ul>
+        <p class="visit-note">There is free parking behind the building after 18:00.</p>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="../images/stock/street-800.jpg" srcset="../images/stock/street-800.jpg 800w, ../images/stock/street.jpg 1600w" sizes="(min-width: 900px) 360px, calc(100vw - 40px)" width="1600" height="2133" alt="A street with the pizzeria tables and red and white tablecloths" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map loads from OpenStreetMap only when you ask for it.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Fornello. Everything here is an example.</span>
+    <span class="foot-links"><a href="privacy.html">Privacy</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Margherita</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="margherita" style="--s1:#FFF9F0;--s2:#B3261E" aria-pressed="false" aria-label="Margherita"></button><button class="sw" type="button" data-skin="diavola" style="--s1:#FBF3EE;--s2:#8F1D14" aria-pressed="false" aria-label="Diavola"></button><button class="sw" type="button" data-skin="basil" style="--s1:#F5F8F0;--s2:#2E6B34" aria-pressed="false" aria-label="Basil"></button><button class="sw" type="button" data-skin="oven" style="--s1:#1D1511;--s2:#F08A3C" aria-pressed="false" aria-label="Oven"></button><button class="sw" type="button" data-skin="napoli" style="--s1:#F4F7FB;--s2:#1E4E8C" aria-pressed="false" aria-label="Napoli"></button></div>
+</aside>
+
+<script type="application/json" id="fornelloData">{"booking": 75, "seats": {"any": "No preference", "inside": "Inside", "outside": "Outside"}}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

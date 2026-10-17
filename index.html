@@ -1,47 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="bg">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0E4A42">
-<title>Master Web – freelance web developer for local businesses</title>
-<meta name="description" id="meta-desc" content="Freelance web developer building fast, reliable websites and web apps for barber shops, salons, rental homes and other local businesses.">
+<meta name="theme-color" content="#FBFAF6">
+<title>Master Web – уебсайт за вашия бизнес за 5–10 работни дни | Пловдив</title>
+<meta name="description" id="meta-desc" content="Кристиан от Пловдив прави уебсайтове за къщи за гости, бръснарници, студия за нокти, цветарници, кафенета, сервизи за гуми, ресторанти, стоматолози, детайлинг студиа, ветеринари, физиотерапевти и масажни студиа. Избирате готов дизайн, аз го нагласям по бизнеса ви и го пускам. Безплатен първи преглед.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Master Web – freelance web developer for local businesses">
-<meta property="og:description" content="Freelance web developer building fast, reliable websites and web apps for barber shops, salons, rental homes and other local businesses.">
-<!-- When the site address is known, add: <link rel="canonical" href="https://YOUR-DOMAIN/"> and <meta property="og:url" content="https://YOUR-DOMAIN/"> -->
+<meta property="og:title" content="Master Web – уебсайт за вашия бизнес за 5–10 работни дни">
+<meta property="og:description" content="Избирате готов дизайн, аз го нагласям по бизнеса ви и го пускам онлайн. Безплатен първи преглед и консултации.">
+<meta property="og:locale" content="bg_BG">
+<!-- When the site address is known, add: <link rel="canonical" href="https://YOUR-DOMAIN/"> and <meta property="og:url" content="https://YOUR-DOMAIN/"> and an og:image -->
 <link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="css/site.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js");
+</script>
+<style>
+  .frame { position: relative; }
+  .frame > .stage-link { inset: 0; left: 0; }
+</style>
 </head>
-<body class="home">
-<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Към съдържанието</a>
 
-<header class="top">
-  <a class="brand" href="./">Master Web</a>
-  <nav aria-label="Main">
-    <a href="#services" data-i18n="nav.services">Services</a>
-    <a href="#work" data-i18n="nav.work">Work</a>
-    <a href="#process" data-i18n="nav.process">Process</a>
-    <a href="#faq" data-i18n="nav.faq">Questions</a>
-    <a class="btn btn-amber" href="#contact" data-i18n="nav.contact">Get in touch</a>
-    <button class="lang" id="lang" type="button" lang="bg" aria-label="Превключи на български">БГ</button>
+<header class="top" id="top">
+  <a class="brand" href="./"><i aria-hidden="true"></i>Master Web</a>
+  <nav aria-label="Основна навигация" data-i18n-attr="aria-label:nav.label">
+    <a href="#work" data-i18n="nav.work">Примери</a>
+    <a href="#get" data-i18n="nav.get">Какво получавате</a>
+    <a href="#process" data-i18n="nav.process">Как работи</a>
+    <a href="#faq" data-i18n="nav.faq">Въпроси</a>
+    <a class="btn btn-accent" href="#brief" data-i18n="nav.cta">Безплатен преглед</a>
+    <button class="lang" id="lang" type="button" lang="en" aria-label="Switch to English">EN</button>
   </nav>
 </header>
 
 <main id="main">
 
   <!-- ============ Hero ============ -->
-  <section class="hero on-dark">
+  <section class="hero" aria-labelledby="h1">
     <div class="wrap hero-grid">
       <div>
-        <h1 data-i18n="hero.title">Websites that bring local customers through the door.</h1>
-        <p data-i18n="hero.text">I'm a freelance web developer. I build fast, clear, easy-to-maintain websites and web apps for barber shops, salons, rental homes and other small businesses.</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Уеб разработчик · Пловдив</p>
+        <h1 id="h1" data-i18n="hero.title">Вашият бизнес онлайн за <em>5&#8288;–&#8288;10&nbsp;работни дни.</em></h1>
+        <p class="lead" data-i18n="hero.lead">Избирате готов дизайн от {n} действащи демонстрации, аз го нагласям по вашия бизнес и го пускам. Първият преглед и консултациите са безплатни.</p>
         <div class="actions">
-          <a class="btn btn-amber" href="#work" data-i18n="hero.work">See my work</a>
-          <a class="btn btn-ghost" href="#contact" data-i18n="hero.start">Start a project</a>
+          <a class="btn btn-accent arrow" href="#brief" data-i18n="hero.cta">Поискайте безплатен преглед</a>
+          <a class="btn btn-line" href="#work" data-i18n="hero.work">Вижте примерите</a>
         </div>
+        <ul class="ticks">
+          <li data-i18n="hero.t1">Безплатен първи преглед</li>
+          <li data-i18n="hero.t2">Български и английски</li>
+          <li data-i18n="hero.t3">Домейн и хостинг – уреждам ги аз</li>
+        </ul>
       </div>
 
       <div class="stage-col">
@@ -49,442 +64,613 @@
           <div class="win desktop">
             <div class="chrome">
               <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span>Vila-Stefani-Devin-main</span>
+              <span>Вила Стефани</span>
             </div>
             <div class="screen">
-              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:1440px;height:900px" data-i18n-attr="title:stage.preview" title="Preview of the Vila Stefani website on a computer" tabindex="-1" aria-hidden="true"></iframe>
+              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:1440px;height:900px" data-i18n-attr="title:stage.preview" title="Преглед на уебсайта на Вила Стефани на компютър" tabindex="-1" aria-hidden="true"></iframe>
             </div>
           </div>
           <div class="win phone">
             <div class="screen">
-              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:390px;height:780px" data-i18n-attr="title:stage.preview_m" title="Preview of the Vila Stefani website on a phone" tabindex="-1" aria-hidden="true"></iframe>
+              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:390px;height:780px" data-i18n-attr="title:stage.preview_m" title="Преглед на уебсайта на Вила Стефани на телефон" tabindex="-1" aria-hidden="true"></iframe>
             </div>
           </div>
-          <a class="stage-link" href="Vila-Stefani-Devin-main/index.html" data-i18n-attr="aria-label:stage.label" aria-label="Open the Vila Stefani website"></a>
+          <a class="stage-link" href="Vila-Stefani-Devin-main/index.html" data-i18n-attr="aria-label:stage.label" aria-label="Отвори уебсайта на Вила Стефани"></a>
+          <div class="float f1" aria-hidden="true"><span class="ok"></span><span><span data-i18n="float.1">Нова заявка</span><small data-i18n="float.1s">Пристигане 12 юли · 2 гости</small></span></div>
+          <div class="float f2" aria-hidden="true"><span class="ok"></span><span><span data-i18n="float.2">Удобен за телефон</span><small data-i18n="float.2s">Проверен на малък екран</small></span></div>
         </div>
-        <p class="stage-cap"><span data-i18n="stage.cap">Live example: Vila Stefani, a guest house in Devin</span> <a href="Vila-Stefani-Devin-main/index.html" data-i18n="stage.open">Open the site</a></p>
+        <p class="stage-cap"><span data-i18n="stage.cap">Реален проект: Вила Стефани, къща за гости в Девин</span> <a href="Vila-Stefani-Devin-main/index.html" data-i18n="stage.open">Отворете сайта</a></p>
       </div>
     </div>
   </section>
 
-  <!-- ============ Included with every site ============ -->
-  <section class="included" aria-labelledby="inc-h">
+  <!-- ============ Facts ============ -->
+  <section class="facts" aria-label="Накратко" data-i18n-attr="aria-label:facts.label">
     <div class="wrap">
-      <h2 class="sr-only" id="inc-h" data-i18n="inc.title">Included with every site</h2>
       <ul>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span data-i18n="inc.1">Bulgarian and English</span></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg><span data-i18n="inc.2">Built for phones first</span></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg><span data-i18n="inc.3">Accessibility checked</span></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/></svg><span data-i18n="inc.4">No unnecessary trackers</span></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/></svg><span data-i18n="inc.5">You own the domain and files</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ============ Services ============ -->
-  <section class="block" id="services" aria-labelledby="svc-h">
-    <div class="wrap">
-      <div class="head">
-        <h2 id="svc-h" data-i18n="svc.title">What I can build for you</h2>
-        <p data-i18n="svc.lead">Start with a simple website and add only what your business needs.</p>
-      </div>
-      <ul class="svc">
-        <li>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
-          <h3 data-i18n="svc.1t">A website</h3>
-          <p data-i18n="svc.1p">A clear site in Bulgarian and English: your rooms or services, photos, reviews, location and contact details.</p>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-          <h3 data-i18n="svc.2t">Booking calendar</h3>
-          <p data-i18n="svc.2p">Guests pick dates and send a request. Your availability stays in sync with Booking.com and Airbnb.</p>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16z"/><path d="M14 6l3 3"/></svg>
-          <h3 data-i18n="svc.3t">Edit it yourself</h3>
-          <p data-i18n="svc.3p">A simple login page where you change texts and photos without touching any code.</p>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          <h3 data-i18n="svc.4t">Automatic guest emails</h3>
-          <p data-i18n="svc.4p">Confirmations, reminders before arrival, and a thank-you with a request for a review.</p>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
-          <h3 data-i18n="svc.5t">Photos</h3>
-          <p data-i18n="svc.5p">A professional photo shoot, and styling of the rooms, arranged for you.</p>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
-          <h3 data-i18n="svc.6t">Found on Google</h3>
-          <p data-i18n="svc.6p">Your Google Business Profile, search basics and fast pages, so people nearby can find you.</p>
-        </li>
+        <li><b data-i18n="facts.n">{n}</b><span data-i18n="facts.1">готови дизайна, които можете да пробвате</span></li>
+        <li><b>11</b><span data-i18n="facts.2">вида бизнес: къщи за гости, бръснарници, студия за нокти, цветарници, кафенета, гуми, ресторанти, стоматолози, детайлинг, ветеринари, физиотерапия и масаж</span></li>
+        <li><b>2</b><span data-i18n="facts.3">езика във всеки сайт: български и английски</span></li>
+        <li><b>5–10</b><span data-i18n="facts.4">работни дни за шаблон без допълнителни функции</span></li>
       </ul>
     </div>
   </section>
 
   <!-- ============ Work ============ -->
-  <section class="block work" id="work" aria-labelledby="work-h">
+  <section class="block work on-green" id="work" aria-labelledby="work-h">
     <div class="wrap">
       <div class="head">
-        <h2 id="work-h" data-i18n="work.title">Sites I have built</h2>
-        <p data-i18n="work.lead">Four kinds of business, each with a live demo. Pick one, switch the design and try it yourself.</p>
+        <p class="eyebrow" data-i18n="work.eyebrow">Примери на живо</p>
+        <h2 id="work-h" data-i18n="work.title">Изберете вид бизнес. Разгледайте. Пробвайте.</h2>
+        <p data-i18n="work.lead">Всеки пример е действащ сайт с резервации или заявки, които можете да пробвате. Нищо не се изпраща: данните остават във вашия браузър.</p>
       </div>
-
       <!--
-        To add a project: add a button to .sc-tabs and a .sc-panel block (copy an existing pair), then add its text to the BG list below.
+        To add a project: add an entry to PROJECTS in the script at the bottom (folder, names and notes in both languages).
         A design = a folder with index.html (Bulgarian), en/index.html (English) and, optionally, admin.html.
       -->
-      <div class="showcase">
-        <p class="sc-step" data-i18n="sc.s1">1 · Choose a type of business</p>
-        <div class="sc-tabs" role="tablist" aria-label="Business types" data-i18n-attr="aria-label:sc.tabs">
-          <button class="sc-tab" type="button" role="tab" id="t-guest" aria-controls="p-guest" aria-selected="true" tabindex="0"><span class="sc-name" data-i18n="guest.t">Guest house</span><small data-i18n="sc.four">4 designs</small></button>
-          <button class="sc-tab" type="button" role="tab" id="t-nail" aria-controls="p-nail" aria-selected="false" tabindex="-1"><span class="sc-name" data-i18n="nail.t">Nail studio</span><small data-i18n="sc.two">2 designs</small></button>
-          <button class="sc-tab" type="button" role="tab" id="t-barber" aria-controls="p-barber" aria-selected="false" tabindex="-1"><span class="sc-name" data-i18n="barber.t">Barbershop</span><small data-i18n="sc.two">2 designs</small></button>
-          <button class="sc-tab" type="button" role="tab" id="t-flower" aria-controls="p-flower" aria-selected="false" tabindex="-1"><span class="sc-name" data-i18n="flower.t">Flower shop</span><small data-i18n="sc.two">2 designs</small></button>
-        </div>
-      <div class="sc-panel" id="p-guest" role="tabpanel" aria-labelledby="t-guest">
-        <div class="sc-info">
-          <h3 data-i18n="guest.h">Guest house</h3>
-          <p class="desc" data-i18n="guest.desc">A website for a guest house. Guests see the rooms, the food and what is nearby, then call or ask about dates. Designs 2 to 4 add a live check of free rooms and an enquiry form; the third uses a calendar and the fourth a timeline.</p>
-          <ul class="chips"><li data-i18n="guest.c1">Bulgarian and English</li><li data-i18n="guest.c2">Guest reviews</li><li data-i18n="guest.c3">Local guide</li><li data-i18n="guest.c4">Free-room check (designs 2 to 4)</li></ul>
-          <div class="sc-design"><span class="sc-label" data-i18n="sc.design">2 · Choose a design</span><div role="group" aria-label="Design"><button class="seg" type="button" aria-pressed="true" data-folder="Vila-Stefani-Devin-main" data-single="1" data-admin="0" data-note-key="guest.n1" data-note-en="Vila Stefani: a live site for a real guest house." aria-label="Design 1: Vila Stefani">1 · Vila Stefani</button><button class="seg" type="button" aria-pressed="false" data-folder="Vila_2" data-admin="1" data-note-key="guest.n2" data-note-en="Linden House: a side-bar layout with a date search, free rooms and an enquiry form." aria-label="Design 2: Linden House">2 · Linden House</button><button class="seg" type="button" aria-pressed="false" data-folder="Vila_3" data-admin="1" data-note-key="guest.n3" data-note-en="The Stone Cellar: full-screen photo chapters and a booking calendar that shows busy days." aria-label="Design 3: The Stone Cellar">3 · The Stone Cellar</button><button class="seg" type="button" aria-pressed="false" data-folder="Vila_4" data-admin="1" data-note-key="guest.n4" data-note-en="Blue Heron: a lake house with an illustrated map and a booking timeline, one row per place." aria-label="Design 4: Blue Heron">4 · Blue Heron</button></div></div>
-          <p class="sc-note" data-note></p>
-          <div class="sc-actions">
-            <a class="btn btn-primary" data-open href="#" data-i18n="sc.open">Open the site</a>
-            <a class="btn btn-quiet" data-admin-link href="#" data-i18n="sc.admin">See the demo back office</a>
-          </div>
-        </div>
-        <div class="sc-shot">
-          <div class="win desktop">
-            <div class="chrome">
-              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span data-chrome>Vila-Stefani-Devin-main</span>
-            </div>
-            <div class="screen">
-              <iframe style="width:1440px;height:900px" data-i18n-attr="title:sc.preview" title="Preview of the website on a computer" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-            </div>
-          </div>
-          <a class="stage-link" data-open href="#" data-i18n-attr="aria-label:sc.open" aria-label="Open the site"></a>
-        </div>
-      </div>
-      <div class="sc-panel" id="p-nail" role="tabpanel" aria-labelledby="t-nail" hidden>
-        <div class="sc-info">
-          <h3 data-i18n="nail.h">Nail studio</h3>
-          <p class="desc" data-i18n="nail.desc">A template for nail studios. Visitors browse the work, see prices, build a visit with a total price and time, and send a request that comes back with a reference number.</p>
-          <ul class="chips"><li data-i18n="nail.c1">5 colour schemes</li><li data-i18n="nail.c2">Price and time total</li><li data-i18n="nail.c3">Request system</li><li data-i18n="nail.c4">Demo back office</li></ul>
-          <div class="sc-design"><span class="sc-label" data-i18n="sc.design">2 · Choose a design</span><div role="group" aria-label="Design"><button class="seg" type="button" aria-pressed="true" data-folder="Nail_Salon_1" data-admin="1" data-note-key="nail.n1" data-note-en="Nuance: soft arched photos, a price planner and a gallery to request looks from." aria-label="Design 1: Nuance">1 · Nuance</button><button class="seg" type="button" aria-pressed="false" data-folder="Nail_Salon_2" data-admin="1" data-note-key="nail.n2" data-note-en="Lumi: a tile layout where you tick several services and see the total." aria-label="Design 2: Lumi">2 · Lumi</button></div></div>
-          <p class="sc-note" data-note></p>
-          <div class="sc-actions">
-            <a class="btn btn-primary" data-open href="#" data-i18n="sc.open">Open the site</a>
-            <a class="btn btn-quiet" data-admin-link href="#" data-i18n="sc.admin">See the demo back office</a>
-          </div>
-        </div>
-        <div class="sc-shot">
-          <div class="win desktop">
-            <div class="chrome">
-              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span data-chrome>Nail_Salon_1</span>
-            </div>
-            <div class="screen">
-              <iframe style="width:1440px;height:900px" data-i18n-attr="title:sc.preview" title="Preview of the website on a computer" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-            </div>
-          </div>
-          <a class="stage-link" data-open href="#" data-i18n-attr="aria-label:sc.open" aria-label="Open the site"></a>
-        </div>
-      </div>
-      <div class="sc-panel" id="p-barber" role="tabpanel" aria-labelledby="t-barber" hidden>
-        <div class="sc-info">
-          <h3 data-i18n="barber.h">Barbershop</h3>
-          <p class="desc" data-i18n="barber.desc">A template for barbershops. Visitors see cuts and prices, pick a time and get a reference number. The second design adds choosing your barber.</p>
-          <ul class="chips"><li data-i18n="barber.c1">5 colour schemes</li><li data-i18n="barber.c2">Live free times</li><li data-i18n="barber.c3">Request system</li><li data-i18n="barber.c4">Demo back office</li></ul>
-          <div class="sc-design"><span class="sc-label" data-i18n="sc.design">2 · Choose a design</span><div role="group" aria-label="Design"><button class="seg" type="button" aria-pressed="true" data-folder="Barber_shop" data-admin="1" data-note-key="barber.n1" data-note-en="Ironwood: dark and classic, with a price estimator and a request form." aria-label="Design 1: Ironwood">1 · Ironwood</button><button class="seg" type="button" aria-pressed="false" data-folder="Barber_shop_2" data-admin="1" data-note-key="barber.n2" data-note-en="Foundry: a booking drawer with four steps: service, barber, time, details." aria-label="Design 2: Foundry">2 · Foundry</button></div></div>
-          <p class="sc-note" data-note></p>
-          <div class="sc-actions">
-            <a class="btn btn-primary" data-open href="#" data-i18n="sc.open">Open the site</a>
-            <a class="btn btn-quiet" data-admin-link href="#" data-i18n="sc.admin">See the demo back office</a>
-          </div>
-        </div>
-        <div class="sc-shot">
-          <div class="win desktop">
-            <div class="chrome">
-              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span data-chrome>Barber_shop</span>
-            </div>
-            <div class="screen">
-              <iframe style="width:1440px;height:900px" data-i18n-attr="title:sc.preview" title="Preview of the website on a computer" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-            </div>
-          </div>
-          <a class="stage-link" data-open href="#" data-i18n-attr="aria-label:sc.open" aria-label="Open the site"></a>
-        </div>
-      </div>
-      <div class="sc-panel" id="p-flower" role="tabpanel" aria-labelledby="t-flower" hidden>
-        <div class="sc-info">
-          <h3 data-i18n="flower.h">Flower shop</h3>
-          <p class="desc" data-i18n="flower.desc">A template for flower shops. Visitors browse bouquets, choose pick-up or delivery, and see a countdown for same-day delivery.</p>
-          <ul class="chips"><li data-i18n="flower.c1">5 colour schemes</li><li data-i18n="flower.c2">Pick-up or delivery</li><li data-i18n="flower.c3">Same-day countdown</li><li data-i18n="flower.c4">Demo back office</li></ul>
-          <div class="sc-design"><span class="sc-label" data-i18n="sc.design">2 · Choose a design</span><div role="group" aria-label="Design"><button class="seg" type="button" aria-pressed="true" data-folder="Flower_Shop" data-admin="1" data-note-key="flower.n1" data-note-en="Mimosa: a photo-led page with an order builder and delivery." aria-label="Design 1: Mimosa">1 · Mimosa</button><button class="seg" type="button" aria-pressed="false" data-folder="Flower_Shop_2" data-admin="1" data-note-key="flower.n2" data-note-en="Verbena: a full-width photo, shop by occasion and budget, and a photo catalog." aria-label="Design 2: Verbena">2 · Verbena</button></div></div>
-          <p class="sc-note" data-note></p>
-          <div class="sc-actions">
-            <a class="btn btn-primary" data-open href="#" data-i18n="sc.open">Open the site</a>
-            <a class="btn btn-quiet" data-admin-link href="#" data-i18n="sc.admin">See the demo back office</a>
-          </div>
-        </div>
-        <div class="sc-shot">
-          <div class="win desktop">
-            <div class="chrome">
-              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span data-chrome>Flower_Shop</span>
-            </div>
-            <div class="screen">
-              <iframe style="width:1440px;height:900px" data-i18n-attr="title:sc.preview" title="Preview of the website on a computer" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-            </div>
-          </div>
-          <a class="stage-link" data-open href="#" data-i18n-attr="aria-label:sc.open" aria-label="Open the site"></a>
-        </div>
-      </div>
-      </div>
+      <p class="sc-step" data-i18n="sc.s1">1 · Изберете вид бизнес</p>
+      <div class="sc-tabs" id="scTabs" role="tablist" aria-label="Видове бизнес" data-i18n-attr="aria-label:sc.tabs"></div>
+      <div id="scPanels"></div>
 
       <div class="next">
         <div>
-          <h3 data-i18n="next.title">Your business could be next</h3>
-          <p data-i18n="next.text">Tell me what you do and I'll tell you what a website can do for you.</p>
+          <h3 data-i18n="next.title">Вашият бизнес не е в списъка?</h3>
+          <p data-i18n="next.text">Разкажете ми с какво се занимавате и ще ви кажа какво може да направи един сайт за вас.</p>
         </div>
-        <a class="btn btn-quiet" href="#contact" data-i18n="next.cta">Start a project</a>
+        <a class="btn btn-accent arrow" href="#brief" data-i18n="next.cta">Разкажете ми</a>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ What you get ============ -->
+  <section class="block" id="get" aria-labelledby="get-h">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow" data-i18n="get.eyebrow">Какво получавате</p>
+        <h2 id="get-h" data-i18n="get.title">Всичко за онлайн присъствието ви на едно място</h2>
+        <p data-i18n="get.lead">От дизайна до пускането. Не е нужно да се занимавате с техническите неща.</p>
+      </div>
+      <ul class="cards">
+        <li class="rv">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 100 18c1.5 0 2-1 1.4-2-.7-1.2 0-2.5 1.4-2.5H17a4 4 0 004-4c0-5-4-9.5-9-9.5z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></svg></span>
+          <h3 data-i18n="get.1t">Дизайн за вашия бизнес</h3>
+          <p data-i18n="get.1p">Избирате шаблон, аз го нагласям към бизнеса ви: цветове, текстове, снимки и услуги. Леките промени са част от работата.</p>
+        </li>
+        <li class="rv">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+          <h3 data-i18n="get.2t">Български и английски</h3>
+          <p data-i18n="get.2p">Всеки сайт има две езикови версии, за да ви намират и чуждестранните клиенти.</p>
+        </li>
+        <li class="rv">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+          <h3 data-i18n="get.3t">Заявки и резервации</h3>
+          <p data-i18n="get.3p">Клиентите избират услуга и час или дати и ви изпращат заявка. Показва се само свободното.</p>
+        </li>
+        <li class="rv">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16z"/><path d="M14 6l3 3"/></svg></span>
+          <h3 data-i18n="get.4t">Админ панел – по желание</h3>
+          <p data-i18n="get.4p">С панел виждате заявките и променяте част от съдържанието сами. Без него промените правя аз или който вие изберете.</p>
+        </li>
+        <li class="rv">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 010-8 5 5 0 019.6-1A4.5 4.5 0 0117 18z"/></svg></span>
+          <h3 data-i18n="get.5t">Домейн и хостинг</h3>
+          <p data-i18n="get.5p">Уреждам регистрацията и пускането онлайн. Годишните такси на доставчиците остават за ваша сметка.</p>
+        </li>
+        <li class="rv">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg></span>
+          <h3 data-i18n="get.6t">Удобен за телефон</h3>
+          <p data-i18n="get.6p">Сайтът се чете и работи добре на малък екран, а текстът и контрастът са проверени с автоматични тестове за достъпност.</p>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ============ Process ============ -->
-  <section class="block" id="process" aria-labelledby="proc-h">
+  <section class="block" id="process" aria-labelledby="proc-h" style="background:var(--surface);border-block:1px solid var(--line)">
     <div class="wrap">
       <div class="head">
-        <h2 id="proc-h" data-i18n="proc.title">How a project works</h2>
+        <p class="eyebrow" data-i18n="proc.eyebrow">Как работим</p>
+        <h2 id="proc-h" data-i18n="proc.title">От първия разговор до пускането</h2>
+        <span class="badge" data-i18n="proc.badge">Първите две стъпки са безплатни</span>
       </div>
       <ol class="steps">
-        <li><h3 data-i18n="p.1t">We talk</h3><p data-i18n="p.1p">Tell me about your business and what you need.</p></li>
-        <li><h3 data-i18n="p.2t">A fixed price</h3><p data-i18n="p.2p">You get a written offer with a fixed price and a clear list of what's included.</p></li>
-        <li><h3 data-i18n="p.3t">I build it</h3><p data-i18n="p.3p">You see a working preview and tell me what to change.</p></li>
-        <li><h3 data-i18n="p.4t">Launch</h3><p data-i18n="p.4p">I connect your domain, put the site online and show you how it works.</p></li>
-        <li><h3 data-i18n="p.5t">Support</h3><p data-i18n="p.5p">For 30 days after launch I fix problems and make small changes.</p></li>
+        <li class="rv"><h3 data-i18n="p.1t">Разговор</h3><p data-i18n="p.1p">Разказвате ми за бизнеса си и какво ви трябва. Консултацията е безплатна.</p></li>
+        <li class="rv"><h3 data-i18n="p.2t">Безплатен преглед</h3><p data-i18n="p.2p">Избираме най-подходящия шаблон и виждате как би изглеждал за вашия бизнес.</p></li>
+        <li class="rv"><h3 data-i18n="p.3t">Нагласяне</h3><p data-i18n="p.3p">Цветове, текстове, снимки и услуги. За шаблон без допълнителни функции – обикновено 5–10 работни дни.</p></li>
+        <li class="rv"><h3 data-i18n="p.4t">Пускане</h3><p data-i18n="p.4p">Свързвам домейна, пускам сайта онлайн и ви показвам как работи.</p></li>
+        <li class="rv"><h3 data-i18n="p.5t">След пускането</h3><p data-i18n="p.5p">С админ панел променяте част от съдържанието сами. Без него ми пишете или се обръщате към когото изберете.</p></li>
       </ol>
     </div>
   </section>
 
-  <!-- ============ FAQ ============ -->
-  <section class="block faq" id="faq" aria-labelledby="faq-h">
+  <!-- ============ Why me ============ -->
+  <section class="block why" id="why" aria-labelledby="why-h">
     <div class="wrap">
       <div class="head">
-        <h2 id="faq-h" data-i18n="faq.title">Common questions</h2>
+        <p class="eyebrow" data-i18n="why.eyebrow">Защо аз</p>
+        <h2 id="why-h" data-i18n="why.title">Спестявам ви време. Цената е честна.</h2>
       </div>
-      <div class="faq-list">
-        <details><summary data-i18n="q1">Who owns the website?</summary><p data-i18n="a1">You do. The domain is registered in your name and you receive all the files.</p></details>
-        <details><summary data-i18n="q2">What do I need to provide?</summary><p data-i18n="a2">Your texts and photos. If you don't have photos, I can arrange a photographer.</p></details>
-        <details><summary data-i18n="q3">How much does it cost?</summary><p data-i18n="a3">It depends on what you need. After a short conversation you get a fixed price in writing.</p></details>
-        <details><summary data-i18n="q4">Are there monthly fees?</summary><p data-i18n="a4">A simple site can be hosted for free. You pay for the domain, usually around €10–20 a year, and for any extra services you choose.</p></details>
-        <details><summary data-i18n="q5">Can I change things later?</summary><p data-i18n="a5">Yes. Small changes are included for 30 days after launch, and I can add features or an editor so you can update the site yourself.</p></details>
+      <div class="why-grid">
+        <div class="me rv">
+          <span class="avatar" aria-hidden="true">K</span>
+          <h3 data-i18n="me.title">Аз съм Кристиан от Пловдив.</h3>
+          <p data-i18n="me.text">Бакалавър съм по информатика и от няколко години правя уебсайтове. Работите директно с човека, който ги прави: без посредници и без чакане на екип.</p>
+          <dl>
+            <dt data-i18n="me.l1">Град</dt><dd data-i18n="me.v1">Пловдив</dd>
+            <dt data-i18n="me.l2">Образование</dt><dd data-i18n="me.v2">Бакалавър по информатика</dd>
+            <dt data-i18n="me.l3">Опит</dt><dd data-i18n="me.v3">Няколко години в уеб разработката</dd>
+          </dl>
+        </div>
+        <ul class="reasons">
+          <li class="rv"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3 data-i18n="r.1t">Не започваме от нулата</h3><p data-i18n="r.1p">Дизайните вече са готови и изпитани. Това спестява седмици и намалява цената.</p></li>
+          <li class="rv"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg></span><h3 data-i18n="r.2t">Виждате преди да решите</h3><p data-i18n="r.2p">Безплатният преглед показва какво получавате, преди да сте се ангажирали с нещо.</p></li>
+          <li class="rv"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg></span><h3 data-i18n="r.3t">Ясно и без жаргон</h3><p data-i18n="r.3p">Казвам ви просто какво е нужно, колко време ще отнеме и кой какво плаща.</p></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- ============ Contact ============ -->
-  <section class="contact on-dark" id="contact" aria-labelledby="contact-h">
+  <!-- ============ FAQ ============ -->
+  <section class="block" id="faq" aria-labelledby="faq-h">
     <div class="wrap">
-      <h2 id="contact-h" data-i18n="contact.title">Let's talk about your website.</h2>
-      <p data-i18n="contact.text">Tell me what you do and what you need. I'll reply with a clear plan and a fixed price.</p>
-      <!-- TODO: replace with your real email address (twice) -->
-      <a class="mail" href="mailto:hello@example.com">hello@example.com</a>
-      <div><a class="btn btn-amber" href="mailto:hello@example.com" data-i18n="contact.cta">Email me</a></div>
+      <div class="head">
+        <p class="eyebrow" data-i18n="faq.eyebrow">Въпроси</p>
+        <h2 id="faq-h" data-i18n="faq.title">Често задавани въпроси</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="q1">Колко струва?</summary><p data-i18n="a1">Цената зависи от избрания шаблон и от промените, които искате. След безплатния преглед получавате ясна цена, преди да сме започнали работа.</p></details>
+        <details><summary data-i18n="q2">Колко време отнема?</summary><p data-i18n="a2">За шаблон или нещо подобно, без допълнителни функции, обикновено 5–10 работни дни. По-сложните неща се уговарят отделно.</p></details>
+        <details><summary data-i18n="q3">Какво мога да променя в шаблона?</summary><p data-i18n="q3a">Цветове, текстове, снимки, услуги и лого. Напълно нов дизайн или сериозно нова функционалност се уговарят отделно.</p></details>
+        <details><summary data-i18n="q4">Трябва ли да купя домейн и хостинг?</summary><p data-i18n="a4">Не е нужно да се занимавате с това. Аз ги уреждам и настройвам, а годишните такси на доставчиците са за ваша сметка.</p></details>
+        <details><summary data-i18n="q5">Мога ли да променям сайта сам?</summary><p data-i18n="a5">Ако админ панелът е част от уговорката, да: виждате заявките и променяте част от съдържанието. Иначе можете да ми възложите промените или да се обърнете към друг.</p></details>
+        <details><summary data-i18n="q6">Работят ли резервациите наистина?</summary><p data-i18n="a6">В демонстрациите данните остават във вашия браузър и нищо не се изпраща. В истински сайт заявките пристигат при вас, а админ панелът ги показва.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Brief ============ -->
+  <section class="brief on-ink" id="brief" aria-labelledby="brief-h">
+    <div class="wrap brief-grid">
+      <div class="pitch">
+        <p class="eyebrow" data-i18n="brief.eyebrow">Безплатен преглед</p>
+        <h2 id="brief-h" data-i18n="brief.title">Разкажете ми за бизнеса си.</h2>
+        <p data-i18n="brief.text">Попълнете краткия формуляр. Ще се върна към вас с препоръка за дизайн и безплатен първи преглед.</p>
+        <ul>
+          <li data-i18n="brief.b1">Консултацията е безплатна</li>
+          <li data-i18n="brief.b2">Първият преглед е безплатен</li>
+          <li data-i18n="brief.b3">Без ангажимент</li>
+        </ul>
+        <!-- Fill CONTACT in the script below: the lines appear here by themselves. -->
+        <div class="direct" id="direct" hidden></div>
+      </div>
+
+      <div>
+        <form class="form" id="briefForm" novalidate>
+          <h3 data-i18n="form.title">Кратка заявка</h3>
+          <div class="row2">
+            <div class="field"><label for="f-name" data-i18n="form.name">Вашето име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-contact" data-i18n="form.contact">Телефон или имейл</label><input id="f-contact" name="contact" type="text" required></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="f-type" data-i18n="form.type">Вид бизнес</label><select id="f-type" name="type"></select></div>
+            <div class="field"><label for="f-design"><span data-i18n="form.design">Дизайн, който ви харесва</span> <small data-i18n="form.opt">(по желание)</small></label><select id="f-design" name="design"></select></div>
+          </div>
+          <div class="field"><label for="f-msg"><span data-i18n="form.msg">Какво ви трябва?</span> <small data-i18n="form.opt">(по желание)</small></label><textarea id="f-msg" name="msg" data-i18n-attr="placeholder:form.ph" placeholder="Например: имам бръснарница в Пловдив и искам клиентите да си запазват час онлайн."></textarea></div>
+          <label class="consent"><input id="f-ok" name="ok" type="checkbox"><span><span data-i18n="form.ok">Съгласен съм да се свържете с мен по тази заявка.</span> <a href="privacy.html" data-i18n="f.privacy">Политика за поверителност</a></span></label>
+          <p class="f-error" id="f-error" role="alert" hidden></p>
+          <button class="btn btn-accent arrow" type="submit" id="f-send" data-i18n="form.send">Изпратете заявката</button>
+          <p class="f-note" id="f-note" data-i18n="form.note">Ползвам данните ви само за да ви отговоря.</p>
+        </form>
+        <div class="form f-done" id="f-done" hidden tabindex="-1">
+          <h3 data-i18n="done.title">Благодаря! Заявката е получена.</h3>
+          <p data-i18n="done.text">Ще се свържа с вас със следващата стъпка: препоръка за дизайн и безплатен първи преглед.</p>
+          <p class="f-demo" id="f-demo" hidden data-i18n="done.demo">Демо режим: нищо не беше изпратено. Заявката е записана само в този браузър.</p>
+          <button class="btn btn-line" type="button" id="f-again" data-i18n="done.again">Нова заявка</button>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>Master Web <span id="year"></span></span>
-    <span class="foot-links"><a href="privacy.html" data-i18n="f.privacy">Privacy notice</a></span>
+    <span><span class="foot-brand">Master Web</span> · <span data-i18n="foot.who">Кристиан, Пловдив</span> · <span id="year"></span></span>
+    <span class="foot-links"><a href="privacy.html" data-i18n="f.privacy">Политика за поверителност</a></span>
   </div>
 </footer>
 
+<nav class="mbar" id="mbar" aria-label="Бърз достъп" data-i18n-attr="aria-label:mbar.label"><a class="btn btn-accent" href="#brief" data-i18n="nav.cta">Безплатен преглед</a></nav>
+
 <script>
-  // Scale each preview (a full-size page) down to fit its frame.
-  const fit = el => {
-    const frame = el.querySelector('iframe');
-    if (frame) frame.style.transform = 'scale(' + el.clientWidth / parseInt(frame.style.width, 10) + ')';
-  };
-  const ro = new ResizeObserver(entries => entries.forEach(e => fit(e.target)));
-  document.querySelectorAll('.screen').forEach(s => { fit(s); ro.observe(s); });
-  document.getElementById('year').textContent = '© ' + new Date().getFullYear();
-
-  // Language: English (default, written in the HTML) and Bulgarian.
-  const BG = {
-    title: "Master Web – свободен уеб разработчик за местни бизнеси",
-    desc: "Свободен уеб разработчик, който прави бързи и надеждни уебсайтове и уеб приложения за бръснарници, салони, къщи под наем и други местни бизнеси.",
-    "skip": "Към съдържанието",
-    "f.privacy": "Политика за поверителност",
-    "nav.services": "Услуги", "nav.work": "Проекти", "nav.process": "Процес", "nav.faq": "Въпроси", "nav.contact": "Свържете се с мен",
-
-    "hero.title": "Уебсайтове, които водят местните клиенти до вратата ви.",
-    "hero.text": "Аз съм свободен уеб разработчик. Правя бързи, ясни и лесни за поддръжка уебсайтове и уеб приложения за бръснарници, салони, къщи под наем и други малки бизнеси.",
-    "hero.work": "Вижте проектите ми", "hero.start": "Започнете проект",
-    "stage.preview": "Преглед на уебсайта на Вила Стефани на компютър",
-    "stage.preview_m": "Преглед на уебсайта на Вила Стефани на телефон",
-    "stage.label": "Отвори уебсайта на Вила Стефани",
-    "stage.cap": "Действащ пример: Вила Стефани, къща за гости в Девин",
-    "stage.open": "Отворете сайта",
-
-    "inc.title": "Включено във всеки сайт",
-    "inc.1": "На български и английски", "inc.2": "Първо за телефони", "inc.3": "Проверен за достъпност",
-    "inc.4": "Без излишни тракери", "inc.5": "Домейнът и файловете са ваши",
-
-    "svc.title": "Какво мога да изградя за вас",
-    "svc.lead": "Започнете с прост уебсайт и добавяйте само това, от което бизнесът ви има нужда.",
-    "svc.1t": "Уебсайт", "svc.1p": "Ясен сайт на български и английски: стаите или услугите ви, снимки, отзиви, адрес и контакти.",
-    "svc.2t": "Календар за резервации", "svc.2p": "Гостите избират дати и изпращат запитване. Заетостта ви се синхронизира с Booking.com и Airbnb.",
-    "svc.3t": "Редактирайте сами", "svc.3p": "Лесна страница за вход, през която променяте текстове и снимки, без да пипате код.",
-    "svc.4t": "Автоматични имейли до гостите", "svc.4p": "Потвърждения, напомняния преди пристигане и благодарствено писмо със заявка за отзив.",
-    "svc.5t": "Снимки", "svc.5p": "Професионална фотосесия и подредба на помещенията, организирани за вас.",
-    "svc.6t": "Да ви намират в Google", "svc.6p": "Профилът ви в Google Бизнес, основи на търсенето и бързи страници, за да ви откриват хората наблизо.",
-
-    "work.title": "Сайтове, които съм направил",
-    "work.lead": "Четири вида бизнес, всеки с действаща демонстрация. Изберете един, сменете дизайна и го пробвайте сами.",
-    "sc.tabs": "Видове бизнес", "sc.one": "1 действащ сайт", "sc.two": "2 дизайна", "sc.three": "3 дизайна", "sc.four": "4 дизайна", "sc.design": "2 · Изберете дизайн", "sc.s1": "1 · Изберете вид бизнес",
-    "sc.open": "Отвори сайта", "sc.admin": "Виж демо админ панела", "sc.preview": "Преглед на уебсайта на компютър",
-    "guest.t": "Къща за гости", "guest.h": "Къща за гости",
-    "guest.desc": "Уебсайт на къща за гости. Гостите виждат стаите, храната и какво има наблизо, после се обаждат или питат за дати. Дизайни 2 до 4 добавят проверка на свободните стаи и форма за запитване; третият ползва календар, четвъртият – времева линия.",
-    "guest.c1": "Български и английски", "guest.c2": "Отзиви от гости", "guest.c3": "Какво има наблизо", "guest.c4": "Проверка на свободни стаи (дизайни 2 до 4)",
-    "guest.n1": "Вила Стефани: действащ сайт на истинска къща за гости.",
-    "guest.n2": "Къща Липа: меню отстрани, търсене по дати, свободни стаи и форма за запитване.",
-    "guest.n3": "Каменната изба: снимки на цял екран и календар, който показва заетите дни.",
-    "guest.n4": "Синя чапла: къща на езеро с илюстрирана карта и времева линия за резервации, по един ред за място.",
-    "nail.t": "Студио за нокти", "nail.h": "Студио за нокти",
-    "nail.desc": "Шаблон за студия за нокти. Посетителите разглеждат работите, виждат цените, събират посещение с обща цена и време и изпращат заявка, която се потвърждава с номер.",
-    "nail.c1": "5 цветови схеми", "nail.c2": "Обща цена и време", "nail.c3": "Система за заявки", "nail.c4": "Демо админ панел",
-    "nail.n1": "Nuance: меки арки на снимките, планиране на цена и галерия, от която се заявяват стилове.",
-    "nail.n2": "Lumi: плочки, в които отбелязваш няколко услуги и виждаш общата цена.",
-    "barber.t": "Бръснарница", "barber.h": "Бръснарница",
-    "barber.desc": "Шаблон за бръснарници. Посетителите виждат прически и цени, избират час и получават номер. Вторият дизайн добавя избор на бръснар.",
-    "barber.c1": "5 цветови схеми", "barber.c2": "Свободни часове на живо", "barber.c3": "Система за заявки", "barber.c4": "Демо админ панел",
-    "barber.n1": "Ironwood: тъмен и класически, с оценка на цената и форма за заявка.",
-    "barber.n2": "Foundry: панел за запазване в четири стъпки: услуга, бръснар, час, данни.",
-    "flower.t": "Цветарница", "flower.h": "Цветарница",
-    "flower.desc": "Шаблон за цветарници. Посетителите разглеждат букети, избират вземане или доставка и виждат обратно броене за доставка още днес.",
-    "flower.c1": "5 цветови схеми", "flower.c2": "Вземане или доставка", "flower.c3": "Брояч за доставка днес", "flower.c4": "Демо админ панел",
-    "flower.n1": "Mimosa: страница с акцент върху снимките, събиране на поръчка и доставка.",
-    "flower.n2": "Verbena: снимка на цяла ширина, избор по повод и бюджет и каталог със снимки.",
-    "next.title": "Следващият може да е вашият бизнес",
-    "next.text": "Разкажете ми с какво се занимавате и ще ви кажа какво може да направи един сайт за вас.",
-    "next.cta": "Започнете проект",
-
-    "proc.title": "Как върви един проект",
-    "p.1t": "Говорим", "p.1p": "Разкажете ми за бизнеса си и какво ви трябва.",
-    "p.2t": "Твърда цена", "p.2p": "Получавате писмена оферта с твърда цена и ясно описание какво е включено.",
-    "p.3t": "Изграждам го", "p.3p": "Виждате работещ преглед и ми казвате какво да променя.",
-    "p.4t": "Пускане", "p.4p": "Свързвам домейна ви, качвам сайта и ви показвам как работи.",
-    "p.5t": "Поддръжка", "p.5p": "30 дни след пускането отстранявам проблеми и правя малки промени.",
-
-    "faq.title": "Често задавани въпроси",
-    "q1": "Чий е сайтът?", "a1": "Ваш е. Домейнът се регистрира на ваше име и получавате всички файлове.",
-    "q2": "Какво трябва да предоставя аз?", "a2": "Текстовете и снимките си. Ако нямате снимки, мога да организирам фотограф.",
-    "q3": "Колко струва?", "a3": "Зависи от нуждите ви. След кратък разговор получавате твърда цена в писмен вид.",
-    "q4": "Има ли месечни такси?", "a4": "Прост сайт може да се хоства безплатно. Плащате за домейна, обикновено около 10–20 € годишно, и за допълнителните услуги, които изберете.",
-    "q5": "Мога ли да променям нещо по-късно?", "a5": "Да. Малките промени са включени 30 дни след пускането, а мога да добавя функции или редактор, за да обновявате сайта сами.",
-
-    "contact.title": "Да поговорим за вашия сайт.",
-    "contact.text": "Разкажете ми с какво се занимавате и какво ви трябва. Ще ви отговоря с ясен план и твърда цена.",
-    "contact.cta": "Пишете ми"
+  /* ================= Settings: fill these in before the site goes live ================= */
+  const CONTACT = {
+    email: "",        // e.g. "hello@your-domain.bg"
+    phone: "",        // e.g. "+359 88 000 0000"
+    viber: "",        // a phone number with country code, e.g. "+359880000000"
+    facebook: "",     // full address of your page
+    instagram: "",    // full address of your profile
+    formEndpoint: ""  // address that receives the form as JSON (e.g. a Formspree address). Empty = demo mode.
   };
 
-  // Remember the English originals so we can switch back.
-  const nodes = document.querySelectorAll('[data-i18n], [data-i18n-attr]');
+  /* ================= The showcase (add a project here) ================= */
+  const PROJECTS = [
+    { id: "guest", name: ["Къща за гости", "Guest house"],
+      desc: ["Сайт за къща за гости: стаи, снимки, отзиви и какво има наблизо. Дизайни 2–4 добавят проверка на свободните стаи и форма за запитване.", "A website for a guest house: rooms, photos, reviews and what is nearby. Designs 2 to 4 add a free-room check and an enquiry form."],
+      chips: [["Български и английски", "Bulgarian and English"], ["Свободни стаи (дизайни 2–4)", "Free rooms (designs 2 to 4)"], ["Форма за запитване", "Enquiry form"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Vila-Stefani-Devin-main", single: true, admin: false, name: "Vila Stefani", note: ["Действащ сайт на истинска къща за гости.", "A live site for a real guest house."] },
+        { folder: "Vila_2", admin: true, name: "Linden House", note: ["Меню отстрани, търсене по дати, свободни стаи и форма за запитване.", "A side-bar layout with a date search, free rooms and an enquiry form."] },
+        { folder: "Vila_3", admin: true, name: "The Stone Cellar", note: ["Снимки на цял екран и календар, който показва заетите дни.", "Full-screen photo chapters and a booking calendar that shows busy days."] },
+        { folder: "Vila_4", admin: true, name: "Blue Heron", note: ["Къща на езеро с илюстрирана карта и времева линия за резервации.", "A lake house with an illustrated map and a booking timeline."] }] },
+    { id: "barber", name: ["Бръснарница", "Barbershop"],
+      desc: ["Сайт за бръснарница: прически и цени, избор на бръснар и час, заявка с номер. Всеки дизайн има избор на цветова схема.", "A website for a barbershop: cuts and prices, choosing a barber and a time, a request with a reference number. Every design has a colour-scheme chooser."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Свободни часове на живо", "Live free times"], ["Система за заявки", "Request system"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Barber_shop", admin: true, name: "Ironwood", note: ["Тъмен и класически, с оценка на цената и форма за заявка.", "Dark and classic, with a price estimator and a request form."] },
+        { folder: "Barber_shop_2", admin: true, name: "Foundry", note: ["Панел за запазване в четири стъпки: услуга, бръснар, час, данни.", "A booking drawer with four steps: service, barber, time, details."] },
+        { folder: "Barber_shop_3", admin: true, name: "Hollis & Dane", note: ["Първа страница като на вестник и табло със столове – колона за всеки бръснар.", "A newspaper front page and a chair board with one column per barber."] },
+        { folder: "Barber_shop_4", admin: true, name: "Bolt", note: ["Разделен екран, услуги с едно докосване и билет, който се събира на живо.", "A split screen, tap-to-add services and a ticket that adds up live."] }] },
+    { id: "nail", name: ["Студио за нокти", "Nail studio"],
+      desc: ["Сайт за студио за нокти: работи, цени, събиране на посещение с обща цена и време и заявка с номер. Един дизайн е лукбук, а друг – конструктор, в който създавате комплекта си на живо.", "A website for a nail studio: work, prices, building a visit with a total price and time, and a request with a reference number. One design is a lookbook, another a builder where you design your set live."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Обща цена и време", "Total price and time"], ["Система за заявки", "Request system"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Nail_Salon_1", admin: true, name: "Nuance", note: ["Меки арки на снимките, планиране на цена и галерия, от която се заявяват стилове.", "Soft arched photos, a price planner and a gallery to request looks from."] },
+        { folder: "Nail_Salon_2", admin: true, name: "Lumi", note: ["Плочки, в които отбелязвате няколко услуги и виждате общата цена.", "A tile layout where you tick several services and see the total."] },
+        { folder: "Nail_Salon_3", admin: true, name: "Atelier Nude", note: ["Лукбук: избирате дизайн и услугите му се записват сами, а менюто е с цени на видно място.", "A lookbook: pick a look and its services are added for you, with the price menu in plain sight."] },
+        { folder: "Nail_Salon_4", admin: true, name: "Glossy", note: ["Създайте комплекта си: форма, дължина, цвят и финиш върху ръка на живо, с цена и време.", "Design your set: shape, length, colour and finish on a live hand, with price and time."] },
+        { folder: "Nail_Salon_5", admin: true, name: "Nocturne", note: ["Тъмно нощно студио: чат с четири въпроса намира комплекта, цената и времето, после избирате ден от календара.", "A dark late-night bar: a four-question chat finds your set, price and time, then you pick a day on a calendar."] }] },
+    { id: "flower", name: ["Цветарница", "Flower shop"],
+      desc: ["Сайт за цветарница: букети, вземане или доставка и обратно броене за доставка още днес. Има и дизайн с абонамент за цветя и дизайн за сватби и събития.", "A website for a flower shop: bouquets, pickup or delivery, and a countdown for same-day delivery. There is also a flower subscription design and a wedding and event design."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Вземане или доставка", "Pickup or delivery"], ["Брояч за доставка днес", "Same-day countdown"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Flower_Shop", admin: true, name: "Mimosa", note: ["Страница с акцент върху снимките, събиране на поръчка и доставка.", "A photo-led page with an order builder and delivery."] },
+        { folder: "Flower_Shop_2", admin: true, name: "Verbena", note: ["Снимка на цяла ширина, избор по повод и бюджет и каталог със снимки.", "A full-width photo, shop by occasion and budget, and a photo catalog."] },
+        { folder: "Flower_Shop_3", admin: true, name: "Sunday Stems", note: ["Абонамент за цветя: размер, ритъм, ваза и подарък, букет за седмицата, календар на сезона и ценова бележка.", "A flower subscription: size, rhythm, vase and gift, this week's bouquet, a season calendar and a price slip."] },
+        { folder: "Flower_Shop_4", admin: true, name: "Atelier Aubade", note: ["Цветарка за сватби и събития: истории, пакети, планер с ценови диапазон и безплатна консултация.", "A wedding and event florist: stories, packages, a planner with a price range and a free consultation."] }] },
+    { id: "cafe", name: ["Кафене", "Café"],
+      desc: ["Сайт за кафене в четири варианта: поръчка за вземане без опашка, пържилня, която продава кафе на зърна, кафене за работа с места на час и класическо кафене с меню и резервация на маса.", "A website for a café in four versions: a pick-up order without a queue, a roastery that sells beans, a work-friendly café with seats by the hour, and a traditional coffee house with a menu and table reservations."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Поръчка, зърна, места или маса", "Orders, beans, seats or tables"], ["Свободен час на живо", "Live free times"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Cafe_1", admin: true, name: "Little Moka", note: ["Топло и закръглено: менюто е и поръчката, с мляко по избор, час за вземане и сметка, която се събира на живо.", "Warm and rounded: the menu is the order, with a milk choice, a pick-up time and a bill that builds as you go."] },
+        { folder: "Cafe_2", admin: true, name: "Ember Roasters", note: ["Пържилня за кафе: избор на зърна, размер и мелене, абонамент, калкулатор за приготвяне и лента с общата сума.", "A coffee roastery: choose beans, size and grind, subscribe, use the brew calculator and watch the total on a checkout bar."] },
+        { folder: "Cafe_3", admin: true, name: "Desk & Drip", note: ["Кафене за работа: план на салона, места на час, цена, която не надвишава дневната, и седмична програма.", "A café for working: a floor plan, seats by the hour, a price that never goes above the day price, and a weekly timetable."] },
+        { folder: "Cafe_4", admin: true, name: "Kettle & Co", note: ["Класическо кафене: голяма снимка, истинско меню с цени, кратка история за мястото и проста резервация на маса.", "A traditional coffee house: one big photo, a proper menu with prices, a short story and a simple table reservation."] }] },
+    { id: "tyre", name: ["Гуми и сервиз", "Tyre shop"],
+      desc: ["Сайт за гуми и сервиз: търсачка на размера, цена на смяната веднага, цени на услугите и запазване на час с реално време за работата.", "A website for a tyre and service workshop: a tyre size finder, the price of a swap at once, a price board and booking with the real time the job takes."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Търсачка на размера", "Tyre size finder"], ["Цена и време на живо", "Live price and time"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Tyre_Shop_1", admin: true, name: "Gripline", note: ["Тъмен и индустриален: размерът на гумата показва цената, а сметката и времето се променят със сервизните услуги.", "Dark and industrial: the tyre size shows the price, and the slip and the time change with the services you tick."] },
+        { folder: "Tyre_Shop_2", admin: true, name: "Stoyanov Tyres", note: ["Семеен сервиз: голям телефон, ясен ценоразпис, видове нови гуми и форма „Поискай цена“.", "A family workshop: a big phone number, a clear price list, kinds of new tyres and an “ask for a price” form."] }] },
+    { id: "restaurant", name: ["Ресторант", "Restaurant"],
+      desc: ["Сайт за ресторант: резервация на маса с часове според броя гости, меню с филтри по режим, обедно меню и тераса.", "A website for a restaurant: table reservations with times that fit the party size, a menu with diet filters, a lunch menu and a terrace."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Резервация на маса", "Table reservations"], ["Меню с филтри", "Menu with filters"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Restaurant_1", admin: true, name: "Maslina", note: ["Спокоен и редакторски: резервационна лента на първия екран, меню с филтри, обяд с три хода и билет за резервацията.", "Calm and editorial: a booking bar on the first screen, a menu with filters, a three-course lunch and a reservation ticket."] },
+        { folder: "Restaurant_2", admin: true, name: "Bashta", note: ["Традиционна механа: гювеч и скара, снимки на ястията и онлайн поръчка за доставка или вземане.", "A traditional tavern: gyuvech and grill, photos of the dishes and online ordering for delivery or pick-up."] },
+        { folder: "Restaurant_3", admin: true, name: "Lozeta", note: ["Ресторант за събития: зали, менюта на човек, дегустация и заявка за сватба, рожден ден или фирмено събитие.", "A restaurant for events: halls, menus per guest, a tasting and a request for a wedding, birthday or company event."] },
+        { folder: "Restaurant_4", admin: true, name: "Fornello", note: ["Класическа пицария: пещ на дърва, меню с три размера и проста резервация на маса.", "A classic pizzeria: a wood-fired oven, a menu with three sizes and a simple table reservation."] }] },
+    { id: "dentist", name: ["Стоматолог", "Dentist"],
+      desc: ["Сайт за стоматологична клиника: услуги с цени, лекари, какво става при първото посещение и запазване на час според продължителността на услугата.", "A website for a dental clinic: services with prices, doctors, what happens at the first visit and booking a time that fits the length of the treatment."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Цени на услугите", "Service prices"], ["Час според услугата", "Time fits the service"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Dentist_1", admin: true, name: "Dent Plus", note: ["Спокойна клиника: ясен ценоразпис, два лекаря, първо посещение стъпка по стъпка и форма за час.", "A calm clinic: a clear price list, two doctors, the first visit step by step and an appointment form."] }] },
+    { id: "detailing", name: ["Автодетайлинг", "Auto detailing"],
+      desc: ["Сайт за детайлинг студио: пакети, цени по размер на автомобила, допълнения и запазване на час с ориентировъчна цена и време.", "A website for a detailing studio: packages, prices by car size, add-ons and booking with an estimated price and time."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Цени по размер", "Prices by car size"], ["Цена и време на живо", "Live price and time"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Detailing_1", admin: true, name: "Kristal", note: ["Строг и тъмен: пет пакета, таблица с цени по размер, допълнения и форма с ориентировъчна цена.", "Strict and dark: five packages, a price table by size, add-ons and a form with an estimated price."] }] },
+    { id: "vet", name: ["Ветеринар", "Vet clinic"],
+      desc: ["Сайт за ветеринарна клиника или ветеринар на посещение: услуги с цени, ваксини, спешен случай и запазване на час.", "A website for a veterinary clinic or a vet who visits at home: services with prices, vaccines, an emergency box and booking."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Цени на услугите", "Service prices"], ["Час или посещение у дома", "Clinic or home visit"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Vet_1", admin: true, name: "Lapa Vet", note: ["Клиника като при лекар: двама лекари с портрети и квалификации, лаборатория и операционна, цени и форма за час.", "A clinic that feels like a doctor’s practice: two vets with portraits and credentials, a lab and operating room, prices and an appointment form."] },
+        { folder: "Vet_2", admin: true, name: "VetDoma", note: ["Лицензиран лекар, който идва у дома: лекари с квалификации, мобилен кабинет, цена с пътуването и адрес във формата.", "A licensed vet who comes to your home: vets with credentials, a mobile kit, a price with travel and an address in the form."] }] },
+    { id: "wellness", name: ["Физиотерапия и масаж", "Physiotherapy and massage"],
+      desc: ["Сайтове за кабинет по физиотерапия и за масажно студио: цени, терапевти и запазване на час според продължителността.", "Websites for a physiotherapy clinic and a massage studio: prices, therapists and booking by length of the session."],
+      chips: [["5 цветови схеми", "5 colour schemes"], ["Цени и продължителност", "Prices and length"], ["Час според посещението", "Time fits the visit"], ["Демо админ панел", "Demo back office"]],
+      designs: [
+        { folder: "Physio_1", admin: true, name: "Motus", note: ["Премиум клиника: „Къде те боли?“ на първия екран, терапевти с портрети и квалификации, метод, ценови карти и тъмен панел за запазване на час.", "A premium clinic: “Where does it hurt?” on the first screen, therapists with portraits and credentials, a method, price cards and a dark booking panel."] },
+        { folder: "Massage_1", admin: true, name: "Tishina", note: ["Тихо студио: масажи с цена по продължителност, подаръчен ваучер и резервация.", "A quiet studio: massages priced by length, a gift voucher and booking."] }] }
+  ];
+  const DESIGN_COUNT = PROJECTS.reduce((n, p) => n + p.designs.length, 0);
+
+  /* ================= English texts (Bulgarian is written in the HTML above) ================= */
+  const EN = {
+    title: "Master Web – a website for your business in 5–10 working days | Plovdiv",
+    desc: "Kristian from Plovdiv builds websites for guest houses, barbershops, nail studios, flower shops, cafés, tyre shops, restaurants, dentists, detailing studios, vets, physiotherapists and massage studios. You choose a ready design, I adapt it to your business and put it online. Free first preview.",
+    "skip": "Skip to content", "f.privacy": "Privacy notice",
+    "nav.label": "Main navigation", "mbar.label": "Quick access", "nav.work": "Examples", "nav.get": "What you get", "nav.process": "How it works", "nav.faq": "Questions", "nav.cta": "Free preview",
+    "hero.eyebrow": "Web developer · Plovdiv",
+    "hero.title": "Your business online in <em>5&#8288;–&#8288;10&nbsp;working days.</em>",
+    "hero.lead": "You choose a ready design from {n} live demos, I adapt it to your business and put it online. The first preview and the consultations are free.",
+    "hero.cta": "Ask for a free preview", "hero.work": "See the examples",
+    "hero.t1": "Free first preview", "hero.t2": "Bulgarian and English", "hero.t3": "Domain and hosting: I set them up",
+    "stage.preview": "Preview of the Vila Stefani website on a computer", "stage.preview_m": "Preview of the Vila Stefani website on a phone", "stage.label": "Open the Vila Stefani website",
+    "stage.cap": "Real project: Vila Stefani, a guest house in Devin", "stage.open": "Open the site",
+    "float.1": "New request", "float.1s": "Arrival 12 July · 2 guests", "float.2": "Made for phones", "float.2s": "Checked on a small screen",
+    "facts.label": "At a glance", "facts.n": "{n}",
+    "facts.1": "ready designs you can try", "facts.2": "kinds of business: guest houses, barbershops, nail studios, flower shops, cafés, tyre shops, restaurants, dentists, detailing, vets, physiotherapy and massage", "facts.3": "languages in every site: Bulgarian and English", "facts.4": "working days for a template with no extra features",
+    "work.eyebrow": "Live examples", "work.title": "Pick a kind of business. Look around. Try it.",
+    "work.lead": "Every example is a working site with bookings or requests you can try. Nothing is sent: the data stays in your browser.",
+    "sc.s1": "1 · Choose a kind of business", "sc.s2": "2 · Choose a design", "sc.tabs": "Kinds of business",
+    "sc.open": "Open the site", "sc.admin": "See the demo back office", "sc.want": "I want this design", "sc.desktop": "Computer", "sc.phone": "Phone", "sc.device": "Preview size",
+    "sc.preview": "Preview of the website", "sc.designs": "{n} designs",
+    "next.title": "Is your business not on the list?", "next.text": "Tell me what you do and I'll tell you what a website can do for you.", "next.cta": "Tell me about it",
+    "get.eyebrow": "What you get", "get.title": "Everything for your online presence in one place", "get.lead": "From the design to going live. You do not have to deal with the technical side.",
+    "get.1t": "A design for your business", "get.1p": "You choose a template and I adapt it to your business: colours, texts, photos and services. Light changes are part of the job.",
+    "get.2t": "Bulgarian and English", "get.2p": "Every site has two language versions, so foreign customers can find you too.",
+    "get.3t": "Requests and bookings", "get.3p": "Customers pick a service and a time, or dates, and send you a request. Only what is free is shown.",
+    "get.4t": "Back office: optional", "get.4p": "With a back office you see the requests and change part of the content yourself. Without it I make the changes, or whoever you choose.",
+    "get.5t": "Domain and hosting", "get.5p": "I handle the registration and putting the site online. The providers' yearly fees are paid by you.",
+    "get.6t": "Made for phones", "get.6p": "The site reads and works well on a small screen, and text and contrast are checked with automated accessibility tests.",
+    "proc.eyebrow": "How we work", "proc.title": "From the first chat to going live", "proc.badge": "The first two steps are free",
+    "p.1t": "A chat", "p.1p": "You tell me about your business and what you need. The consultation is free.",
+    "p.2t": "A free preview", "p.2p": "We pick the best template and you see how it would look for your business.",
+    "p.3t": "Adapting it", "p.3p": "Colours, texts, photos and services. For a template with no extra features it usually takes 5–10 working days.",
+    "p.4t": "Going live", "p.4p": "I connect the domain, put the site online and show you how it works.",
+    "p.5t": "After launch", "p.5p": "With a back office you change part of the content yourself. Without it, write to me or to whoever you choose.",
+    "why.eyebrow": "Why me", "why.title": "I save you time. The price is fair.",
+    "me.title": "I am Kristian, from Plovdiv.", "me.text": "I have a bachelor's degree in computer science and have built websites for a few years. You work directly with the person who builds them: no middlemen and no waiting for a team.",
+    "me.l1": "City", "me.v1": "Plovdiv", "me.l2": "Education", "me.v2": "Bachelor's degree in computer science", "me.l3": "Experience", "me.v3": "A few years in web development",
+    "r.1t": "We do not start from zero", "r.1p": "The designs are already built and tried. That saves weeks and lowers the price.",
+    "r.2t": "You see it before you decide", "r.2p": "The free preview shows what you get before you commit to anything.",
+    "r.3t": "Clear and jargon-free", "r.3p": "I tell you plainly what is needed, how long it takes and who pays for what.",
+    "faq.eyebrow": "Questions", "faq.title": "Common questions",
+    q1: "How much does it cost?", a1: "It depends on the template you choose and the changes you want. After the free preview you get a clear price before any work starts.",
+    q2: "How long does it take?", a2: "For a template or something similar, with no extra features, usually 5–10 working days. More complex things are agreed separately.",
+    q3: "What can I change in a template?", q3a: "Colours, texts, photos, services and logo. A completely new design or a major new feature is agreed separately.",
+    q4: "Do I have to buy a domain and hosting?", a4: "You do not have to deal with that. I set them up, and the providers' yearly fees are paid by you.",
+    q5: "Can I edit the site myself?", a5: "If the back office is part of the deal, yes: you see the requests and change part of the content. Otherwise you can ask me to make the changes, or turn to someone else.",
+    q6: "Do the bookings really work?", a6: "In the demos the data stays in your browser and nothing is sent. In a real site the requests reach you and the back office shows them.",
+    "brief.eyebrow": "Free preview", "brief.title": "Tell me about your business.", "brief.text": "Fill in the short form. I will come back to you with a design recommendation and a free first preview.",
+    "brief.b1": "The consultation is free", "brief.b2": "The first preview is free", "brief.b3": "No commitment",
+    "form.title": "A short request", "form.name": "Your name", "form.contact": "Phone or email", "form.type": "Kind of business", "form.design": "A design you like", "form.opt": "(optional)",
+    "form.msg": "What do you need?", "form.ph": "For example: I have a barbershop in Plovdiv and want customers to book online.",
+    "form.ok": "I agree that you contact me about this request.", "form.send": "Send the request", "form.note": "I use your details only to reply to you.",
+    "form.other": "Something else", "form.unknown": "Not sure yet: recommend one",
+    "err.name": "Please enter your name.", "err.contact": "Please enter a phone number or an email address.", "err.ok": "Please tick the box so I may contact you.", "err.send": "Something went wrong. Please try again.",
+    "sending": "Sending…",
+    "done.title": "Thank you! Your request is received.", "done.text": "I will be in touch with the next step: a design recommendation and a free first preview.",
+    "done.demo": "Demo mode: nothing was sent. The request is saved only in this browser.", "done.again": "New request",
+    "foot.who": "Kristian, Plovdiv"
+  };
+  const BG_EXTRA = {
+    "sc.s2": "2 · Изберете дизайн", "sc.open": "Отвори сайта", "sc.admin": "Демо админ панел", "sc.want": "Искам този дизайн", "sc.desktop": "Компютър", "sc.phone": "Телефон", "sc.device": "Размер на прегледа",
+    "sc.preview": "Преглед на уебсайта", "sc.designs": "{n} дизайна",
+    "form.other": "Друго", "form.unknown": "Още не знам: препоръчайте ми",
+    "err.name": "Моля, въведете името си.", "err.contact": "Моля, въведете телефон или имейл.", "err.ok": "Моля, отбележете съгласието, за да се свържа с вас.", "err.send": "Нещо се обърка. Опитайте пак.",
+    "sending": "Изпращане…"
+  };
+
+  /* ================= Helpers ================= */
+  const $ = id => document.getElementById(id);
+  const isBg = () => document.documentElement.lang === 'bg';
+  const idx = () => isBg() ? 0 : 1;
+  const BG = {};                       // Bulgarian originals, read from the HTML
+  const nodes = [...document.querySelectorAll('[data-i18n], [data-i18n-attr]')];
   nodes.forEach(el => {
-    if (el.dataset.i18n) el._en = el.innerHTML;
-    if (el.dataset.i18nAttr) {
-      el._enAttrs = {};
-      el.dataset.i18nAttr.split(';').forEach(pair => { const attr = pair.split(':')[0]; el._enAttrs[attr] = el.getAttribute(attr); });
-    }
+    if (el.dataset.i18n) BG[el.dataset.i18n] = el.innerHTML;
+    if (el.dataset.i18nAttr) el.dataset.i18nAttr.split(';').forEach(p => { const [a, k] = p.split(':'); BG[k] = el.getAttribute(a); });
+  });
+  BG.title = document.title; BG.desc = $('meta-desc').content;
+  Object.assign(BG, BG_EXTRA);
+  const tr = k => (isBg() ? BG[k] : EN[k]).replace(/\{n\}/g, DESIGN_COUNT);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+
+  $('year').textContent = '© ' + new Date().getFullYear();
+  const topbar = $('top');
+  const onScroll = () => topbar.classList.toggle('scrolled', window.scrollY > 8);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* Scale each preview (a full-size page) down to fit its frame. */
+  const fit = s => {
+    const f = s.querySelector('iframe');
+    if (f) f.style.transform = 'scale(' + s.clientWidth / parseInt(f.style.width, 10) + ')';
+  };
+  const ro = new ResizeObserver(es => es.forEach(e => fit(e.target)));
+  const watch = s => { fit(s); ro.observe(s); };
+  document.querySelectorAll('.screen').forEach(watch);
+
+  /* ================= Showcase ================= */
+  let device = 'desktop';
+  const state = {};                    // project id -> index of the chosen design
+  PROJECTS.forEach(p => state[p.id] = 0);
+  const tabsEl = $('scTabs'), panelsEl = $('scPanels');
+  const tabs = [];
+
+  PROJECTS.forEach((p, pi) => {
+    const tab = el('button', 'sc-tab'); tab.type = 'button'; tab.id = 't-' + p.id; tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-controls', 'p-' + p.id); tab.setAttribute('aria-selected', pi === 0 ? 'true' : 'false'); tab.tabIndex = pi === 0 ? 0 : -1;
+    tab.appendChild(el('span', 'sc-name')); tab.appendChild(el('small'));
+    tabsEl.appendChild(tab); tabs.push(tab);
+
+    const panel = el('div', 'sc-panel'); panel.id = 'p-' + p.id; panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', tab.id); panel.hidden = pi !== 0;
+    panel.innerHTML =
+      '<div class="sc-info"><h3></h3><p class="desc"></p><ul class="chips"></ul>' +
+      '<span class="sc-label" id="lbl-' + p.id + '"></span><div class="picker" role="group" aria-labelledby="lbl-' + p.id + '"></div>' +
+      '<div class="sc-actions"><a class="btn btn-accent" data-open href="#"></a><a class="btn btn-ghost" data-admin-link href="#"></a><button class="btn btn-light" type="button" data-want></button></div></div>' +
+      '<div class="sc-shot"><div class="dev" role="group"><button type="button" data-dev="desktop"></button><button type="button" data-dev="phone"></button></div>' +
+      '<div class="frame"><div class="win"><div class="chrome"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span data-chrome></span></div>' +
+      '<div class="screen"><iframe style="width:1440px;height:900px" loading="lazy" tabindex="-1" aria-hidden="true"></iframe></div></div><a class="stage-link" data-open href="#"></a></div></div>';
+    const picker = panel.querySelector('.picker');
+    p.designs.forEach((d, di) => {
+      const b = el('button', 'seg'); b.type = 'button'; b.setAttribute('aria-pressed', di === 0 ? 'true' : 'false'); b.dataset.i = di;
+      b.innerHTML = '<span class="n">' + (di + 1) + '</span><b></b><small></small>';
+      b.querySelector('b').textContent = d.name;
+      b.addEventListener('click', () => { state[p.id] = di; updatePanel(p); });
+      picker.appendChild(b);
+    });
+    panel.querySelector('[data-want]').addEventListener('click', () => want(p));
+    panel.querySelectorAll('[data-dev]').forEach(b => b.addEventListener('click', () => setDevice(b.dataset.dev)));
+    panelsEl.appendChild(panel);
+    watch(panel.querySelector('.screen'));
   });
 
-  // Work showcase: one business type at a time, with a switch between designs. Only the visible preview is loaded.
-  const scTabs = [...document.querySelectorAll('.sc-tab')];
-  const isBg = () => document.documentElement.lang === 'bg';
-  function updatePanel(panel) {
-    const btn = panel.querySelector('.seg[aria-pressed="true"]');
-    const folder = btn.dataset.folder;
-    const single = btn.dataset.single === '1';           // a site with one page for both languages
-    const url = folder + '/' + (single || isBg() ? 'index.html' : 'en/index.html');
-    panel.querySelectorAll('[data-open]').forEach(a => { if (a.getAttribute('href') !== url) a.setAttribute('href', url); });
+  function updatePanel(p) {
+    const panel = $('p-' + p.id), d = p.designs[state[p.id]], bg = isBg();
+    const folder = d.folder, url = folder + '/' + (d.single || bg ? 'index.html' : 'en/index.html');
+    const tab = $('t-' + p.id);
+    tab.querySelector('.sc-name').textContent = p.name[idx()];
+    tab.querySelector('small').textContent = p.designs.length === 1 ? (bg ? '1 дизайн' : '1 design') : tr('sc.designs').replace('{n}', p.designs.length).replace(/^\d+/, p.designs.length);
+    panel.querySelector('h3').textContent = p.name[idx()];
+    panel.querySelector('.desc').textContent = p.desc[idx()];
+    const chips = panel.querySelector('.chips'); chips.textContent = '';
+    p.chips.forEach(c => chips.appendChild(el('li', '', c[idx()])));
+    $('lbl-' + p.id).textContent = tr('sc.s2');
+    panel.querySelectorAll('.seg').forEach((b, i) => {
+      b.setAttribute('aria-pressed', i === state[p.id] ? 'true' : 'false');
+      b.querySelector('small').textContent = p.designs[i].note[idx()];
+    });
+    panel.querySelectorAll('[data-open]').forEach(a => {
+      if (a.getAttribute('href') !== url) a.setAttribute('href', url);
+      if (a.classList.contains('btn')) a.textContent = tr('sc.open'); else a.setAttribute('aria-label', tr('sc.open') + ': ' + d.name);
+    });
     const adm = panel.querySelector('[data-admin-link]');
-    if (adm) {
-      adm.hidden = btn.dataset.admin !== '1';
-      adm.setAttribute('href', folder + '/admin.html' + (isBg() ? '' : '?lang=en'));
-    }
-    panel.querySelector('[data-chrome]').textContent = folder;
-    panel.querySelector('[data-note]').textContent = isBg() ? BG[btn.dataset.noteKey] : btn.dataset.noteEn;
+    adm.hidden = !d.admin; adm.textContent = tr('sc.admin');
+    adm.setAttribute('href', folder + '/admin.html' + (bg ? '' : '?lang=en'));
+    panel.querySelector('[data-want]').textContent = tr('sc.want');
+    panel.querySelector('[data-chrome]').textContent = d.name;
+    panel.querySelector('.dev').setAttribute('aria-label', tr('sc.device'));
+    panel.querySelector('[data-dev="desktop"]').textContent = tr('sc.desktop');
+    panel.querySelector('[data-dev="phone"]').textContent = tr('sc.phone');
+    panel.querySelectorAll('[data-dev]').forEach(b => b.setAttribute('aria-pressed', b.dataset.dev === device ? 'true' : 'false'));
     const frame = panel.querySelector('iframe');
+    frame.title = tr('sc.preview') + ': ' + d.name;
     if (!panel.hidden && frame.getAttribute('src') !== url) frame.setAttribute('src', url);   // load only what is on screen
   }
-  function selectTab(tab, focus) {
-    scTabs.forEach(t => {
-      const on = t === tab;
-      t.setAttribute('aria-selected', on ? 'true' : 'false');
-      t.tabIndex = on ? 0 : -1;
-      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+  function setDevice(dv) {
+    device = dv;
+    document.querySelectorAll('.sc-panel').forEach(panel => {
+      const win = panel.querySelector('.win'), f = panel.querySelector('iframe');
+      win.classList.toggle('is-phone', dv === 'phone');
+      f.style.width = dv === 'phone' ? '390px' : '1440px'; f.style.height = dv === 'phone' ? '780px' : '900px';
+      panel.querySelectorAll('[data-dev]').forEach(b => b.setAttribute('aria-pressed', b.dataset.dev === dv ? 'true' : 'false'));
+      fit(panel.querySelector('.screen'));
     });
-    const panel = document.getElementById(tab.getAttribute('aria-controls'));
-    updatePanel(panel);
-    fit(panel.querySelector('.screen'));
+  }
+  function selectTab(tab, focus) {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1;
+      $(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    const p = PROJECTS[tabs.indexOf(tab)];
+    updatePanel(p);
+    fit($('p-' + p.id).querySelector('.screen'));
     if (focus) tab.focus();
   }
-  scTabs.forEach((t, i) => {
+  tabs.forEach((t, i) => {
     t.addEventListener('click', () => selectTab(t, false));
     t.addEventListener('keydown', e => {
-      const n = scTabs.length;
-      if (e.key === 'ArrowRight') { e.preventDefault(); selectTab(scTabs[(i + 1) % n], true); }
-      if (e.key === 'ArrowLeft') { e.preventDefault(); selectTab(scTabs[(i - 1 + n) % n], true); }
+      const n = tabs.length;
+      if (e.key === 'ArrowRight') { e.preventDefault(); selectTab(tabs[(i + 1) % n], true); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); selectTab(tabs[(i - 1 + n) % n], true); }
     });
   });
-  document.querySelectorAll('.sc-panel').forEach(panel => {
-    panel.querySelectorAll('.seg').forEach(btn => btn.addEventListener('click', () => {
-      panel.querySelectorAll('.seg').forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
-      updatePanel(panel);
-    }));
+
+  /* ================= The brief form ================= */
+  const form = $('briefForm'), fType = $('f-type'), fDesign = $('f-design'), errBox = $('f-error'), sendBtn = $('f-send');
+  function fillSelects() {
+    const keepT = fType.value, keepD = fDesign.value;
+    fType.textContent = ''; fDesign.textContent = '';
+    PROJECTS.forEach(p => { const o = el('option', '', p.name[idx()]); o.value = p.id; fType.appendChild(o); });
+    const other = el('option', '', tr('form.other')); other.value = 'other'; fType.appendChild(other);
+    const unk = el('option', '', tr('form.unknown')); unk.value = ''; fDesign.appendChild(unk);
+    PROJECTS.forEach(p => p.designs.forEach(d => { const o = el('option', '', d.name + ' (' + p.name[idx()] + ')'); o.value = d.folder; fDesign.appendChild(o); }));
+    if (keepT) fType.value = keepT; if (keepD) fDesign.value = keepD;
+  }
+  function want(p) {
+    fillSelects();
+    fType.value = p.id; fDesign.value = p.designs[state[p.id]].folder;
+    $('brief').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    setTimeout(() => $('f-name').focus({ preventScroll: true }), 450);
+  }
+  fType.addEventListener('change', () => {
+    const p = PROJECTS.filter(x => x.id === fType.value)[0];
+    if (p && !p.designs.some(d => d.folder === fDesign.value)) fDesign.value = '';
   });
+  function fail(msg, field) {
+    errBox.textContent = msg; errBox.hidden = false;
+    form.querySelectorAll('[aria-invalid]').forEach(f => f.removeAttribute('aria-invalid'));
+    if (field) { field.setAttribute('aria-invalid', 'true'); field.focus(); }
+  }
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = $('f-name').value.trim(), contact = $('f-contact').value.trim();
+    if (!name) return fail(tr('err.name'), $('f-name'));
+    if (!contact) return fail(tr('err.contact'), $('f-contact'));
+    if (!$('f-ok').checked) return fail(tr('err.ok'), $('f-ok'));
+    errBox.hidden = true;
+    const payload = { name, contact, type: fType.value, design: fDesign.value, message: $('f-msg').value.trim(), lang: document.documentElement.lang, sent: new Date().toISOString() };
+    const finish = demo => { form.hidden = true; $('f-demo').hidden = !demo; const d = $('f-done'); d.hidden = false; d.focus({ preventScroll: true }); sendBtn.disabled = false; sendBtn.textContent = tr('form.send'); };
+    sendBtn.disabled = true; sendBtn.textContent = tr('sending');
+    if (CONTACT.formEndpoint) {
+      fetch(CONTACT.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) })
+        .then(r => { if (!r.ok) throw new Error(); finish(false); })
+        .catch(() => { sendBtn.disabled = false; sendBtn.textContent = tr('form.send'); fail(tr('err.send')); });
+    } else {
+      try { const l = JSON.parse(localStorage.getItem('masterweb.briefs') || '[]'); l.push(payload); localStorage.setItem('masterweb.briefs', JSON.stringify(l)); } catch (er) {}
+      setTimeout(() => finish(true), 600);
+    }
+  });
+  $('f-again').addEventListener('click', () => { form.reset(); fillSelects(); form.hidden = false; $('f-done').hidden = true; $('f-name').focus(); });
 
-  const metaDesc = document.getElementById('meta-desc');
-  const EN = { title: document.title, desc: metaDesc.content };
-  const langBtn = document.getElementById('lang');
+  /* Direct contact lines: shown only for the details filled in above */
+  (function () {
+    const box = $('direct'), rows = [];
+    const digits = s => s.replace(/[^\d+]/g, '');
+    if (CONTACT.phone) rows.push(['tel:' + digits(CONTACT.phone), CONTACT.phone]);
+    if (CONTACT.viber) rows.push(['viber://chat?number=' + encodeURIComponent(digits(CONTACT.viber)), 'Viber / WhatsApp']);
+    if (CONTACT.email) rows.push(['mailto:' + CONTACT.email, CONTACT.email]);
+    if (CONTACT.facebook) rows.push([CONTACT.facebook, 'Facebook']);
+    if (CONTACT.instagram) rows.push([CONTACT.instagram, 'Instagram']);
+    rows.forEach(r => { const a = el('a', '', r[1]); a.href = r[0]; box.appendChild(a); });
+    box.hidden = !rows.length;
+  })();
 
+  /* ================= Language: Bulgarian (default, written in the HTML) and English ================= */
+  const langBtn = $('lang');
   function setLang(lang) {
     const bg = lang === 'bg';
     document.documentElement.lang = lang;
-    nodes.forEach(el => {
-      if (el.dataset.i18n) el.innerHTML = bg ? BG[el.dataset.i18n] : el._en;
-      if (el.dataset.i18nAttr) {
-        el.dataset.i18nAttr.split(';').forEach(pair => {
-          const [attr, key] = pair.split(':');
-          const value = bg ? BG[key] : el._enAttrs[attr];
-          if (el.getAttribute(attr) !== value) el.setAttribute(attr, value);   // do not reload a preview that is already right
-        });
-      }
+    nodes.forEach(n => {
+      if (n.dataset.i18n) n.innerHTML = tr(n.dataset.i18n);
+      if (n.dataset.i18nAttr) n.dataset.i18nAttr.split(';').forEach(pair => {
+        const [attr, key] = pair.split(':'), value = tr(key);
+        if (n.getAttribute(attr) !== value) n.setAttribute(attr, value);   // do not reload a preview that is already right
+      });
     });
-    document.querySelectorAll('.sc-panel').forEach(updatePanel);
-    document.title = bg ? BG.title : EN.title;
-    metaDesc.content = bg ? BG.desc : EN.desc;
-    // The button names the language you can switch to.
+    PROJECTS.forEach(updatePanel);
+    fillSelects();
+    document.title = tr('title'); $('meta-desc').content = tr('desc');
+    document.querySelector('meta[property="og:locale"]').content = bg ? 'bg_BG' : 'en_GB';
     langBtn.textContent = bg ? 'EN' : 'БГ';
     langBtn.lang = bg ? 'en' : 'bg';
     langBtn.setAttribute('aria-label', bg ? 'Switch to English' : 'Превключи на български');
     try { localStorage.setItem('lang', lang); } catch (e) {}
   }
-
-  langBtn.addEventListener('click', () => setLang(document.documentElement.lang === 'bg' ? 'en' : 'bg'));
+  langBtn.addEventListener('click', () => setLang(isBg() ? 'en' : 'bg'));
 
   let saved = null;
   try { saved = localStorage.getItem('lang'); } catch (e) {}
-  const initial = saved || ((navigator.language || '').toLowerCase().startsWith('bg') ? 'bg' : 'en');
-  if (initial === 'bg') setLang('bg');
-  else document.querySelectorAll('.sc-panel').forEach(updatePanel);
+  setLang(saved === 'en' ? 'en' : 'bg');
+  setDevice('desktop');
+
+  /* ================= Scroll reveal and the phone bar ================= */
+  if (document.documentElement.classList.contains('js')) {
+    const io = new IntersectionObserver(es => es.forEach(en => {
+      if (!en.isIntersecting) return;
+      io.unobserve(en.target); en.target.classList.add('in');
+      setTimeout(() => { en.target.classList.remove('rv', 'in'); en.target.style.removeProperty('--d'); }, 1300);
+    }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('.rv').forEach((n, i) => { n.style.setProperty('--d', ((i % 3) * 0.08).toFixed(2) + 's'); io.observe(n); });
+  }
+  const mbar = $('mbar');
+  const brief = $('brief'), heroActions = document.querySelector('.hero .actions');
+  const seen = { brief: false, hero: true };
+  const upd = () => mbar.classList.toggle('off', seen.brief || seen.hero);
+  new IntersectionObserver(es => { seen.brief = es[0].isIntersecting; upd(); }).observe(brief);
+  new IntersectionObserver(es => { seen.hero = es[0].isIntersecting; upd(); }).observe(heroActions);
 </script>
 </body>
 </html>

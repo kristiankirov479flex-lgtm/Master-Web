@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="[[lang]]" data-skin="volt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B0C">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/straight-razor.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="[[root]]fonts/unbounded-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("boltSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"[[brand]] Barbers","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":[[[hours_ld]]]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<div class="shell">
+
+  <!-- Left rail on wide screens, top bar on phones -->
+  <header class="rail" id="top">
+    <div class="rail-top">
+      <a class="logo" href="[[home_href]]" aria-label="[[brand]]"><i aria-hidden="true"></i><b>[[brand]]</b></a>
+      <a class="lang lang-m" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="[[menu_btn]]"><span></span></button>
+    </div>
+    <p class="rail-tag">[[tagline]]</p>
+    <nav class="side-nav" id="nav" aria-label="[[nav_label]]">
+      [[nav_links]]
+    </nav>
+    <div class="rail-foot">
+      <p class="status off" id="openNow">[[open_loading]]</p>
+      <p class="nextfree" id="nextFree" hidden></p>
+      <a class="tel" href="tel:[[phone_href]]">[[phone]]</a>
+      <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+    </div>
+  </header>
+
+  <main id="main" class="stage">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-labelledby="h1">
+      <div class="hero-text">
+        <p class="kicker">[[hero_kicker]]</p>
+        <h1 id="h1">[[h1]]</h1>
+        <p class="lead">[[lead]]</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#build" data-book>[[cta]]</a>
+          <a class="btn btn-line" href="#barbers">[[hero_cta2]]</a>
+        </div>
+        <ul class="hero-stats" aria-label="[[stats_label]]">
+          [[stats]]
+        </ul>
+      </div>
+      <div class="hero-pics">
+        <img class="pic-a" src="[[root]]images/stock/straight-razor.jpg" srcset="[[root]]images/stock/straight-razor-800.jpg 800w, [[root]]images/stock/straight-razor.jpg 1600w" sizes="(min-width: 1100px) 28vw, 70vw" width="1600" height="2397" alt="[[pic_a]]" fetchpriority="high" decoding="async">
+        <img class="pic-b" src="[[root]]images/stock/thinning-shears-800.jpg" width="800" height="1200" alt="[[pic_b]]" decoding="async">
+        <span class="sticker" aria-hidden="true">[[sticker]]</span>
+      </div>
+    </section>
+
+    <!-- ============ Build your visit ============ -->
+    <section class="card" id="build" aria-labelledby="build-h">
+      <header class="sec-head">
+        <p class="kicker"><b>01</b> [[k_build]]</p>
+        <h2 id="build-h">[[build_h]]</h2>
+        <p>[[build_p]]</p>
+      </header>
+      <form class="bld" id="bookForm" novalidate>
+        <div class="bld-steps" id="steps">
+          <fieldset class="step">
+            <legend><b>A</b> [[a_h]]</legend>
+            [[svc_tiles]]
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>B</b> [[b_h]]</legend>
+            <div class="pickers">
+              [[barber_options]]
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>C</b> [[c_h]]</legend>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="[[c_h]]"></div>
+            <p class="hint" id="slotHint" role="status">[[checking]]</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="[[f_time]]"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>D</b> [[d_h]]</legend>
+            <div class="chosen" id="lookChip" hidden>
+              <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+              <div><b>[[chip_look]]</b><span id="lookText"></span></div>
+              <button type="button" id="lookRemove" aria-label="[[chip_remove]]">×</button>
+            </div>
+            <div class="me-grid">
+              <div class="field"><label for="b-name">[[f_name]]</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="b-phone">[[f_phone]]</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="b-msg">[[f_msg]]</label><textarea id="b-msg" name="msg"></textarea></div>
+            <small class="hint">[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+          </fieldset>
+        </div>
+
+        <section class="ticket" id="ticket" aria-labelledby="tk-h">
+          <p class="tk-top"><span id="tk-h">[[tk_h]]</span><span class="tk-ref" id="tkRef">[[tk_draft]]</span></p>
+          <ul class="tk-lines" id="tkLines"></ul>
+          <dl class="tk-meta" id="tkMeta"></dl>
+          <p class="tk-total"><span>[[total_l]]</span><b id="tkTotal">0 €</b></p>
+          <p class="tk-time" id="tkTime"></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <button class="btn btn-main" type="submit" id="bkSend">[[b_send]]</button>
+          <i class="barcode" aria-hidden="true"></i>
+        </section>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </section>
+
+    <!-- ============ Barbers ============ -->
+    <section class="card" id="barbers" aria-labelledby="team-h">
+      <header class="sec-head">
+        <p class="kicker"><b>02</b> [[k_team]]</p>
+        <h2 id="team-h">[[team_h]]</h2>
+        <p>[[team_p]]</p>
+      </header>
+      <div class="crew">
+        [[team]]
+      </div>
+    </section>
+
+    <!-- ============ Work ============ -->
+    <section class="card" id="work" aria-labelledby="work-h">
+      <header class="sec-head">
+        <p class="kicker"><b>03</b> [[k_work]]</p>
+        <h2 id="work-h">[[work_h]]</h2>
+        <p>[[work_p]]</p>
+      </header>
+      <div class="grid-work">
+        [[rail]]
+      </div>
+    </section>
+
+    <!-- ============ Reviews ============ -->
+    <section class="card" id="reviews" aria-labelledby="rev-h">
+      <header class="sec-head">
+        <p class="kicker"><b>04</b> [[k_rev]]</p>
+        <h2 id="rev-h">[[rev_h]]</h2>
+      </header>
+      <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span>[[rev_p]]</span></div>
+      <div class="notes">
+        [[reviews]]
+      </div>
+      <p class="rev-note">[[rev_note]]</p>
+    </section>
+
+    <!-- ============ Visit and questions ============ -->
+    <section class="card" id="visit" aria-labelledby="visit-h">
+      <div class="visit-grid">
+        <div>
+          <p class="kicker"><b>05</b> [[k_visit]]</p>
+          <h2 id="visit-h">[[visit_h]]</h2>
+          <p class="status off" id="statusBox">[[open_loading]]</p>
+          <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+          <dl class="info">
+            <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+            <dt>[[hours_l]]</dt><dd>[[hours]]</dd>
+            <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+            <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+          </dl>
+          <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+            <div class="map-ph">
+              <p>[[map_t]]</p>
+              <button class="btn btn-line btn-sm" type="button" id="mapLoad">[[map_btn]]</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="kicker"><b>06</b> [[k_faq]]</p>
+          <h2 id="faq-h">[[faq_h]]</h2>
+          <div class="faq-list">
+            [[faq]]
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span class="foot-brand">[[brand]]</span>
+      <span>© <span id="year">[[year]]</span> [[brand]] Barbers · [[foot_tag]]</span>
+      <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+    </footer>
+  </main>
+</div>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="[[dock_label]]">
+  <div class="dock-label"><small>[[dock_label]]</small><b id="skinName">[[skin_name]]</b></div>
+  <div class="swatches">
+        [[swatches]]
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="[[quick_label]]">
+  <a href="tel:[[phone_href]]">[[q_call]]</a>
+  <a href="#ticket" id="qTicket">[[q_ticket]] · <b id="qTotal">0 €</b></a>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="[[lb_label]]">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="[[lb_close]]">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="[[lb_prev]]">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="[[lb_next]]">›</button>
+    <button class="lb-act" type="button" id="lbRequest">[[lb_request]]</button>
+  </div>
+</dialog>
+
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>

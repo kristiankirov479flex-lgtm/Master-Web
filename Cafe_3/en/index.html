@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en" data-skin="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F6F2EA">
+<title>Desk &amp; Drip – a work-friendly café in Plovdiv. Book a desk by the hour or for the day</title>
+<meta name="description" content="Desk &amp; Drip is a café for working, with fast Wi-Fi, sockets and a quiet corner. Pick a spot on the plan, see the price and book a time.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Desk &amp; Drip – a work-friendly café in Plovdiv. Book a desk by the hour or for the day">
+<meta property="og:description" content="Desk &amp; Drip is a café for working, with fast Wi-Fi, sockets and a quiet corner. Pick a spot on the plan, see the price and book a time.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/lounge-bright.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("deskSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Desk & Drip","inLanguage":"en","telephone":"+359880000000","email":"hello@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 33","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Coffee","amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true}],"openingHours":["Mo-Fr 08:00-20:00","Sa-Su 09:00-17:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><rect x="3" y="3" width="11" height="11" rx="2" fill="currentColor"/><rect x="18" y="3" width="11" height="11" rx="5.500" fill="none" stroke="currentColor" stroke-width="2.500"/><rect x="3" y="18" width="11" height="11" rx="5.500" fill="none" stroke="currentColor" stroke-width="2.500"/><rect x="18" y="18" width="11" height="11" rx="2" fill="currentColor"/></svg><b>Desk & Drip</b></a>
+    <nav class="nav" id="nav" aria-label="Navigation"><a href="#plan">Seats</a><a href="#prices">Prices</a><a href="#book">Book</a><a href="#community">Community</a><a href="#visit">Visit</a></nav>
+    <div class="top-r">
+      <span class="open-pill" id="openPill" data-state="unknown"><i aria-hidden="true"></i><span id="openText">Opening hours</span></span>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <a class="btn btn-main btn-sm top-cta" href="#book">Book</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero with the floor plan ============ -->
+  <section class="hero" id="plan" aria-labelledby="h1">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Café and workspace · Plovdiv</p>
+        <h1 id="h1">A desk for the day, <em>coffee included.</em></h1>
+        <p class="lead">Fast Wi-Fi, a socket at every seat and a quiet corner. Pick a spot on the plan, see the price and book for an hour or the whole day.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#book">Book a seat</a>
+          <a class="btn btn-line" href="#prices">See prices</a>
+        </div>
+        <ul class="facts">
+          <li><b>500</b><span>Mbit/s</span></li>
+          <li><b>13</b><span>sockets</span></li>
+          <li><b id="nextFree">–</b><span>first free hour</span></li>
+        </ul>
+      </div>
+      <div class="planbox">
+        <p class="plan-h">The café plan</p>
+        <div class="plan" role="group" aria-label="The café plan">
+          <span class="plan-door" aria-hidden="true">entrance</span>
+          <span class="plan-bar" aria-hidden="true">bar</span>
+          <button class="zone zone-window" type="button" data-zone="window" aria-pressed="false"><b>Window bar</b><span>4 seats</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u><u></u></i></button><button class="zone zone-long" type="button" data-zone="long" aria-pressed="false"><b>Long table</b><span>6 seats</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u><u></u><u></u><u></u></i></button><button class="zone zone-quiet" type="button" data-zone="quiet" aria-pressed="false"><b>Quiet corner</b><span>3 seats</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u></i></button><button class="zone zone-meeting" type="button" data-zone="meeting" aria-pressed="false"><b>Meeting table</b><span>6 people</span><i class="seats" aria-hidden="true"><u></u><u></u><u></u><u></u><u></u><u></u></i></button>
+        </div>
+        <div class="plan-cap" id="planCap" role="status">Press a zone to see the seats and the price.</div>
+        <a class="btn btn-main btn-sm plan-go" id="planGo" href="#book" hidden>Book this zone</a>
+      </div>
+    </div>
+  </section>
+  <figure class="strip"><img src="../images/stock/lounge-bright-800.jpg" srcset="../images/stock/lounge-bright-800.jpg 800w, ../images/stock/lounge-bright.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="A bright room with long tables, plants and big windows" loading="lazy" decoding="async"></figure>
+
+  <!-- ============ Prices ============ -->
+  <section class="block" id="prices" aria-labelledby="pr-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Prices</p>
+        <h2 id="pr-h">By the hour or for the day</h2>
+        <p>You pay on site. If you stay longer, the price never goes above the day price.</p>
+      </header>
+      <ul class="plans">
+        <li class="pl"><h3>By the hour</h3><p class="pl-p"><b>from €3</b><span>per hour</span></p><p>For short jobs. A drink from 2 hours.</p></li>
+        <li class="pl pl-main"><h3>Day pass</h3><p class="pl-p"><b>from €14</b><span>up to 8 hours</span></p><p>Best value. Bottomless filter from 4 hours.</p></li>
+        <li class="pl"><h3>Week or month</h3><p class="pl-p"><b>ask us</b><span>a regular seat</span></p><p>Not booked online. Write to us and we will make an offer.</p></li>
+      </ul>
+      <p class="prices-note">The meeting table is priced for the whole table, up to 6 people.</p>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="block soft" id="book" aria-labelledby="bk-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Book</p>
+        <h2 id="bk-h">Choose a zone, a day and a time</h2>
+        <p>The card on the right shows the exact price and when you finish.</p>
+      </header>
+      <form class="book-form" id="bookForm" novalidate>
+        <div class="steps">
+          <fieldset class="step">
+            <legend><b>1</b> Where to sit</legend>
+            <div class="zcards" role="radiogroup" aria-label="Where to sit"><label class="zcard"><input type="radio" name="zone" value="window" checked><figure><img src="../images/stock/window-seat-800.jpg" srcset="../images/stock/window-seat-800.jpg 800w, ../images/stock/window-seat.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1167" alt="Window bar" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Window bar</b><small>Bright, with a view of the street</small></span><em>€3.50 / h</em></label><label class="zcard"><input type="radio" name="zone" value="long"><figure><img src="../images/stock/long-table-800.jpg" srcset="../images/stock/long-table-800.jpg 800w, ../images/stock/long-table.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1067" alt="Long table" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Long table</b><small>A shared table, a socket at every seat</small></span><em>€3.00 / h</em></label><label class="zcard"><input type="radio" name="zone" value="quiet"><figure><img src="../images/stock/laptop-mug-800.jpg" srcset="../images/stock/laptop-mug-800.jpg 800w, ../images/stock/laptop-mug.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1067" alt="Quiet corner" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Quiet corner</b><small>No talking and no calls</small></span><em>€4.00 / h</em></label><label class="zcard"><input type="radio" name="zone" value="meeting"><figure><img src="../images/stock/talking-800.jpg" srcset="../images/stock/talking-800.jpg 800w, ../images/stock/talking.jpg 1600w" sizes="(min-width: 900px) 130px, 30vw" width="1600" height="1067" alt="Meeting table" loading="lazy" decoding="async"></figure><span class="zc-t"><b>Meeting table</b><small>A whole table for up to 6, with a screen</small></span><em>€12.00 / h</em></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> When and for how long</legend>
+            <div class="hours-row">
+              <span class="qty-l" id="hrsL">Hours</span>
+              <div class="stepper" role="group" aria-labelledby="hrsL"><button type="button" id="hMinus" aria-label="One hour fewer">−</button><output id="hOut">3</output><button type="button" id="hPlus" aria-label="One hour more">+</button></div>
+              <span class="hint" id="hrsHint"></span>
+            </div>
+            <div class="field" id="peopleRow" hidden><label for="f-people">How many people?</label><select id="f-people" name="people"></select></div>
+            <p class="sub-h">Day</p>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Day"></div>
+            <p class="sub-h">Start time</p>
+            <p class="hint" id="slotHint" role="status">Checking free times…</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Start time"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> Needs and your details</legend>
+            <div class="opts"><label class="opt"><input type="checkbox" name="need" value="power" data-name="Power socket"><span>Power socket</span></label><label class="opt"><input type="checkbox" name="need" value="screen" data-name="Second screen"><span>Second screen</span></label><label class="opt"><input type="checkbox" name="need" value="calls" data-name="I will take calls"><span>I will take calls</span></label><label class="opt"><input type="checkbox" name="need" value="dog" data-name="I am bringing a dog"><span>I am bringing a dog</span></label></div>
+            <div class="grid2">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Note (optional)</label><textarea id="f-msg" name="msg" rows="2"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="slip" aria-labelledby="slip-h">
+          <h3 id="slip-h">Your booking</h3>
+          <p class="slip-zone" id="slipZone"></p>
+          <dl class="slip-list">
+            <div><dt>When</dt><dd id="slWhen">–</dd></div>
+            <div><dt>Length</dt><dd id="slLen">–</dd></div>
+            <div><dt>Pricing</dt><dd id="slRate">–</dd></div>
+            <div><dt>Included</dt><dd id="slExtra">–</dd></div>
+          </dl>
+          <p class="slip-total"><span>Total</span><b id="slTotal">–</b></p>
+          <p class="slip-save" id="slSave" hidden></p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-main btn-block" type="submit" id="bkSend">Book the seat</button>
+          <small class="fine">You pay on site. Free cancellation up to 2 hours before. <a href="privacy.html">Privacy</a></small>
+        </section>
+      </form>
+      <div class="done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Included ============ -->
+  <section class="block" id="included" aria-labelledby="in-h">
+    <div class="wrap included">
+      <header class="sec-head">
+        <p class="kicker">Included</p>
+        <h2 id="in-h">Everything you need to work</h2>
+        <p>A few house rules so it works for everyone.</p>
+        <ul class="rules"><li>No talking and no calls in the quiet corner.</li><li>Buy a drink at least every two hours.</li><li>Do not hold a seat with a bag if you are not sitting there.</li><li>Headphones at the talking tables, please.</li></ul>
+      </header>
+      <ul class="amen"><li><b>Fast Wi-Fi</b><span>500 Mbit/s, no guest password</span></li><li><b>Sockets</b><span>One at every seat</span></li><li><b>Printing and scanning</b><span>The first 5 pages are free</span></li><li><b>Phone booth</b><span>For calls without disturbing anyone</span></li><li><b>Bike parking</b><span>Behind the café</span></li><li><b>Bottomless filter</b><span>From 4 hours up</span></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Community ============ -->
+  <section class="block community" id="community" aria-labelledby="cm-h">
+    <div class="wrap comm">
+      <div>
+        <header class="sec-head">
+          <p class="kicker kicker-dark">Community</p>
+          <h2 id="cm-h">Not only for work</h2>
+          <p>Weekly meetups at the café. Free for everyone.</p>
+        </header>
+        <ul class="events"><li><span class="ev-d">Monday</span><span class="ev-t">18:30</span><div><h3>Coffee and code</h3><p>An open evening for developers and anyone learning.</p></div></li><li><span class="ev-d">Wednesday</span><span class="ev-t">18:00</span><div><h3>English club</h3><p>Conversation in English over coffee. All levels.</p></div></li><li><span class="ev-d">Thursday</span><span class="ev-t">09:00</span><div><h3>Silent morning</h3><p>Three hours without talking. Only keyboards.</p></div></li><li><span class="ev-d">Saturday</span><span class="ev-t">11:00</span><div><h3>Latte art workshop</h3><p>A small group, everyone pours a heart. €15.</p></div></li></ul>
+      </div>
+      <div class="comm-photos">
+        <figure class="cp cp-1"><img src="../images/stock/notes-latte-800.jpg" srcset="../images/stock/notes-latte-800.jpg 800w, ../images/stock/notes-latte.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1067" alt="A notebook, a laptop and a latte on a wooden table" loading="lazy" decoding="async"></figure>
+        <figure class="cp cp-2"><img src="../images/stock/sunlit-room-800.jpg" srcset="../images/stock/sunlit-room-800.jpg 800w, ../images/stock/sunlit-room.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1201" alt="A sunlit room with people working" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Visit</p>
+        <h2 id="vs-h">Find us</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Monday – Friday</dt><dd>08:00 – 20:00</dd></div><div data-hrs="we"><dt>Saturday and Sunday</dt><dd>09:00 – 17:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Address</b><span>33 Primer St., Plovdiv</span></li>
+          <li><b>Phone</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Email</b><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="../images/stock/glass-hall-800.jpg" srcset="../images/stock/glass-hall-800.jpg 800w, ../images/stock/glass-hall.jpg 1600w" sizes="(min-width: 900px) 520px, 90vw" width="1600" height="1068" alt="A hall with glass walls and a long table" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map loads from OpenStreetMap only when you ask for it.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Desk &amp; Drip. Everything here is an example.</span>
+    <span class="foot-links"><a href="privacy.html">Privacy</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar">
+  <span id="barTxt">Working today?</span>
+  <a class="btn btn-main btn-sm" href="#book">Book a seat</a>
+</div>
+
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Paper</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="paper" style="--s1:#F6F2EA;--s2:#D2381E" aria-pressed="false" aria-label="Paper"></button><button class="sw" type="button" data-skin="ultra" style="--s1:#EEF1FB;--s2:#2742C7" aria-pressed="false" aria-label="Ultramarine"></button><button class="sw" type="button" data-skin="sage" style="--s1:#EEF2EA;--s2:#3F6B34" aria-pressed="false" aria-label="Sage"></button><button class="sw" type="button" data-skin="charcoal" style="--s1:#17181A;--s2:#FFB84D" aria-pressed="false" aria-label="Charcoal"></button><button class="sw" type="button" data-skin="plum" style="--s1:#F8EFF3;--s2:#8A2D6B" aria-pressed="false" aria-label="Plum"></button></div>
+</aside>
+
+<script type="application/json" id="deskData">{"zones": [{"id": "window", "seats": 4, "rate": 3.5, "day": 16, "name": "Window bar"}, {"id": "long", "seats": 6, "rate": 3.0, "day": 14, "name": "Long table"}, {"id": "quiet", "seats": 3, "rate": 4.0, "day": 18, "name": "Quiet corner"}, {"id": "meeting", "seats": 6, "rate": 12.0, "day": 70, "name": "Meeting table"}], "maxHours": 8, "coffeeFrom": 2, "needs": {"power": "Power socket", "screen": "Second screen", "calls": "I will take calls", "dog": "I am bringing a dog"}}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

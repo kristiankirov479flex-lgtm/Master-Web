@@ -62,6 +62,30 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop_2/en/"/>
   </url>
   <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop_3/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop_3/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop_4/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Flower_Shop_4/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Flower_Shop_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Flower_Shop_4/en/"/>
+  </url>
+  <url>
     <loc>https://YOUR-DOMAIN/Barber_shop_2/</loc>
     <lastmod>2026-10-16</lastmod>
     <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop_2/"/>
@@ -74,6 +98,30 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop_2/en/"/>
   </url>
   <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop_3/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop_3/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop_4/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Barber_shop_4/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Barber_shop_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Barber_shop_4/en/"/>
+  </url>
+  <url>
     <loc>https://YOUR-DOMAIN/Nail_Salon_2/</loc>
     <lastmod>2026-10-16</lastmod>
     <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_2/"/>
@@ -84,6 +132,42 @@
     <lastmod>2026-10-16</lastmod>
     <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_2/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_3/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_3/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_4/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_4/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_5/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_5/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_5/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Nail_Salon_5/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Nail_Salon_5/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Nail_Salon_5/en/"/>
   </url>
   <url>
     <loc>https://YOUR-DOMAIN/Vila_2/</loc>
@@ -120,5 +204,197 @@
     <lastmod>2026-10-16</lastmod>
     <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vila_4/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vila_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Tyre_Shop_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Tyre_Shop_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Tyre_Shop_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Tyre_Shop_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Tyre_Shop_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Tyre_Shop_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_2/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_2/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_3/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_3/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_4/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Cafe_4/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Cafe_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Cafe_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Tyre_Shop_2/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Tyre_Shop_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Tyre_Shop_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Tyre_Shop_2/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Tyre_Shop_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Tyre_Shop_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_2/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_2/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_3/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_3/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_3/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_3/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_4/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Restaurant_4/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Restaurant_4/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Restaurant_4/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Dentist_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Dentist_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Dentist_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Dentist_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Dentist_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Dentist_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Detailing_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Detailing_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Detailing_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Detailing_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Detailing_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Detailing_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vet_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vet_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vet_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vet_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vet_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vet_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vet_2/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vet_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vet_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Vet_2/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Vet_2/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Vet_2/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Physio_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Physio_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Physio_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Physio_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Physio_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Physio_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Massage_1/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Massage_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Massage_1/en/"/>
+  </url>
+  <url>
+    <loc>https://YOUR-DOMAIN/Massage_1/en/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/Massage_1/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/Massage_1/en/"/>
   </url>
 </urlset>

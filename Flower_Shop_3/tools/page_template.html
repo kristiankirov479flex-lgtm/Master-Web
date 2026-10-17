@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="[[lang]]" data-skin="tulip">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF6EE">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/vibrant-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="[[root]]fonts/unbounded-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("sundaySkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"[[brand]]","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":[[[hours_ld]]]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="[[home_href]]"><i aria-hidden="true"></i><b>[[brand]]</b></a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="[[menu_btn]]"><span></span></button>
+    <nav class="nav" id="nav" aria-label="[[nav_label]]">
+      [[nav_links]]
+      <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+      <a class="btn btn-main btn-sm" href="#plan">[[cta]]</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero: two colour blocks ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-a">
+      <p class="tag">[[hero_tag]]</p>
+      <h1 id="h1">[[h1]]</h1>
+      <p class="lead">[[lead]]</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#plan">[[cta1]]</a>
+        <a class="btn btn-line" href="#week">[[cta2]]</a>
+      </div>
+      <ul class="perks">
+        [[perks]]
+      </ul>
+    </div>
+    <figure class="hero-b">
+      <div class="orb orb-main"><img src="[[root]]images/stock/[[hero_img]]" srcset="[[root]]images/stock/[[hero_img_s]] 800w, [[root]]images/stock/[[hero_img]] 1600w" sizes="(min-width: 960px) 44vw, 90vw" width="[[hero_w]]" height="[[hero_h]]" alt="[[hero_alt]]" fetchpriority="high" decoding="async"></div>
+      <div class="orb orb-a" aria-hidden="true"><img src="[[root]]images/stock/tulips-800.jpg" width="400" height="400" alt="" loading="lazy" decoding="async"></div>
+      <div class="orb orb-b" aria-hidden="true"><img src="[[root]]images/stock/pink-roses-800.jpg" width="400" height="400" alt="" loading="lazy" decoding="async"></div>
+      <figcaption class="sticker"><small>[[sticker_k]]</small><b id="stickName"></b><span id="stickCut"></span></figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ This week ============ -->
+  <section class="block soft" id="week" aria-labelledby="week-h">
+    <div class="wrap week">
+      <div class="week-pic"><img id="weekImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="800" height="1000" loading="lazy"></div>
+      <div class="week-text">
+        <p class="kicker">[[k_week]]</p>
+        <h2 id="week-h">[[week_h]]</h2>
+        <p class="week-name" id="weekName"></p>
+        <p class="week-stems" id="weekStems"></p>
+        <p class="cut" id="cutLine" role="status"></p>
+        <div class="up">
+          <b>[[next_h]]</b>
+          <ul id="upNext"></ul>
+        </div>
+        <a class="btn btn-main" href="#plan">[[cta1]]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Build your subscription ============ -->
+  <section class="block dark" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_plan]]</p>
+        <h2 id="plan-h">[[plan_h]]</h2>
+        <p>[[plan_p]]</p>
+      </header>
+      <form class="sub" id="subForm" novalidate>
+        <div class="sub-steps">
+          <fieldset class="st">
+            <legend><b>1</b> [[o_size]]</legend>
+            <div class="sizes">[[size_opts]]</div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>2</b> [[o_rhythm]]</legend>
+            <div class="pills">[[freq_opts]]</div>
+            <p class="st-sub">[[o_length]]</p>
+            <div class="pills">[[len_opts]]</div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>3</b> [[o_extras]]</legend>
+            <div class="pills">
+              <label class="pl"><input type="checkbox" name="vase" value="1"><span>[[vase_l]]<small>[[vase_s]]</small></span></label>
+              <label class="pl"><input type="checkbox" name="gift" value="1"><span>[[gift_l]]<small>[[gift_s]]</small></span></label>
+            </div>
+            <div class="field" id="giftBox" hidden><label for="f-to">[[f_to]]</label><input id="f-to" name="to" type="text" autocomplete="off"></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>4</b> [[o_when]]</legend>
+            <div class="pills">[[fulfil_opts]]</div>
+            <div class="pills" id="dayOpts">[[day_opts]]</div>
+            <p class="st-sub">[[o_first]]</p>
+            <div class="dchips" id="dates" role="radiogroup" aria-label="[[o_first]]"></div>
+            <p class="st-sub">[[o_window]]</p>
+            <p class="hint" id="slotHint" role="status">[[checking]]</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="[[o_window]]"></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>5</b> [[o_you]]</legend>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">[[f_name]]</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">[[f_phone]]</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field" id="addrBox"><label for="f-addr">[[f_addr]]</label><input id="f-addr" name="addr" type="text" autocomplete="street-address"></div>
+            <div class="field"><label for="f-card">[[f_card]]</label><textarea id="f-card" name="card"></textarea></div>
+            <div class="field"><label for="f-msg">[[f_msg]]</label><textarea id="f-msg" name="msg"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="slip" aria-labelledby="slip-h">
+          <h3 id="slip-h">[[slip_h]]</h3>
+          <p class="slip-name" id="slipName"></p>
+          <dl class="slip-rows" id="slipRows"></dl>
+          <p class="slip-big"><span>[[per_delivery]]</span><b id="slipPer"></b></p>
+          <p class="slip-line"><span>[[per_month]]</span><b id="slipMonth"></b></p>
+          <p class="slip-line"><span id="slipTotalL">[[total_l]]</span><b id="slipTotal"></b></p>
+          <p class="slip-save" id="slipSave"></p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-light" type="submit" id="bkSend">[[f_send]]</button>
+          <small class="fine">[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+        </section>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Season calendar ============ -->
+  <section class="block" id="season" aria-labelledby="season-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_season]]</p>
+        <h2 id="season-h">[[season_h]]</h2>
+        <p>[[season_p]]</p>
+      </header>
+      <ol class="months">
+        [[months]]
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ How it works ============ -->
+  <section class="block accent" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <h2 id="how-h">[[how_h]]</h2>
+      <ol class="steps">
+        [[steps]]
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">[[k_rev]]</p>
+        <h2 id="rev-h">[[rev_h]]</h2>
+      </header>
+      <div class="revs">
+        [[reviews]]
+      </div>
+      <p class="rev-note">[[rev_note]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Questions and visit ============ -->
+  <section class="block soft" id="visit" aria-labelledby="faq-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">[[k_faq]]</p>
+        <h2 id="faq-h">[[faq_h]]</h2>
+        <div class="faq-list">
+          [[faq]]
+        </div>
+      </div>
+      <div class="shopcard">
+        <p class="kicker">[[k_visit]]</p>
+        <h2>[[visit_h]]</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+          <dt>[[hours_l]]</dt><dd>[[hours]]</dd>
+          <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+          <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>[[map_t]]</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">[[map_btn]]</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">[[brand]]</span>
+    <span>© <span id="year">[[year]]</span> [[brand]] · [[foot_tag]]</span>
+    <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="[[dock_label]]">
+  <div class="dock-label"><small>[[dock_label]]</small><b id="skinName">[[skin_name]]</b></div>
+  <div class="swatches">
+        [[swatches]]
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="[[quick_label]]">
+  <a href="tel:[[phone_href]]">[[q_call]]</a>
+  <a href="#plan">[[q_plan]] · <b id="qTotal"></b></a>
+</nav>
+
+<script type="application/json" id="sundayData">[[data_json]]</script>
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>

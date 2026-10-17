@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="bg" data-skin="bone">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F3EEE7">
+<title>Atelier Nude – студио за нокти в Пловдив</title>
+<meta name="description" content="Студио за нокти в Пловдив с лукбук: избери дизайн, който обичаш, виж цената и времето и запази свободен час. Гел лак, изграждане и нейл арт.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atelier Nude – студио за нокти в Пловдив">
+<meta property="og:description" content="Студио за нокти в Пловдив с лукбук: избери дизайн, който обичаш, виж цената и времето и запази свободен час. Гел лак, изграждане и нейл арт.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/hero-light-pink.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/playfair-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("atelierSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NailSalon","name":"Atelier Nude Nail Studio","inLanguage":"bg",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-19:00", "Sa-Su 10:00-18:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="mast" id="top">
+  <div class="wrap mast-in">
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    <a class="brand" href="index.html">Atelier Nude</a>
+    <nav class="mnav" id="nav" aria-label="Основна навигация">
+      <a href="#looks">Лукбук</a>
+      <a href="#menu">Меню</a>
+      <a href="#book">Час</a>
+      <a href="#visit">Адрес</a>
+    </nav>
+    <div class="mast-r">
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="btn btn-main btn-sm" type="button" data-go="book">Запази дизайн</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Cover ============ -->
+  <section class="cover wrap" aria-labelledby="h1">
+    <div class="cover-text">
+      <p class="issue">Пловдив · Лукбук № 1</p>
+      <h1 id="h1">Нокти, <em>ушити по мярка</em> за теб.</h1>
+      <p class="deck">Разгледай лукбука, избери комплекта, който обичаш, и ние го запазваме: правилните услуги, правилното време и цената предварително.</p>
+      <div class="cover-actions">
+        <a class="btn btn-main" href="#looks">Разгледай лукбука</a>
+        <a class="btn btn-line" href="#menu">Виж менюто</a>
+      </div>
+      <div class="live">
+        <p class="status off" id="openNow">Проверяваме…</p>
+        <p class="nextfree" id="nextFree" hidden></p>
+      </div>
+    </div>
+    <figure class="cover-pic">
+      <img src="images/stock/hero-light-pink.jpg" srcset="images/stock/hero-light-pink-800.jpg 800w, images/stock/hero-light-pink.jpg 1600w" sizes="(min-width: 960px) 40vw, 92vw" width="1600" height="2553" alt="Нежни телесно-розови гел нокти върху бяла пухкава повърхност" fetchpriority="high" decoding="async">
+      <figcaption>Дизайн 01 · Млечна баня</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ Lookbook ============ -->
+  <section class="block" id="looks" aria-labelledby="looks-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Лукбукът</p>
+        <h2 id="looks-h">Избери дизайн. Останалото е наша грижа.</h2>
+        <p>Всеки дизайн идва с услугите, които са му нужни. Натисни „Запази този дизайн“ и посещението ти е готово, или отвори снимката за по-близък поглед.</p>
+      </header>
+      <div class="filters" role="group" aria-label="Филтър на дизайните">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">Всички</button>
+        <button class="chip" type="button" data-filter="natural" aria-pressed="false">Естествени</button>
+        <button class="chip" type="button" data-filter="art" aria-pressed="false">Нейл арт</button>
+        <button class="chip" type="button" data-filter="bold" aria-pressed="false">Смели</button>
+      </div>
+      <p class="sr-only" id="shown" role="status"></p>
+      <div class="looks" id="looks-grid">
+        <article class="look" data-cat="natural"><button class="look-img" type="button" data-full="images/stock/hero-light-pink.jpg" aria-label="Отвори снимката: Нежни телесно-розови гел нокти върху бяла пухкава повърхност"><img src="images/stock/hero-light-pink-800.jpg" width="800" height="1276" alt="Нежни телесно-розови гел нокти върху бяла пухкава повърхност" loading="lazy" decoding="async"></button><div class="look-body"><h3>Млечна баня</h3><p class="look-svc">Маникюр с гел лак</p><p class="look-meta"><b>от 25 €</b> · 1 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="milk" data-svcs="gel_mani" data-name="Млечна баня">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="bold"><button class="look-img" type="button" data-full="images/stock/black-tortoiseshell.jpg" aria-label="Отвори снимката: Черни нокти с костенурков принт и златен пръстен"><img src="images/stock/black-tortoiseshell-800.jpg" width="800" height="1200" alt="Черни нокти с костенурков принт и златен пръстен" loading="lazy" decoding="async"></button><div class="look-body"><h3>Костенурка нуар</h3><p class="look-svc">Гел лак с френски връхчета или нейл арт + Нейл арт, френски връхчета, хром</p><p class="look-meta"><b>от 28 € · плюс арт</b> · 2 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="tortoise" data-svcs="gel_art,art" data-name="Костенурка нуар">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="art"><button class="look-img" type="button" data-full="images/stock/blue-white-tree.jpg" aria-label="Отвори снимката: Сини и бели нокти със зимно дърво"><img src="images/stock/blue-white-tree-800.jpg" width="800" height="622" alt="Сини и бели нокти със зимно дърво" loading="lazy" decoding="async"></button><div class="look-body"><h3>Зимно дърво</h3><p class="look-svc">Гел лак с френски връхчета или нейл арт + Нейл арт, френски връхчета, хром</p><p class="look-meta"><b>от 28 € · плюс арт</b> · 2 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="tree" data-svcs="gel_art,art" data-name="Зимно дърво">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="natural"><button class="look-img" type="button" data-full="images/stock/pink-on-white.jpg" aria-label="Отвори снимката: Нежни розови бадемови нокти върху бял текстил"><img src="images/stock/pink-on-white-800.jpg" width="800" height="1066" alt="Нежни розови бадемови нокти върху бял текстил" loading="lazy" decoding="async"></button><div class="look-body"><h3>Нежен бадем</h3><p class="look-svc">Гел върху естествени нокти</p><p class="look-meta"><b>от 30 €</b> · 2 ч</p><button class="btn btn-main btn-sm" type="button" data-look="almond" data-svcs="overlay" data-name="Нежен бадем">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="art"><button class="look-img" type="button" data-full="images/stock/navy-gold-white.jpg" aria-label="Отвори снимката: Нейл арт в тъмносиньо, златно и бяло на двете ръце"><img src="images/stock/navy-gold-white-800.jpg" width="800" height="1000" alt="Нейл арт в тъмносиньо, златно и бяло на двете ръце" loading="lazy" decoding="async"></button><div class="look-body"><h3>Полунощно злато</h3><p class="look-svc">Изграждане с гел, средни нокти + Нейл арт, френски връхчета, хром</p><p class="look-meta"><b>от 45 € · плюс арт</b> · 2 ч 45 мин</p><button class="btn btn-main btn-sm" type="button" data-look="gold" data-svcs="ext_med,art" data-name="Полунощно злато">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="natural"><button class="look-img" type="button" data-full="images/stock/hand-with-flower.jpg" aria-label="Отвори снимката: Металикови нюд нокти сред оранжеви цветя"><img src="images/stock/hand-with-flower-800.jpg" width="800" height="1200" alt="Металикови нюд нокти сред оранжеви цветя" loading="lazy" decoding="async"></button><div class="look-body"><h3>Метален нюд</h3><p class="look-svc">Маникюр с гел лак</p><p class="look-meta"><b>от 25 €</b> · 1 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="metal" data-svcs="gel_mani" data-name="Метален нюд">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="bold"><button class="look-img" type="button" data-full="images/stock/black-silver-ring.jpg" aria-label="Отвори снимката: Лъскав черен маникюр със сребърен пръстен"><img src="images/stock/black-silver-ring-800.jpg" width="800" height="534" alt="Лъскав черен маникюр със сребърен пръстен" loading="lazy" decoding="async"></button><div class="look-body"><h3>Лъскаво черно</h3><p class="look-svc">Маникюр с гел лак</p><p class="look-meta"><b>от 25 €</b> · 1 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="black" data-svcs="gel_mani" data-name="Лъскаво черно">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="art"><button class="look-img" type="button" data-full="images/stock/mauve-glitter.jpg" aria-label="Отвори снимката: Люляково-розови, бели и сребристи брокатени нокти"><img src="images/stock/mauve-glitter-800.jpg" width="800" height="800" alt="Люляково-розови, бели и сребристи брокатени нокти" loading="lazy" decoding="async"></button><div class="look-body"><h3>Люляков брокат</h3><p class="look-svc">Изграждане с гел, къси нокти + Нейл арт, френски връхчета, хром</p><p class="look-meta"><b>от 40 € · плюс арт</b> · 2 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="mauve" data-svcs="ext_short,art" data-name="Люляков брокат">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="art"><button class="look-img" type="button" data-full="images/stock/pink-selective-focus.jpg" aria-label="Отвори снимката: Розови и червени нокти с надпис love"><img src="images/stock/pink-selective-focus-800.jpg" width="800" height="534" alt="Розови и червени нокти с надпис love" loading="lazy" decoding="async"></button><div class="look-body"><h3>Любовни писма</h3><p class="look-svc">Гел лак с френски връхчета или нейл арт + Нейл арт, френски връхчета, хром</p><p class="look-meta"><b>от 28 € · плюс арт</b> · 2 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="love" data-svcs="gel_art,art" data-name="Любовни писма">Запази този дизайн</button></div></article>
+        <article class="look" data-cat="natural"><button class="look-img" type="button" data-full="images/stock/hand-on-pink.jpg" aria-label="Отвори снимката: Розови нокти на розов фон"><img src="images/stock/hand-on-pink-800.jpg" width="800" height="1200" alt="Розови нокти на розов фон" loading="lazy" decoding="async"></button><div class="look-body"><h3>Розов тон</h3><p class="look-svc">Маникюр с гел лак</p><p class="look-meta"><b>от 25 €</b> · 1 ч 30 мин</p><button class="btn btn-main btn-sm" type="button" data-look="rose" data-svcs="gel_mani" data-name="Розов тон">Запази този дизайн</button></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Menu ============ -->
+  <section class="block tint" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Менюто</p>
+        <h2 id="menu-h">Цените – на видно място.</h2>
+        <p>Добави всяка услуга към посещението си с бутона плюс. Всяка показва времето и цената си.</p>
+      </header>
+      <div class="menu">
+        <section class="mn-col"><h3>Ръце</h3><ul><li><span class="mn-name">Класически маникюр, без лак<small>45 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">12 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="mani" data-name="Класически маникюр, без лак" data-min="45" data-p0="12" data-p1="12" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Класически маникюр, без лак"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Маникюр с гел лак<small>1 ч – 1 ч 30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">25 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="gel_mani" data-name="Маникюр с гел лак" data-min="90" data-p0="25" data-p1="25" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Маникюр с гел лак"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Гел лак с френски връхчета или нейл арт<small>1 ч 30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">28 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="gel_art" data-name="Гел лак с френски връхчета или нейл арт" data-min="90" data-p0="28" data-p1="28" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Гел лак с френски връхчета или нейл арт"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Гел върху естествени нокти<small>2 ч</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">30 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="overlay" data-name="Гел върху естествени нокти" data-min="120" data-p0="30" data-p1="30" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Гел върху естествени нокти"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Сваляне на гел лак<small>20 – 30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">10 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="removal" data-name="Сваляне на гел лак" data-min="30" data-p0="10" data-p1="10" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Сваляне на гел лак"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Ремонт на счупен нокът<small></small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">2 € на нокът</b><button class="mn-add" type="button" aria-pressed="false" data-svc="repair" data-name="Ремонт на счупен нокът" data-min="10" data-p0="2" data-p1="2" data-kind="per" data-add="Добави" data-added="Добавено" aria-label="Добави: Ремонт на счупен нокът"><span aria-hidden="true">+</span></button></li></ul></section>
+        <section class="mn-col"><h3>Изграждане</h3><ul><li><span class="mn-name">Изграждане с гел, къси нокти<small>1 ч 30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">40 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="ext_short" data-name="Изграждане с гел, къси нокти" data-min="90" data-p0="40" data-p1="40" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Изграждане с гел, къси нокти"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Изграждане с гел, средни нокти<small>1 ч 45 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">45 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="ext_med" data-name="Изграждане с гел, средни нокти" data-min="105" data-p0="45" data-p1="45" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Изграждане с гел, средни нокти"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Изграждане с гел, дълги нокти<small>2 ч</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">50 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="ext_long" data-name="Изграждане с гел, дълги нокти" data-min="120" data-p0="50" data-p1="50" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Изграждане с гел, дълги нокти"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Корекция<small>1 ч 30 мин – 2 ч</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">от 30 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="refill" data-name="Корекция" data-min="120" data-p0="30" data-p1="30" data-kind="from" data-add="Добави" data-added="Добавено" aria-label="Добави: Корекция"><span aria-hidden="true">+</span></button></li></ul></section>
+        <section class="mn-col"><h3>Крака</h3><ul><li><span class="mn-name">Класически педикюр, без лак<small>45 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">20 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="pedi" data-name="Класически педикюр, без лак" data-min="45" data-p0="20" data-p1="20" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Класически педикюр, без лак"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">Педикюр с гел лак<small>1 ч – 1 ч 30 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">25 – 30 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="gel_pedi" data-name="Педикюр с гел лак" data-min="90" data-p0="25" data-p1="30" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: Педикюр с гел лак"><span aria-hidden="true">+</span></button></li><li><span class="mn-name">СПА педикюр с гел лак<small>2 ч</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">30 €</b><button class="mn-add" type="button" aria-pressed="false" data-svc="spa_pedi" data-name="СПА педикюр с гел лак" data-min="120" data-p0="30" data-p1="30" data-kind="fixed" data-add="Добави" data-added="Добавено" aria-label="Добави: СПА педикюр с гел лак"><span aria-hidden="true">+</span></button></li></ul></section>
+        <section class="mn-col"><h3>Допълнения</h3><ul><li><span class="mn-name">Нейл арт, френски връхчета, хром<small>30 – 60 мин</small></span><i class="dots" aria-hidden="true"></i><b class="mn-price">по запитване</b><button class="mn-add" type="button" aria-pressed="false" data-svc="art" data-name="Нейл арт, френски връхчета, хром" data-min="60" data-p0="0" data-p1="0" data-kind="request" data-add="Добави" data-added="Добавено" aria-label="Добави: Нейл арт, френски връхчета, хром"><span aria-hidden="true">+</span></button></li></ul></section>
+      </div>
+      <p class="svc-note">Примерни цени в евро, по салони в Пловдив.</p>
+      <div class="gift">
+        <div><h3>Подаръчни карти</h3><p>Подари на някого маникюр, който ще помни. Поискай подаръчна карта на всякаква стойност.</p></div>
+        <button class="btn btn-main" type="button" id="giftBtn">Попитай за подаръчна карта</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="block" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Час</p>
+        <h2 id="book-h">Твоето посещение, твоето време.</h2>
+        <p>Провери посещението си, избери ден и свободен час и изпрати заявката. Ще ти отговорим, за да потвърдим.</p>
+      </header>
+      <form class="bk" id="bookForm" novalidate>
+        <section class="bk-visit" aria-labelledby="visit-h2">
+          <h3 id="visit-h2">Твоето посещение</h3>
+          <div class="chosen-look" id="lookBox" hidden>
+            <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="64" height="80">
+            <div><b id="lookName"></b><span>Твоят дизайн</span></div>
+          </div>
+          <ul class="basket" id="basket"></ul>
+          <p class="empty" id="empty">Още нищо. <a href="#looks">Избери дизайн</a></p>
+          <dl class="totals" id="totals" hidden>
+            <dt>Цена</dt><dd id="tPrice"></dd>
+            <dt>Време</dt><dd id="tTime"></dd>
+          </dl>
+          <p class="fine">Примерни цени. Крайната цена и времето се потвърждават, когато ти отговорим.</p>
+        </section>
+        <div class="bk-when">
+          <p class="bk-n"><b>1</b> Избери ден</p>
+          <div class="days">
+            <button class="rail-btn" type="button" id="dayPrev" aria-label="По-ранни дни">‹</button>
+            <div class="day-strip" id="dayStrip" role="group" aria-label="Избери ден"></div>
+            <button class="rail-btn" type="button" id="dayNext" aria-label="По-късни дни">›</button>
+          </div>
+          <p class="bk-n"><b>2</b> Избери час</p>
+          <p class="hint" id="slotHint" role="status">Избери услуги и ден, за да видиш свободните часове.</p>
+          <div class="tchips" id="tchips" role="radiogroup" aria-label="Час"></div>
+          <p class="bk-n"><b>3</b> Твоите данни</p>
+          <div class="me-grid">
+            <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="f-msg">Съобщение (по желание)</label><textarea id="f-msg" name="msg"></textarea></div>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <div class="me-foot">
+            <button class="btn btn-main" type="submit" id="bkSend">Изпрати заявката</button>
+            <small class="hint">Ползваме данните ти само за да отговорим на заявката ти. <a href="privacy.html">Политика за поверителност</a></small>
+          </div>
+        </div>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Praise ============ -->
+  <section class="block dark" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Похвали</p>
+        <h2 id="rev-h">Какво казват клиентите</h2>
+      </header>
+      <div class="praise">
+        <figure class="quote"><blockquote>Идеален гел маникюр. Издържа три седмици без нито една цепнатина.</blockquote><figcaption><b>Маникюр с гел лак</b> · Примерен клиент</figcaption></figure>
+        <figure class="quote"><blockquote>Занесох снимка и ми направиха точно такъв дизайн.</blockquote><figcaption><b>Нейл арт</b> · Примерен клиент</figcaption></figure>
+        <figure class="quote"><blockquote>Спокойно студио, всичко беше чисто, а цената беше ясна още преди да си запазя час.</blockquote><figcaption><b>Педикюр с гел лак</b> · Примерен клиент</figcaption></figure>
+      </div>
+      <p class="rev-note">Примерни отзиви. Заменете ги с истински отзиви от Google.</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit and questions ============ -->
+  <section class="block" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">Посети ни</p>
+        <h2 id="visit-h">Намери студиото</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Адрес</dt><dd>ул. Примерна 1, Пловдив</dd>
+          <dt>Работно време</dt><dd>Пон – Пет 09:00 – 19:00 · Съб – Нед 10:00 – 18:00</dd>
+          <dt>Телефон</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Имейл</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата е от OpenStreetMap и се зарежда само ако поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Въпроси</p>
+        <h2 id="faq-h">Добре е да знаеш</h2>
+        <div class="faq-list">
+          <details><summary>Колко време отнема посещението?</summary><p>Маникюр с гел лак отнема около 1 до 1,5 часа, а изграждане на нокти – 2 до 3 часа. В менюто е посочено времето за всяка услуга.</p></details>
+          <details><summary>Мога ли да донеса снимка на дизайна, който искам?</summary><p>Да. Избери който и да е дизайн от лукбука, или донеси или изпрати своя снимка, и ще ти кажем доколко можем да я пресъздадем.</p></details>
+          <details><summary>Свалянето на стар гел включено ли е?</summary><p>Свалянето е отделна услуга и е в менюто. Така старият гел се маха безопасно, без да се вреди на ноктите.</p></details>
+          <details><summary>Какво става, ако трябва да отменя или закъснея?</summary><p>Предупреди ни поне 24 часа предварително, за да предложим часа на друг клиент. При закъснение над 15 минути може да се наложи услугата да бъде съкратена.</p></details>
+          <details><summary>Нужен ли е депозит?</summary><p>За изграждане на нокти и по-дълги посещения можем да поискаме малък депозит, който се приспада от цената.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">Atelier Nude</span>
+    <span>© <span id="year">2026</span> Atelier Nude Nail Studio · Студио за нокти в Пловдив</span>
+    <span class="foot-links"><a href="privacy.html">Политика за поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Слонова кост и мастило</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="bone" data-name="Слонова кост и мастило" aria-label="Цветова схема: Слонова кост и мастило" title="Слонова кост и мастило" aria-pressed="true" style="--s1:#F3EEE7;--s2:#1C1A18"></button>
+        <button class="sw" type="button" data-skin="blush" data-name="Руж и пудра" aria-label="Цветова схема: Руж и пудра" title="Руж и пудра" aria-pressed="false" style="--s1:#F7E9E6;--s2:#8F3B4A"></button>
+        <button class="sw" type="button" data-skin="mocha" data-name="Мока и сметана" aria-label="Цветова схема: Мока и сметана" title="Мока и сметана" aria-pressed="false" style="--s1:#EFE6DA;--s2:#7A4A2B"></button>
+        <button class="sw" type="button" data-skin="noir" data-name="Черно и нюд" aria-label="Цветова схема: Черно и нюд" title="Черно и нюд" aria-pressed="false" style="--s1:#141313;--s2:#D9B99B"></button>
+        <button class="sw" type="button" data-skin="mint" data-name="Мента и гора" aria-label="Цветова схема: Мента и гора" title="Мента и гора" aria-pressed="false" style="--s1:#E8EFEA;--s2:#2C5B48"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Бърза връзка">
+  <a href="tel:+359000000000">Обади се</a>
+  <button type="button" data-go="book">Запази</button>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Снимка">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Затвори">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Предишна снимка">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="Следваща снимка">›</button>
+    <button class="lb-act" type="button" id="lbRequest">Запази този дизайн</button>
+  </div>
+</dialog>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

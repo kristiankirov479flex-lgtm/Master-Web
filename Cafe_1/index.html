@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="bg" data-skin="latte">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FBF3E8">
+<title>Little Moka – кафене и пекарна в Пловдив. Поръчай напред и вземи без опашка</title>
+<meta name="description" content="Little Moka е кафене и пекарна с печени всяка сутрин кроасани и кафе от собствена смес. Избери от менюто, избери час и вземи поръчката си без опашка.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Little Moka – кафене и пекарна в Пловдив. Поръчай напред и вземи без опашка">
+<meta property="og:description" content="Little Moka е кафене и пекарна с печени всяка сутрин кроасани и кафе от собствена смес. Избери от менюто, избери час и вземи поръчката си без опашка.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/latte-croissants.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/nunito-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("mokaSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Little Moka","inLanguage":"bg","telephone":"+359880000000","email":"hello@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 12","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Coffee, bakery, brunch","openingHours":["Mo-Fr 07:30-18:00","Sa-Su 08:30-17:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false"><path d="M5 12h19v7a8 8 0 0 1-8 8h-3a8 8 0 0 1-8-8z" fill="currentColor"/><path d="M24 14h2.5a3.5 3.5 0 0 1 0 7H24" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M11 3c-1.5 2 1.5 3 0 6M17 3c-1.5 2 1.5 3 0 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><b>Little Moka</b></a>
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#order">Меню и поръчка</a><a href="#bakery">Пекарна</a><a href="#card">Карта</a><a href="#visit">Адрес</a></nav>
+    <div class="top-r">
+      <span class="open-pill" data-state="unknown"><i aria-hidden="true"></i><span class="open-text">Часове за работа</span></span>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Кафене и пекарна · Пловдив</p>
+        <h1 id="h1">Хубаво кафе. <em>Без опашка.</em></h1>
+        <p class="lead">Избери от менюто, избери час и вземи поръчката си топла от плота. Кафето е от собствена смес, а кроасаните се пекат тук всяка сутрин.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#order">Поръчай напред</a>
+          <a class="btn btn-line" href="#visit">Адрес и часове</a>
+        </div>
+        <p class="open-pill open-pill-m" data-state="unknown"><i aria-hidden="true"></i><span class="open-text">Часове за работа</span></p>
+        <p class="next" id="nextSlot" role="status"><span class="next-dot" aria-hidden="true"></span><span id="nextText">Проверяваме първия свободен час…</span></p>
+      </div>
+      <div class="hero-photos">
+        <figure class="ph ph-main"><img src="images/stock/latte-croissants-800.jpg" srcset="images/stock/latte-croissants-800.jpg 800w, images/stock/latte-croissants.jpg 1600w" sizes="(min-width: 960px) 560px, 92vw" width="1600" height="1073" alt="Лате с рисунка до пресни кроасани" loading="eager" fetchpriority="high"></figure>
+        <figure class="ph ph-a"><img src="images/stock/hall-tiles-800.jpg" srcset="images/stock/hall-tiles-800.jpg 800w, images/stock/hall-tiles.jpg 1600w" sizes="(min-width: 960px) 260px, 44vw" width="1600" height="1067" alt="Салонът с плочки на пода и високи маси" loading="lazy" decoding="async"><figcaption>Салонът</figcaption></figure>
+        <figure class="ph ph-b"><img src="images/stock/croissants-tray-800.jpg" srcset="images/stock/croissants-tray-800.jpg 800w, images/stock/croissants-tray.jpg 1600w" sizes="(min-width: 960px) 260px, 44vw" width="1600" height="1067" alt="Поднос с току-що изпечени кроасани" loading="lazy" decoding="async"><figcaption>От фурната</figcaption></figure>
+        <p class="sticker" aria-hidden="true"><b>от 6:30</b><span>прясна пекарна</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Today's board ============ -->
+  <section class="board-sec" aria-labelledby="bd-h">
+    <div class="wrap board">
+      <div class="board-head">
+        <p class="kicker kicker-dark">Днес на плота</p>
+        <h2 id="bd-h">Дъската на деня</h2>
+        <p>Примерни неща от дъската. В истинско кафене ги сменяте всеки ден.</p>
+      </div>
+      <ul class="board-list">
+        <li><span>Кафе на деня</span><b>Етиопия, филтър · 4,80 €</b></li>
+        <li><span>От фурната</span><b>Кроасан с бадеми · 3,60 €</b></li>
+        <li><span>Брънч</span><b>Тост с авокадо и яйце · 9,40 €</b></li>
+        <li><span>Сезонна напитка</span><b>Тиквено лате · 4,90 €</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Menu and order ============ -->
+  <section class="block" id="order" aria-labelledby="or-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Меню и поръчка</p>
+        <h2 id="or-h">Събери поръчката си и избери час</h2>
+        <p>Натисни „+“ до нещата, които искаш. Вдясно виждаш сметката и избираш кога да дойдеш. Плащаш на касата.</p>
+      </header>
+      <div class="order-grid">
+        <div class="menu">
+          <div class="chips" id="cats" role="group" aria-label="Категория"><button class="chip" type="button" data-cat="all" aria-pressed="true">Всичко</button><button class="chip" type="button" data-cat="coffee" aria-pressed="false">Кафе</button><button class="chip" type="button" data-cat="drinks" aria-pressed="false">Други напитки</button><button class="chip" type="button" data-cat="bakery" aria-pressed="false">Пекарна</button><button class="chip" type="button" data-cat="brunch" aria-pressed="false">Брънч</button></div>
+          <p class="legend"><span class="tag">V</span> вегетарианско &nbsp; <span class="tag">VG</span> веган</p>
+          <div class="mgroup" data-cat="coffee"><h3>Кафе</h3><ul class="items"><li class="item" data-id="espresso" data-cat="coffee">
+            <div class="item-t"><h4>Еспресо</h4><p>Къс и плътен, от нашата смес</p></div>
+            <b class="price">2,20 €</b>
+            <button class="add" type="button" data-id="espresso" aria-label="Добави Еспресо"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="doppio" data-cat="coffee">
+            <div class="item-t"><h4>Двойно еспресо</h4><p>Два шота, за по-дълго утро</p></div>
+            <b class="price">3,20 €</b>
+            <button class="add" type="button" data-id="doppio" aria-label="Добави Двойно еспресо"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="americano" data-cat="coffee">
+            <div class="item-t"><h4>Американо</h4><p>Еспресо с гореща вода</p></div>
+            <b class="price">2,90 €</b>
+            <button class="add" type="button" data-id="americano" aria-label="Добави Американо"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="flat-white" data-cat="coffee">
+            <div class="item-t"><h4>Флат уайт</h4><p>Двойно еспресо и копринено мляко</p></div>
+            <b class="price">4,20 €</b>
+            <button class="add" type="button" data-id="flat-white" aria-label="Добави Флат уайт"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="cappuccino" data-cat="coffee">
+            <div class="item-t"><h4>Капучино</h4><p>Равни части кафе, мляко и пяна</p></div>
+            <b class="price">3,90 €</b>
+            <button class="add" type="button" data-id="cappuccino" aria-label="Добави Капучино"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="latte" data-cat="coffee">
+            <div class="item-t"><h4>Лате</h4><p>Меко, с много мляко</p></div>
+            <b class="price">4,20 €</b>
+            <button class="add" type="button" data-id="latte" aria-label="Добави Лате"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="mocha" data-cat="coffee">
+            <div class="item-t"><h4>Мока</h4><p>Еспресо, тъмен шоколад и мляко</p></div>
+            <b class="price">4,60 €</b>
+            <button class="add" type="button" data-id="mocha" aria-label="Добави Мока"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="v60" data-cat="coffee">
+            <div class="item-t"><h4>Филтър V60 <span class="tag" title="Веган">VG</span></h4><p>Ръчно приготвено, светло изпечено</p></div>
+            <b class="price">4,50 €</b>
+            <button class="add" type="button" data-id="v60" aria-label="Добави Филтър V60"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li></ul></div>
+        <div class="mgroup" data-cat="drinks"><h3>Други напитки</h3><ul class="items"><li class="item" data-id="hot-choc" data-cat="drinks">
+            <div class="item-t"><h4>Топъл шоколад <span class="tag" title="Вегетарианско">V</span></h4><p>Гъст, с истински шоколад</p></div>
+            <b class="price">4,40 €</b>
+            <button class="add" type="button" data-id="hot-choc" aria-label="Добави Топъл шоколад"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="matcha" data-cat="drinks">
+            <div class="item-t"><h4>Матча лате <span class="tag" title="Вегетарианско">V</span></h4><p>Японска матча и мляко</p></div>
+            <b class="price">4,80 €</b>
+            <button class="add" type="button" data-id="matcha" aria-label="Добави Матча лате"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="chai" data-cat="drinks">
+            <div class="item-t"><h4>Чай лате <span class="tag" title="Вегетарианско">V</span></h4><p>Подправен чай с мляко</p></div>
+            <b class="price">4,60 €</b>
+            <button class="add" type="button" data-id="chai" aria-label="Добави Чай лате"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="orange" data-cat="drinks">
+            <div class="item-t"><h4>Пресен портокал <span class="tag" title="Веган">VG</span></h4><p>Изцеден на момента</p></div>
+            <b class="price">4,50 €</b>
+            <button class="add" type="button" data-id="orange" aria-label="Добави Пресен портокал"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="iced-tea" data-cat="drinks">
+            <div class="item-t"><h4>Леден чай <span class="tag" title="Веган">VG</span></h4><p>Домашен, с лимон и мента</p></div>
+            <b class="price">3,80 €</b>
+            <button class="add" type="button" data-id="iced-tea" aria-label="Добави Леден чай"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="cold-brew" data-cat="drinks">
+            <div class="item-t"><h4>Колд брю <span class="tag" title="Веган">VG</span></h4><p>18 часа бавно запарено</p></div>
+            <b class="price">4,60 €</b>
+            <button class="add" type="button" data-id="cold-brew" aria-label="Добави Колд брю"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li></ul></div>
+        <div class="mgroup" data-cat="bakery"><h3>Пекарна</h3><ul class="items"><li class="item" data-id="croissant" data-cat="bakery">
+            <div class="item-t"><h4>Кроасан с масло <span class="tag" title="Вегетарианско">V</span></h4><p>Печен всяка сутрин от 6:30</p></div>
+            <b class="price">2,80 €</b>
+            <button class="add" type="button" data-id="croissant" aria-label="Добави Кроасан с масло"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="pain-choc" data-cat="bakery">
+            <div class="item-t"><h4>Кроасан с шоколад <span class="tag" title="Вегетарианско">V</span></h4><p>Две ленти тъмен шоколад</p></div>
+            <b class="price">3,20 €</b>
+            <button class="add" type="button" data-id="pain-choc" aria-label="Добави Кроасан с шоколад"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="cinnamon" data-cat="bakery">
+            <div class="item-t"><h4>Руло с канела <span class="tag" title="Вегетарианско">V</span></h4><p>Топло, със сметанов крем</p></div>
+            <b class="price">3,60 €</b>
+            <button class="add" type="button" data-id="cinnamon" aria-label="Добави Руло с канела"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="banana" data-cat="bakery">
+            <div class="item-t"><h4>Банан хляб <span class="tag" title="Вегетарианско">V</span></h4><p>Влажен, с орехи</p></div>
+            <b class="price">3,40 €</b>
+            <button class="add" type="button" data-id="banana" aria-label="Добави Банан хляб"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="pastry" data-cat="bakery">
+            <div class="item-t"><h4>Пастет със сирене и шунка</h4><p>Хрупкаво тесто, топъл пълнеж</p></div>
+            <b class="price">3,50 €</b>
+            <button class="add" type="button" data-id="pastry" aria-label="Добави Пастет със сирене и шунка"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="cheesecake" data-cat="bakery">
+            <div class="item-t"><h4>Чийзкейк <span class="tag" title="Вегетарианско">V</span></h4><p>Класически, с плодов сос</p></div>
+            <b class="price">5,20 €</b>
+            <button class="add" type="button" data-id="cheesecake" aria-label="Добави Чийзкейк"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li></ul></div>
+        <div class="mgroup" data-cat="brunch"><h3>Брънч</h3><ul class="items"><li class="item" data-id="avo" data-cat="brunch">
+            <div class="item-t"><h4>Тост с авокадо <span class="tag" title="Вегетарианско">V</span></h4><p>Ръжен хляб, авокадо, лимон, чили</p></div>
+            <b class="price">8,90 €</b>
+            <button class="add" type="button" data-id="avo" aria-label="Добави Тост с авокадо"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="eggs" data-cat="brunch">
+            <div class="item-t"><h4>Яйца на тост <span class="tag" title="Вегетарианско">V</span></h4><p>Две яйца по избор на хляб със заквасена сметана</p></div>
+            <b class="price">7,90 €</b>
+            <button class="add" type="button" data-id="eggs" aria-label="Добави Яйца на тост"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="granola" data-cat="brunch">
+            <div class="item-t"><h4>Купа с гранола <span class="tag" title="Вегетарианско">V</span></h4><p>Кисело мляко, гранола, сезонни плодове</p></div>
+            <b class="price">6,90 €</b>
+            <button class="add" type="button" data-id="granola" aria-label="Добави Купа с гранола"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="toastie" data-cat="brunch">
+            <div class="item-t"><h4>Тост с шунка и сирене</h4><p>Топъл, с горчица и корнишон</p></div>
+            <b class="price">6,50 €</b>
+            <button class="add" type="button" data-id="toastie" aria-label="Добави Тост с шунка и сирене"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li><li class="item" data-id="soup" data-cat="brunch">
+            <div class="item-t"><h4>Супа на деня</h4><p>Със своя хляб, от 11:00</p></div>
+            <b class="price">5,50 €</b>
+            <button class="add" type="button" data-id="soup" aria-label="Добави Супа на деня"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button>
+          </li></ul></div>
+        </div>
+
+        <section class="tray" id="tray" aria-labelledby="tray-h">
+          <form id="orderForm" novalidate>
+            <h3 id="tray-h">Твоята поръчка</h3>
+            <p class="tray-empty" id="trayEmpty">Още няма нищо тук. Добави нещо от менюто.</p>
+            <ul class="lines" id="lines"></ul>
+            <p class="total" id="totalRow" hidden><span>Общо</span><b id="total">0,00 €</b></p>
+
+            <fieldset class="pick">
+              <legend>Кога идваш?</legend>
+              <div class="dchips" id="dchips" role="radiogroup" aria-label="Ден"></div>
+              <p class="hint" id="slotHint" role="status">Проверяваме свободните часове…</p>
+              <div class="tchips" id="tchips" role="radiogroup" aria-label="Час за вземане"></div>
+            </fieldset>
+
+            <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="2"></textarea></div>
+
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="orError" role="alert" hidden></p>
+            <button class="btn btn-main btn-block" type="submit" id="send">Изпрати поръчката</button>
+            <small class="fine">Плащаш при вземане. Само името и телефонът ни трябват. <a href="privacy.html">Поверителност</a></small>
+          </form>
+          <div class="done" id="done" hidden tabindex="-1"></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Bakery ============ -->
+  <section class="block bakery" id="bakery" aria-labelledby="bk-h">
+    <div class="wrap bakery-in">
+      <div class="bakery-copy">
+        <p class="kicker">Пекарна</p>
+        <h2 id="bk-h">Печем тук, всяка сутрин</h2>
+        <p>Тестото се меси вечерта, а в 6:30 първите кроасани излизат от фурната. Когато нещо свърши, го маркираме на дъската.</p>
+        <ul class="ticks">
+          <li>Масло, а не маргарин</li><li>Хлябът е на квас</li><li>Веган и безглутенови опции всеки ден</li>
+        </ul>
+      </div>
+      <div class="bakery-photos">
+        <figure class="bp bp-1"><img src="images/stock/croissants-paper-800.jpg" srcset="images/stock/croissants-paper-800.jpg 800w, images/stock/croissants-paper.jpg 1600w" sizes="(min-width: 900px) 580px, 92vw" width="1600" height="1067" alt="Кроасани върху хартия" loading="lazy" decoding="async"></figure>
+        <figure class="bp bp-2"><img src="images/stock/bakery-case-800.jpg" srcset="images/stock/bakery-case-800.jpg 800w, images/stock/bakery-case.jpg 1600w" sizes="(min-width: 900px) 285px, 45vw" width="1600" height="2351" alt="Витрина с кроасани" loading="lazy" decoding="async"></figure>
+        <figure class="bp bp-3"><img src="images/stock/beans-latte-800.jpg" srcset="images/stock/beans-latte-800.jpg 800w, images/stock/beans-latte.jpg 1600w" sizes="(min-width: 900px) 285px, 45vw" width="1600" height="2400" alt="Лате върху кафеени зърна" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Loyalty ============ -->
+  <section class="block soft" id="card" aria-labelledby="cd-h">
+    <div class="wrap card-in">
+      <header class="sec-head">
+        <p class="kicker">Карта за лоялност</p>
+        <h2 id="cd-h">Деветото кафе е от нас</h2>
+        <p>Всяко кафе дава печат. На десетия печат получаваш напитка по избор безплатно. Картата е хартиена, без приложение и без регистрация.</p>
+      </header>
+      <div class="stampcard">
+        <p class="stamp-t">Примерна карта</p>
+        <ol class="stamps"><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp" aria-hidden="true">✓</li><li class="stamp free" aria-hidden="true">★</li></ol>
+        <p class="stamp-f">Безплатна напитка</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Адрес</p>
+        <h2 id="vs-h">Заповядай при нас</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>07:30 – 18:00</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>08:30 – 17:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Адрес</b><span>ул. Примерна 12, Пловдив</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Имейл</b><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+        <ul class="good">
+          <li>Работим с лаптоп</li><li>Приемаме кучета</li><li>Безжичен интернет</li><li>Достъпен вход</li>
+        </ul>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="images/stock/hall-industrial-800.jpg" srcset="images/stock/hall-industrial-800.jpg 800w, images/stock/hall-industrial.jpg 1600w" sizes="(min-width: 960px) 520px, 92vw" width="1600" height="1200" alt="Кафенето отвътре с високи тавани и големи прозорци" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Little Moka. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar" hidden>
+  <span id="barTxt"></span>
+  <a class="btn btn-main btn-sm" href="#tray">Виж поръчката</a>
+</div>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Лате</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="latte" style="--s1:#FBF3E8;--s2:#B5472A" aria-pressed="false" aria-label="Лате"></button><button class="sw" type="button" data-skin="matcha" style="--s1:#F2F4E8;--s2:#4C6B2A" aria-pressed="false" aria-label="Матча"></button><button class="sw" type="button" data-skin="berry" style="--s1:#FFF1F2;--s2:#B8264F" aria-pressed="false" aria-label="Малина"></button><button class="sw" type="button" data-skin="espresso" style="--s1:#1E1511;--s2:#E8A15D" aria-pressed="false" aria-label="Еспресо"></button><button class="sw" type="button" data-skin="blueberry" style="--s1:#EEF1FA;--s2:#3B4FBF" aria-pressed="false" aria-label="Боровинка"></button></div>
+</aside>
+
+<script type="application/json" id="mokaData">{"menu": [{"id": "espresso", "cat": "coffee", "price": 2.2, "milk": false, "name": "Еспресо"}, {"id": "doppio", "cat": "coffee", "price": 3.2, "milk": false, "name": "Двойно еспресо"}, {"id": "americano", "cat": "coffee", "price": 2.9, "milk": false, "name": "Американо"}, {"id": "flat-white", "cat": "coffee", "price": 4.2, "milk": true, "name": "Флат уайт"}, {"id": "cappuccino", "cat": "coffee", "price": 3.9, "milk": true, "name": "Капучино"}, {"id": "latte", "cat": "coffee", "price": 4.2, "milk": true, "name": "Лате"}, {"id": "mocha", "cat": "coffee", "price": 4.6, "milk": true, "name": "Мока"}, {"id": "v60", "cat": "coffee", "price": 4.5, "milk": false, "name": "Филтър V60"}, {"id": "hot-choc", "cat": "drinks", "price": 4.4, "milk": true, "name": "Топъл шоколад"}, {"id": "matcha", "cat": "drinks", "price": 4.8, "milk": true, "name": "Матча лате"}, {"id": "chai", "cat": "drinks", "price": 4.6, "milk": true, "name": "Чай лате"}, {"id": "orange", "cat": "drinks", "price": 4.5, "milk": false, "name": "Пресен портокал"}, {"id": "iced-tea", "cat": "drinks", "price": 3.8, "milk": false, "name": "Леден чай"}, {"id": "cold-brew", "cat": "drinks", "price": 4.6, "milk": false, "name": "Колд брю"}, {"id": "croissant", "cat": "bakery", "price": 2.8, "milk": false, "name": "Кроасан с масло"}, {"id": "pain-choc", "cat": "bakery", "price": 3.2, "milk": false, "name": "Кроасан с шоколад"}, {"id": "cinnamon", "cat": "bakery", "price": 3.6, "milk": false, "name": "Руло с канела"}, {"id": "banana", "cat": "bakery", "price": 3.4, "milk": false, "name": "Банан хляб"}, {"id": "pastry", "cat": "bakery", "price": 3.5, "milk": false, "name": "Пастет със сирене и шунка"}, {"id": "cheesecake", "cat": "bakery", "price": 5.2, "milk": false, "name": "Чийзкейк"}, {"id": "avo", "cat": "brunch", "price": 8.9, "milk": false, "name": "Тост с авокадо"}, {"id": "eggs", "cat": "brunch", "price": 7.9, "milk": false, "name": "Яйца на тост"}, {"id": "granola", "cat": "brunch", "price": 6.9, "milk": false, "name": "Купа с гранола"}, {"id": "toastie", "cat": "brunch", "price": 6.5, "milk": false, "name": "Тост с шунка и сирене"}, {"id": "soup", "cat": "brunch", "price": 5.5, "milk": false, "name": "Супа на деня"}], "milk": [{"id": "whole", "add": 0.0, "name": "Пълномаслено"}, {"id": "oat", "add": 0.6, "name": "Овесено (+0,60 €)"}, {"id": "almond", "add": 0.6, "name": "Бадемово (+0,60 €)"}, {"id": "lf", "add": 0.3, "name": "Безлактозно (+0,30 €)"}]}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

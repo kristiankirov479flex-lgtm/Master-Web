@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" data-skin="tulip">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF6EE">
+<title>Sunday Stems – fresh flowers delivered every week in Plovdiv</title>
+<meta name="description" content="A flower subscription in Plovdiv: choose a size and a rhythm, and fresh seasonal flowers arrive at your door every week, every two weeks or once a month.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sunday Stems – fresh flowers delivered every week in Plovdiv">
+<meta property="og:description" content="A flower subscription in Plovdiv: choose a size and a rhythm, and fresh seasonal flowers arrive at your door every week, every two weeks or once a month.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/vibrant-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("sundaySkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Sunday Stems","inLanguage":"en",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-19:00", "Sa-Su 10:00-16:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><i aria-hidden="true"></i><b>Sunday Stems</b></a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#week">This week</a>
+      <a href="#plan">Subscribe</a>
+      <a href="#season">Seasons</a>
+      <a href="#visit">Visit</a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <a class="btn btn-main btn-sm" href="#plan">Start my flowers</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero: two colour blocks ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-a">
+      <p class="tag">Flower subscription · Plovdiv</p>
+      <h1 id="h1">Fresh flowers. <em>Every week.</em></h1>
+      <p class="lead">Pick a size and a rhythm. A new seasonal bouquet arrives at your door, wrapped that morning. Pause or skip whenever you like.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#plan">Build my subscription</a>
+        <a class="btn btn-line" href="#week">See this week&#x27;s bouquet</a>
+      </div>
+      <ul class="perks">
+        <li>Free delivery in Plovdiv</li>
+        <li>Pause or skip any time</li>
+        <li>Seasonal and fresh</li>
+      </ul>
+    </div>
+    <figure class="hero-b">
+      <div class="orb orb-main"><img src="../images/stock/vibrant-bouquet.jpg" srcset="../images/stock/vibrant-bouquet-800.jpg 800w, ../images/stock/vibrant-bouquet.jpg 1600w" sizes="(min-width: 960px) 44vw, 90vw" width="1600" height="1093" alt="A vibrant mixed bouquet" fetchpriority="high" decoding="async"></div>
+      <div class="orb orb-a" aria-hidden="true"><img src="../images/stock/tulips-800.jpg" width="400" height="400" alt="" loading="lazy" decoding="async"></div>
+      <div class="orb orb-b" aria-hidden="true"><img src="../images/stock/pink-roses-800.jpg" width="400" height="400" alt="" loading="lazy" decoding="async"></div>
+      <figcaption class="sticker"><small>This week</small><b id="stickName"></b><span id="stickCut"></span></figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ This week ============ -->
+  <section class="block soft" id="week" aria-labelledby="week-h">
+    <div class="wrap week">
+      <div class="week-pic"><img id="weekImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="800" height="1000" loading="lazy"></div>
+      <div class="week-text">
+        <p class="kicker">This week</p>
+        <h2 id="week-h">What is blooming now.</h2>
+        <p class="week-name" id="weekName"></p>
+        <p class="week-stems" id="weekStems"></p>
+        <p class="cut" id="cutLine" role="status"></p>
+        <div class="up">
+          <b>Coming up</b>
+          <ul id="upNext"></ul>
+        </div>
+        <a class="btn btn-main" href="#plan">Build my subscription</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Build your subscription ============ -->
+  <section class="block dark" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Subscribe</p>
+        <h2 id="plan-h">Build your subscription.</h2>
+        <p>Five choices, one price per delivery. You see the monthly cost before you send the request.</p>
+      </header>
+      <form class="sub" id="subForm" novalidate>
+        <div class="sub-steps">
+          <fieldset class="st">
+            <legend><b>1</b> Pick a size</legend>
+            <div class="sizes"><label class="sz"><input type="radio" name="size" value="petite" data-price="18" data-name="Petite"><img src="../images/stock/pink-glass-vase-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span class="sz-t"><b>Petite</b><small>About 12 stems in a small vase wrap</small></span><span class="sz-p">18 €</span></label><label class="sz"><input type="radio" name="size" value="classic" data-price="28" data-name="Classic" checked><img src="../images/stock/hand-colorful-bouquet-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span class="sz-t"><b>Classic</b><small>About 20 stems, our everyday bouquet</small></span><span class="sz-p">28 €</span></label><label class="sz"><input type="radio" name="size" value="grand" data-price="42" data-name="Grand"><img src="../images/stock/roses-hydrangeas-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span class="sz-t"><b>Grand</b><small>About 35 stems for a statement</small></span><span class="sz-p">42 €</span></label></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>2</b> How often?</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="freq" value="weekly" data-days="7" data-pm="4.33" data-name="Every week" checked><span>Every week</span></label><label class="pl"><input type="radio" name="freq" value="biweekly" data-days="14" data-pm="2.17" data-name="Every 2 weeks"><span>Every 2 weeks</span></label><label class="pl"><input type="radio" name="freq" value="monthly" data-days="28" data-pm="1.0" data-name="Once a month"><span>Once a month</span></label></div>
+            <p class="st-sub">How long?</p>
+            <div class="pills"><label class="pl"><input type="radio" name="len" value="4" data-n="4" data-off="0" data-name="Try 4 deliveries"><span>Try 4 deliveries<small>&nbsp;</small></span></label><label class="pl"><input type="radio" name="len" value="12" data-n="12" data-off="10" data-name="12 deliveries" checked><span>12 deliveries<small>−10 %</small></span></label><label class="pl"><input type="radio" name="len" value="open" data-n="0" data-off="5" data-name="Until I stop"><span>Until I stop<small>−5 %</small></span></label></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>3</b> Extras</legend>
+            <div class="pills">
+              <label class="pl"><input type="checkbox" name="vase" value="1"><span>Add a vase<small>+ 12 € once</small></span></label>
+              <label class="pl"><input type="checkbox" name="gift" value="1"><span>This is a gift<small>We add a card</small></span></label>
+            </div>
+            <div class="field" id="giftBox" hidden><label for="f-to">Who is it for?</label><input id="f-to" name="to" type="text" autocomplete="off"></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>4</b> When and where?</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="fulfil" value="delivery" checked><span>Deliver to me</span></label><label class="pl"><input type="radio" name="fulfil" value="pickup"><span>I will pick up</span></label></div>
+            <div class="pills" id="dayOpts"><label class="pl"><input type="radio" name="day" value="5" checked><span>Fridays</span></label><label class="pl"><input type="radio" name="day" value="6"><span>Saturdays</span></label></div>
+            <p class="st-sub">First delivery</p>
+            <div class="dchips" id="dates" role="radiogroup" aria-label="First delivery"></div>
+            <p class="st-sub">Delivery window starts at</p>
+            <p class="hint" id="slotHint" role="status">Pick a first delivery to see delivery windows.</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Delivery window starts at"></div>
+          </fieldset>
+          <fieldset class="st">
+            <legend><b>5</b> Your details</legend>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field" id="addrBox"><label for="f-addr">Delivery address</label><input id="f-addr" name="addr" type="text" autocomplete="street-address"></div>
+            <div class="field"><label for="f-card">Card message (optional)</label><textarea id="f-card" name="card"></textarea></div>
+            <div class="field"><label for="f-msg">Anything else? (optional)</label><textarea id="f-msg" name="msg"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="slip" aria-labelledby="slip-h">
+          <h3 id="slip-h">Your subscription</h3>
+          <p class="slip-name" id="slipName"></p>
+          <dl class="slip-rows" id="slipRows"></dl>
+          <p class="slip-big"><span>Per delivery</span><b id="slipPer"></b></p>
+          <p class="slip-line"><span>About per month</span><b id="slipMonth"></b></p>
+          <p class="slip-line"><span id="slipTotalL">Total for 12 deliveries</span><b id="slipTotal"></b></p>
+          <p class="slip-save" id="slipSave"></p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-light" type="submit" id="bkSend">Start my subscription</button>
+          <small class="fine">We use your details only to answer your request. <a href="privacy.html">Privacy notice</a></small>
+        </section>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Season calendar ============ -->
+  <section class="block" id="season" aria-labelledby="season-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Seasons</p>
+        <h2 id="season-h">What is in season, month by month.</h2>
+        <p>Your bouquet follows the flower calendar, so it is always fresh and never flown halfway round the world.</p>
+      </header>
+      <ol class="months">
+        <li class="mo" data-m="0"><b>January</b><span class="now" hidden>Now</span><ul><li><i style="--c:#F4B6C2"></i>Anemones</li><li><i style="--c:#E8D9F5"></i>Hellebores</li><li><i style="--c:#FFD08A"></i>Ranunculus</li></ul></li>
+        <li class="mo" data-m="1"><b>February</b><span class="now" hidden>Now</span><ul><li><i style="--c:#FF8A7A"></i>Tulips</li><li><i style="--c:#FFE066"></i>Daffodils</li><li><i style="--c:#C9A7F5"></i>Anemones</li></ul></li>
+        <li class="mo" data-m="2"><b>March</b><span class="now" hidden>Now</span><ul><li><i style="--c:#FFE066"></i>Daffodils</li><li><i style="--c:#9EC9FF"></i>Hyacinths</li><li><i style="--c:#FF9CC4"></i>Tulips</li></ul></li>
+        <li class="mo" data-m="3"><b>April</b><span class="now" hidden>Now</span><ul><li><i style="--c:#FF6F61"></i>Tulips</li><li><i style="--c:#C9A7F5"></i>Lilac</li><li><i style="--c:#FFB3C7"></i>Peonies</li></ul></li>
+        <li class="mo" data-m="4"><b>May</b><span class="now" hidden>Now</span><ul><li><i style="--c:#FF9CC4"></i>Peonies</li><li><i style="--c:#C9A7F5"></i>Lilac</li><li><i style="--c:#FFD3E0"></i>Sweet peas</li></ul></li>
+        <li class="mo" data-m="5"><b>June</b><span class="now" hidden>Now</span><ul><li><i style="--c:#E5446D"></i>Roses</li><li><i style="--c:#6C8CFF"></i>Delphinium</li><li><i style="--c:#FFB3C7"></i>Peonies</li></ul></li>
+        <li class="mo" data-m="6"><b>July</b><span class="now" hidden>Now</span><ul><li><i style="--c:#FFC21A"></i>Sunflowers</li><li><i style="--c:#FF7A59"></i>Zinnias</li><li><i style="--c:#9B7BD8"></i>Lavender</li></ul></li>
+        <li class="mo" data-m="7"><b>August</b><span class="now" hidden>Now</span><ul><li><i style="--c:#E5446D"></i>Dahlias</li><li><i style="--c:#FF9A3D"></i>Zinnias</li><li><i style="--c:#FF9CC4"></i>Gladioli</li></ul></li>
+        <li class="mo" data-m="8"><b>September</b><span class="now" hidden>Now</span><ul><li><i style="--c:#B3261E"></i>Dahlias</li><li><i style="--c:#9B7BD8"></i>Asters</li><li><i style="--c:#FFC21A"></i>Chrysanthemums</li></ul></li>
+        <li class="mo" data-m="9"><b>October</b><span class="now" hidden>Now</span><ul><li><i style="--c:#FF9A3D"></i>Chrysanthemums</li><li><i style="--c:#E5446D"></i>Rose hips</li><li><i style="--c:#D9C7A0"></i>Dried grasses</li></ul></li>
+        <li class="mo" data-m="10"><b>November</b><span class="now" hidden>Now</span><ul><li><i style="--c:#FFFFFF"></i>Chrysanthemums</li><li><i style="--c:#8FB8A0"></i>Eucalyptus</li><li><i style="--c:#B3261E"></i>Berries</li></ul></li>
+        <li class="mo" data-m="11"><b>December</b><span class="now" hidden>Now</span><ul><li><i style="--c:#C8102E"></i>Amaryllis</li><li><i style="--c:#2F6B3F"></i>Pine</li><li><i style="--c:#8FB8A0"></i>Eucalyptus</li></ul></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ How it works ============ -->
+  <section class="block accent" id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <h2 id="how-h">How it works</h2>
+      <ol class="steps">
+        <li><h3>Choose</h3><p>Pick a size, a rhythm and a day. You see the price per delivery and per month.</p></li>
+        <li><h3>We arrange</h3><p>The morning of your delivery we pick the best of the week and wrap it.</p></li>
+        <li><h3>It arrives</h3><p>At your door, in Plovdiv, free of charge. Pause or skip any time.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Happy subscribers</p>
+        <h2 id="rev-h">What subscribers say</h2>
+      </header>
+      <div class="revs">
+        <figure class="rev"><blockquote>Every Saturday is a small celebration now. The flowers last more than a week.</blockquote><figcaption><b>Classic, weekly</b> · Example subscriber</figcaption></figure>
+        <figure class="rev"><blockquote>I gave it to my mum for her birthday and she has not stopped talking about it.</blockquote><figcaption><b>Gift subscription</b> · Example subscriber</figcaption></figure>
+        <figure class="rev"><blockquote>It is the easiest way I know to make the flat feel alive.</blockquote><figcaption><b>Petite, every 2 weeks</b> · Example subscriber</figcaption></figure>
+      </div>
+      <p class="rev-note">Example reviews. Replace them with real reviews.</p>
+    </div>
+  </section>
+
+  <!-- ============ Questions and visit ============ -->
+  <section class="block soft" id="visit" aria-labelledby="faq-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">Questions</p>
+        <h2 id="faq-h">Good to know</h2>
+        <div class="faq-list">
+          <details><summary>Can I pause or skip a delivery?</summary><p>Yes. Tell us by phone or message at least two days before the delivery and we skip it.</p></details>
+          <details><summary>Which flowers will I get?</summary><p>Whatever is best that week. The page shows this week&#x27;s bouquet, and the calendar shows what is in season.</p></details>
+          <details><summary>Is delivery included?</summary><p>Delivery in Plovdiv is free. We also deliver nearby for a small fee; ask us.</p></details>
+          <details><summary>How do I pay?</summary><p>You pay on the first delivery, by cash or card. Then each delivery or each month, as you prefer.</p></details>
+          <details><summary>Can I give it as a gift?</summary><p>Yes. Tick “This is a gift”, tell us who it is for and we add a card with your message.</p></details>
+        </div>
+      </div>
+      <div class="shopcard">
+        <p class="kicker">Visit</p>
+        <h2>The shop</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Address</dt><dd>Primer St. 1, Plovdiv</dd>
+          <dt>Hours</dt><dd>Mon – Fri 09:00 – 19:00 · Sat – Sun 10:00 – 16:00</dd>
+          <dt>Phone</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map is from OpenStreetMap and loads only if you choose.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">Sunday Stems</span>
+    <span>© <span id="year">2026</span> Sunday Stems · Flower subscriptions in Plovdiv</span>
+    <span class="foot-links"><a href="privacy.html">Privacy notice</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Tulip Red</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="tulip" data-name="Tulip Red" aria-label="Colour scheme: Tulip Red" title="Tulip Red" aria-pressed="true" style="--s1:#FFF6EE;--s2:#C93A1F"></button>
+        <button class="sw" type="button" data-skin="lemon" data-name="Lemon and Leaf" aria-label="Colour scheme: Lemon and Leaf" title="Lemon and Leaf" aria-pressed="false" style="--s1:#FFFBE6;--s2:#1B6B45"></button>
+        <button class="sw" type="button" data-skin="peony" data-name="Peony Pink" aria-label="Colour scheme: Peony Pink" title="Peony Pink" aria-pressed="false" style="--s1:#FFF1F5;--s2:#B8236B"></button>
+        <button class="sw" type="button" data-skin="iris" data-name="Iris Purple" aria-label="Colour scheme: Iris Purple" title="Iris Purple" aria-pressed="false" style="--s1:#F3F0FF;--s2:#5A33C9"></button>
+        <button class="sw" type="button" data-skin="sage" data-name="Sage Green" aria-label="Colour scheme: Sage Green" title="Sage Green" aria-pressed="false" style="--s1:#F1F5EC;--s2:#2F6B3F"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+359000000000">Call</a>
+  <a href="#plan">Subscribe · <b id="qTotal"></b></a>
+</nav>
+
+<script type="application/json" id="sundayData">{"weekly": [{"name": "Peach Parade", "stems": "Ranunculus, spray roses, eucalyptus", "src": "../images/stock/pink-roses-800.jpg"}, {"name": "Garden Walk", "stems": "Sweet peas, snapdragons, green fern", "src": "../images/stock/mixed-glass-vase-800.jpg"}, {"name": "Tulip Tuesday", "stems": "Tulips, ranunculus, tulip foliage", "src": "../images/stock/tulips-800.jpg"}, {"name": "Poppy Fields", "stems": "Poppies, wild grasses, chamomile", "src": "../images/stock/poppies-amber-vase-800.jpg"}, {"name": "Rose and Hydrangea", "stems": "Roses, hydrangea, lisianthus", "src": "../images/stock/roses-hydrangeas-800.jpg"}, {"name": "Dried and Dreamy", "stems": "Dried grasses, strawflower, preserved eucalyptus", "src": "../images/stock/beige-bouquet-800.jpg"}], "cutBy": "Order by {d} {t} for delivery on {s}", "cutIn": "Order within {x} for delivery on {s}", "hUnit": "h", "mUnit": "min", "totalL": "Total for {n} deliveries", "totalOpen": "Until you stop", "vase": 12}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

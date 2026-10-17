@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="bg" data-skin="margherita">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF9F0">
+<title>Fornello – пицария с дървена пещ в Пловдив</title>
+<meta name="description" content="Fornello е пицария в Пловдив с дървена пещ и тесто, което втасва 48 часа. Виж менюто с цени за три размера и резервирай маса.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fornello – пицария с дървена пещ в Пловдив">
+<meta property="og:description" content="Fornello е пицария в Пловдив с дървена пещ и тесто, което втасва 48 часа. Виж менюто с цени за три размера и резервирай маса.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/oven-pizza.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("fornelloSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Fornello","inLanguage":"bg","telephone":"+359880000000","email":"ciao@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 16","addressLocality":"Plovdiv","addressCountry":"BG"},"servesCuisine":"Pizza, Italian","acceptsReservations":"True","openingHours":["Mo-Fr 12:00-22:30","Sa-Su 12:00-23:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html">Fornello</a>
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#menu">Меню</a><a href="#oven">Нашата пещ</a><a href="#reserve">Резервация</a><a href="#visit">Адрес</a></nav>
+    <div class="top-r">
+      <a class="call" href="tel:+359880000000"><span class="call-l">Обади се</span> <b>+359 88 000 0000</b></a>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="images/stock/oven-pizza-800.jpg" srcset="images/stock/oven-pizza-800.jpg 800w, images/stock/oven-pizza.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="Пица, която излиза от дървена пещ с огън" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Пицария · Пловдив</p>
+      <h1 id="h1">Пица от дървена пещ</h1>
+      <p class="lead">Тестото втасва 48 часа, а пицата се пече 90 секунди при 450 градуса. Хапни при нас или се обади за вземане.</p>
+      <p class="hero-links"><a class="btn btn-main" href="#menu">Виж менюто</a> <a class="btn btn-light" href="#reserve">Резервирай маса</a></p>
+    </div>
+  </section>
+  <div class="info-bar">
+    <ul class="wrap info-row">
+      <li><b>Днес</b> <span id="todayHours">12:00 – 22:30</span></li>
+      <li><b>Адрес</b> <span>ул. Примерна 16, Пловдив</span></li>
+      <li><b>За вкъщи</b> <span>Обади се и пицата е готова за 20 минути</span></li>
+    </ul>
+  </div>
+
+  <!-- ============ Menu ============ -->
+  <section class="block" id="menu" aria-labelledby="mn-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="mn-h">Меню</h2>
+        <p>Три размера: малка 25 см, средна 32 см и голяма 42 см. Цените са в евро.</p>
+      </header>
+      <div class="pz-wrap"><table class="plist pz"><caption>Пици</caption><thead><tr><th scope="col">Пица</th><th scope="col">25 cm</th><th scope="col">32 cm</th><th scope="col">42 cm</th></tr></thead><tbody><tr><th scope="row">Маргарита <span class="tag" title="Вегетарианска">V</span><small>домати, моцарела, босилек</small></th><td>7,50 €</td><td>9,50 €</td><td>13,50 €</td></tr><tr><th scope="row">Пеперони<small>домати, моцарела, пикантен салам</small></th><td>9,00 €</td><td>11,50 €</td><td>16,00 €</td></tr><tr><th scope="row">Четири сирена <span class="tag" title="Вегетарианска">V</span><small>моцарела, горгонзола, пармезан, кашкавал</small></th><td>10,00 €</td><td>13,00 €</td><td>18,00 €</td></tr><tr><th scope="row">Капричоза<small>шунка, гъби, артишок, маслини</small></th><td>10,00 €</td><td>13,00 €</td><td>18,00 €</td></tr><tr><th scope="row">Прошуто и гъби<small>шунка, гъби, моцарела</small></th><td>9,50 €</td><td>12,50 €</td><td>17,00 €</td></tr><tr><th scope="row">Вегетариана <span class="tag" title="Вегетарианска">V</span><small>чушки, гъби, царевица, лук, маслини</small></th><td>9,00 €</td><td>11,50 €</td><td>16,00 €</td></tr><tr><th scope="row">Дяволска<small>лют пипер, салам, лук, моцарела</small></th><td>9,50 €</td><td>12,50 €</td><td>17,00 €</td></tr><tr><th scope="row">Българска <span class="tag" title="Вегетарианска">V</span><small>кашкавал, сирене, чушки, домати</small></th><td>9,00 €</td><td>11,50 €</td><td>16,00 €</td></tr></tbody></table></div>
+      <p class="p-note"><span class="tag">V</span> вегетарианска</p>
+      <div class="menu-cols"><section class="m-group"><h3>Паста</h3><ul class="m-list"><li><div class="m-top"><h4>Спагети карбонара</h4><i aria-hidden="true"></i><b>9,50 €</b></div><p>пансета, яйце, пармезан</p></li><li><div class="m-top"><h4>Лазаня</h4><i aria-hidden="true"></i><b>10,00 €</b></div><p>със сос болонезе и бешамел</p></li><li><div class="m-top"><h4>Пене арабиата</h4><i aria-hidden="true"></i><b>8,50 €</b></div><p>лют доматен сос</p></li><li><div class="m-top"><h4>Ньоки с четири сирена</h4><i aria-hidden="true"></i><b>11,00 €</b></div></li></ul></section><section class="m-group"><h3>Салати</h3><ul class="m-list"><li><div class="m-top"><h4>Капрезе</h4><i aria-hidden="true"></i><b>8,00 €</b></div><p>домати, моцарела, босилек</p></li><li><div class="m-top"><h4>Рукола</h4><i aria-hidden="true"></i><b>8,00 €</b></div><p>пармезан и балсамов оцет</p></li><li><div class="m-top"><h4>Гръцка</h4><i aria-hidden="true"></i><b>7,50 €</b></div></li></ul></section><section class="m-group"><h3>Десерти</h3><ul class="m-list"><li><div class="m-top"><h4>Тирамису</h4><i aria-hidden="true"></i><b>5,50 €</b></div></li><li><div class="m-top"><h4>Панакота</h4><i aria-hidden="true"></i><b>5,00 €</b></div><p>с горски плодове</p></li><li><div class="m-top"><h4>Сладолед</h4><i aria-hidden="true"></i><b>4,00 €</b></div><p>две топки</p></li></ul></section><section class="m-group"><h3>Напитки</h3><ul class="m-list"><li><div class="m-top"><h4>Газирана напитка</h4><i aria-hidden="true"></i><b>2,50 €</b></div><p>0,33 л</p></li><li><div class="m-top"><h4>Бира</h4><i aria-hidden="true"></i><b>3,50 €</b></div><p>Местна, 0,5 л</p></li><li><div class="m-top"><h4>Вино на чаша</h4><i aria-hidden="true"></i><b>4,00 €</b></div><p>червено или бяло</p></li><li><div class="m-top"><h4>Еспресо</h4><i aria-hidden="true"></i><b>2,20 €</b></div></li></ul></section></div>
+      <div class="menu-ph"><figure><img src="images/stock/slice-pull-800.jpg" srcset="images/stock/slice-pull-800.jpg 800w, images/stock/slice-pull.jpg 1600w" sizes="(min-width: 900px) 352px, calc(100vw - 40px)" width="1600" height="1067" alt="Парче пица с разтеглено сирене" loading="lazy" decoding="async"></figure><figure><img src="images/stock/pizza-board-800.jpg" srcset="images/stock/pizza-board-800.jpg 800w, images/stock/pizza-board.jpg 1600w" sizes="(min-width: 900px) 352px, calc(100vw - 40px)" width="1600" height="1600" alt="Пица върху дървена дъска" loading="lazy" decoding="async"></figure><figure><img src="images/stock/slice-spatula-800.jpg" srcset="images/stock/slice-spatula-800.jpg 800w, images/stock/slice-spatula.jpg 1600w" sizes="(min-width: 900px) 352px, calc(100vw - 40px)" width="1600" height="1067" alt="Парче пица, вдигнато с лопатка" loading="lazy" decoding="async"></figure></div>
+    </div>
+  </section>
+
+  <!-- ============ Our oven ============ -->
+  <section class="block soft" id="oven" aria-labelledby="ov-h">
+    <div class="wrap oven">
+      <div class="oven-text">
+        <h2 id="ov-h">Нашата пещ</h2>
+        <p>Пещта е зидана преди девет години и се пали всяка сутрин в десет. Печем на дъбови дърва, затова коричката е тънка и леко опушена.</p>
+        <p>Тестото замесваме с малко мая и го оставяме да почива два дни. Така пицата е лека и не тежи.</p>
+        <ul class="facts4"><li><b>48 ч</b><span>почива тестото</span></li><li><b>450 °C</b><span>е пещта</span></li><li><b>90 сек</b><span>се пече пицата</span></li></ul>
+      </div>
+      <div class="oven-ph"><figure><img src="images/stock/dough-800.jpg" srcset="images/stock/dough-800.jpg 800w, images/stock/dough.jpg 1600w" sizes="(min-width: 900px) 360px, calc(100vw - 40px)" width="1600" height="1067" alt="Ръце, които месят тесто" loading="lazy" decoding="async"></figure><figure><img src="images/stock/oven-fire-800.jpg" srcset="images/stock/oven-fire-800.jpg 800w, images/stock/oven-fire.jpg 1600w" sizes="(min-width: 900px) 360px, calc(100vw - 40px)" width="1600" height="1281" alt="Огън в дървената пещ" loading="lazy" decoding="async"></figure></div>
+    </div>
+  </section>
+
+  <!-- ============ Reservations ============ -->
+  <section class="block" id="reserve" aria-labelledby="rs-h">
+    <div class="wrap narrow">
+      <header class="sec-head">
+        <h2 id="rs-h">Резервация на маса</h2>
+        <p>Приемаме и без резервация, но в петък и събота вечер е добре да запазиш маса. За повече от 10 души ни се обади.</p>
+      </header>
+      <form class="res" id="resForm" novalidate>
+        <div class="row3">
+          <div class="field"><label for="f-people">Колко души</label><select id="f-people" name="people"><option value="1">1 човек</option><option value="2" selected>2 души</option><option value="3">3 души</option><option value="4">4 души</option><option value="5">5 души</option><option value="6">6 души</option><option value="7">7 души</option><option value="8">8 души</option><option value="9">9 души</option><option value="10">10 души</option></select></div>
+          <div class="field"><label for="f-date">Дата</label><input id="f-date" name="date" type="date" required></div>
+          <div class="field"><label for="f-time">Час</label><select id="f-time" name="time" required></select></div>
+        </div>
+        <p class="hint" id="timeHint" role="status">Избери дата, за да видиш свободните часове.</p>
+        <fieldset class="group"><legend>Къде да седнете</legend><div class="opts"><label class="opt"><input type="radio" name="seat" value="any" checked><span>Без значение</span></label><label class="opt"><input type="radio" name="seat" value="inside"><span>Вътре</span></label><label class="opt"><input type="radio" name="seat" value="outside"><span>Навън</span></label></div></fieldset>
+        <div class="row2">
+          <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="3"></textarea></div>
+        <p class="demo-note" id="demoNote" hidden></p>
+        <p class="form-error" id="resError" role="alert" hidden></p>
+        <button class="btn btn-main" type="submit" id="resSend">Резервирай масата</button>
+        <small class="fine">Ще ти се обадим само ако трябва да променим нещо. <a href="privacy.html">Поверителност</a></small>
+      </form>
+      <div class="done" id="resDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Find us ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <h2 id="vs-h">Намери ни</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>12:00 – 22:30</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>12:00 – 23:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Адрес</b><span>ул. Примерна 16, Пловдив</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Имейл</b><a href="mailto:ciao@example.com">ciao@example.com</a></li>
+        </ul>
+        <p class="visit-note">Има безплатно паркиране зад сградата след 18:00.</p>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="images/stock/street-800.jpg" srcset="images/stock/street-800.jpg 800w, images/stock/street.jpg 1600w" sizes="(min-width: 900px) 360px, calc(100vw - 40px)" width="1600" height="2133" alt="Улица с маси на пицарията и червено-бели покривки" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Fornello. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Маргарита</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="margherita" style="--s1:#FFF9F0;--s2:#B3261E" aria-pressed="false" aria-label="Маргарита"></button><button class="sw" type="button" data-skin="diavola" style="--s1:#FBF3EE;--s2:#8F1D14" aria-pressed="false" aria-label="Дяволска"></button><button class="sw" type="button" data-skin="basil" style="--s1:#F5F8F0;--s2:#2E6B34" aria-pressed="false" aria-label="Босилек"></button><button class="sw" type="button" data-skin="oven" style="--s1:#1D1511;--s2:#F08A3C" aria-pressed="false" aria-label="Пещ"></button><button class="sw" type="button" data-skin="napoli" style="--s1:#F4F7FB;--s2:#1E4E8C" aria-pressed="false" aria-label="Неапол"></button></div>
+</aside>
+
+<script type="application/json" id="fornelloData">{"booking": 75, "seats": {"any": "Без значение", "inside": "Вътре", "outside": "Навън"}}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

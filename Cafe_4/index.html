@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="bg" data-skin="linen">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF6EE">
+<title>Kettle &amp; Co – кафене в Пловдив. Кафе, торти и спокойна маса</title>
+<meta name="description" content="Kettle &amp; Co е семейно кафене в Пловдив. Прясно кафе, домашни торти и закуска всеки ден от 7:30. Виж менюто и резервирай маса.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kettle &amp; Co – кафене в Пловдив. Кафе, торти и спокойна маса">
+<meta property="og:description" content="Kettle &amp; Co е семейно кафене в Пловдив. Прясно кафе, домашни торти и закуска всеки ден от 7:30. Виж менюто и резервирай маса.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/street.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/alegreya-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("kettleSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Kettle & Co","inLanguage":"bg","telephone":"+359880000000","email":"hello@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 14","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Coffee, cakes, breakfast","acceptsReservations":"True","openingHours":["Mo-Fr 07:30-18:00","Sa-Su 08:00-18:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html">Kettle <span>&amp;</span> Co</a>
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#menu">Меню</a><a href="#about">За нас</a><a href="#gallery">Снимки</a><a href="#reserve">Резервация</a><a href="#visit">Адрес</a></nav>
+    <div class="top-r">
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="images/stock/street-800.jpg" srcset="images/stock/street-800.jpg 800w, images/stock/street.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="Улица с маси на кафенето пред сградата и черна дъска с менюто" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Семейно кафене · Пловдив</p>
+      <h1 id="h1">Кафе, торта и спокойна маса</h1>
+      <p class="lead">Отворено всеки ден от 7:30. Кафето е от пловдивска пържилня, а тортите правим тук.</p>
+      <p class="hero-links"><a class="btn btn-main" href="#menu">Виж менюто</a> <a class="btn btn-light" href="#reserve">Резервирай маса</a></p>
+    </div>
+  </section>
+  <div class="info-bar">
+    <ul class="wrap info-row">
+      <li><b>Днес</b> <span id="todayHours">07:30 – 18:00</span></li>
+      <li><b>Адрес</b> <span>ул. Примерна 14, Пловдив</span></li>
+      <li><b>Телефон</b> <a href="tel:+359880000000">+359 88 000 0000</a></li>
+    </ul>
+  </div>
+
+  <!-- ============ About ============ -->
+  <section class="block" id="about" aria-labelledby="ab-h">
+    <div class="wrap about">
+      <div class="about-text">
+        <h2 id="ab-h">За нас</h2>
+        <p>Отворихме кафенето преди единайсет години в къща на тиха уличка в Пловдив. Искахме място, където можеш да седнеш с вестник, с книга или просто с приятел и никой да не те пита дали ще поръчваш пак.</p>
+        <p>Всяка сутрин в шест започваме с тестото. Кафето купуваме от малка пържилня в града, а млякото и яйцата от стопанство в Родопите.</p>
+        <ul class="ticks">
+          <li>Торти и сладки, правени тук</li><li>Овесено и соево мляко срещу 0,50 €</li><li>Кучета са добре дошли на терасата</li>
+        </ul>
+      </div>
+      <figure class="about-ph"><img src="images/stock/interior-sunny-800.jpg" srcset="images/stock/interior-sunny-800.jpg 800w, images/stock/interior-sunny.jpg 1600w" sizes="(min-width: 900px) 460px, calc(100vw - 40px)" width="1600" height="2133" alt="Слънчева зала с дървени столове и маси" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <!-- ============ Menu ============ -->
+  <section class="block soft" id="menu" aria-labelledby="mn-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="mn-h">Меню</h2>
+        <p>Цените са в евро. Питай за алергени, ако имаш нужда.</p>
+      </header>
+      <div class="menu-cols"><section class="m-group" aria-labelledby="mg-coffee"><h3 id="mg-coffee">Кафе</h3><p class="m-note">Овесено или соево мляко: +0,50 €</p><ul class="m-list"><li><div class="m-top"><h4>Еспресо</h4><i aria-hidden="true"></i><b>2,20 €</b></div></li><li><div class="m-top"><h4>Двойно еспресо</h4><i aria-hidden="true"></i><b>3,20 €</b></div></li><li><div class="m-top"><h4>Американо</h4><i aria-hidden="true"></i><b>2,80 €</b></div></li><li><div class="m-top"><h4>Капучино</h4><i aria-hidden="true"></i><b>3,60 €</b></div></li><li><div class="m-top"><h4>Флат уайт</h4><i aria-hidden="true"></i><b>4,00 €</b></div></li><li><div class="m-top"><h4>Лате</h4><i aria-hidden="true"></i><b>4,00 €</b></div></li><li><div class="m-top"><h4>Филтър кафе</h4><i aria-hidden="true"></i><b>3,00 €</b></div><p>Чаша от каната</p></li><li><div class="m-top"><h4>Виенско кафе</h4><i aria-hidden="true"></i><b>4,50 €</b></div><p>С разбита сметана</p></li></ul></section><section class="m-group" aria-labelledby="mg-other"><h3 id="mg-other">Чай и други напитки</h3><ul class="m-list"><li><div class="m-top"><h4>Чай</h4><i aria-hidden="true"></i><b>3,50 €</b></div><p>Чайник за една чаша, няколко вида</p></li><li><div class="m-top"><h4>Топъл шоколад</h4><i aria-hidden="true"></i><b>4,20 €</b></div></li><li><div class="m-top"><h4>Пресен портокал</h4><i aria-hidden="true"></i><b>4,50 €</b></div></li><li><div class="m-top"><h4>Домашна лимонада</h4><i aria-hidden="true"></i><b>3,80 €</b></div><p>Лимон и мента</p></li><li><div class="m-top"><h4>Минерална вода</h4><i aria-hidden="true"></i><b>2,00 €</b></div><p>0,5 л</p></li></ul></section><section class="m-group" aria-labelledby="mg-cakes"><h3 id="mg-cakes">Торти и сладки</h3><p class="m-note">Всичко се прави тук, всяка сутрин</p><ul class="m-list"><li><div class="m-top"><h4>Шоколадова торта</h4><i aria-hidden="true"></i><b>5,50 €</b></div></li><li><div class="m-top"><h4>Чийзкейк с горски плодове</h4><i aria-hidden="true"></i><b>5,20 €</b></div></li><li><div class="m-top"><h4>Ябълков щрудел</h4><i aria-hidden="true"></i><b>4,80 €</b></div><p>Топъл, с ванилов сос</p></li><li><div class="m-top"><h4>Орехова торта</h4><i aria-hidden="true"></i><b>5,00 €</b></div></li><li><div class="m-top"><h4>Кроасан</h4><i aria-hidden="true"></i><b>3,00 €</b></div><p>С масло, или с конфитюр</p></li></ul></section><section class="m-group" aria-labelledby="mg-light"><h3 id="mg-light">Закуска и лека храна</h3><p class="m-note">Закуска до 11:00</p><ul class="m-list"><li><div class="m-top"><h4>Бъркани яйца на тост</h4><i aria-hidden="true"></i><b>6,50 €</b></div></li><li><div class="m-top"><h4>Баница с кисело мляко</h4><i aria-hidden="true"></i><b>4,50 €</b></div></li><li><div class="m-top"><h4>Тост с шунка и кашкавал</h4><i aria-hidden="true"></i><b>5,50 €</b></div></li><li><div class="m-top"><h4>Супа на деня</h4><i aria-hidden="true"></i><b>5,00 €</b></div><p>С хляб</p></li><li><div class="m-top"><h4>Салата с козе сирене</h4><i aria-hidden="true"></i><b>7,50 €</b></div></li></ul></section></div>
+      <div class="from-counter">
+        <figure><img src="images/stock/cake-latte-800.jpg" srcset="images/stock/cake-latte-800.jpg 800w, images/stock/cake-latte.jpg 1600w" sizes="(min-width: 900px) 370px, calc(100vw - 40px)" width="1600" height="1601" alt="Лате и парче торта" loading="lazy" decoding="async"></figure><figure><img src="images/stock/flat-lay-cake-800.jpg" srcset="images/stock/flat-lay-cake-800.jpg 800w, images/stock/flat-lay-cake.jpg 1600w" sizes="(min-width: 900px) 370px, calc(100vw - 40px)" width="1600" height="1067" alt="Кафе, парче торта и лайм върху маса" loading="lazy" decoding="async"></figure><figure><img src="images/stock/cocoa-cake-800.jpg" srcset="images/stock/cocoa-cake-800.jpg 800w, images/stock/cocoa-cake.jpg 1600w" sizes="(min-width: 900px) 370px, calc(100vw - 40px)" width="1600" height="1067" alt="Какао и парче торта върху дървена маса" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Photos ============ -->
+  <section class="block" id="gallery" aria-labelledby="gl-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="gl-h">Нашето място</h2>
+        <p>Две зали, тераса и барът с кафе машината.</p>
+      </header>
+      <div class="gallery">
+        <figure><img src="images/stock/interior-wood-800.jpg" srcset="images/stock/interior-wood-800.jpg 800w, images/stock/interior-wood.jpg 1600w" sizes="(min-width: 900px) 370px, 45vw" width="1600" height="2386" alt="Дървена ламперия и картини в малката зала" loading="lazy" decoding="async"></figure><figure><img src="images/stock/interior-plants-800.jpg" srcset="images/stock/interior-plants-800.jpg 800w, images/stock/interior-plants.jpg 1600w" sizes="(min-width: 900px) 370px, 45vw" width="1600" height="2400" alt="Маса сред растения до прозорец" loading="lazy" decoding="async"></figure><figure><img src="images/stock/interior-books-800.jpg" srcset="images/stock/interior-books-800.jpg 800w, images/stock/interior-books.jpg 1600w" sizes="(min-width: 900px) 370px, 45vw" width="1600" height="2133" alt="Етажерка с книги и малка маса" loading="lazy" decoding="async"></figure>
+        <figure><img src="images/stock/terrace-800.jpg" srcset="images/stock/terrace-800.jpg 800w, images/stock/terrace.jpg 1600w" sizes="(min-width: 900px) 370px, 45vw" width="1600" height="1067" alt="Тераса с маси и чадъри" loading="lazy" decoding="async"></figure><figure><img src="images/stock/interior-grand-800.jpg" srcset="images/stock/interior-grand-800.jpg 800w, images/stock/interior-grand.jpg 1600w" sizes="(min-width: 900px) 370px, 45vw" width="1600" height="800" alt="Голямата зала вечер" loading="lazy" decoding="async"></figure><figure><img src="images/stock/machine-800.jpg" srcset="images/stock/machine-800.jpg 800w, images/stock/machine.jpg 1600w" sizes="(min-width: 900px) 370px, 45vw" width="1600" height="1065" alt="Кафе машината на бара" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Reservations ============ -->
+  <section class="block soft" id="reserve" aria-labelledby="rs-h">
+    <div class="wrap narrow">
+      <header class="sec-head">
+        <h2 id="rs-h">Резервация на маса</h2>
+        <p>Не е задължителна, но в събота и неделя сутрин е полезна. За повече от 8 души ни се обадете.</p>
+      </header>
+      <form class="res" id="resForm" novalidate>
+        <div class="row3">
+          <div class="field"><label for="f-people">Колко души</label><select id="f-people" name="people"><option value="1">1 човек</option><option value="2" selected>2 души</option><option value="3">3 души</option><option value="4">4 души</option><option value="5">5 души</option><option value="6">6 души</option><option value="7">7 души</option><option value="8">8 души</option></select></div>
+          <div class="field"><label for="f-date">Дата</label><input id="f-date" name="date" type="date" required></div>
+          <div class="field"><label for="f-time">Час</label><select id="f-time" name="time" required></select></div>
+        </div>
+        <p class="hint" id="timeHint" role="status">Избери дата, за да видиш свободните часове.</p>
+        <div class="row2">
+          <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="3"></textarea></div>
+        <p class="demo-note" id="demoNote" hidden></p>
+        <p class="form-error" id="resError" role="alert" hidden></p>
+        <button class="btn btn-main" type="submit" id="resSend">Резервирай масата</button>
+        <small class="fine">Ще ти се обадим само ако трябва да променим нещо. <a href="privacy.html">Поверителност</a></small>
+      </form>
+      <div class="done" id="resDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Find us ============ -->
+  <section class="block" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <h2 id="vs-h">Намери ни</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>07:30 – 18:00</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>08:00 – 18:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Адрес</b><span>ул. Примерна 14, Пловдив</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Имейл</b><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+        <p class="visit-note">Има платено паркиране на съседната улица.</p>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="images/stock/cheesecake-table-800.jpg" srcset="images/stock/cheesecake-table-800.jpg 800w, images/stock/cheesecake-table.jpg 1600w" sizes="(min-width: 900px) 520px, calc(100vw - 40px)" width="1600" height="1067" alt="Маса с кафе, чийзкейк и ледено кафе до прозореца" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Kettle &amp; Co. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Лен и зелено</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="linen" style="--s1:#FAF6EE;--s2:#2F5D3A" aria-pressed="false" aria-label="Лен и зелено"></button><button class="sw" type="button" data-skin="wine" style="--s1:#FBF4F1;--s2:#7A2434" aria-pressed="false" aria-label="Вино"></button><button class="sw" type="button" data-skin="harbour" style="--s1:#F4F6F8;--s2:#1F4468" aria-pressed="false" aria-label="Пристанище"></button><button class="sw" type="button" data-skin="roast" style="--s1:#1C1612;--s2:#D9B26B" aria-pressed="false" aria-label="Печено кафе"></button><button class="sw" type="button" data-skin="clay" style="--s1:#F8EEE4;--s2:#9A4426" aria-pressed="false" aria-label="Глина"></button></div>
+</aside>
+
+<script type="application/json" id="kettleData">{"maxParty": 8, "booking": 90}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

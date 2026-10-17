@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="[[lang]]" data-skin="orchid">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0C0710">
+<title>[[title]]</title>
+<meta name="description" content="[[desc]]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[[title]]">
+<meta property="og:description" content="[[desc]]">
+<meta property="og:locale" content="[[lang]]">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/mauve-glitter.jpg is a placeholder) -->
+<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="[[root]]fonts/oswald-[[script]].woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="[[root]]fonts/fonts.css">
+<link rel="stylesheet" href="[[root]]css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("nocturneSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NailSalon","name":"[[brand]] Nail Bar","inLanguage":"[[lang]]",
+ "telephone":"[[phone_href]]","email":"[[email]]",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":[[[hours_ld]]]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">[[skip]]</a>
+
+<header class="bar" id="topbar">
+  <a class="brand" href="[[home_href]]">[[brand]]<span>[[tagline]]</span></a>
+  <div class="bar-r">
+    <a class="lang" href="[[other_href]]" lang="[[other_lang]]" hreflang="[[other_lang]]" aria-label="[[other_aria]]">[[other_label]]</a>
+    <a class="btn btn-main btn-sm" href="#find">[[cta]]</a>
+  </div>
+</header>
+
+<!-- Dots on the right: where you are on the page -->
+<nav class="dots" id="dots" aria-label="[[nav_label]]">
+  <a href="#top" aria-label="[[d1]]" aria-current="true"><i></i></a>
+  <a href="#find" aria-label="[[d2]]"><i></i></a>
+  <a href="#book" aria-label="[[d3]]"><i></i></a>
+  <a href="#visit" aria-label="[[d4]]"><i></i></a>
+</nav>
+
+<main id="main">
+
+  <!-- ============ Screen 1: after dark ============ -->
+  <section class="screen hero" id="top" aria-labelledby="h1">
+    <div class="hero-text">
+      <p class="eyebrow">[[eyebrow]]</p>
+      <h1 id="h1">[[h1]]</h1>
+      <p class="lead">[[lead]]</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#find">[[cta1]]</a>
+        <a class="btn btn-ghost" href="#book">[[cta2]]</a>
+      </div>
+      <div class="live">
+        <p class="status off" id="openNow">[[loading]]</p>
+        <p class="nextfree" id="nextFree" hidden></p>
+      </div>
+    </div>
+    <div class="reel" aria-hidden="true">
+      [[reel]]
+    </div>
+    <div class="ticker" aria-label="[[rev_label]]">
+      <div class="ticker-track" aria-hidden="true"><ul>[[ticker]]</ul><ul>[[ticker]]</ul></div>
+      <p class="sr-only">[[ticker_sr]]</p>
+    </div>
+  </section>
+
+  <!-- ============ Screen 2: find your set ============ -->
+  <section class="screen find" id="find" aria-labelledby="find-h">
+    <div class="find-in">
+      <header class="head">
+        <p class="eyebrow">[[k_find]]</p>
+        <h2 id="find-h">[[find_h]]</h2>
+        <p>[[find_p]]</p>
+      </header>
+      <div class="phone" id="quiz">
+        <div class="phone-top">
+          <span class="avatar" aria-hidden="true">N</span>
+          <div><b>[[bot_name]]</b><small id="quizStep">[[bot_role]]</small></div>
+          <button class="restart" type="button" id="restart" hidden>[[restart]]</button>
+        </div>
+        <div class="chat" id="chat" role="log" aria-live="polite" aria-label="[[chat_label]]"></div>
+        <div class="choices" id="choices"></div>
+      </div>
+      <section class="result" id="result" aria-labelledby="res-h" hidden tabindex="-1">
+        <img id="resImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="800" height="1000">
+        <div class="res-body">
+          <p class="eyebrow">[[res_k]]</p>
+          <h3 id="res-h"></h3>
+          <p class="res-desc" id="resDesc"></p>
+          <ul class="res-lines" id="resLines"></ul>
+          <p class="res-total"><span>[[sum_price]]</span><b id="resPrice"></b></p>
+          <p class="res-total"><span>[[sum_time]]</span><b id="resTime"></b></p>
+          <p class="res-note" id="resNote"></p>
+          <div class="res-actions">
+            <a class="btn btn-main" href="#book" id="resBook">[[res_book]]</a>
+            <button class="btn btn-ghost" type="button" id="resAgain">[[restart]]</button>
+          </div>
+        </div>
+      </section>
+      <p class="skip-quiz"><button type="button" id="skipQuiz">[[skip_quiz]]</button></p>
+    </div>
+  </section>
+
+  <!-- ============ Screen 3: book ============ -->
+  <section class="screen book" id="book" aria-labelledby="book-h">
+    <div class="find-in">
+      <header class="head">
+        <p class="eyebrow">[[k_book]]</p>
+        <h2 id="book-h">[[book_h]]</h2>
+        <p>[[book_p]]</p>
+      </header>
+      <form class="bk" id="bookForm" novalidate>
+        <section class="bk-set" aria-labelledby="set-h">
+          <h3 id="set-h">[[sum_h]]</h3>
+          <p class="bk-empty" id="bkEmpty">[[need_set]] <a href="#find">[[need_link]]</a></p>
+          <div id="bkSet" hidden>
+            <p class="bk-desc" id="bkDesc"></p>
+            <ul class="res-lines" id="bkLines"></ul>
+            <p class="res-total"><span>[[sum_price]]</span><b id="bkPrice"></b></p>
+            <p class="res-total"><span>[[sum_time]]</span><b id="bkTime"></b></p>
+            <a class="edit" href="#find">[[change_set]]</a>
+          </div>
+        </section>
+        <div class="bk-when">
+          <div class="cal" id="cal">
+            <div class="cal-head">
+              <button class="rail-btn" type="button" id="calPrev" aria-label="[[cal_prev]]">‹</button>
+              <b id="calTitle" aria-live="polite"></b>
+              <button class="rail-btn" type="button" id="calNext" aria-label="[[cal_next]]">›</button>
+            </div>
+            <div class="cal-dow" id="calDow" aria-hidden="true"></div>
+            <div class="cal-grid" id="calGrid" role="group" aria-label="[[s_day]]"></div>
+          </div>
+          <div class="bk-side">
+            <p class="bk-n"><b>1</b> [[s_time]]</p>
+            <p class="hint" id="slotHint" role="status">[[f_hint]]</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="[[f_time]]"></div>
+            <p class="bk-n"><b>2</b> [[s_you]]</p>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">[[f_name]]</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">[[f_phone]]</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">[[f_msg]]</label><textarea id="f-msg" name="msg"></textarea></div>
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="bkError" role="alert" hidden></p>
+            <div class="me-foot">
+              <button class="btn btn-main" type="submit" id="bkSend">[[f_send]]</button>
+              <small class="hint">[[f_note]] <a href="[[privacy_href]]">[[f_priv]]</a></small>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Screen 4: visit and questions ============ -->
+  <section class="screen visit" id="visit" aria-labelledby="visit-h">
+    <div class="find-in visit-grid">
+      <div>
+        <p class="eyebrow">[[k_visit]]</p>
+        <h2 id="visit-h">[[visit_h]]</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>[[addr_l]]</dt><dd>[[addr]]</dd>
+          <dt>[[hours_l]]</dt><dd>[[hours]]</dd>
+          <dt>[[phone_l]]</dt><dd><a href="tel:[[phone_href]]">[[phone]]</a></dd>
+          <dt>[[email_l]]</dt><dd><a href="mailto:[[email]]">[[email]]</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>[[map_t]]</p>
+            <button class="btn btn-ghost btn-sm" type="button" id="mapLoad">[[map_btn]]</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">[[k_faq]]</p>
+        <h2 id="faq-h">[[faq_h]]</h2>
+        <div class="faq-list">
+          [[faq]]
+        </div>
+      </div>
+    </div>
+    <footer class="foot">
+      <span class="foot-brand">[[brand]]</span>
+      <span>© <span id="year">[[year]]</span> [[brand]] Nail Bar · [[foot_tag]]</span>
+      <span class="foot-links"><a href="[[privacy_href]]">[[foot_priv]]</a> <a href="[[admin_href]]">[[admin_t]]</a></span>
+    </footer>
+  </section>
+</main>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="[[dock_label]]">
+  <div class="dock-label"><small>[[dock_label]]</small><b id="skinName">[[skin_name]]</b></div>
+  <div class="swatches">
+        [[swatches]]
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="[[quick_label]]">
+  <a href="tel:[[phone_href]]">[[q_call]]</a>
+  <a href="#find">[[q_find]]</a>
+</nav>
+
+<script src="[[root]]js/config.js"></script>
+<script src="[[root]]js/api.js"></script>
+<script src="[[root]]js/main.js"></script>
+</body>
+</html>

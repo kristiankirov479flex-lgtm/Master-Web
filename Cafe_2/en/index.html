@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en" data-skin="ember">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17110D">
+<title>Ember Roasters – coffee roasters in Plovdiv. Freshly roasted coffee to your door</title>
+<meta name="description" content="Ember Roasters is a small specialty coffee roastery in Plovdiv. Choose beans, size and grind; we roast on Tuesdays and Fridays and deliver, or you collect from us.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ember Roasters – coffee roasters in Plovdiv. Freshly roasted coffee to your door">
+<meta property="og:description" content="Ember Roasters is a small specialty coffee roastery in Plovdiv. Choose beans, size and grind; we roast on Tuesdays and Fridays and deliver, or you collect from us.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/roaster-pour.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("emberSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Ember Roasters","inLanguage":"en","telephone":"+359880000000","email":"beans@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 21","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Coffee","openingHours":["Mo-Fr 10:00-18:00","Sa-Su 10:00-14:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><path d="M16 2c1 5 7 8 7 15a7 7 0 0 1-14 0c0-3 1.5-4.5 3-6 .3 2 1.2 3 2.2 3.4C13.500 9 15 6 16 2z" fill="currentColor"/><ellipse cx="16" cy="22" rx="3.2" ry="4.6" fill="var(--bg)" opacity=".55" transform="rotate(20 16 22)"/></svg><b>Ember Roasters</b></a>
+    <nav class="nav" id="nav" aria-label="Navigation"><a href="#beans">Coffees</a><a href="#build">Order</a><a href="#brew">Brewing</a><a href="#roastery">Roastery</a><a href="#visit">Visit</a></nav>
+    <div class="top-r">
+      <a class="bag-pill" href="#build" id="bagPill"><span class="bag-n" id="bagN">0</span><span class="bag-t" id="bagT">Your bag is empty</span></a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Coffee roasters · Plovdiv</p>
+        <h1 id="h1">Roasted on Tuesday. <em>In your cup</em> by Friday.</h1>
+        <p class="lead">A small specialty coffee roastery. You choose beans, size and grind; we roast in small batches and deliver, or you collect from us.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#beans">Choose a coffee</a>
+          <a class="btn btn-ghost" href="#brew">How to brew</a>
+        </div>
+        <dl class="roast-facts">
+          <div><dt>Last roast</dt><dd id="lastRoast">–</dd></div>
+          <div><dt>Roast days</dt><dd>Tuesday and Friday</dd></div>
+          <div><dt>Delivery</dt><dd>Plovdiv, free over €35</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-ph"><img src="../images/stock/roaster-beans-800.jpg" srcset="../images/stock/roaster-beans-800.jpg 800w, ../images/stock/roaster-beans.jpg 1600w" sizes="(min-width: 960px) 480px, 90vw" width="1600" height="2395" alt="Freshly roasted beans in the roaster drum" loading="eager" fetchpriority="high"><figcaption>Tuesday's batch</figcaption></figure>
+    </div>
+  </section>
+  <div class="marquee" aria-hidden="true"><div class="marquee-in"><span>Peach</span><span>Jasmine</span><span>Honey</span><span>Caramel</span><span>Red apple</span><span>Cocoa</span><span>Hazelnut</span><span>Chocolate</span><span>Almond</span><span>Dark chocolate</span><span>Sweet tobacco</span><span>Citrus</span><span>Milk chocolate</span><span>Orange</span><span>Peach</span><span>Jasmine</span><span>Honey</span><span>Caramel</span><span>Red apple</span><span>Cocoa</span><span>Hazelnut</span><span>Chocolate</span><span>Almond</span><span>Dark chocolate</span><span>Sweet tobacco</span><span>Citrus</span><span>Milk chocolate</span><span>Orange</span></div></div>
+
+  <!-- ============ Step 1: coffees ============ -->
+  <section class="block" id="beans" aria-labelledby="bn-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Step 1</p>
+        <h2 id="bn-h">What we are roasting this week</h2>
+        <p>Five coffees from small farms. Choose one and carry on down the page.</p>
+      </header>
+      <div class="chips" id="methods" role="group" aria-label="Brew method"><button class="chip" type="button" data-method="all" aria-pressed="true">All</button><button class="chip" type="button" data-method="filter" aria-pressed="false">For filter</button><button class="chip" type="button" data-method="espresso" aria-pressed="false">For espresso</button></div>
+      <ul class="coffees" id="coffees"><li class="coffee" data-id="guji" data-method="filter">
+          <figure><img src="../images/stock/bowl-beans-800.jpg" srcset="../images/stock/bowl-beans-800.jpg 800w, ../images/stock/bowl-beans.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="1572" alt="Ethiopia Guji" loading="lazy" decoding="async"><span class="m-tag">Filter</span></figure>
+          <div class="c-body">
+            <h3>Ethiopia Guji</h3>
+            <p class="c-org">Guji, Ethiopia · 2000 m · Natural</p>
+            <ul class="c-notes"><li>Peach</li><li>Jasmine</li><li>Honey</li></ul>
+            <p class="roast"><span>Roast</span><span class="dots" role="img" aria-label="Roast level 2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></p>
+            <div class="c-foot"><b>11.90 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="guji" aria-pressed="false">Choose</button></div>
+          </div>
+        </li><li class="coffee" data-id="huila" data-method="both">
+          <figure><img src="../images/stock/beans-trail-800.jpg" srcset="../images/stock/beans-trail-800.jpg 800w, ../images/stock/beans-trail.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2133" alt="Colombia Huila" loading="lazy" decoding="async"><span class="m-tag">Filter and espresso</span></figure>
+          <div class="c-body">
+            <h3>Colombia Huila</h3>
+            <p class="c-org">Huila, Colombia · 1800 m · Washed</p>
+            <ul class="c-notes"><li>Caramel</li><li>Red apple</li><li>Cocoa</li></ul>
+            <p class="roast"><span>Roast</span><span class="dots" role="img" aria-label="Roast level 3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></p>
+            <div class="c-foot"><b>10.50 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="huila" aria-pressed="false">Choose</button></div>
+          </div>
+        </li><li class="coffee" data-id="cerrado" data-method="espresso">
+          <figure><img src="../images/stock/beans-dark-800.jpg" srcset="../images/stock/beans-dark-800.jpg 800w, ../images/stock/beans-dark.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2405" alt="Brazil Cerrado" loading="lazy" decoding="async"><span class="m-tag">Espresso</span></figure>
+          <div class="c-body">
+            <h3>Brazil Cerrado</h3>
+            <p class="c-org">Cerrado, Brazil · 1100 m · Natural</p>
+            <ul class="c-notes"><li>Hazelnut</li><li>Chocolate</li><li>Almond</li></ul>
+            <p class="roast"><span>Roast</span><span class="dots" role="img" aria-label="Roast level 4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></p>
+            <div class="c-foot"><b>9.50 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="cerrado" aria-pressed="false">Choose</button></div>
+          </div>
+        </li><li class="coffee" data-id="ember" data-method="espresso">
+          <figure><img src="../images/stock/steam-cup-800.jpg" srcset="../images/stock/steam-cup-800.jpg 800w, ../images/stock/steam-cup.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2400" alt="Ember house blend" loading="lazy" decoding="async"><span class="m-tag">Espresso</span></figure>
+          <div class="c-body">
+            <h3>Ember house blend</h3>
+            <p class="c-org">Brazil and Colombia · Blend</p>
+            <ul class="c-notes"><li>Dark chocolate</li><li>Sweet tobacco</li><li>Citrus</li></ul>
+            <p class="roast"><span>Roast</span><span class="dots" role="img" aria-label="Roast level 4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></p>
+            <div class="c-foot"><b>8.90 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="ember" aria-pressed="false">Choose</button></div>
+          </div>
+        </li><li class="coffee" data-id="decaf" data-method="both">
+          <figure><img src="../images/stock/flat-lay-800.jpg" srcset="../images/stock/flat-lay-800.jpg 800w, ../images/stock/flat-lay.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2400" alt="Decaf Mexico" loading="lazy" decoding="async"><span class="m-tag">Filter and espresso</span></figure>
+          <div class="c-body">
+            <h3>Decaf Mexico</h3>
+            <p class="c-org">Chiapas, Mexico · Sugarcane process</p>
+            <ul class="c-notes"><li>Milk chocolate</li><li>Orange</li></ul>
+            <p class="roast"><span>Roast</span><span class="dots" role="img" aria-label="Roast level 3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></p>
+            <div class="c-foot"><b>11.20 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="decaf" aria-pressed="false">Choose</button></div>
+          </div>
+        </li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Steps 2 and 3: build the bag ============ -->
+  <section class="block soft" id="build" aria-labelledby="bd-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Steps 2 and 3</p>
+        <h2 id="bd-h">Build your bag</h2>
+        <p>Size, grind, how often. Then when and where. The total is always on the bar at the bottom.</p>
+      </header>
+      <form class="build" id="buildForm" novalidate>
+        <div class="b-grid">
+          <fieldset class="step">
+            <legend><b>1</b> Your bag</legend>
+            <p class="picked" id="picked" role="status">You have not chosen a coffee yet. Go up and press “Choose”.</p>
+            <div class="grid2">
+              <fieldset class="sub"><legend>Size</legend><div class="opts"><label class="opt"><input type="radio" name="size" value="250" checked><span><b>250 g</b><small class="size-p" data-size="250"></small></span></label><label class="opt"><input type="radio" name="size" value="1000"><span><b>1 kg</b><small class="size-p" data-size="1000"></small></span></label></div></fieldset>
+              <div class="field"><label for="f-grind">Grind</label><select id="f-grind" name="grind"><option value="whole">Whole bean</option><option value="espresso">Espresso</option><option value="moka">Moka pot</option><option value="filter">Filter (V60)</option><option value="press">French press</option></select></div>
+            </div>
+            <div class="qty-row">
+              <span class="qty-l" id="qtyL">Number of bags</span>
+              <div class="stepper" role="group" aria-labelledby="qtyL"><button type="button" id="qMinus" aria-label="One bag fewer">−</button><output id="qOut">1</output><button type="button" id="qPlus" aria-label="One bag more">+</button></div>
+            </div>
+            <fieldset class="sub"><legend>How often?</legend><div class="opts"><label class="opt"><input type="radio" name="freq" value="once" checked><span><b>Just once</b></span></label><label class="opt"><input type="radio" name="freq" value="14"><span><b>Every 2 weeks</b><small>−8%</small></span></label><label class="opt"><input type="radio" name="freq" value="30"><span><b>Every month</b><small>−8%</small></span></label></div></fieldset>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Delivery or pick-up</legend>
+            <div class="opts" role="radiogroup" aria-label="Delivery or pick-up">
+              <label class="opt"><input type="radio" name="fulfil" value="delivery" checked><span><b>Delivery to an address</b><small id="feeNote"></small></span></label>
+              <label class="opt"><input type="radio" name="fulfil" value="pickup"><span><b>Pick up at the roastery</b><small>Free</small></span></label>
+            </div>
+            <div class="field" id="addrRow"><label for="f-addr">Delivery address</label><input id="f-addr" name="address" type="text" autocomplete="street-address"></div>
+            <p class="sub-h" id="whenH">When should we deliver?</p>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Day"></div>
+            <p class="hint" id="slotHint" role="status">Checking free times…</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Time"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> Your details</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Note (optional)</label><textarea id="f-msg" name="msg" rows="2"></textarea></div>
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="bkError" role="alert" hidden></p>
+          </fieldset>
+        </div>
+        <div class="checkout" id="checkout">
+          <div class="co-sum">
+            <p class="co-line" id="coLine">Your bag is empty</p>
+            <p class="co-sub" id="coSub"></p>
+          </div>
+          <p class="co-total"><span id="coTotalL">Total</span><b id="coTotal">0,00 €</b></p>
+          <button class="btn btn-main" type="submit" id="bkSend">Place the order</button>
+        </div>
+        <small class="fine">You pay on receipt. No account needed. <a href="privacy.html">Privacy</a></small>
+      </form>
+      <div class="done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Brew calculator ============ -->
+  <section class="block" id="brew" aria-labelledby="br-h">
+    <div class="wrap brew">
+      <div class="brew-copy">
+        <header class="sec-head">
+          <p class="kicker">Brewing</p>
+          <h2 id="br-h">How much coffee for how much water?</h2>
+          <p>Choose a method and how many cups you want. The calculator gives you grams, temperature and time.</p>
+        </header>
+        <form class="calc" id="calc" aria-label="How much coffee for how much water?" onsubmit="return false">
+          <div class="field"><label for="c-method">Method</label><select id="c-method"><option value="v60">V60 pour-over</option><option value="espresso">Espresso</option><option value="moka">Moka pot</option><option value="press">French press</option><option value="aero">AeroPress</option></select></div>
+          <div class="field"><label for="c-cups"><span id="cupsLbl">Cups (250 ml each)</span>: <b id="cupsOut">2</b></label><input id="c-cups" type="range" min="1" max="8" value="2"></div>
+          <dl class="calc-out" aria-live="polite">
+            <div><dt>Coffee</dt><dd id="cCoffee">–</dd></div>
+            <div><dt>Water</dt><dd id="cWater">–</dd></div>
+            <div><dt>Temperature</dt><dd id="cTemp">–</dd></div>
+            <div><dt>Time</dt><dd id="cTime">–</dd></div>
+            <div><dt>Grind</dt><dd id="cGrind">–</dd></div>
+          </dl>
+        </form>
+      </div>
+      <div class="brew-photos">
+        <figure class="bpx bpx-1"><img src="../images/stock/pour-over-800.jpg" srcset="../images/stock/pour-over-800.jpg 800w, ../images/stock/pour-over.jpg 1600w" sizes="(min-width: 900px) 260px, 45vw" width="1600" height="2400" alt="Water poured into a V60" loading="lazy" decoding="async"></figure>
+        <figure class="bpx bpx-2"><img src="../images/stock/drip-bag-800.jpg" srcset="../images/stock/drip-bag-800.jpg 800w, ../images/stock/drip-bag.jpg 1600w" sizes="(min-width: 900px) 260px, 45vw" width="1600" height="2400" alt="A drip bag in a cup" loading="lazy" decoding="async"></figure>
+        <figure class="bpx bpx-3"><img src="../images/stock/portafilters-800.jpg" srcset="../images/stock/portafilters-800.jpg 800w, ../images/stock/portafilters.jpg 1600w" sizes="(min-width: 900px) 260px, 45vw" width="1600" height="2400" alt="Two portafilters with beans and ground coffee" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Roastery ============ -->
+  <section class="block roastery" id="roastery" aria-labelledby="ro-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker kicker-dark">The roastery</p>
+        <h2 id="ro-h">Small batches, clear roasting</h2>
+        <p>We roast 12 kg at a time and log every batch. That way we know what we send and can repeat it.</p>
+      </header>
+      <div class="steps3">
+        <figure class="r-ph"><img src="../images/stock/roaster-drum-800.jpg" srcset="../images/stock/roaster-drum-800.jpg 800w, ../images/stock/roaster-drum.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1067" alt="The roaster drum full of beans" loading="lazy" decoding="async"></figure>
+        <ol class="r-steps">
+          <li><b>1 · Green coffee</b><span>We buy straight from small farms and keep every lot separate.</span></li>
+          <li><b>2 · Roasting</b><span>Tuesday and Friday mornings. We watch the temperature the whole time.</span></li>
+          <li><b>3 · Rest and pack</b><span>Two days of rest, then a bag with the roast date printed on it.</span></li>
+        </ol>
+        <figure class="r-ph r-ph2"><img src="../images/stock/roaster-scoop-800.jpg" srcset="../images/stock/roaster-scoop-800.jpg 800w, ../images/stock/roaster-scoop.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1067" alt="A scoop taking a sample of the beans" loading="lazy" decoding="async"></figure>
+      </div>
+      <p class="cupping"><b>Every Saturday at 11:00:</b> a free cupping at the roastery. Just come along.</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Visit</p>
+        <h2 id="vs-h">Find the roastery</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Monday – Friday</dt><dd>10:00 – 18:00</dd></div><div data-hrs="we"><dt>Saturday and Sunday</dt><dd>10:00 – 14:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Address</b><span>21 Primer St., Plovdiv</span></li>
+          <li><b>Phone</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Email</b><a href="mailto:beans@example.com">beans@example.com</a></li>
+        </ul>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="../images/stock/board-latte-800.jpg" srcset="../images/stock/board-latte-800.jpg 800w, ../images/stock/board-latte.jpg 1600w" sizes="(min-width: 900px) 520px, 90vw" width="1600" height="1067" alt="A board with ground coffee, beans and a latte" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map loads from OpenStreetMap only when you ask for it.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Ember Roasters. Everything here is an example.</span>
+    <span class="foot-links"><a href="privacy.html">Privacy</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Ember</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="ember" style="--s1:#17110D;--s2:#FF6A2B" aria-pressed="false" aria-label="Ember"></button><button class="sw" type="button" data-skin="paper" style="--s1:#F4EEE4;--s2:#C2410C" aria-pressed="false" aria-label="Paper"></button><button class="sw" type="button" data-skin="moss" style="--s1:#0F1812;--s2:#A6E06A" aria-pressed="false" aria-label="Moss"></button><button class="sw" type="button" data-skin="midnight" style="--s1:#101522;--s2:#F2C14E" aria-pressed="false" aria-label="Midnight"></button><button class="sw" type="button" data-skin="blush" style="--s1:#FBEFF0;--s2:#9D2A5B" aria-pressed="false" aria-label="Blush"></button></div>
+</aside>
+
+<script type="application/json" id="emberData">{"coffees": [{"id": "guji", "method": "filter", "price": 11.9, "name": "Ethiopia Guji", "roast": 2}, {"id": "huila", "method": "both", "price": 10.5, "name": "Colombia Huila", "roast": 3}, {"id": "cerrado", "method": "espresso", "price": 9.5, "name": "Brazil Cerrado", "roast": 4}, {"id": "ember", "method": "espresso", "price": 8.9, "name": "Ember house blend", "roast": 4}, {"id": "decaf", "method": "both", "price": 11.2, "name": "Decaf Mexico", "roast": 3}], "sizes": [{"id": "250", "g": 250, "mult": 1.0}, {"id": "1000", "g": 1000, "mult": 3.6}], "grinds": {"whole": "Whole bean", "espresso": "Espresso", "moka": "Moka pot", "filter": "Filter (V60)", "press": "French press"}, "freqs": {"once": "Just once", "14": "Every 2 weeks", "30": "Every month"}, "subDiscount": 0.08, "fee": 4.5, "freeFrom": 35, "roastDays": [1, 4], "methods": [{"id": "v60", "name": "V60 pour-over", "ratio": 16, "temp": "94 °C", "time": "3:00", "grind": "medium-fine"}, {"id": "espresso", "name": "Espresso", "ratio": 2, "temp": "93 °C", "time": "0:28", "grind": "fine"}, {"id": "moka", "name": "Moka pot", "ratio": 10, "temp": "90 °C", "time": "4:00", "grind": "medium-fine"}, {"id": "press", "name": "French press", "ratio": 15, "temp": "95 °C", "time": "4:00", "grind": "coarse"}, {"id": "aero", "name": "AeroPress", "ratio": 14, "temp": "85 °C", "time": "2:00", "grind": "medium"}]}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

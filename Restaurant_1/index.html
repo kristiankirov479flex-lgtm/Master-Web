@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="bg" data-skin="olive">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5F0E4">
+<title>Maslina – ресторант в Пловдив. Резервирай маса онлайн</title>
+<meta name="description" content="Maslina е ресторант в Пловдив със средиземноморска кухня, сезонни продукти и ежедневно обедно меню. Виж менюто и резервирай маса за минута.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maslina – ресторант в Пловдив. Резервирай маса онлайн">
+<meta property="og:description" content="Maslina е ресторант в Пловдив със средиземноморска кухня, сезонни продукти и ежедневно обедно меню. Виж менюто и резервирай маса за минута.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/hall-light.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-600-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("maslinaSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Maslina","inLanguage":"bg","telephone":"+359880000000","email":"tables@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 8","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Mediterranean","acceptsReservations":"True","openingHours":["Mo-Fr 12:00-22:00","Sa-Su 12:00-23:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#menu">Меню</a><a href="#lunch">Обяд</a><a href="#atmosphere">Атмосфера</a><a href="#visit">Адрес</a></nav>
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><path d="M4 26C10 14 18 8 28 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M11 20c-4 .5-6-2-6.5-5 3.5-.5 6 1 6.5 5zM15 15c-3.5-.6-4.6-3.4-4.5-6.3 3.4.6 4.9 3 4.5 6.3zM21 11c-3-.8-3.6-3.4-3-6 3.2.9 3.9 3.2 3 6zM17 21c3.5-1.2 6.3-.3 8.6 2-2.7 2.2-6.3 1.8-8.6-2z" fill="currentColor"/></svg><b>Maslina</b></a>
+    <div class="top-r">
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <a class="btn btn-main btn-sm" href="#reserve">Резервирай</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="images/stock/hall-light-800.jpg" srcset="images/stock/hall-light-800.jpg 800w, images/stock/hall-light.jpg 1600w" sizes="100vw" width="1600" height="1066" alt="Светлият салон на ресторанта с големи прозорци и растения" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Ресторант · Пловдив</p>
+      <h1 id="h1">Бавна храна, <em>дълги вечери</em></h1>
+      <p class="lead">Средиземноморска кухня със сезонни продукти. Избери маса за минута, а ние ще се погрижим за останалото.</p>
+    </div>
+    <form class="quick wrap" id="quick" aria-labelledby="q-h">
+      <h2 id="q-h" class="quick-h">Резервирай маса</h2>
+      <label class="q-f"><span>Гости</span><select id="qParty"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></label>
+      <label class="q-f"><span>Дата</span><select id="qDate"></select></label>
+      <button class="btn btn-main" type="submit">Виж свободните часове</button>
+    </form>
+  </section>
+
+  <!-- ============ Signature dishes ============ -->
+  <section class="block sigs" id="signature" aria-labelledby="sg-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">От кухнята</p>
+        <h2 id="sg-h">Три ястия, с които започваме</h2>
+        <p>Примерни ястия. Менюто се сменя със сезоните.</p>
+      </header>
+      <ul class="sig-list"><li class="sig"><figure><img src="images/stock/spaghetti-800.jpg" srcset="images/stock/spaghetti-800.jpg 800w, images/stock/spaghetti.jpg 1600w" sizes="(min-width: 800px) 380px, calc(100vw - 40px)" width="1600" height="1067" alt="Спагети помодоро" loading="lazy" decoding="async"></figure><div><h3>Спагети помодоро</h3><p>Доматите са от нашата градина.</p><b>12,50 €</b></div></li><li class="sig"><figure><img src="images/stock/salmon-800.jpg" srcset="images/stock/salmon-800.jpg 800w, images/stock/salmon.jpg 1600w" sizes="(min-width: 800px) 380px, calc(100vw - 40px)" width="1600" height="2400" alt="Сьомга с резене" loading="lazy" decoding="async"></figure><div><h3>Сьомга с резене</h3><p>Печена на тих огън, със свеж лимон.</p><b>22,00 €</b></div></li><li class="sig"><figure><img src="images/stock/pesto-pasta-800.jpg" srcset="images/stock/pesto-pasta-800.jpg 800w, images/stock/pesto-pasta.jpg 1600w" sizes="(min-width: 800px) 380px, calc(100vw - 40px)" width="1600" height="1068" alt="Фарфале с песто" loading="lazy" decoding="async"></figure><div><h3>Фарфале с песто</h3><p>Босилек, бадеми и малко пармезан.</p><b>13,50 €</b></div></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Menu ============ -->
+  <section class="block soft" id="menu" aria-labelledby="mn-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">Меню</p>
+        <h2 id="mn-h">Менюто</h2>
+        <p>Избери категория или филтрирай по хранителен режим.</p>
+      </header>
+      <div class="filters">
+        <div class="chips" id="cats" role="group" aria-label="Категория"><button class="chip" type="button" data-cat="all" aria-pressed="true">Всичко</button><button class="chip" type="button" data-cat="starters" aria-pressed="false">Предястия</button><button class="chip" type="button" data-cat="mains" aria-pressed="false">Основни</button><button class="chip" type="button" data-cat="pasta" aria-pressed="false">Паста</button><button class="chip" type="button" data-cat="desserts" aria-pressed="false">Десерти</button></div>
+        <div class="chips" id="diets" role="group" aria-label="Хранителен режим"><button class="chip chip-d" type="button" data-diet="V" aria-pressed="false">Вегетарианско</button><button class="chip chip-d" type="button" data-diet="VG" aria-pressed="false">Веган</button><button class="chip chip-d" type="button" data-diet="GF" aria-pressed="false">Без глутен</button></div>
+      </div>
+      <p class="m-empty" id="menuEmpty" role="status" hidden>Няма ястия с тези филтри. Свали един от тях.</p>
+      <div class="menu-cols" id="menuBox"><section class="m-group" data-cat="starters" aria-labelledby="mg-starters"><h3 id="mg-starters">Предястия</h3><ul class="m-list"><li class="m-item" data-cat="starters" data-tags="V GF"><div class="m-top"><h4>Бурата с печени домати</h4><i aria-hidden="true"></i><b>11,50 €</b></div><p>Босилек, студено пресовано зехтин <span class="tag" title="Вегетарианско">V</span><span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="V GF"><div class="m-top"><h4>Шопска с козе сирене</h4><i aria-hidden="true"></i><b>8,50 €</b></div><p>Домати, краставици, печени чушки <span class="tag" title="Вегетарианско">V</span><span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="GF"><div class="m-top"><h4>Карпачо от телешко</h4><i aria-hidden="true"></i><b>13,50 €</b></div><p>Рукола, пармезан, каперси <span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="VG GF"><div class="m-top"><h4>Крем супа от печена тиква</h4><i aria-hidden="true"></i><b>7,50 €</b></div><p>Тиквено семе и мащерка <span class="tag" title="Веган">VG</span><span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="GF"><div class="m-top"><h4>Октопод на скара</h4><i aria-hidden="true"></i><b>16,00 €</b></div><p>Картофи, лимон, пушена чушка <span class="tag" title="Без глутен">GF</span></p></li></ul></section><section class="m-group" data-cat="mains" aria-labelledby="mg-mains"><h3 id="mg-mains">Основни</h3><ul class="m-list"><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Телешко филе</h4><i aria-hidden="true"></i><b>28,00 €</b></div><p>Чубрица и сос от червено вино <span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Сьомга с резене</h4><i aria-hidden="true"></i><b>22,00 €</b></div><p>Лимонов сос, печени зеленчуци <span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Агнешко печено</h4><i aria-hidden="true"></i><b>24,50 €</b></div><p>Картофи с розмарин, сос от мента <span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Пилешко със зеленчуци</h4><i aria-hidden="true"></i><b>17,50 €</b></div><p>Градински зеленчуци и картофено пюре <span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="V GF"><div class="m-top"><h4>Ризото с гъби</h4><i aria-hidden="true"></i><b>16,50 €</b></div><p>Пармезан и пресен магданоз <span class="tag" title="Вегетарианско">V</span><span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="VG GF"><div class="m-top"><h4>Печени зеленчуци с хумус</h4><i aria-hidden="true"></i><b>14,50 €</b></div><p>Сумак, лимон, тахан <span class="tag" title="Веган">VG</span><span class="tag" title="Без глутен">GF</span></p></li></ul></section><section class="m-group" data-cat="pasta" aria-labelledby="mg-pasta"><h3 id="mg-pasta">Паста</h3><ul class="m-list"><li class="m-item" data-cat="pasta" data-tags="VG"><div class="m-top"><h4>Спагети помодоро</h4><i aria-hidden="true"></i><b>12,50 €</b></div><p>Доматен сос и босилек <span class="tag" title="Веган">VG</span></p></li><li class="m-item" data-cat="pasta" data-tags=""><div class="m-top"><h4>Пене болонезе</h4><i aria-hidden="true"></i><b>14,00 €</b></div><p>Бавно готвен телешки сос </p></li><li class="m-item" data-cat="pasta" data-tags="V"><div class="m-top"><h4>Фарфале с песто</h4><i aria-hidden="true"></i><b>13,50 €</b></div><p>Сушени домати и бадеми <span class="tag" title="Вегетарианско">V</span></p></li><li class="m-item" data-cat="pasta" data-tags="V"><div class="m-top"><h4>Таляталe с трюфел</h4><i aria-hidden="true"></i><b>18,00 €</b></div><p>Сметана и пармезан <span class="tag" title="Вегетарианско">V</span></p></li><li class="m-item" data-cat="pasta" data-tags=""><div class="m-top"><h4>Лингуини с морски дарове</h4><i aria-hidden="true"></i><b>19,50 €</b></div><p>Миди, скариди, чери домати </p></li></ul></section><section class="m-group" data-cat="desserts" aria-labelledby="mg-desserts"><h3 id="mg-desserts">Десерти</h3><ul class="m-list"><li class="m-item" data-cat="desserts" data-tags="V"><div class="m-top"><h4>Тирамису</h4><i aria-hidden="true"></i><b>7,50 €</b></div><p>Маскарпоне и еспресо <span class="tag" title="Вегетарианско">V</span></p></li><li class="m-item" data-cat="desserts" data-tags="V GF"><div class="m-top"><h4>Панакота</h4><i aria-hidden="true"></i><b>7,00 €</b></div><p>Горски плодове <span class="tag" title="Вегетарианско">V</span><span class="tag" title="Без глутен">GF</span></p></li><li class="m-item" data-cat="desserts" data-tags="V"><div class="m-top"><h4>Баклава</h4><i aria-hidden="true"></i><b>6,50 €</b></div><p>Орехи и мед <span class="tag" title="Вегетарианско">V</span></p></li><li class="m-item" data-cat="desserts" data-tags="V"><div class="m-top"><h4>Шоколадово суфле</h4><i aria-hidden="true"></i><b>8,50 €</b></div><p>Топло, със сладолед от ванилия <span class="tag" title="Вегетарианско">V</span></p></li><li class="m-item" data-cat="desserts" data-tags="VG GF"><div class="m-top"><h4>Сорбе от сезонни плодове</h4><i aria-hidden="true"></i><b>5,50 €</b></div><p>Две топки <span class="tag" title="Веган">VG</span><span class="tag" title="Без глутен">GF</span></p></li></ul></section></div>
+      <p class="m-note">V вегетарианско · VG веган · GF без глутен. Кажи ни за алергии преди да поръчаш: кухнята работи с ядки, млечни продукти и глутен.</p>
+    </div>
+  </section>
+
+  <!-- ============ Lunch ============ -->
+  <section class="block lunch" id="lunch" aria-labelledby="ln-h">
+    <div class="wrap lunch-in">
+      <figure class="lunch-ph"><img src="images/stock/steak-sauce-800.jpg" srcset="images/stock/steak-sauce-800.jpg 800w, images/stock/steak-sauce.jpg 1600w" sizes="(min-width: 900px) 520px, 92vw" width="1600" height="1600" alt="Сервиране на телешко филе със сос" loading="lazy" decoding="async"></figure>
+      <div class="lunch-card">
+        <p class="kicker">Обедно меню</p>
+        <h2 id="ln-h">Обяд с три хода</h2>
+        <p class="lunch-when" id="lunchWhen">Понеделник – петък, 12:00 – 15:00</p>
+        <ul class="lunch-menu">
+          <li><span>Предястие</span><b>Крем супа от печена тиква</b></li>
+          <li><span>Основно</span><b>Пилешко със зеленчуци</b></li>
+          <li><span>Десерт</span><b>Панакота с горски плодове</b></li>
+        </ul>
+        <p class="lunch-price"><b>14,00 €</b> <span>с хляб и вода</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Reserve ============ -->
+  <section class="block soft" id="reserve" aria-labelledby="rs-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">Резервация</p>
+        <h2 id="rs-h">Запази маса</h2>
+        <p>Четири кратки стъпки. Картата вдясно показва какво сме записали.</p>
+      </header>
+      <form class="res-form" id="resForm" novalidate>
+        <div class="steps">
+          <fieldset class="step">
+            <legend><b>1</b> Гости и ден</legend>
+            <div class="party-row">
+              <div class="stepper" role="group" aria-label="Брой гости">
+                <button type="button" id="pMinus" aria-label="Един гост по-малко">−</button>
+                <output id="partyOut" aria-live="polite">2</output>
+                <button type="button" id="pPlus" aria-label="Един гост повече">+</button>
+              </div>
+              <p class="hint" id="partyHint"></p>
+            </div>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Ден"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Час</legend>
+            <p class="hint" id="slotHint" role="status">Проверяваме свободните маси…</p>
+            <div id="tchips"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> Повод и предпочитания</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-occ">Повод</label><select id="f-occ" name="occ"><option value="none">Без повод</option><option value="birthday">Рожден ден</option><option value="anniversary">Годишнина</option><option value="business">Бизнес вечеря</option><option value="other">Друг повод</option></select></div>
+              <div class="field"><label for="f-seat">Къде да седнете</label><select id="f-seat" name="seat"><option value="any">Без значение</option><option value="inside">Вътре</option><option value="terrace">На терасата</option></select></div>
+            </div>
+            <p class="sub-h">Алергии и хранителен режим</p>
+            <div class="opts"><label class="opt"><input type="checkbox" name="allergy" value="gluten" data-name="Глутен"><span>Глутен</span></label><label class="opt"><input type="checkbox" name="allergy" value="lactose" data-name="Лактоза"><span>Лактоза</span></label><label class="opt"><input type="checkbox" name="allergy" value="nuts" data-name="Ядки"><span>Ядки</span></label><label class="opt"><input type="checkbox" name="allergy" value="shellfish" data-name="Морски дарове"><span>Морски дарове</span></label><label class="opt"><input type="checkbox" name="allergy" value="veg" data-name="Вегетарианец"><span>Вегетарианец</span></label><label class="opt"><input type="checkbox" name="allergy" value="vegan" data-name="Веган"><span>Веган</span></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>4</b> Данни за връзка</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="3"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="ticket" aria-labelledby="tk-h">
+          <h3 id="tk-h">Твоята резервация</h3>
+          <dl class="tk-list">
+            <div><dt>Гости</dt><dd id="tkParty">2</dd></div>
+            <div><dt>Кога</dt><dd id="tkWhen">–</dd></div>
+            <div><dt>Маса</dt><dd id="tkTable">–</dd></div>
+            <div><dt>Бележки</dt><dd id="tkNotes">–</dd></div>
+          </dl>
+          <p class="tk-fine">Пазим масата 15 минути след часа. Ако закъснявате, обадете се.</p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-main btn-block" type="submit" id="bkSend">Резервирай масата</button>
+          <small class="fine">Без предплащане. Ще се свържем само ако трябва да потвърдим. <a href="privacy.html">Поверителност</a></small>
+        </section>
+      </form>
+      <div class="done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Atmosphere ============ -->
+  <section class="block" id="atmosphere" aria-labelledby="at-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">Атмосфера</p>
+        <h2 id="at-h">Място за разговор</h2>
+        <p>Светъл салон, бар и тераса. Подходящо за вечеря за двама и за маса с приятели.</p>
+      </header>
+      <div class="mosaic">
+        <figure class="mo mo-1"><img src="images/stock/hall-dark-800.jpg" srcset="images/stock/hall-dark-800.jpg 800w, images/stock/hall-dark.jpg 1600w" sizes="(min-width: 900px) 600px, 92vw" width="1600" height="1067" alt="Вечерният салон със светлини и дървени маси" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-2"><img src="images/stock/terrace-lake-800.jpg" srcset="images/stock/terrace-lake-800.jpg 800w, images/stock/terrace-lake.jpg 1600w" sizes="(min-width: 900px) 360px, 46vw" width="1600" height="1200" alt="Тераса с маси на брега на езеро" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-3"><img src="images/stock/table-wine-800.jpg" srcset="images/stock/table-wine-800.jpg 800w, images/stock/table-wine.jpg 1600w" sizes="(min-width: 900px) 360px, 46vw" width="1600" height="1067" alt="Подредена маса с чаши за вино" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-4"><img src="images/stock/bar-brown-800.jpg" srcset="images/stock/bar-brown-800.jpg 800w, images/stock/bar-brown.jpg 1600w" sizes="(min-width: 900px) 420px, 92vw" width="1600" height="1200" alt="Барът с тъмно дърво и висящи лампи" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-5"><img src="images/stock/street-terrace-800.jpg" srcset="images/stock/street-terrace-800.jpg 800w, images/stock/street-terrace.jpg 1600w" sizes="(min-width: 900px) 300px, 46vw" width="1600" height="2387" alt="Малка улична тераса пред ресторанта" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Адрес</p>
+        <h2 id="vs-h">Заповядай при нас</h2>
+        <p class="status-line"><span class="open-pill" id="openPill" data-state="unknown"><i aria-hidden="true"></i><span id="openText">Работно време</span></span></p>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>12:00 – 22:00</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>12:00 – 23:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Адрес</b><span>ул. Примерна 8, Пловдив</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Имейл</b><a href="mailto:tables@example.com">tables@example.com</a></li>
+        </ul>
+        <p class="visit-note">За групи над 10 души ни се обадете.</p>
+      </div>
+      <div class="visit-side">
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Maslina. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar">
+  <a class="btn btn-line btn-sm" href="tel:+359880000000">Обади се</a>
+  <a class="btn btn-main btn-sm" href="#reserve">Резервирай</a>
+</div>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Маслина</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="olive" style="--s1:#F5F0E4;--s2:#4F5B2A" aria-pressed="false" aria-label="Маслина"></button><button class="sw" type="button" data-skin="bordeaux" style="--s1:#1C1013;--s2:#E0B07A" aria-pressed="false" aria-label="Бордо"></button><button class="sw" type="button" data-skin="terracotta" style="--s1:#F8EEE4;--s2:#A34A2B" aria-pressed="false" aria-label="Теракота"></button><button class="sw" type="button" data-skin="sea" style="--s1:#EEF3F2;--s2:#176B72" aria-pressed="false" aria-label="Море"></button><button class="sw" type="button" data-skin="brass" style="--s1:#14161A;--s2:#C7A24A" aria-pressed="false" aria-label="Месинг"></button></div>
+</aside>
+
+<script type="application/json" id="masData">{"maxParty": 10, "seating": {"any": "Без значение", "inside": "Вътре", "terrace": "На терасата"}, "occasions": {"none": "Без повод", "birthday": "Рожден ден", "anniversary": "Годишнина", "business": "Бизнес вечеря", "other": "Друг повод"}}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

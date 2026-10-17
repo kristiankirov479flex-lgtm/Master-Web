@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" data-skin="oak">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F6EFE2">
+<title>Bashta – a traditional Bulgarian tavern in Plovdiv. Order online</title>
+<meta name="description" content="Bashta is a family tavern in Plovdiv with gyuvech, kavarma, grill and shopska salad. Eat with us or order for delivery or pick-up.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bashta – a traditional Bulgarian tavern in Plovdiv. Order online">
+<meta property="og:description" content="Bashta is a family tavern in Plovdiv with gyuvech, kavarma, grill and shopska salad. Eat with us or order for delivery or pick-up.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/table-feast.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("bashtaSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Bashta","inLanguage":"en","telephone":"+359880000000","email":"hello@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 8","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Bulgarian","openingHours":["Mo-Fr 11:30-21:30","Sa-Su 12:00-21:30"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html">Bashta</a>
+    <nav class="nav" id="nav" aria-label="Navigation"><a href="#order">Menu and order</a><a href="#about">About us</a><a href="#gallery">Photos</a><a href="#visit">Contact</a></nav>
+    <div class="top-r">
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="../images/stock/table-feast-800.jpg" srcset="../images/stock/table-feast-800.jpg 800w, ../images/stock/table-feast.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="A table full of traditional Bulgarian dishes" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Tavern · Plovdiv</p>
+      <h1 id="h1">Traditional Bulgarian food, cooked slowly</h1>
+      <p class="lead">Gyuvech, kavarma and grill, the way grandmother made them. Eat with us or order to take home.</p>
+      <p class="hero-links"><a class="btn btn-main" href="#order">Order online</a> <a class="btn btn-light" href="#visit">How to find us</a></p>
+    </div>
+  </section>
+  <div class="cloth" aria-hidden="true"></div>
+  <div class="info-bar">
+    <ul class="wrap info-row">
+      <li><b>Today</b> <span id="todayHours">11:30 – 21:30</span></li>
+      <li><b>Delivery</b> <span>In Plovdiv, €2 · free over €25</span></li>
+      <li><b>Tables</b> <a href="tel:+359880000000">+359 88 000 0000</a></li>
+    </ul>
+  </div>
+
+  <!-- ============ Menu and order ============ -->
+  <section class="block" id="order" aria-labelledby="or-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="or-h">Menu and order</h2>
+        <p>Press “+” next to the dishes you want. On the right you choose delivery or pick-up and a time. You pay on receipt. To book a table here, please call us.</p>
+      </header>
+      <div class="order-grid">
+        <div class="menu"><section class="m-group" aria-labelledby="mg-salads"><h3 id="mg-salads">Salads</h3><figure class="g-ph"><img src="../images/stock/salad-greek-800.jpg" srcset="../images/stock/salad-greek-800.jpg 800w, ../images/stock/salad-greek.jpg 1600w" sizes="(min-width: 960px) 600px, calc(100vw - 40px)" width="1600" height="1067" alt="A salad with tomatoes, cucumbers, olives and white cheese" loading="lazy" decoding="async"></figure><ul class="items"><li class="item"><div class="item-t"><h4>Shopska salad <span class="tag" title="Vegetarian">V</span></h4><p>Tomatoes, cucumbers, peppers, white cheese</p></div><b class="price">6.50 €</b><button class="add" type="button" data-id="shopska" aria-label="Add Shopska salad"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Snezhanka <span class="tag" title="Vegetarian">V</span></h4><p>Yoghurt, cucumber, walnuts, dill</p></div><b class="price">6.00 €</b><button class="add" type="button" data-id="snezhanka" aria-label="Add Snezhanka"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Roasted peppers with garlic <span class="tag" title="Vegetarian">V</span></h4><p>With walnuts and parsley</p></div><b class="price">7.00 €</b><button class="add" type="button" data-id="peppers" aria-label="Add Roasted peppers with garlic"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Tarator <span class="tag" title="Vegetarian">V</span></h4><p>Cold yoghurt and cucumber soup</p></div><b class="price">5.00 €</b><button class="add" type="button" data-id="tarator" aria-label="Add Tarator"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-soups"><h3 id="mg-soups">Soups</h3><ul class="items"><li class="item"><div class="item-t"><h4>Chicken soup </h4><p>A home recipe</p></div><b class="price">4.50 €</b><button class="add" type="button" data-id="chicken" aria-label="Add Chicken soup"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Bean soup <span class="tag" title="Vegetarian">V</span></h4><p>With savory and dried pepper</p></div><b class="price">4.50 €</b><button class="add" type="button" data-id="beans" aria-label="Add Bean soup"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-grill"><h3 id="mg-grill">From the grill</h3><figure class="g-ph"><img src="../images/stock/grill-platter-800.jpg" srcset="../images/stock/grill-platter-800.jpg 800w, ../images/stock/grill-platter.jpg 1600w" sizes="(min-width: 960px) 600px, calc(100vw - 40px)" width="1600" height="1067" alt="A large plate of grilled meats and sides" loading="lazy" decoding="async"></figure><ul class="items"><li class="item"><div class="item-t"><h4>Kebapche (2 pieces) </h4></div><b class="price">4.00 €</b><button class="add" type="button" data-id="kebapche" aria-label="Add Kebapche (2 pieces)"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Kyufte (2 pieces) </h4></div><b class="price">4.40 €</b><button class="add" type="button" data-id="kyufte" aria-label="Add Kyufte (2 pieces)"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Pork chop </h4><p>With roasted onion</p></div><b class="price">9.50 €</b><button class="add" type="button" data-id="chop" aria-label="Add Pork chop"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Chicken skewer </h4><p>With pepper and onion</p></div><b class="price">8.50 €</b><button class="add" type="button" data-id="skewer" aria-label="Add Chicken skewer"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Lamb chops </h4><p>Four pieces</p></div><b class="price">16.00 €</b><button class="add" type="button" data-id="lamb" aria-label="Add Lamb chops"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Grill for two </h4><p>Kebapche, kyufte, chop, skewer and sides</p></div><b class="price">24.00 €</b><button class="add" type="button" data-id="grill2" aria-label="Add Grill for two"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-pots"><h3 id="mg-pots">Pot dishes</h3><figure class="g-ph"><img src="../images/stock/clay-pot-800.jpg" srcset="../images/stock/clay-pot-800.jpg 800w, ../images/stock/clay-pot.jpg 1600w" sizes="(min-width: 960px) 600px, calc(100vw - 40px)" width="1600" height="1067" alt="A dish in a clay pot with a lid" loading="lazy" decoding="async"></figure><ul class="items"><li class="item"><div class="item-t"><h4>Gyuvech </h4><p>Pork, vegetables, egg and cheese</p></div><b class="price">9.50 €</b><button class="add" type="button" data-id="gyuvech" aria-label="Add Gyuvech"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Kavarma </h4><p>Slow-cooked pork with onion and wine</p></div><b class="price">10.50 €</b><button class="add" type="button" data-id="kavarma" aria-label="Add Kavarma"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Sarmi </h4><p>Cabbage rolls with mince and rice</p></div><b class="price">9.00 €</b><button class="add" type="button" data-id="sarmi" aria-label="Add Sarmi"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Moussaka </h4><p>Baked, with potatoes and mince</p></div><b class="price">8.50 €</b><button class="add" type="button" data-id="moussaka" aria-label="Add Moussaka"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Lamb with rice </h4><p>Baked in a clay pot</p></div><b class="price">12.50 €</b><button class="add" type="button" data-id="lambrice" aria-label="Add Lamb with rice"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-sides"><h3 id="mg-sides">Sides</h3><ul class="items"><li class="item"><div class="item-t"><h4>French fries <span class="tag" title="Vegetarian">V</span></h4></div><b class="price">3.50 €</b><button class="add" type="button" data-id="fries" aria-label="Add French fries"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Baked potatoes with savory <span class="tag" title="Vegetarian">V</span></h4></div><b class="price">4.00 €</b><button class="add" type="button" data-id="baked" aria-label="Add Baked potatoes with savory"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Pickled vegetables <span class="tag" title="Vegetarian">V</span></h4></div><b class="price">4.50 €</b><button class="add" type="button" data-id="pickles" aria-label="Add Pickled vegetables"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Bread <span class="tag" title="Vegetarian">V</span></h4></div><b class="price">1.00 €</b><button class="add" type="button" data-id="bread" aria-label="Add Bread"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-desserts"><h3 id="mg-desserts">Desserts</h3><ul class="items"><li class="item"><div class="item-t"><h4>Baklava <span class="tag" title="Vegetarian">V</span></h4><p>With walnuts and syrup</p></div><b class="price">4.50 €</b><button class="add" type="button" data-id="baklava" aria-label="Add Baklava"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Pumpkin pastry <span class="tag" title="Vegetarian">V</span></h4><p>With walnuts and cinnamon</p></div><b class="price">4.00 €</b><button class="add" type="button" data-id="pumpkin" aria-label="Add Pumpkin pastry"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Yoghurt with honey and walnuts <span class="tag" title="Vegetarian">V</span></h4></div><b class="price">4.00 €</b><button class="add" type="button" data-id="honey" aria-label="Add Yoghurt with honey and walnuts"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section><section class="m-group" aria-labelledby="mg-drinks"><h3 id="mg-drinks">Drinks</h3><ul class="items"><li class="item"><div class="item-t"><h4>Ayran <span class="tag" title="Vegetarian">V</span></h4></div><b class="price">2.50 €</b><button class="add" type="button" data-id="ayran" aria-label="Add Ayran"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Homemade lemonade <span class="tag" title="Vegetarian">V</span></h4></div><b class="price">3.50 €</b><button class="add" type="button" data-id="lemonade" aria-label="Add Homemade lemonade"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Mineral water <span class="tag" title="Vegetarian">V</span></h4><p>0.5 l</p></div><b class="price">2.00 €</b><button class="add" type="button" data-id="water" aria-label="Add Mineral water"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Beer <span class="tag" title="Vegetarian">V</span></h4><p>Local, 0.5 l</p></div><b class="price">3.50 €</b><button class="add" type="button" data-id="beer" aria-label="Add Beer"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li><li class="item"><div class="item-t"><h4>Wine by the glass <span class="tag" title="Vegetarian">V</span></h4><p>Red or white</p></div><b class="price">4.00 €</b><button class="add" type="button" data-id="wine" aria-label="Add Wine by the glass"><span aria-hidden="true">+</span><span class="add-n" hidden></span></button></li></ul></section>
+          <p class="legend"><span class="tag">V</span> vegetarian</p>
+        </div>
+
+        <section class="tray" id="tray" aria-labelledby="tray-h">
+          <form id="orderForm" novalidate>
+            <h3 id="tray-h">Your order</h3>
+            <p class="tray-empty" id="trayEmpty">Nothing here yet. Add dishes from the menu.</p>
+            <ul class="lines" id="lines"></ul>
+            <dl class="sums" id="sums" hidden>
+              <div><dt>Dishes</dt><dd id="sumSub">0,00 €</dd></div>
+              <div id="feeRow"><dt>Delivery</dt><dd id="sumFee">0,00 €</dd></div>
+              <div class="grand"><dt>Total</dt><dd id="sumTotal">0,00 €</dd></div>
+            </dl>
+            <fieldset class="group"><legend>How do you want it?</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="fulfil" value="delivery" checked><span>Delivery</span></label>
+                <label class="opt"><input type="radio" name="fulfil" value="pickup"><span>Pick up at the tavern</span></label>
+              </div>
+              <p class="hint" id="howHint"></p>
+            </fieldset>
+            <div class="field" id="addrRow"><label for="f-addr">Delivery address</label><input id="f-addr" name="address" type="text" autocomplete="street-address"></div>
+            <div class="row2">
+              <div class="field"><label for="f-date">Day</label><select id="f-date" name="date"></select></div>
+              <div class="field"><label for="f-time">Time</label><select id="f-time" name="time"></select></div>
+            </div>
+            <p class="hint" id="timeHint" role="status">Checking free times…</p>
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="field"><label for="f-msg">Note (optional)</label><textarea id="f-msg" name="msg" rows="2"></textarea></div>
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="orError" role="alert" hidden></p>
+            <button class="btn btn-main btn-block" type="submit" id="send">Place the order</button>
+            <small class="fine">You pay cash or card on receipt. <a href="privacy.html">Privacy</a></small>
+          </form>
+          <div class="done" id="done" hidden tabindex="-1"></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ About ============ -->
+  <section class="block soft" id="about" aria-labelledby="ab-h">
+    <div class="wrap about">
+      <div class="about-text">
+        <h2 id="ab-h">About us</h2>
+        <p>Ivan, who runs the tavern, had his father build this house more than seventy years ago. Today it has two rooms with wooden ceilings and a yard with a grapevine.</p>
+        <p>We cook the family recipes: the gyuvech is baked in clay pots, the kavarma cooks for two hours and the meat for the grill comes from a butcher in town.</p>
+        <ul class="ticks"><li>Clay pots baked in the oven</li><li>Vegetables from the market every morning</li><li>Delivery and pick-up until 21:30</li></ul>
+      </div>
+      <figure class="about-ph"><img src="../images/stock/table-friends-800.jpg" srcset="../images/stock/table-friends-800.jpg 800w, ../images/stock/table-friends.jpg 1600w" sizes="(min-width: 900px) 500px, calc(100vw - 40px)" width="1600" height="1067" alt="Friends around a table full of dishes" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <!-- ============ Photos ============ -->
+  <section class="block" id="gallery" aria-labelledby="gl-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="gl-h">At the tavern</h2>
+        <p>The two rooms, the yard and part of the kitchen.</p>
+      </header>
+      <div class="gallery">
+        <figure><img src="../images/stock/room-checkered-800.jpg" srcset="../images/stock/room-checkered-800.jpg 800w, ../images/stock/room-checkered.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2400" alt="A room with a wooden ceiling and red and white tablecloths" loading="lazy" decoding="async"></figure><figure><img src="../images/stock/room-wood-800.jpg" srcset="../images/stock/room-wood-800.jpg 800w, ../images/stock/room-wood.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2000" alt="A wood-panelled room with tables" loading="lazy" decoding="async"></figure><figure><img src="../images/stock/room-garden-800.jpg" srcset="../images/stock/room-garden-800.jpg 800w, ../images/stock/room-garden.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="1067" alt="A yard with plants and tables" loading="lazy" decoding="async"></figure>
+        <figure><img src="../images/stock/lamb-chops-800.jpg" srcset="../images/stock/lamb-chops-800.jpg 800w, ../images/stock/lamb-chops.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2397" alt="Lamb chops with sausages" loading="lazy" decoding="async"></figure><figure><img src="../images/stock/kebabs-800.jpg" srcset="../images/stock/kebabs-800.jpg 800w, ../images/stock/kebabs.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="2400" alt="Skewers and sauces" loading="lazy" decoding="async"></figure><figure><img src="../images/stock/easter-table-800.jpg" srcset="../images/stock/easter-table-800.jpg 800w, ../images/stock/easter-table.jpg 1600w" sizes="(min-width: 900px) 350px, 45vw" width="1600" height="1200" alt="A festive table" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <h2 id="vs-h">Contact</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Monday – Friday</dt><dd>11:30 – 21:30</dd></div><div data-hrs="we"><dt>Saturday and Sunday</dt><dd>12:00 – 21:30</dd></div></dl>
+        <ul class="info">
+          <li><b>Address</b><span>8 Primer St., Plovdiv</span></li>
+          <li><b>Phone</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Email</b><a href="mailto:hello@example.com">hello@example.com</a></li>
+        </ul>
+        <p class="visit-note">We take table reservations by phone only. For groups of more than 10 please call at least a day ahead.</p>
+      </div>
+      <div class="visit-side">
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map loads from OpenStreetMap only when you ask for it.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Bashta. Everything here is an example.</span>
+    <span class="foot-links"><a href="privacy.html">Privacy</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar" hidden>
+  <span id="barTxt"></span>
+  <a class="btn btn-main btn-sm" href="#tray">View order</a>
+</div>
+
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Oak</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="oak" style="--s1:#F6EFE2;--s2:#8E2A1F" aria-pressed="false" aria-label="Oak"></button><button class="sw" type="button" data-skin="olive" style="--s1:#F3F1E4;--s2:#4A5A2A" aria-pressed="false" aria-label="Olive"></button><button class="sw" type="button" data-skin="indigo" style="--s1:#F2F3F7;--s2:#243B6B" aria-pressed="false" aria-label="Indigo"></button><button class="sw" type="button" data-skin="night" style="--s1:#1E1712;--s2:#E0A458" aria-pressed="false" aria-label="Night"></button><button class="sw" type="button" data-skin="pomegranate" style="--s1:#FBF1F2;--s2:#8A1F44" aria-pressed="false" aria-label="Pomegranate"></button></div>
+</aside>
+
+<script type="application/json" id="bashtaData">{"menu": [{"id": "shopska", "price": 6.5, "name": "Shopska salad"}, {"id": "snezhanka", "price": 6.0, "name": "Snezhanka"}, {"id": "peppers", "price": 7.0, "name": "Roasted peppers with garlic"}, {"id": "tarator", "price": 5.0, "name": "Tarator"}, {"id": "chicken", "price": 4.5, "name": "Chicken soup"}, {"id": "beans", "price": 4.5, "name": "Bean soup"}, {"id": "kebapche", "price": 4.0, "name": "Kebapche (2 pieces)"}, {"id": "kyufte", "price": 4.4, "name": "Kyufte (2 pieces)"}, {"id": "chop", "price": 9.5, "name": "Pork chop"}, {"id": "skewer", "price": 8.5, "name": "Chicken skewer"}, {"id": "lamb", "price": 16.0, "name": "Lamb chops"}, {"id": "grill2", "price": 24.0, "name": "Grill for two"}, {"id": "gyuvech", "price": 9.5, "name": "Gyuvech"}, {"id": "kavarma", "price": 10.5, "name": "Kavarma"}, {"id": "sarmi", "price": 9.0, "name": "Sarmi"}, {"id": "moussaka", "price": 8.5, "name": "Moussaka"}, {"id": "lambrice", "price": 12.5, "name": "Lamb with rice"}, {"id": "fries", "price": 3.5, "name": "French fries"}, {"id": "baked", "price": 4.0, "name": "Baked potatoes with savory"}, {"id": "pickles", "price": 4.5, "name": "Pickled vegetables"}, {"id": "bread", "price": 1.0, "name": "Bread"}, {"id": "baklava", "price": 4.5, "name": "Baklava"}, {"id": "pumpkin", "price": 4.0, "name": "Pumpkin pastry"}, {"id": "honey", "price": 4.0, "name": "Yoghurt with honey and walnuts"}, {"id": "ayran", "price": 2.5, "name": "Ayran"}, {"id": "lemonade", "price": 3.5, "name": "Homemade lemonade"}, {"id": "water", "price": 2.0, "name": "Mineral water"}, {"id": "beer", "price": 3.5, "name": "Beer"}, {"id": "wine", "price": 4.0, "name": "Wine by the glass"}], "min": 12, "fee": 2.0, "free": 25}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

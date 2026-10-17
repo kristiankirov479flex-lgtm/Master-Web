@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en" data-skin="volt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0B0C">
+<title>Bolt Barbers – fast fades and clean shaves in Plovdiv</title>
+<meta name="description" content="Build your visit in one minute: pick the services, the barber, the day and the time, and print your ticket. Fades, haircuts, beards and hot towel shaves in Plovdiv.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bolt Barbers – fast fades and clean shaves in Plovdiv">
+<meta property="og:description" content="Build your visit in one minute: pick the services, the barber, the day and the time, and print your ticket. Fades, haircuts, beards and hot towel shaves in Plovdiv.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/straight-razor.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("boltSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BarberShop","name":"Bolt Barbers","inLanguage":"en",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-21:00", "Sa-Su 10:00-19:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="shell">
+
+  <!-- Left rail on wide screens, top bar on phones -->
+  <header class="rail" id="top">
+    <div class="rail-top">
+      <a class="logo" href="index.html" aria-label="Bolt"><i aria-hidden="true"></i><b>Bolt</b></a>
+      <a class="lang lang-m" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+    <p class="rail-tag">Barbers · Plovdiv</p>
+    <nav class="side-nav" id="nav" aria-label="Main navigation">
+      <a href="#build"><b>01</b>Book</a>
+      <a href="#barbers"><b>02</b>Crew</a>
+      <a href="#work"><b>03</b>Work</a>
+      <a href="#reviews"><b>04</b>Notes</a>
+      <a href="#visit"><b>05</b>Visit</a>
+    </nav>
+    <div class="rail-foot">
+      <p class="status off" id="openNow">Checking opening hours…</p>
+      <p class="nextfree" id="nextFree" hidden></p>
+      <a class="tel" href="tel:+359000000000">+359 000 000 000</a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+    </div>
+  </header>
+
+  <main id="main" class="stage">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" aria-labelledby="h1">
+      <div class="hero-text">
+        <p class="kicker">Open seven days</p>
+        <h1 id="h1">Cut.<br>Book.<br><em>Go.</em></h1>
+        <p class="lead">Fast fades, clean lines and hot towel shaves. Build your visit in a minute and walk out looking sharp.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#build" data-book>Build my visit</a>
+          <a class="btn btn-line" href="#barbers">Meet the crew</a>
+        </div>
+        <ul class="hero-stats" aria-label="Quick facts">
+          <li><b>3</b><span>chairs</span></li>
+          <li><b>7</b><span>days a week</span></li>
+          <li><b>40</b><span>min for a cut</span></li>
+        </ul>
+      </div>
+      <div class="hero-pics">
+        <img class="pic-a" src="../images/stock/straight-razor.jpg" srcset="../images/stock/straight-razor-800.jpg 800w, ../images/stock/straight-razor.jpg 1600w" sizes="(min-width: 1100px) 28vw, 70vw" width="1600" height="2397" alt="A tattooed hand cleaning a neckline with a straight razor" fetchpriority="high" decoding="async">
+        <img class="pic-b" src="../images/stock/thinning-shears-800.jpg" width="800" height="1200" alt="A barber thinning dark hair with a comb and shears" decoding="async">
+        <span class="sticker" aria-hidden="true">Walk-ins welcome</span>
+      </div>
+    </section>
+
+    <!-- ============ Build your visit ============ -->
+    <section class="card" id="build" aria-labelledby="build-h">
+      <header class="sec-head">
+        <p class="kicker"><b>01</b> Book</p>
+        <h2 id="build-h">Build your visit</h2>
+        <p>Tap what you need. Your ticket on the right adds it up as you go.</p>
+      </header>
+      <form class="bld" id="bookForm" novalidate>
+        <div class="bld-steps" id="steps">
+          <fieldset class="step">
+            <legend><b>A</b> Pick your services</legend>
+            <p class="g-h">Hair</p><div class="tiles"><label class="tile"><input type="checkbox" name="svc" value="haircut" data-name="Haircut" data-min="40" data-price="15"><span class="t-name">Haircut</span><span class="t-meta">40 min</span><b class="t-price">15 €</b></label><label class="tile"><input type="checkbox" name="svc" value="fade" data-name="Skin fade or detailed cut" data-min="50" data-price="18"><span class="t-name">Skin fade or detailed cut</span><span class="t-meta">50 min</span><b class="t-price">18 €</b></label><label class="tile"><input type="checkbox" name="svc" value="buzz" data-name="Buzz cut, one length" data-min="25" data-price="10"><span class="t-name">Buzz cut, one length</span><span class="t-meta">25 min</span><b class="t-price">10 €</b></label><label class="tile"><input type="checkbox" name="svc" value="kids" data-name="Kids haircut, under 12" data-min="30" data-price="12"><span class="t-name">Kids haircut, under 12</span><span class="t-meta">30 min</span><b class="t-price">12 €</b></label></div>
+            <p class="g-h">Beard and shave</p><div class="tiles"><label class="tile"><input type="checkbox" name="svc" value="beard" data-name="Beard trim and shape" data-min="30" data-price="10"><span class="t-name">Beard trim and shape</span><span class="t-meta">30 min</span><b class="t-price">10 €</b></label><label class="tile"><input type="checkbox" name="svc" value="shave" data-name="Hot towel shave with a straight razor" data-min="40" data-price="15"><span class="t-name">Hot towel shave with a straight razor</span><span class="t-meta">40 min</span><b class="t-price">15 €</b></label><label class="tile"><input type="checkbox" name="svc" value="head" data-name="Head shave" data-min="30" data-price="15"><span class="t-name">Head shave</span><span class="t-meta">30 min</span><b class="t-price">15 €</b></label></div>
+            <p class="g-h">Add-ons</p><div class="tiles"><label class="tile small"><input type="checkbox" name="svc" value="wash" data-name="Hair wash and styling" data-min="10" data-price="5" data-extra="1"><span class="t-name">Hair wash and styling</span><span class="t-meta">+ 10 min</span><b class="t-price">+ 5 €</b></label><label class="tile small"><input type="checkbox" name="svc" value="trim" data-name="Eyebrow, ear and nose trim" data-min="10" data-price="5" data-extra="1"><span class="t-name">Eyebrow, ear and nose trim</span><span class="t-meta">+ 10 min</span><b class="t-price">+ 5 €</b></label><label class="tile small"><input type="checkbox" name="svc" value="grey" data-name="Grey blending (colour)" data-min="30" data-price="15" data-extra="1"><span class="t-name">Grey blending (colour)</span><span class="t-meta">+ 30 min</span><b class="t-price">+ 15 €</b></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>B</b> Pick your barber</legend>
+            <div class="pickers">
+              <label class="pk"><input type="radio" name="barber" value="any" data-name="Any barber" checked><span class="any" aria-hidden="true">?</span><span class="pk-t"><b>Any barber</b><small>The first free chair</small></span></label>
+              <label class="pk"><input type="radio" name="barber" value="niko" data-name="Niko"><img src="../images/stock/haircut-barber-800.jpg" alt="" width="56" height="56" loading="lazy"><span class="pk-t"><b>Niko</b><small>Skin fades and detail</small></span></label>
+              <label class="pk"><input type="radio" name="barber" value="stan" data-name="Stan"><img src="../images/stock/scissors-cut-800.jpg" alt="" width="56" height="56" loading="lazy"><span class="pk-t"><b>Stan</b><small>Classic cuts and scissors</small></span></label>
+              <label class="pk"><input type="radio" name="barber" value="lex" data-name="Lex"><img src="../images/stock/haircut-focus-800.jpg" alt="" width="56" height="56" loading="lazy"><span class="pk-t"><b>Lex</b><small>Beards and straight razor</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>C</b> Pick a day and a time</legend>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Pick a day and a time"></div>
+            <p class="hint" id="slotHint" role="status">Pick services to see free times.</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Time"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>D</b> Who is coming?</legend>
+            <div class="chosen" id="lookChip" hidden>
+              <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="52" height="52">
+              <div><b>Cut you like</b><span id="lookText"></span></div>
+              <button type="button" id="lookRemove" aria-label="Remove">×</button>
+            </div>
+            <div class="me-grid">
+              <div class="field"><label for="b-name">Your name</label><input id="b-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="b-phone">Phone</label><input id="b-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="b-msg">Message (optional)</label><textarea id="b-msg" name="msg"></textarea></div>
+            <small class="hint">We use your details only to answer your booking. <a href="privacy.html">Privacy notice</a></small>
+          </fieldset>
+        </div>
+
+        <section class="ticket" id="ticket" aria-labelledby="tk-h">
+          <p class="tk-top"><span id="tk-h">Your ticket</span><span class="tk-ref" id="tkRef">Draft</span></p>
+          <ul class="tk-lines" id="tkLines"></ul>
+          <dl class="tk-meta" id="tkMeta"></dl>
+          <p class="tk-total"><span>Total</span><b id="tkTotal">0 €</b></p>
+          <p class="tk-time" id="tkTime"></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <button class="btn btn-main" type="submit" id="bkSend">Print my ticket</button>
+          <i class="barcode" aria-hidden="true"></i>
+        </section>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </section>
+
+    <!-- ============ Barbers ============ -->
+    <section class="card" id="barbers" aria-labelledby="team-h">
+      <header class="sec-head">
+        <p class="kicker"><b>02</b> Crew</p>
+        <h2 id="team-h">Meet the crew</h2>
+        <p>Names and photos are examples. Pick a barber and your ticket remembers.</p>
+      </header>
+      <div class="crew">
+        <article class="crew-card"><img src="../images/stock/haircut-barber-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><div class="crew-body"><h3>Niko</h3><p class="role">Skin fades and detail</p><p>Clean lines and sharp edges. Bring a photo and he will match it.</p><button class="btn btn-main btn-sm" type="button" data-book data-barber="niko">Pick Niko</button></div></article>
+        <article class="crew-card"><img src="../images/stock/scissors-cut-800.jpg" width="800" height="1000" alt="" loading="lazy" decoding="async"><div class="crew-body"><h3>Stan</h3><p class="role">Classic cuts and scissors</p><p>Scissor work, short back and sides, and a calm chair.</p><button class="btn btn-main btn-sm" type="button" data-book data-barber="stan">Pick Stan</button></div></article>
+        <article class="crew-card"><img src="../images/stock/haircut-focus-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><div class="crew-body"><h3>Lex</h3><p class="role">Beards and straight razor</p><p>The slow, careful shave. Book extra time and relax.</p><button class="btn btn-main btn-sm" type="button" data-book data-barber="lex">Pick Lex</button></div></article>
+      </div>
+    </section>
+
+    <!-- ============ Work ============ -->
+    <section class="card" id="work" aria-labelledby="work-h">
+      <header class="sec-head">
+        <p class="kicker"><b>03</b> Work</p>
+        <h2 id="work-h">Fresh out of the chair</h2>
+        <p>Press a photo to see it larger, or to book that cut.</p>
+      </header>
+      <div class="grid-work">
+        <button class="w-item" type="button" data-cat="cut" data-full="../images/stock/beard-trim.jpg" aria-label="Open photo: A barber trimming a client&#x27;s beard with clippers"><img src="../images/stock/beard-trim-800.jpg" width="800" height="1200" alt="A barber trimming a client&#x27;s beard with clippers" loading="lazy" decoding="async"></button>
+        <button class="w-item" type="button" data-cat="shop" data-full="../images/stock/pendant-lamps.jpg" aria-label="Open photo: A row of barber chairs under warm hanging lamps"><img src="../images/stock/pendant-lamps-800.jpg" width="800" height="1200" alt="A row of barber chairs under warm hanging lamps" loading="lazy" decoding="async"></button>
+        <button class="w-item" type="button" data-cat="cut" data-full="../images/stock/white-shirt-cut.jpg" aria-label="Open photo: A barber in a white shirt cutting a client&#x27;s hair"><img src="../images/stock/white-shirt-cut-800.jpg" width="800" height="534" alt="A barber in a white shirt cutting a client&#x27;s hair" loading="lazy" decoding="async"></button>
+        <button class="w-item" type="button" data-cat="shop" data-full="../images/stock/black-silver-chair.jpg" aria-label="Open photo: Black and silver vintage barber chairs in a dim shop"><img src="../images/stock/black-silver-chair-800.jpg" width="800" height="1000" alt="Black and silver vintage barber chairs in a dim shop" loading="lazy" decoding="async"></button>
+        <button class="w-item" type="button" data-cat="cut" data-full="../images/stock/bearded-man.jpg" aria-label="Open photo: Side view of a man with a full groomed beard and a styled quiff"><img src="../images/stock/bearded-man-800.jpg" width="800" height="1200" alt="Side view of a man with a full groomed beard and a styled quiff" loading="lazy" decoding="async"></button>
+        <button class="w-item" type="button" data-cat="cut" data-full="../images/stock/shaving.jpg" aria-label="Open photo: Black and white photo of a client with shaving foam on his beard"><img src="../images/stock/shaving-800.jpg" width="800" height="534" alt="Black and white photo of a client with shaving foam on his beard" loading="lazy" decoding="async"></button>
+        <button class="w-item" type="button" data-cat="shop" data-full="../images/stock/leather-chair-brick.jpg" aria-label="Open photo: Leather barber chairs in front of a brick wall and mirrors"><img src="../images/stock/leather-chair-brick-800.jpg" width="800" height="532" alt="Leather barber chairs in front of a brick wall and mirrors" loading="lazy" decoding="async"></button>
+        <button class="w-item" type="button" data-cat="cut" data-full="../images/stock/haircut-shop.jpg" aria-label="Open photo: A barber in black gloves shaping a client&#x27;s beard in a dark shop"><img src="../images/stock/haircut-shop-800.jpg" width="800" height="534" alt="A barber in black gloves shaping a client&#x27;s beard in a dark shop" loading="lazy" decoding="async"></button>
+      </div>
+    </section>
+
+    <!-- ============ Reviews ============ -->
+    <section class="card" id="reviews" aria-labelledby="rev-h">
+      <header class="sec-head">
+        <p class="kicker"><b>04</b> Notes</p>
+        <h2 id="rev-h">What clients say</h2>
+      </header>
+      <div class="rating"><b>5.0</b><span class="stars" aria-hidden="true">★★★★★</span><span>Example rating. Replace it with your real Google rating.</span></div>
+      <div class="notes">
+        <figure class="note"><blockquote>Best fade I have had in years. Clean work, and it still looked sharp three weeks later.</blockquote><figcaption><b>Skin fade</b> · Example client</figcaption></figure>
+        <figure class="note"><blockquote>I came with a photo and left with exactly that cut. Friendly, and no long waiting.</blockquote><figcaption><b>Haircut and beard</b> · Example client</figcaption></figure>
+        <figure class="note"><blockquote>The hot towel shave is worth it. Spotless shop and the price was clear before I booked.</blockquote><figcaption><b>Hot towel shave</b> · Example client</figcaption></figure>
+      </div>
+      <p class="rev-note">Example notes. Replace them with real Google reviews.</p>
+    </section>
+
+    <!-- ============ Visit and questions ============ -->
+    <section class="card" id="visit" aria-labelledby="visit-h">
+      <div class="visit-grid">
+        <div>
+          <p class="kicker"><b>05</b> Visit</p>
+          <h2 id="visit-h">Find the shop</h2>
+          <p class="status off" id="statusBox">Checking opening hours…</p>
+          <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+          <dl class="info">
+            <dt>Address</dt><dd>Primer St. 1, Plovdiv</dd>
+            <dt>Hours</dt><dd>Mon – Fri 09:00 – 21:00 · Sat – Sun 10:00 – 19:00</dd>
+            <dt>Phone</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+            <dt>Email</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+          </dl>
+          <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+            <div class="map-ph">
+              <p>The map is from OpenStreetMap and loads only if you choose.</p>
+              <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="kicker"><b>06</b> Questions</p>
+          <h2 id="faq-h">Good to know</h2>
+          <div class="faq-list">
+            <details><summary>Do I need an appointment?</summary><p>We recommend one, so you do not have to wait. Build your visit above and print your ticket. Walk-ins are welcome when a chair is free.</p></details>
+          <details><summary>How long does a visit take?</summary><p>A haircut takes about 40 minutes, and a haircut with a beard about an hour. Each tile shows its time, and your ticket adds them up.</p></details>
+          <details><summary>Can I bring a photo of the cut I want?</summary><p>Yes. Press a photo in the Work section to book that cut, or show your own photo to your barber.</p></details>
+          <details><summary>Do you cut children&#x27;s hair?</summary><p>Yes. Children under 12 have their own price.</p></details>
+          <details><summary>What if I need to cancel or I am late?</summary><p>Please tell us as early as you can, so we can offer your time to someone else. If you are more than 10 minutes late, the service may need to be shortened.</p></details>
+          <details><summary>Can I pay by card?</summary><p>Yes, we accept cash and card.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span class="foot-brand">Bolt</span>
+      <span>© <span id="year">2026</span> Bolt Barbers · Barbers in Plovdiv</span>
+      <span class="foot-links"><a href="privacy.html">Privacy notice</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+    </footer>
+  </main>
+</div>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Volt Lime</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="volt" data-name="Volt Lime" aria-label="Colour scheme: Volt Lime" title="Volt Lime" aria-pressed="true" style="--s1:#0B0B0C;--s2:#C6F432"></button>
+        <button class="sw" type="button" data-skin="ultra" data-name="Ultra Pink" aria-label="Colour scheme: Ultra Pink" title="Ultra Pink" aria-pressed="false" style="--s1:#15123B;--s2:#FF5C9A"></button>
+        <button class="sw" type="button" data-skin="sun" data-name="Sunny Orange" aria-label="Colour scheme: Sunny Orange" title="Sunny Orange" aria-pressed="false" style="--s1:#FFF1D6;--s2:#C93A00"></button>
+        <button class="sw" type="button" data-skin="ice" data-name="Ice Cyan" aria-label="Colour scheme: Ice Cyan" title="Ice Cyan" aria-pressed="false" style="--s1:#0A1C26;--s2:#4FE0F0"></button>
+        <button class="sw" type="button" data-skin="mono" data-name="Mono and Red" aria-label="Colour scheme: Mono and Red" title="Mono and Red" aria-pressed="false" style="--s1:#F4F4F0;--s2:#D6001C"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+359000000000">Call</a>
+  <a href="#ticket" id="qTicket">Ticket · <b id="qTotal">0 €</b></a>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Close">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Previous photo">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="Next photo">›</button>
+    <button class="lb-act" type="button" id="lbRequest">Book this cut</button>
+  </div>
+</dialog>
+
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

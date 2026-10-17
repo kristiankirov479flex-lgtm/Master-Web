@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" data-skin="olive">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5F0E4">
+<title>Maslina – restaurant in Plovdiv. Reserve a table online</title>
+<meta name="description" content="Maslina is a restaurant in Plovdiv with Mediterranean cooking, seasonal produce and a daily lunch menu. See the menu and reserve a table in a minute.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maslina – restaurant in Plovdiv. Reserve a table online">
+<meta property="og:description" content="Maslina is a restaurant in Plovdiv with Mediterranean cooking, seasonal produce and a daily lunch menu. See the menu and reserve a table in a minute.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/hall-light.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("maslinaSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Maslina","inLanguage":"en","telephone":"+359880000000","email":"tables@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 8","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Mediterranean","acceptsReservations":"True","openingHours":["Mo-Fr 12:00-22:00","Sa-Su 12:00-23:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <nav class="nav" id="nav" aria-label="Navigation"><a href="#menu">Menu</a><a href="#lunch">Lunch</a><a href="#atmosphere">Atmosphere</a><a href="#visit">Visit</a></nav>
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" focusable="false"><path d="M4 26C10 14 18 8 28 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M11 20c-4 .5-6-2-6.5-5 3.5-.5 6 1 6.5 5zM15 15c-3.5-.6-4.6-3.4-4.5-6.3 3.4.6 4.9 3 4.5 6.3zM21 11c-3-.8-3.6-3.4-3-6 3.2.9 3.9 3.2 3 6zM17 21c3.5-1.2 6.3-.3 8.6 2-2.7 2.2-6.3 1.8-8.6-2z" fill="currentColor"/></svg><b>Maslina</b></a>
+    <div class="top-r">
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <a class="btn btn-main btn-sm" href="#reserve">Reserve</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" aria-hidden="true"><img src="../images/stock/hall-light-800.jpg" srcset="../images/stock/hall-light-800.jpg 800w, ../images/stock/hall-light.jpg 1600w" sizes="100vw" width="1600" height="1066" alt="The bright dining room with large windows and plants" loading="eager" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow">Restaurant · Plovdiv</p>
+      <h1 id="h1">Slow food, <em>long evenings</em></h1>
+      <p class="lead">Mediterranean cooking with seasonal produce. Choose a table in a minute and we will take care of the rest.</p>
+    </div>
+    <form class="quick wrap" id="quick" aria-labelledby="q-h">
+      <h2 id="q-h" class="quick-h">Reserve a table</h2>
+      <label class="q-f"><span>Guests</span><select id="qParty"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></label>
+      <label class="q-f"><span>Date</span><select id="qDate"></select></label>
+      <button class="btn btn-main" type="submit">See free times</button>
+    </form>
+  </section>
+
+  <!-- ============ Signature dishes ============ -->
+  <section class="block sigs" id="signature" aria-labelledby="sg-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">From the kitchen</p>
+        <h2 id="sg-h">Three dishes we start with</h2>
+        <p>Sample dishes. The menu changes with the seasons.</p>
+      </header>
+      <ul class="sig-list"><li class="sig"><figure><img src="../images/stock/spaghetti-800.jpg" srcset="../images/stock/spaghetti-800.jpg 800w, ../images/stock/spaghetti.jpg 1600w" sizes="(min-width: 800px) 380px, calc(100vw - 40px)" width="1600" height="1067" alt="Spaghetti pomodoro" loading="lazy" decoding="async"></figure><div><h3>Spaghetti pomodoro</h3><p>The tomatoes come from our own garden.</p><b>€12.50</b></div></li><li class="sig"><figure><img src="../images/stock/salmon-800.jpg" srcset="../images/stock/salmon-800.jpg 800w, ../images/stock/salmon.jpg 1600w" sizes="(min-width: 800px) 380px, calc(100vw - 40px)" width="1600" height="2400" alt="Salmon with fennel" loading="lazy" decoding="async"></figure><div><h3>Salmon with fennel</h3><p>Slow-roasted, with fresh lemon.</p><b>€22.00</b></div></li><li class="sig"><figure><img src="../images/stock/pesto-pasta-800.jpg" srcset="../images/stock/pesto-pasta-800.jpg 800w, ../images/stock/pesto-pasta.jpg 1600w" sizes="(min-width: 800px) 380px, calc(100vw - 40px)" width="1600" height="1068" alt="Farfalle with pesto" loading="lazy" decoding="async"></figure><div><h3>Farfalle with pesto</h3><p>Basil, almonds and a little parmesan.</p><b>€13.50</b></div></li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Menu ============ -->
+  <section class="block soft" id="menu" aria-labelledby="mn-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">Menu</p>
+        <h2 id="mn-h">The menu</h2>
+        <p>Choose a category or filter by diet.</p>
+      </header>
+      <div class="filters">
+        <div class="chips" id="cats" role="group" aria-label="Category"><button class="chip" type="button" data-cat="all" aria-pressed="true">All</button><button class="chip" type="button" data-cat="starters" aria-pressed="false">Starters</button><button class="chip" type="button" data-cat="mains" aria-pressed="false">Mains</button><button class="chip" type="button" data-cat="pasta" aria-pressed="false">Pasta</button><button class="chip" type="button" data-cat="desserts" aria-pressed="false">Desserts</button></div>
+        <div class="chips" id="diets" role="group" aria-label="Diet"><button class="chip chip-d" type="button" data-diet="V" aria-pressed="false">Vegetarian</button><button class="chip chip-d" type="button" data-diet="VG" aria-pressed="false">Vegan</button><button class="chip chip-d" type="button" data-diet="GF" aria-pressed="false">Gluten-free</button></div>
+      </div>
+      <p class="m-empty" id="menuEmpty" role="status" hidden>No dishes match these filters. Remove one of them.</p>
+      <div class="menu-cols" id="menuBox"><section class="m-group" data-cat="starters" aria-labelledby="mg-starters"><h3 id="mg-starters">Starters</h3><ul class="m-list"><li class="m-item" data-cat="starters" data-tags="V GF"><div class="m-top"><h4>Burrata with roasted tomatoes</h4><i aria-hidden="true"></i><b>11.50 €</b></div><p>Basil and cold-pressed olive oil <span class="tag" title="Vegetarian">V</span><span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="V GF"><div class="m-top"><h4>Shopska with goat cheese</h4><i aria-hidden="true"></i><b>8.50 €</b></div><p>Tomato, cucumber, roasted peppers <span class="tag" title="Vegetarian">V</span><span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="GF"><div class="m-top"><h4>Beef carpaccio</h4><i aria-hidden="true"></i><b>13.50 €</b></div><p>Rocket, parmesan, capers <span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="VG GF"><div class="m-top"><h4>Roast pumpkin soup</h4><i aria-hidden="true"></i><b>7.50 €</b></div><p>Pumpkin seeds and thyme <span class="tag" title="Vegan">VG</span><span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="starters" data-tags="GF"><div class="m-top"><h4>Grilled octopus</h4><i aria-hidden="true"></i><b>16.00 €</b></div><p>Potatoes, lemon, smoked paprika <span class="tag" title="Gluten-free">GF</span></p></li></ul></section><section class="m-group" data-cat="mains" aria-labelledby="mg-mains"><h3 id="mg-mains">Mains</h3><ul class="m-list"><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Beef fillet</h4><i aria-hidden="true"></i><b>28.00 €</b></div><p>Savory and red wine sauce <span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Salmon with fennel</h4><i aria-hidden="true"></i><b>22.00 €</b></div><p>Lemon sauce and roasted vegetables <span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Roast lamb</h4><i aria-hidden="true"></i><b>24.50 €</b></div><p>Rosemary potatoes and mint sauce <span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="GF"><div class="m-top"><h4>Chicken with vegetables</h4><i aria-hidden="true"></i><b>17.50 €</b></div><p>Garden vegetables and mashed potato <span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="V GF"><div class="m-top"><h4>Mushroom risotto</h4><i aria-hidden="true"></i><b>16.50 €</b></div><p>Parmesan and fresh parsley <span class="tag" title="Vegetarian">V</span><span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="mains" data-tags="VG GF"><div class="m-top"><h4>Roast vegetables with hummus</h4><i aria-hidden="true"></i><b>14.50 €</b></div><p>Sumac, lemon, tahini <span class="tag" title="Vegan">VG</span><span class="tag" title="Gluten-free">GF</span></p></li></ul></section><section class="m-group" data-cat="pasta" aria-labelledby="mg-pasta"><h3 id="mg-pasta">Pasta</h3><ul class="m-list"><li class="m-item" data-cat="pasta" data-tags="VG"><div class="m-top"><h4>Spaghetti pomodoro</h4><i aria-hidden="true"></i><b>12.50 €</b></div><p>Tomato sauce and basil <span class="tag" title="Vegan">VG</span></p></li><li class="m-item" data-cat="pasta" data-tags=""><div class="m-top"><h4>Penne bolognese</h4><i aria-hidden="true"></i><b>14.00 €</b></div><p>Slow-cooked beef ragù </p></li><li class="m-item" data-cat="pasta" data-tags="V"><div class="m-top"><h4>Farfalle with pesto</h4><i aria-hidden="true"></i><b>13.50 €</b></div><p>Sun-dried tomatoes and almonds <span class="tag" title="Vegetarian">V</span></p></li><li class="m-item" data-cat="pasta" data-tags="V"><div class="m-top"><h4>Tagliatelle with truffle</h4><i aria-hidden="true"></i><b>18.00 €</b></div><p>Cream and parmesan <span class="tag" title="Vegetarian">V</span></p></li><li class="m-item" data-cat="pasta" data-tags=""><div class="m-top"><h4>Linguine with seafood</h4><i aria-hidden="true"></i><b>19.50 €</b></div><p>Mussels, prawns, cherry tomatoes </p></li></ul></section><section class="m-group" data-cat="desserts" aria-labelledby="mg-desserts"><h3 id="mg-desserts">Desserts</h3><ul class="m-list"><li class="m-item" data-cat="desserts" data-tags="V"><div class="m-top"><h4>Tiramisu</h4><i aria-hidden="true"></i><b>7.50 €</b></div><p>Mascarpone and espresso <span class="tag" title="Vegetarian">V</span></p></li><li class="m-item" data-cat="desserts" data-tags="V GF"><div class="m-top"><h4>Panna cotta</h4><i aria-hidden="true"></i><b>7.00 €</b></div><p>Wild berries <span class="tag" title="Vegetarian">V</span><span class="tag" title="Gluten-free">GF</span></p></li><li class="m-item" data-cat="desserts" data-tags="V"><div class="m-top"><h4>Baklava</h4><i aria-hidden="true"></i><b>6.50 €</b></div><p>Walnuts and honey <span class="tag" title="Vegetarian">V</span></p></li><li class="m-item" data-cat="desserts" data-tags="V"><div class="m-top"><h4>Chocolate soufflé</h4><i aria-hidden="true"></i><b>8.50 €</b></div><p>Warm, with vanilla ice cream <span class="tag" title="Vegetarian">V</span></p></li><li class="m-item" data-cat="desserts" data-tags="VG GF"><div class="m-top"><h4>Seasonal fruit sorbet</h4><i aria-hidden="true"></i><b>5.50 €</b></div><p>Two scoops <span class="tag" title="Vegan">VG</span><span class="tag" title="Gluten-free">GF</span></p></li></ul></section></div>
+      <p class="m-note">V vegetarian · VG vegan · GF gluten-free. Tell us about allergies before you order: the kitchen handles nuts, dairy and gluten.</p>
+    </div>
+  </section>
+
+  <!-- ============ Lunch ============ -->
+  <section class="block lunch" id="lunch" aria-labelledby="ln-h">
+    <div class="wrap lunch-in">
+      <figure class="lunch-ph"><img src="../images/stock/steak-sauce-800.jpg" srcset="../images/stock/steak-sauce-800.jpg 800w, ../images/stock/steak-sauce.jpg 1600w" sizes="(min-width: 900px) 520px, 92vw" width="1600" height="1600" alt="A beef fillet being sauced at the pass" loading="lazy" decoding="async"></figure>
+      <div class="lunch-card">
+        <p class="kicker">Lunch menu</p>
+        <h2 id="ln-h">Three-course lunch</h2>
+        <p class="lunch-when" id="lunchWhen">Monday – Friday, 12:00 – 15:00</p>
+        <ul class="lunch-menu">
+          <li><span>Starter</span><b>Roast pumpkin soup</b></li>
+          <li><span>Main</span><b>Chicken with vegetables</b></li>
+          <li><span>Dessert</span><b>Panna cotta with wild berries</b></li>
+        </ul>
+        <p class="lunch-price"><b>14.00 €</b> <span>with bread and water</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Reserve ============ -->
+  <section class="block soft" id="reserve" aria-labelledby="rs-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">Reservation</p>
+        <h2 id="rs-h">Reserve your table</h2>
+        <p>Four short steps. The card on the right shows what we have noted.</p>
+      </header>
+      <form class="res-form" id="resForm" novalidate>
+        <div class="steps">
+          <fieldset class="step">
+            <legend><b>1</b> Guests and day</legend>
+            <div class="party-row">
+              <div class="stepper" role="group" aria-label="Number of guests">
+                <button type="button" id="pMinus" aria-label="One guest fewer">−</button>
+                <output id="partyOut" aria-live="polite">2</output>
+                <button type="button" id="pPlus" aria-label="One guest more">+</button>
+              </div>
+              <p class="hint" id="partyHint"></p>
+            </div>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Day"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Time</legend>
+            <p class="hint" id="slotHint" role="status">Checking free tables…</p>
+            <div id="tchips"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> Occasion and preferences</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-occ">Occasion</label><select id="f-occ" name="occ"><option value="none">No occasion</option><option value="birthday">Birthday</option><option value="anniversary">Anniversary</option><option value="business">Business dinner</option><option value="other">Other</option></select></div>
+              <div class="field"><label for="f-seat">Where to sit</label><select id="f-seat" name="seat"><option value="any">No preference</option><option value="inside">Inside</option><option value="terrace">On the terrace</option></select></div>
+            </div>
+            <p class="sub-h">Allergies and diet</p>
+            <div class="opts"><label class="opt"><input type="checkbox" name="allergy" value="gluten" data-name="Gluten"><span>Gluten</span></label><label class="opt"><input type="checkbox" name="allergy" value="lactose" data-name="Lactose"><span>Lactose</span></label><label class="opt"><input type="checkbox" name="allergy" value="nuts" data-name="Nuts"><span>Nuts</span></label><label class="opt"><input type="checkbox" name="allergy" value="shellfish" data-name="Shellfish"><span>Shellfish</span></label><label class="opt"><input type="checkbox" name="allergy" value="veg" data-name="Vegetarian"><span>Vegetarian</span></label><label class="opt"><input type="checkbox" name="allergy" value="vegan" data-name="Vegan"><span>Vegan</span></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>4</b> Your details</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Note (optional)</label><textarea id="f-msg" name="msg" rows="3"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="ticket" aria-labelledby="tk-h">
+          <h3 id="tk-h">Your reservation</h3>
+          <dl class="tk-list">
+            <div><dt>Guests</dt><dd id="tkParty">2</dd></div>
+            <div><dt>When</dt><dd id="tkWhen">–</dd></div>
+            <div><dt>Table</dt><dd id="tkTable">–</dd></div>
+            <div><dt>Notes</dt><dd id="tkNotes">–</dd></div>
+          </dl>
+          <p class="tk-fine">We hold the table for 15 minutes. If you are running late, please call.</p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-main btn-block" type="submit" id="bkSend">Book the table</button>
+          <small class="fine">No deposit. We will contact you only if we need to confirm. <a href="privacy.html">Privacy</a></small>
+        </section>
+      </form>
+      <div class="done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Atmosphere ============ -->
+  <section class="block" id="atmosphere" aria-labelledby="at-h">
+    <div class="wrap">
+      <header class="sec-head sec-center">
+        <p class="kicker">Atmosphere</p>
+        <h2 id="at-h">A place to talk</h2>
+        <p>A bright dining room, a bar and a terrace. Good for dinner for two or a table of friends.</p>
+      </header>
+      <div class="mosaic">
+        <figure class="mo mo-1"><img src="../images/stock/hall-dark-800.jpg" srcset="../images/stock/hall-dark-800.jpg 800w, ../images/stock/hall-dark.jpg 1600w" sizes="(min-width: 900px) 600px, 92vw" width="1600" height="1067" alt="The evening dining room with lights and wooden tables" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-2"><img src="../images/stock/terrace-lake-800.jpg" srcset="../images/stock/terrace-lake-800.jpg 800w, ../images/stock/terrace-lake.jpg 1600w" sizes="(min-width: 900px) 360px, 46vw" width="1600" height="1200" alt="A terrace with tables by the lake" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-3"><img src="../images/stock/table-wine-800.jpg" srcset="../images/stock/table-wine-800.jpg 800w, ../images/stock/table-wine.jpg 1600w" sizes="(min-width: 900px) 360px, 46vw" width="1600" height="1067" alt="A laid table with wine glasses" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-4"><img src="../images/stock/bar-brown-800.jpg" srcset="../images/stock/bar-brown-800.jpg 800w, ../images/stock/bar-brown.jpg 1600w" sizes="(min-width: 900px) 420px, 92vw" width="1600" height="1200" alt="The bar with dark wood and hanging lamps" loading="lazy" decoding="async"></figure>
+        <figure class="mo mo-5"><img src="../images/stock/street-terrace-800.jpg" srcset="../images/stock/street-terrace-800.jpg 800w, ../images/stock/street-terrace.jpg 1600w" sizes="(min-width: 900px) 300px, 46vw" width="1600" height="2387" alt="A small street terrace in front of the restaurant" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block soft" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Visit</p>
+        <h2 id="vs-h">Come and see us</h2>
+        <p class="status-line"><span class="open-pill" id="openPill" data-state="unknown"><i aria-hidden="true"></i><span id="openText">Opening hours</span></span></p>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Monday – Friday</dt><dd>12:00 – 22:00</dd></div><div data-hrs="we"><dt>Saturday and Sunday</dt><dd>12:00 – 23:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Address</b><span>8 Primer St., Plovdiv</span></li>
+          <li><b>Phone</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Email</b><a href="mailto:tables@example.com">tables@example.com</a></li>
+        </ul>
+        <p class="visit-note">For groups of more than 10 please call us.</p>
+      </div>
+      <div class="visit-side">
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map loads from OpenStreetMap only when you ask for it.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Maslina. Everything here is an example.</span>
+    <span class="foot-links"><a href="privacy.html">Privacy</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<div class="actionbar" id="bar">
+  <a class="btn btn-line btn-sm" href="tel:+359880000000">Call</a>
+  <a class="btn btn-main btn-sm" href="#reserve">Reserve</a>
+</div>
+
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Olive</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="olive" style="--s1:#F5F0E4;--s2:#4F5B2A" aria-pressed="false" aria-label="Olive"></button><button class="sw" type="button" data-skin="bordeaux" style="--s1:#1C1013;--s2:#E0B07A" aria-pressed="false" aria-label="Bordeaux"></button><button class="sw" type="button" data-skin="terracotta" style="--s1:#F8EEE4;--s2:#A34A2B" aria-pressed="false" aria-label="Terracotta"></button><button class="sw" type="button" data-skin="sea" style="--s1:#EEF3F2;--s2:#176B72" aria-pressed="false" aria-label="Sea"></button><button class="sw" type="button" data-skin="brass" style="--s1:#14161A;--s2:#C7A24A" aria-pressed="false" aria-label="Brass"></button></div>
+</aside>
+
+<script type="application/json" id="masData">{"maxParty": 10, "seating": {"any": "No preference", "inside": "Inside", "terrace": "On the terrace"}, "occasions": {"none": "No occasion", "birthday": "Birthday", "anniversary": "Anniversary", "business": "Business dinner", "other": "Other"}}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="bg" data-skin="ember">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17110D">
+<title>Ember Roasters – пържилня за кафе в Пловдив. Прясно изпечено кафе до вратата ти</title>
+<meta name="description" content="Ember Roasters е малка пържилня за специално кафе в Пловдив. Избери зърна, размер и мелене, а ние ги изпичаме във вторник и петък и ги доставяме или ги вземаш от нас.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ember Roasters – пържилня за кафе в Пловдив. Прясно изпечено кафе до вратата ти">
+<meta property="og:description" content="Ember Roasters е малка пържилня за специално кафе в Пловдив. Избери зърна, размер и мелене, а ние ги изпичаме във вторник и петък и ги доставяме или ги вземаш от нас.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/roaster-pour.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("emberSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Ember Roasters","inLanguage":"bg","telephone":"+359880000000","email":"beans@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 21","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "servesCuisine":"Coffee","openingHours":["Mo-Fr 10:00-18:00","Sa-Su 10:00-14:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="index.html"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><path d="M16 2c1 5 7 8 7 15a7 7 0 0 1-14 0c0-3 1.5-4.5 3-6 .3 2 1.2 3 2.2 3.4C13.500 9 15 6 16 2z" fill="currentColor"/><ellipse cx="16" cy="22" rx="3.2" ry="4.6" fill="var(--bg)" opacity=".55" transform="rotate(20 16 22)"/></svg><b>Ember Roasters</b></a>
+    <nav class="nav" id="nav" aria-label="Навигация"><a href="#beans">Кафета</a><a href="#build">Поръчай</a><a href="#brew">Приготвяне</a><a href="#roastery">Пържилнята</a><a href="#visit">Адрес</a></nav>
+    <div class="top-r">
+      <a class="bag-pill" href="#build" id="bagPill"><span class="bag-n" id="bagN">0</span><span class="bag-t" id="bagT">Торбата е празна</span></a>
+      <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Меню"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Пържилня за кафе · Пловдив</p>
+        <h1 id="h1">Изпечено във вторник. <em>В чашата ти</em> в петък.</h1>
+        <p class="lead">Малка пържилня за специално кафе. Избираш зърна, размер и мелене, а ние ги изпичаме на малки партиди и ги доставяме или ги вземаш от нас.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#beans">Избери кафе</a>
+          <a class="btn btn-ghost" href="#brew">Как се приготвя</a>
+        </div>
+        <dl class="roast-facts">
+          <div><dt>Последно изпичане</dt><dd id="lastRoast">–</dd></div>
+          <div><dt>Дни за изпичане</dt><dd>вторник и петък</dd></div>
+          <div><dt>Доставка</dt><dd>Пловдив, безплатна над 35 €</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-ph"><img src="images/stock/roaster-beans-800.jpg" srcset="images/stock/roaster-beans-800.jpg 800w, images/stock/roaster-beans.jpg 1600w" sizes="(min-width: 960px) 480px, 90vw" width="1600" height="2395" alt="Изпечени зърна в барабана на пържилнята" loading="eager" fetchpriority="high"><figcaption>Партида от вторник</figcaption></figure>
+    </div>
+  </section>
+  <div class="marquee" aria-hidden="true"><div class="marquee-in"><span>Праскова</span><span>Жасмин</span><span>Мед</span><span>Карамел</span><span>Червена ябълка</span><span>Какао</span><span>Лешник</span><span>Шоколад</span><span>Бадем</span><span>Тъмен шоколад</span><span>Сладък тютюн</span><span>Цитрус</span><span>Млечен шоколад</span><span>Портокал</span><span>Праскова</span><span>Жасмин</span><span>Мед</span><span>Карамел</span><span>Червена ябълка</span><span>Какао</span><span>Лешник</span><span>Шоколад</span><span>Бадем</span><span>Тъмен шоколад</span><span>Сладък тютюн</span><span>Цитрус</span><span>Млечен шоколад</span><span>Портокал</span></div></div>
+
+  <!-- ============ Step 1: coffees ============ -->
+  <section class="block" id="beans" aria-labelledby="bn-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Стъпка 1</p>
+        <h2 id="bn-h">Какво ще пием тази седмица</h2>
+        <p>Пет кафета от малки ферми. Избери едно и продължи надолу.</p>
+      </header>
+      <div class="chips" id="methods" role="group" aria-label="Начин на приготвяне"><button class="chip" type="button" data-method="all" aria-pressed="true">Всички</button><button class="chip" type="button" data-method="filter" aria-pressed="false">За филтър</button><button class="chip" type="button" data-method="espresso" aria-pressed="false">За еспресо</button></div>
+      <ul class="coffees" id="coffees"><li class="coffee" data-id="guji" data-method="filter">
+          <figure><img src="images/stock/bowl-beans-800.jpg" srcset="images/stock/bowl-beans-800.jpg 800w, images/stock/bowl-beans.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="1572" alt="Етиопия Гуджи" loading="lazy" decoding="async"><span class="m-tag">Филтър</span></figure>
+          <div class="c-body">
+            <h3>Етиопия Гуджи</h3>
+            <p class="c-org">Гуджи, Етиопия · 2000 м · Натурална</p>
+            <ul class="c-notes"><li>Праскова</li><li>Жасмин</li><li>Мед</li></ul>
+            <p class="roast"><span>Изпичане</span><span class="dots" role="img" aria-label="Изпичане 2/5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></p>
+            <div class="c-foot"><b>11,90 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="guji" aria-pressed="false">Избери</button></div>
+          </div>
+        </li><li class="coffee" data-id="huila" data-method="both">
+          <figure><img src="images/stock/beans-trail-800.jpg" srcset="images/stock/beans-trail-800.jpg 800w, images/stock/beans-trail.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2133" alt="Колумбия Уила" loading="lazy" decoding="async"><span class="m-tag">Филтър и еспресо</span></figure>
+          <div class="c-body">
+            <h3>Колумбия Уила</h3>
+            <p class="c-org">Уила, Колумбия · 1800 м · Измита</p>
+            <ul class="c-notes"><li>Карамел</li><li>Червена ябълка</li><li>Какао</li></ul>
+            <p class="roast"><span>Изпичане</span><span class="dots" role="img" aria-label="Изпичане 3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></p>
+            <div class="c-foot"><b>10,50 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="huila" aria-pressed="false">Избери</button></div>
+          </div>
+        </li><li class="coffee" data-id="cerrado" data-method="espresso">
+          <figure><img src="images/stock/beans-dark-800.jpg" srcset="images/stock/beans-dark-800.jpg 800w, images/stock/beans-dark.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2405" alt="Бразилия Серадо" loading="lazy" decoding="async"><span class="m-tag">Еспресо</span></figure>
+          <div class="c-body">
+            <h3>Бразилия Серадо</h3>
+            <p class="c-org">Серадо, Бразилия · 1100 м · Натурална</p>
+            <ul class="c-notes"><li>Лешник</li><li>Шоколад</li><li>Бадем</li></ul>
+            <p class="roast"><span>Изпичане</span><span class="dots" role="img" aria-label="Изпичане 4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></p>
+            <div class="c-foot"><b>9,50 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="cerrado" aria-pressed="false">Избери</button></div>
+          </div>
+        </li><li class="coffee" data-id="ember" data-method="espresso">
+          <figure><img src="images/stock/steam-cup-800.jpg" srcset="images/stock/steam-cup-800.jpg 800w, images/stock/steam-cup.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2400" alt="Смес Ember" loading="lazy" decoding="async"><span class="m-tag">Еспресо</span></figure>
+          <div class="c-body">
+            <h3>Смес Ember</h3>
+            <p class="c-org">Бразилия и Колумбия · Смес</p>
+            <ul class="c-notes"><li>Тъмен шоколад</li><li>Сладък тютюн</li><li>Цитрус</li></ul>
+            <p class="roast"><span>Изпичане</span><span class="dots" role="img" aria-label="Изпичане 4/5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></p>
+            <div class="c-foot"><b>8,90 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="ember" aria-pressed="false">Избери</button></div>
+          </div>
+        </li><li class="coffee" data-id="decaf" data-method="both">
+          <figure><img src="images/stock/flat-lay-800.jpg" srcset="images/stock/flat-lay-800.jpg 800w, images/stock/flat-lay.jpg 1600w" sizes="(min-width: 1180px) 380px, (min-width: 960px) calc((100vw - 84px) / 3), (min-width: 600px) calc(50vw - 31px), calc(100vw - 40px)" width="1600" height="2400" alt="Без кофеин Мексико" loading="lazy" decoding="async"><span class="m-tag">Филтър и еспресо</span></figure>
+          <div class="c-body">
+            <h3>Без кофеин Мексико</h3>
+            <p class="c-org">Чиапас, Мексико · Захарна тръстика</p>
+            <ul class="c-notes"><li>Млечен шоколад</li><li>Портокал</li></ul>
+            <p class="roast"><span>Изпичане</span><span class="dots" role="img" aria-label="Изпичане 3/5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></p>
+            <div class="c-foot"><b>11,20 €</b><small>/ 250 г</small><button class="choose" type="button" data-id="decaf" aria-pressed="false">Избери</button></div>
+          </div>
+        </li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Steps 2 and 3: build the bag ============ -->
+  <section class="block soft" id="build" aria-labelledby="bd-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Стъпки 2 и 3</p>
+        <h2 id="bd-h">Събери торбата си</h2>
+        <p>Размер, мелене, колко често. После кога и къде. Сметката е винаги на долната лента.</p>
+      </header>
+      <form class="build" id="buildForm" novalidate>
+        <div class="b-grid">
+          <fieldset class="step">
+            <legend><b>1</b> Твоята торба</legend>
+            <p class="picked" id="picked" role="status">Още не си избрал кафе. Върни се горе и натисни „Избери“.</p>
+            <div class="grid2">
+              <fieldset class="sub"><legend>Размер</legend><div class="opts"><label class="opt"><input type="radio" name="size" value="250" checked><span><b>250 г</b><small class="size-p" data-size="250"></small></span></label><label class="opt"><input type="radio" name="size" value="1000"><span><b>1 кг</b><small class="size-p" data-size="1000"></small></span></label></div></fieldset>
+              <div class="field"><label for="f-grind">Мелене</label><select id="f-grind" name="grind"><option value="whole">На зърна</option><option value="espresso">За еспресо</option><option value="moka">За мока</option><option value="filter">За филтър (V60)</option><option value="press">За преса</option></select></div>
+            </div>
+            <div class="qty-row">
+              <span class="qty-l" id="qtyL">Брой торби</span>
+              <div class="stepper" role="group" aria-labelledby="qtyL"><button type="button" id="qMinus" aria-label="Една торба по-малко">−</button><output id="qOut">1</output><button type="button" id="qPlus" aria-label="Една торба повече">+</button></div>
+            </div>
+            <fieldset class="sub"><legend>Колко често?</legend><div class="opts"><label class="opt"><input type="radio" name="freq" value="once" checked><span><b>Само веднъж</b></span></label><label class="opt"><input type="radio" name="freq" value="14"><span><b>На всеки 2 седмици</b><small>−8 %</small></span></label><label class="opt"><input type="radio" name="freq" value="30"><span><b>Всеки месец</b><small>−8 %</small></span></label></div></fieldset>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Доставка или вземане</legend>
+            <div class="opts" role="radiogroup" aria-label="Доставка или вземане">
+              <label class="opt"><input type="radio" name="fulfil" value="delivery" checked><span><b>Доставка до адрес</b><small id="feeNote"></small></span></label>
+              <label class="opt"><input type="radio" name="fulfil" value="pickup"><span><b>Вземане от пържилнята</b><small>Безплатно</small></span></label>
+            </div>
+            <div class="field" id="addrRow"><label for="f-addr">Адрес за доставка</label><input id="f-addr" name="address" type="text" autocomplete="street-address"></div>
+            <p class="sub-h" id="whenH">Кога да доставим?</p>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Ден"></div>
+            <p class="hint" id="slotHint" role="status">Проверяваме свободните часове…</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Час"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> Данни за връзка</legend>
+            <div class="grid2">
+              <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Бележка (по желание)</label><textarea id="f-msg" name="msg" rows="2"></textarea></div>
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="bkError" role="alert" hidden></p>
+          </fieldset>
+        </div>
+        <div class="checkout" id="checkout">
+          <div class="co-sum">
+            <p class="co-line" id="coLine">Торбата е празна</p>
+            <p class="co-sub" id="coSub"></p>
+          </div>
+          <p class="co-total"><span id="coTotalL">Общо</span><b id="coTotal">0,00 €</b></p>
+          <button class="btn btn-main" type="submit" id="bkSend">Изпрати поръчката</button>
+        </div>
+        <small class="fine">Плащаш при получаване. Без регистрация. <a href="privacy.html">Поверителност</a></small>
+      </form>
+      <div class="done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Brew calculator ============ -->
+  <section class="block" id="brew" aria-labelledby="br-h">
+    <div class="wrap brew">
+      <div class="brew-copy">
+        <header class="sec-head">
+          <p class="kicker">Приготвяне</p>
+          <h2 id="br-h">Колко кафе за колко вода?</h2>
+          <p>Избери метод и колко чаши искаш. Калкулаторът ти казва грамовете, температурата и времето.</p>
+        </header>
+        <form class="calc" id="calc" aria-label="Колко кафе за колко вода?" onsubmit="return false">
+          <div class="field"><label for="c-method">Метод</label><select id="c-method"><option value="v60">Филтър V60</option><option value="espresso">Еспресо</option><option value="moka">Мока</option><option value="press">Френска преса</option><option value="aero">AeroPress</option></select></div>
+          <div class="field"><label for="c-cups"><span id="cupsLbl">Чаши (по 250 мл)</span>: <b id="cupsOut">2</b></label><input id="c-cups" type="range" min="1" max="8" value="2"></div>
+          <dl class="calc-out" aria-live="polite">
+            <div><dt>Кафе</dt><dd id="cCoffee">–</dd></div>
+            <div><dt>Вода</dt><dd id="cWater">–</dd></div>
+            <div><dt>Температура</dt><dd id="cTemp">–</dd></div>
+            <div><dt>Време</dt><dd id="cTime">–</dd></div>
+            <div><dt>Мелене</dt><dd id="cGrind">–</dd></div>
+          </dl>
+        </form>
+      </div>
+      <div class="brew-photos">
+        <figure class="bpx bpx-1"><img src="images/stock/pour-over-800.jpg" srcset="images/stock/pour-over-800.jpg 800w, images/stock/pour-over.jpg 1600w" sizes="(min-width: 900px) 260px, 45vw" width="1600" height="2400" alt="Наливане на вода във V60" loading="lazy" decoding="async"></figure>
+        <figure class="bpx bpx-2"><img src="images/stock/drip-bag-800.jpg" srcset="images/stock/drip-bag-800.jpg 800w, images/stock/drip-bag.jpg 1600w" sizes="(min-width: 900px) 260px, 45vw" width="1600" height="2400" alt="Филтърна торбичка в чаша" loading="lazy" decoding="async"></figure>
+        <figure class="bpx bpx-3"><img src="images/stock/portafilters-800.jpg" srcset="images/stock/portafilters-800.jpg 800w, images/stock/portafilters.jpg 1600w" sizes="(min-width: 900px) 260px, 45vw" width="1600" height="2400" alt="Два портафилтъра със зърна и мляно кафе" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Roastery ============ -->
+  <section class="block roastery" id="roastery" aria-labelledby="ro-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker kicker-dark">Пържилнята</p>
+        <h2 id="ro-h">Малки партиди, ясно изпичане</h2>
+        <p>Изпичаме по 12 кг наведнъж и записваме всяка партида. Така знаем какво пращаме и можем да го повторим.</p>
+      </header>
+      <div class="steps3">
+        <figure class="r-ph"><img src="images/stock/roaster-drum-800.jpg" srcset="images/stock/roaster-drum-800.jpg 800w, images/stock/roaster-drum.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1067" alt="Барабанът на пържилнята, пълен със зърна" loading="lazy" decoding="async"></figure>
+        <ol class="r-steps">
+          <li><b>1 · Зелено зърно</b><span>Купуваме директно от малки ферми и пазим всяка партида отделно.</span></li>
+          <li><b>2 · Изпичане</b><span>Вторник и петък сутрин. Следим температурата през цялото време.</span></li>
+          <li><b>3 · Почивка и пакет</b><span>Две дни почивка, после пакет с датата на изпичане върху него.</span></li>
+        </ol>
+        <figure class="r-ph r-ph2"><img src="images/stock/roaster-scoop-800.jpg" srcset="images/stock/roaster-scoop-800.jpg 800w, images/stock/roaster-scoop.jpg 1600w" sizes="(min-width: 900px) 420px, 90vw" width="1600" height="1067" alt="Лопатка за проба от зърната" loading="lazy" decoding="async"></figure>
+      </div>
+      <p class="cupping"><b>Всяка събота в 11:00:</b> безплатна дегустация (cupping) в пържилнята. Просто елате.</p>
+    </div>
+  </section>
+
+  <!-- ============ Visit ============ -->
+  <section class="block" id="visit" aria-labelledby="vs-h">
+    <div class="wrap visit">
+      <div class="visit-copy">
+        <p class="kicker">Адрес</p>
+        <h2 id="vs-h">Намери пържилнята</h2>
+        <dl class="hours" id="hours"><div data-hrs="wd"><dt>Понеделник – петък</dt><dd>10:00 – 18:00</dd></div><div data-hrs="we"><dt>Събота и неделя</dt><dd>10:00 – 14:00</dd></div></dl>
+        <ul class="info">
+          <li><b>Адрес</b><span>ул. Примерна 21, Пловдив</span></li>
+          <li><b>Телефон</b><a href="tel:+359880000000">+359 88 000 0000</a></li>
+          <li><b>Имейл</b><a href="mailto:beans@example.com">beans@example.com</a></li>
+        </ul>
+      </div>
+      <div class="visit-side">
+        <figure class="visit-ph"><img src="images/stock/board-latte-800.jpg" srcset="images/stock/board-latte-800.jpg 800w, images/stock/board-latte.jpg 1600w" sizes="(min-width: 900px) 520px, 90vw" width="1600" height="1067" alt="Дъска с мляно кафе, зърна и лате" loading="lazy" decoding="async"></figure>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата се зарежда от OpenStreetMap едва когато я поискаш.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot dark">
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Ember Roasters. Всичко тук е пример.</span>
+    <span class="foot-links"><a href="privacy.html">Поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+  </div>
+</footer>
+
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Жарава</b></div>
+  <div class="swatches"><button class="sw" type="button" data-skin="ember" style="--s1:#17110D;--s2:#FF6A2B" aria-pressed="false" aria-label="Жарава"></button><button class="sw" type="button" data-skin="paper" style="--s1:#F4EEE4;--s2:#C2410C" aria-pressed="false" aria-label="Хартия"></button><button class="sw" type="button" data-skin="moss" style="--s1:#0F1812;--s2:#A6E06A" aria-pressed="false" aria-label="Мъх"></button><button class="sw" type="button" data-skin="midnight" style="--s1:#101522;--s2:#F2C14E" aria-pressed="false" aria-label="Полунощ"></button><button class="sw" type="button" data-skin="blush" style="--s1:#FBEFF0;--s2:#9D2A5B" aria-pressed="false" aria-label="Руж"></button></div>
+</aside>
+
+<script type="application/json" id="emberData">{"coffees": [{"id": "guji", "method": "filter", "price": 11.9, "name": "Етиопия Гуджи", "roast": 2}, {"id": "huila", "method": "both", "price": 10.5, "name": "Колумбия Уила", "roast": 3}, {"id": "cerrado", "method": "espresso", "price": 9.5, "name": "Бразилия Серадо", "roast": 4}, {"id": "ember", "method": "espresso", "price": 8.9, "name": "Смес Ember", "roast": 4}, {"id": "decaf", "method": "both", "price": 11.2, "name": "Без кофеин Мексико", "roast": 3}], "sizes": [{"id": "250", "g": 250, "mult": 1.0}, {"id": "1000", "g": 1000, "mult": 3.6}], "grinds": {"whole": "На зърна", "espresso": "За еспресо", "moka": "За мока", "filter": "За филтър (V60)", "press": "За преса"}, "freqs": {"once": "Само веднъж", "14": "На всеки 2 седмици", "30": "Всеки месец"}, "subDiscount": 0.08, "fee": 4.5, "freeFrom": 35, "roastDays": [1, 4], "methods": [{"id": "v60", "name": "Филтър V60", "ratio": 16, "temp": "94 °C", "time": "3:00", "grind": "средно ситно"}, {"id": "espresso", "name": "Еспресо", "ratio": 2, "temp": "93 °C", "time": "0:28", "grind": "ситно"}, {"id": "moka", "name": "Мока", "ratio": 10, "temp": "90 °C", "time": "4:00", "grind": "средно ситно"}, {"id": "press", "name": "Френска преса", "ratio": 15, "temp": "95 °C", "time": "4:00", "grind": "едро"}, {"id": "aero", "name": "AeroPress", "ratio": 14, "temp": "85 °C", "time": "2:00", "grind": "средно"}]}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

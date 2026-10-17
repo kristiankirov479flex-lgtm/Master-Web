@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" data-skin="evergreen">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0F1F19">
+<title>Atelier Aubade – wedding and event florist in Plovdiv</title>
+<meta name="description" content="A florist for weddings and events in Plovdiv. Plan your flowers online, see a price range, and book a free consultation.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atelier Aubade – wedding and event florist in Plovdiv">
+<meta property="og:description" content="A florist for weddings and events in Plovdiv. Plan your flowers online, see a price range, and book a free consultation.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/red-white-bouquet.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/alegreya-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("aubadeSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Florist","name":"Atelier Aubade","inLanguage":"en",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 10:00-18:00", "Sa-Su 10:00-14:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <nav class="nav nav-l" id="nav" aria-label="Main navigation">
+      <a href="#stories">Stories</a>
+      <a href="#packages">Packages</a>
+      <a href="#plan">Plan</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Studio</a>
+    </nav>
+    <a class="logo" href="index.html"><b>Atelier Aubade</b><span>wedding and event florist</span></a>
+    <div class="top-r">
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <a class="btn btn-main btn-sm" href="#plan">Book a consultation</a>
+      <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero: a contact sheet of photos ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="sheet" aria-hidden="true">
+      <img class="s1" src="../images/stock/red-white-bouquet-800.jpg" width="800" height="1200" alt="" loading="eager" decoding="async">
+      <img class="s2" src="../images/stock/rose-bouquet-800.jpg" width="800" height="800" alt="" loading="lazy" decoding="async">
+      <img class="s3" src="../images/stock/pink-white-roses-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async">
+      <img class="s4" src="../images/stock/holding-bouquet.jpg" width="1600" height="2400" alt="" loading="lazy" decoding="async">
+      <img class="s5" src="../images/stock/arranging-vase.jpg" width="1600" height="1067" alt="" loading="lazy" decoding="async">
+      <img class="s6" src="../images/stock/roses-hydrangeas-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async">
+    </div>
+    <div class="hero-card">
+      <p class="eyebrow">Plovdiv · weddings and events</p>
+      <h1 id="h1">Flowers for the day <em>you will remember.</em></h1>
+      <p class="lead">We design and arrange flowers for weddings, birthdays and company evenings. Plan yours below, see a price range, and talk to us for free.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#plan">Plan my flowers</a>
+        <a class="btn btn-line" href="#stories">See our stories</a>
+      </div>
+      <ul class="kinds"><li>Weddings</li><li>Birthdays</li><li>Corporate</li></ul>
+    </div>
+  </section>
+
+  <!-- ============ Stories: a rail of past events ============ -->
+  <section class="block" id="stories" aria-labelledby="st-h">
+    <div class="wrap">
+      <div class="rail-head">
+        <header class="sec-head">
+          <p class="kicker">Stories</p>
+          <h2 id="st-h">Days we have dressed in flowers.</h2>
+          <p>A few recent events, with the style we chose together. Swipe or use the arrows.</p>
+        </header>
+        <div class="rail-btns">
+          <button class="rail-btn" type="button" id="railPrev" aria-label="Previous stories">‹</button>
+          <button class="rail-btn" type="button" id="railNext" aria-label="Next stories">›</button>
+        </div>
+      </div>
+    </div>
+    <div class="rail" id="rail" role="group" aria-label="Days we have dressed in flowers." tabindex="0">
+      <figure class="story"><img src="../images/stock/beige-bouquet-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"><figcaption><b>Wedding, Plovdiv Old Town</b><span>Soft and neutral</span></figcaption></figure>
+      <figure class="story"><img src="../images/stock/pink-grey-vase-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Birthday dinner, Hisarya</b><span>Pastel dream</span></figcaption></figure>
+      <figure class="story"><img src="../images/stock/poppies-amber-vase-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Garden wedding, Brestovitsa</b><span>Garden wild</span></figcaption></figure>
+      <figure class="story"><img src="../images/stock/red-arrangement-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Anniversary, Plovdiv</b><span>Romantic</span></figcaption></figure>
+      <figure class="story"><img src="../images/stock/white-purple-black-vase-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><figcaption><b>Corporate evening, Sofia</b><span>Moody</span></figcaption></figure>
+      <figure class="story"><img src="../images/stock/tulips-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><figcaption><b>Spring brunch, Plovdiv</b><span>Minimal</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ Packages ============ -->
+  <section class="block soft" id="packages" aria-labelledby="pk-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Packages</p>
+        <h2 id="pk-h">Three places to start.</h2>
+        <p>Every event is different, so these are starting points. Press one and the planner below fills itself in.</p>
+      </header>
+      <div class="packs">
+        <article class="pack"><h3>The Bouquet</h3><p class="pack-t">For small ceremonies or a registry office.</p><ul><li>Main bouquet</li><li>2 buttonholes</li><li>Delivery to the venue</li></ul><p class="pack-p"><small>from</small> <b>106 €</b></p><button class="btn btn-line" type="button" data-pack="bridal">Start with this</button></article>
+        <article class="pack"><h3>The Ceremony</h3><p class="pack-t">The ceremony dressed in flowers.</p><ul><li>Main bouquet and 3 smaller ones</li><li>4 buttonholes</li><li>Welcome arch or backdrop</li><li>4 aisle arrangements</li><li>Setup at the venue</li></ul><p class="pack-p"><small>from</small> <b>612 €</b></p><button class="btn btn-line" type="button" data-pack="ceremony">Start with this</button></article>
+        <article class="pack"><h3>The Whole Day</h3><p class="pack-t">From the first bouquet to the last table.</p><ul><li>Everything in The Ceremony, plus</li><li>10 table centrepieces</li><li>Cake flowers and car decoration</li><li>A planning visit to the venue</li></ul><p class="pack-p"><small>from</small> <b>1098 €</b></p><button class="btn btn-line" type="button" data-pack="full">Start with this</button></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Plan your flowers ============ -->
+  <section class="block" id="plan" aria-labelledby="plan-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Planner</p>
+        <h2 id="plan-h">Plan your flowers. See what it costs.</h2>
+        <p>Choose the event, the style and the pieces. You get a price range straight away, and a free consultation to make it real.</p>
+      </header>
+      <form class="plan-form" id="planForm" novalidate>
+        <div class="pl-steps">
+          <fieldset class="step">
+            <legend><b>1</b> What are we celebrating?</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="event" value="wedding" data-name="Wedding" checked><span>Wedding</span></label><label class="pl"><input type="radio" name="event" value="birthday" data-name="Birthday"><span>Birthday</span></label><label class="pl"><input type="radio" name="event" value="corporate" data-name="Corporate event"><span>Corporate event</span></label><label class="pl"><input type="radio" name="event" value="other" data-name="Something else"><span>Something else</span></label></div>
+            <div class="guests">
+              <label for="guests">Guests: <b id="guestsOut">80</b></label>
+              <input id="guests" name="guests" type="range" min="10" max="250" step="5" value="80">
+              <p class="hint" id="tablesHint"></p>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>2</b> Your style</legend>
+            <p class="hint">Pick up to three that feel like you.</p>
+            <div class="styles"><label class="sty"><input type="checkbox" name="style" value="romantic" data-name="Romantic"><img src="../images/stock/pink-roses-800.jpg" alt="" width="400" height="711" loading="lazy" decoding="async"><span>Romantic</span></label><label class="sty"><input type="checkbox" name="style" value="wild" data-name="Garden wild"><img src="../images/stock/hand-colorful-bouquet-800.jpg" alt="" width="400" height="400" loading="lazy" decoding="async"><span>Garden wild</span></label><label class="sty"><input type="checkbox" name="style" value="minimal" data-name="Minimal"><img src="../images/stock/beige-bouquet-800.jpg" alt="" width="400" height="533" loading="lazy" decoding="async"><span>Minimal</span></label><label class="sty"><input type="checkbox" name="style" value="rustic" data-name="Rustic"><img src="../images/stock/dried-peach-paper-800.jpg" alt="" width="400" height="600" loading="lazy" decoding="async"><span>Rustic</span></label><label class="sty"><input type="checkbox" name="style" value="moody" data-name="Moody"><img src="../images/stock/white-purple-black-vase-800.jpg" alt="" width="400" height="600" loading="lazy" decoding="async"><span>Moody</span></label><label class="sty"><input type="checkbox" name="style" value="pastel" data-name="Pastel dream"><img src="../images/stock/pink-glass-vase-800.jpg" alt="" width="400" height="600" loading="lazy" decoding="async"><span>Pastel dream</span></label></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>3</b> What do you need?</legend>
+            <ul class="pieces" id="pieces"></ul>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>4</b> Book a free consultation</legend>
+            <p class="hint">Forty-five minutes, in the studio. Bring photos, fabric swatches and questions.</p>
+            <div class="dchips" id="dchips" role="radiogroup" aria-label="Book a free consultation"></div>
+            <p class="hint" id="slotHint" role="status">Pick a day to see free times.</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Time"></div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><b>5</b> About you and the day</legend>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              <div class="field"><label for="f-date">Date of the event</label><input id="f-date" name="edate" type="date"></div>
+              <div class="field"><label for="f-venue">Venue (if you know)</label><input id="f-venue" name="venue" type="text"></div>
+            </div>
+            <div class="field"><label for="f-msg">Anything else? (optional)</label><textarea id="f-msg" name="msg"></textarea></div>
+          </fieldset>
+        </div>
+
+        <section class="brief" aria-labelledby="brief-h">
+          <h3 id="brief-h">Your plan</h3>
+          <p class="brief-sub" id="briefSub"></p>
+          <ul class="brief-lines" id="briefLines"></ul>
+          <p class="brief-range"><span>Estimated range</span><b id="briefRange"></b></p>
+          <p class="brief-fine">A first estimate from sample prices. The real proposal follows the consultation.</p>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <button class="btn btn-main" type="submit" id="bkSend">Book the consultation</button>
+          <small class="brief-fine">We use your details only to answer your request. <a href="privacy.html">Privacy notice</a></small>
+        </section>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Process ============ -->
+  <section class="block soft" id="process" aria-labelledby="pr-h">
+    <div class="wrap process">
+      <header class="sec-head">
+        <p class="kicker">Process</p>
+        <h2 id="pr-h">From the first chat to the last petal.</h2>
+        <p>Clear steps, so nothing is left to chance.</p>
+      </header>
+      <ol class="timeline">
+        <li><h3>Free consultation</h3><p>45 minutes in the studio. We hear the story, the venue and the budget.</p></li>
+        <li><h3>Proposal and moodboard</h3><p>Within three days you get a written proposal with a moodboard.</p></li>
+        <li><h3>Date secured</h3><p>A deposit confirms your date. Sample prices: 30% of the proposal.</p></li>
+        <li><h3>The day</h3><p>We arrange, deliver and set up at the venue, and take care of the details.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Kind words</p>
+        <h2 id="rev-h">What couples and hosts say</h2>
+      </header>
+      <div class="revs">
+        <figure class="rev"><blockquote>They listened, then made something better than the picture I had in my head.</blockquote><figcaption><b>Wedding, 90 guests</b> · Example client</figcaption></figure>
+        <figure class="rev"><blockquote>Every table looked different and every one was beautiful. Guests asked who did the flowers.</blockquote><figcaption><b>Birthday dinner</b> · Example client</figcaption></figure>
+        <figure class="rev"><blockquote>Calm, punctual and tidy. The venue manager asked for their number.</blockquote><figcaption><b>Corporate evening</b> · Example client</figcaption></figure>
+      </div>
+      <p class="rev-note">Example reviews. Replace them with real reviews.</p>
+    </div>
+  </section>
+
+  <!-- ============ Questions and studio ============ -->
+  <section class="block soft" id="contact" aria-labelledby="faq-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">Questions</p>
+        <h2 id="faq-h">Good to know</h2>
+        <div class="faq-list">
+          <details><summary>How far ahead should I book?</summary><p>For weddings, three to six months ahead is comfortable, and peak weekends go first. For smaller events, a few weeks is usually fine.</p></details>
+          <details><summary>Is the consultation really free?</summary><p>Yes. It takes 45 minutes in the studio and does not oblige you to anything.</p></details>
+          <details><summary>Do you deliver and set up?</summary><p>Yes. Delivery and setup at your venue are part of the proposal. Travel outside Plovdiv is priced separately.</p></details>
+          <details><summary>How does the deposit work?</summary><p>A deposit (sample: 30%) secures your date and is deducted from the final price.</p></details>
+          <details><summary>Can I see flowers before I decide?</summary><p>In the consultation we show seasonal stems and sample arrangements.</p></details>
+        </div>
+      </div>
+      <div class="studio">
+        <p class="kicker">Studio</p>
+        <h2>Visit the studio</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Address</dt><dd>Primer St. 1, Plovdiv</dd>
+          <dt>Consultations</dt><dd>Mon – Fri 10:00 – 18:00 · Sat – Sun 10:00 – 14:00</dd>
+          <dt>Phone</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map is from OpenStreetMap and loads only if you choose.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">Atelier Aubade</span>
+    <span>© <span id="year">2026</span> Atelier Aubade · Wedding and event florist in Plovdiv</span>
+    <span class="foot-links"><a href="privacy.html">Privacy notice</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Evergreen and Gold</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="evergreen" data-name="Evergreen and Gold" aria-label="Colour scheme: Evergreen and Gold" title="Evergreen and Gold" aria-pressed="true" style="--s1:#0F1F19;--s2:#D8B56A"></button>
+        <button class="sw" type="button" data-skin="ivory" data-name="Ivory and Clay" aria-label="Colour scheme: Ivory and Clay" title="Ivory and Clay" aria-pressed="false" style="--s1:#F8F3EA;--s2:#8A5A44"></button>
+        <button class="sw" type="button" data-skin="blush" data-name="Blush and Rouge" aria-label="Colour scheme: Blush and Rouge" title="Blush and Rouge" aria-pressed="false" style="--s1:#F9ECEA;--s2:#9A3F55"></button>
+        <button class="sw" type="button" data-skin="midnight" data-name="Midnight and Rose Gold" aria-label="Colour scheme: Midnight and Rose Gold" title="Midnight and Rose Gold" aria-pressed="false" style="--s1:#0E1426;--s2:#E3B7A0"></button>
+        <button class="sw" type="button" data-skin="plum" data-name="Plum and Petal" aria-label="Colour scheme: Plum and Petal" title="Plum and Petal" aria-pressed="false" style="--s1:#1E0F1F;--s2:#E6A9C5"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+359000000000">Call</a>
+  <a href="#plan">Plan</a>
+</nav>
+
+<script type="application/json" id="aubadeData">{"pieces": [{"id": "bouquet", "name": "Main bouquet", "min": 90, "max": 160, "per": false, "cap": 1, "def": 1}, {"id": "small", "name": "Smaller bouquets", "min": 40, "max": 65, "per": true, "cap": 8, "def": 0}, {"id": "button", "name": "Buttonholes", "min": 8, "max": 12, "per": true, "cap": 12, "def": 0}, {"id": "arch", "name": "Welcome arch or backdrop", "min": 250, "max": 650, "per": false, "cap": 1, "def": 0}, {"id": "aisle", "name": "Aisle or entrance arrangements", "min": 30, "max": 55, "per": true, "cap": 10, "def": 0}, {"id": "tables", "name": "Table centrepieces", "min": 30, "max": 65, "per": true, "cap": 30, "def": 0}, {"id": "cake", "name": "Cake flowers", "min": 25, "max": 45, "per": false, "cap": 1, "def": 0}, {"id": "car", "name": "Car decoration", "min": 45, "max": 80, "per": false, "cap": 1, "def": 0}], "packs": {"bridal": {"bouquet": 1, "button": 2}, "ceremony": {"bouquet": 1, "small": 3, "button": 4, "arch": 1, "aisle": 4}, "full": {"bouquet": 1, "small": 4, "button": 6, "arch": 1, "aisle": 6, "tables": 10, "cake": 1, "car": 1}}, "consult": 45, "tablesHint": "About {n} tables of 8", "noneYet": "Pick the pieces you need.", "stylesNone": "No style picked yet", "each": "each"}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

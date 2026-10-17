@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="bg" data-skin="orchid">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0C0710">
+<title>Nocturne – нощно студио за нокти в Пловдив</title>
+<meta name="description" content="Отворено до 22:00. Отговори на четири бързи въпроса, получи комплекта нокти, който ти отива, с цената и времето, и запази свободен час в нощно студио за нокти в Пловдив.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nocturne – нощно студио за нокти в Пловдив">
+<meta property="og:description" content="Отворено до 22:00. Отговори на четири бързи въпроса, получи комплекта нокти, който ти отива, с цената и времето, и запази свободен час в нощно студио за нокти в Пловдив.">
+<meta property="og:locale" content="bg">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/mauve-glitter.jpg is a placeholder) -->
+<link rel="preload" href="fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("nocturneSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NailSalon","name":"Nocturne Nail Bar","inLanguage":"bg",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 12:00-22:00", "Sa-Su 12:00-20:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Към съдържанието</a>
+
+<header class="bar" id="topbar">
+  <a class="brand" href="index.html">Nocturne<span>студио за нокти</span></a>
+  <div class="bar-r">
+    <a class="lang" href="en/index.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+    <a class="btn btn-main btn-sm" href="#find">Намери комплекта</a>
+  </div>
+</header>
+
+<!-- Dots on the right: where you are on the page -->
+<nav class="dots" id="dots" aria-label="Раздели на страницата">
+  <a href="#top" aria-label="Начало" aria-current="true"><i></i></a>
+  <a href="#find" aria-label="Намери комплекта"><i></i></a>
+  <a href="#book" aria-label="Час"><i></i></a>
+  <a href="#visit" aria-label="Адрес"><i></i></a>
+</nav>
+
+<main id="main">
+
+  <!-- ============ Screen 1: after dark ============ -->
+  <section class="screen hero" id="top" aria-labelledby="h1">
+    <div class="hero-text">
+      <p class="eyebrow">Пловдив · отворено до 22:00</p>
+      <h1 id="h1">Нокти <em>след мръкване.</em></h1>
+      <p class="lead">Нощно студио за нокти. Кажи ни настроението си с четири докосвания и ще ти намерим комплект, цена и час.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#find">Намери комплекта · 60 секунди</a>
+        <a class="btn btn-ghost" href="#book">Към запазването</a>
+      </div>
+      <div class="live">
+        <p class="status off" id="openNow">Проверяваме…</p>
+        <p class="nextfree" id="nextFree" hidden></p>
+      </div>
+    </div>
+    <div class="reel" aria-hidden="true">
+      <div class="rcol c1"><div class="rtrack"><img src="images/stock/pink-selective-focus-800.jpg" width="800" height="534" alt="" loading="eager" decoding="async"><img src="images/stock/black-tortoiseshell-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><img src="images/stock/hand-with-flower-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><img src="images/stock/pink-selective-focus-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><img src="images/stock/black-tortoiseshell-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><img src="images/stock/hand-with-flower-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="rcol c2"><div class="rtrack"><img src="images/stock/hero-light-pink-800.jpg" width="800" height="1276" alt="" loading="lazy" decoding="async"><img src="images/stock/blue-white-tree-800.jpg" width="800" height="622" alt="" loading="lazy" decoding="async"><img src="images/stock/black-silver-ring-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><img src="images/stock/hero-light-pink-800.jpg" width="800" height="1276" alt="" loading="lazy" decoding="async"><img src="images/stock/blue-white-tree-800.jpg" width="800" height="622" alt="" loading="lazy" decoding="async"><img src="images/stock/black-silver-ring-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="rcol c3"><div class="rtrack"><img src="images/stock/navy-gold-white-800.jpg" width="800" height="1000" alt="" loading="lazy" decoding="async"><img src="images/stock/mauve-glitter-800.jpg" width="800" height="800" alt="" loading="lazy" decoding="async"><img src="images/stock/pink-on-white-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"><img src="images/stock/navy-gold-white-800.jpg" width="800" height="1000" alt="" loading="lazy" decoding="async"><img src="images/stock/mauve-glitter-800.jpg" width="800" height="800" alt="" loading="lazy" decoding="async"><img src="images/stock/pink-on-white-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"></div></div>
+    </div>
+    <div class="ticker" aria-label="Цитати от клиенти">
+      <div class="ticker-track" aria-hidden="true"><ul><li>„Издържа три седмици без нито една цепнатина.“</li><li>„Занесох снимка и направиха точно такъв дизайн.“</li><li>„Спокойно студио, а цената беше ясна още преди да запазя.“</li><li>„Внимателни със слабите ми нокти.“</li></ul><ul><li>„Издържа три седмици без нито една цепнатина.“</li><li>„Занесох снимка и направиха точно такъв дизайн.“</li><li>„Спокойно студио, а цената беше ясна още преди да запазя.“</li><li>„Внимателни със слабите ми нокти.“</li></ul></div>
+      <p class="sr-only">Примерни отзиви: издържа три седмици без нито една цепнатина; занесох снимка и направиха точно такъв дизайн; спокойно студио, а цената беше ясна още преди да запазя.</p>
+    </div>
+  </section>
+
+  <!-- ============ Screen 2: find your set ============ -->
+  <section class="screen find" id="find" aria-labelledby="find-h">
+    <div class="find-in">
+      <header class="head">
+        <p class="eyebrow">Търсач на комплект</p>
+        <h2 id="find-h">Четири докосвания. Един комплект.</h2>
+        <p>Поговори с нашия търсач на комплекти. Той избира услугите, цената и времето вместо теб, а ти можеш да промениш всичко.</p>
+      </header>
+      <div class="phone" id="quiz">
+        <div class="phone-top">
+          <span class="avatar" aria-hidden="true">N</span>
+          <div><b>Търсач на комплект</b><small id="quizStep">Четири бързи въпроса</small></div>
+          <button class="restart" type="button" id="restart" hidden>Започни отначало</button>
+        </div>
+        <div class="chat" id="chat" role="log" aria-live="polite" aria-label="Разговор с търсача на комплекти"></div>
+        <div class="choices" id="choices"></div>
+      </div>
+      <section class="result" id="result" aria-labelledby="res-h" hidden tabindex="-1">
+        <img id="resImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="800" height="1000">
+        <div class="res-body">
+          <p class="eyebrow">Твоят комплект</p>
+          <h3 id="res-h"></h3>
+          <p class="res-desc" id="resDesc"></p>
+          <ul class="res-lines" id="resLines"></ul>
+          <p class="res-total"><span>Цена</span><b id="resPrice"></b></p>
+          <p class="res-total"><span>Време</span><b id="resTime"></b></p>
+          <p class="res-note" id="resNote"></p>
+          <div class="res-actions">
+            <a class="btn btn-main" href="#book" id="resBook">Запази този комплект</a>
+            <button class="btn btn-ghost" type="button" id="resAgain">Започни отначало</button>
+          </div>
+        </div>
+      </section>
+      <p class="skip-quiz"><button type="button" id="skipQuiz">Не ти се говори? Запази простичък маникюр с гел лак.</button></p>
+    </div>
+  </section>
+
+  <!-- ============ Screen 3: book ============ -->
+  <section class="screen book" id="book" aria-labelledby="book-h">
+    <div class="find-in">
+      <header class="head">
+        <p class="eyebrow">Час</p>
+        <h2 id="book-h">Избери вечерта.</h2>
+        <p>Избери ден от календара, свободен час и ни кажи кой си.</p>
+      </header>
+      <form class="bk" id="bookForm" novalidate>
+        <section class="bk-set" aria-labelledby="set-h">
+          <h3 id="set-h">Твоят комплект</h3>
+          <p class="bk-empty" id="bkEmpty">Още нищо не е избрано. <a href="#find">Намери комплекта</a></p>
+          <div id="bkSet" hidden>
+            <p class="bk-desc" id="bkDesc"></p>
+            <ul class="res-lines" id="bkLines"></ul>
+            <p class="res-total"><span>Цена</span><b id="bkPrice"></b></p>
+            <p class="res-total"><span>Време</span><b id="bkTime"></b></p>
+            <a class="edit" href="#find">Промени комплекта</a>
+          </div>
+        </section>
+        <div class="bk-when">
+          <div class="cal" id="cal">
+            <div class="cal-head">
+              <button class="rail-btn" type="button" id="calPrev" aria-label="Предишен месец">‹</button>
+              <b id="calTitle" aria-live="polite"></b>
+              <button class="rail-btn" type="button" id="calNext" aria-label="Следващ месец">›</button>
+            </div>
+            <div class="cal-dow" id="calDow" aria-hidden="true"></div>
+            <div class="cal-grid" id="calGrid" role="group" aria-label="Избери ден"></div>
+          </div>
+          <div class="bk-side">
+            <p class="bk-n"><b>1</b> Избери час</p>
+            <p class="hint" id="slotHint" role="status">Избери ден, за да видиш свободните часове.</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Час"></div>
+            <p class="bk-n"><b>2</b> За теб</p>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">Име</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Съобщение (по желание)</label><textarea id="f-msg" name="msg"></textarea></div>
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="bkError" role="alert" hidden></p>
+            <div class="me-foot">
+              <button class="btn btn-main" type="submit" id="bkSend">Изпрати заявката</button>
+              <small class="hint">Ползваме данните ти само за да отговорим на заявката ти. <a href="privacy.html">Политика за поверителност</a></small>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Screen 4: visit and questions ============ -->
+  <section class="screen visit" id="visit" aria-labelledby="visit-h">
+    <div class="find-in visit-grid">
+      <div>
+        <p class="eyebrow">Посети ни</p>
+        <h2 id="visit-h">Намери студиото</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Адрес</dt><dd>ул. Примерна 1, Пловдив</dd>
+          <dt>Работно време</dt><dd>Пон – Пет 12:00 – 22:00 · Съб – Нед 12:00 – 20:00</dd>
+          <dt>Телефон</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Имейл</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>Картата е от OpenStreetMap и се зарежда само ако поискаш.</p>
+            <button class="btn btn-ghost btn-sm" type="button" id="mapLoad">Покажи картата</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Въпроси</p>
+        <h2 id="faq-h">Добре е да знаеш</h2>
+        <div class="faq-list">
+          <details><summary>Колко време отнема посещението?</summary><p>Маникюр с гел лак отнема около 1 до 1,5 часа, а изграждане на нокти – 2 до 3 часа. Търсачът на комплекти събира времето вместо теб.</p></details>
+          <details><summary>Мога ли да донеса снимка на дизайна, който искам?</summary><p>Да. Донеси или изпрати своя снимка и ще ти кажем доколко можем да я пресъздадем. Нейл артът се оценява по запитване.</p></details>
+          <details><summary>Свалянето на стар гел включено ли е?</summary><p>Свалянето е отделна услуга. Кажи ни в съобщението и ще го добавим към посещението ти.</p></details>
+          <details><summary>Какво става, ако трябва да отменя или закъснея?</summary><p>Предупреди ни поне 24 часа предварително, за да предложим часа на друг клиент. При закъснение над 15 минути може да се наложи услугата да бъде съкратена.</p></details>
+          <details><summary>Нужен ли е депозит?</summary><p>За изграждане на нокти и по-дълги посещения можем да поискаме малък депозит, който се приспада от цената.</p></details>
+        </div>
+      </div>
+    </div>
+    <footer class="foot">
+      <span class="foot-brand">Nocturne</span>
+      <span>© <span id="year">2026</span> Nocturne Nail Bar · Студио за нокти в Пловдив</span>
+      <span class="foot-links"><a href="privacy.html">Политика за поверителност</a> <a href="admin.html">Демо админ панел</a></span>
+    </footer>
+  </section>
+</main>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Цветова схема">
+  <div class="dock-label"><small>Цветова схема</small><b id="skinName">Орхидея нощем</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="orchid" data-name="Орхидея нощем" aria-label="Цветова схема: Орхидея нощем" title="Орхидея нощем" aria-pressed="true" style="--s1:#0C0710;--s2:#FF3DCB"></button>
+        <button class="sw" type="button" data-skin="acid" data-name="Кисел лайм" aria-label="Цветова схема: Кисел лайм" title="Кисел лайм" aria-pressed="false" style="--s1:#0A0D08;--s2:#C8FF2E"></button>
+        <button class="sw" type="button" data-skin="ember" data-name="Жарава" aria-label="Цветова схема: Жарава" title="Жарава" aria-pressed="false" style="--s1:#100806;--s2:#FF6A3D"></button>
+        <button class="sw" type="button" data-skin="ice" data-name="Леденосиньо" aria-label="Цветова схема: Леденосиньо" title="Леденосиньо" aria-pressed="false" style="--s1:#060D12;--s2:#5CE1FF"></button>
+        <button class="sw" type="button" data-skin="pearl" data-name="Перлен ден" aria-label="Цветова схема: Перлен ден" title="Перлен ден" aria-pressed="false" style="--s1:#EEEAF3;--s2:#5B2EFF"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Бърза връзка">
+  <a href="tel:+359000000000">Обади се</a>
+  <a href="#find">Намери комплекта</a>
+</nav>
+
+<script type="application/json" id="quizData">{"intro": "Здравей! Аз съм търсачът на комплекти. Четири бързи въпроса и ще намеря твоя комплект.", "done": "Готово! Ето твоя комплект.", "occ": {"everyday": "за всеки ден", "date": "за вечер навън", "event": "за голямо събитие", "me": "просто за теб"}, "qs": [{"key": "occasion", "q": "Какъв е поводът?", "opts": [{"v": "everyday", "label": "За всеки ден"}, {"v": "date", "label": "Вечер навън"}, {"v": "event", "label": "Голямо събитие"}, {"v": "me", "label": "Просто за мен"}]}, {"key": "length", "q": "Колко дълги обичаш ноктите си?", "opts": [{"v": "nat", "label": "Моите нокти"}, {"v": "short", "label": "Къси"}, {"v": "med", "label": "Средни"}, {"v": "long", "label": "Дълги"}]}, {"key": "style", "q": "Избери финиш.", "opts": [{"v": "nude", "label": "Нежен нюд"}, {"v": "colour", "label": "Лъскав цвят"}, {"v": "chrome", "label": "Хром и блясък"}, {"v": "art", "label": "Нейл арт"}]}, {"key": "pedi", "q": "И педикюр?", "opts": [{"v": "yes", "label": "Да, добави"}, {"v": "no", "label": "Не днес"}]}], "looks": {"nude": {"src": "images/stock/hero-light-pink-800.jpg", "w": 800, "h": 1276, "name": "Нежен нюд", "alt": "Нежни телесно-розови гел нокти върху бяла пухкава повърхност"}, "colour": {"src": "images/stock/hand-on-pink-800.jpg", "w": 800, "h": 1200, "name": "Бонбонен гланц", "alt": "Розови нокти на розов фон"}, "chrome": {"src": "images/stock/mauve-glitter-800.jpg", "w": 800, "h": 800, "name": "Хромирано огледало", "alt": "Люляково-розови, бели и сребристи брокатени нокти"}, "art": {"src": "images/stock/navy-gold-white-800.jpg", "w": 800, "h": 1000, "name": "Арт творба", "alt": "Нейл арт в тъмносиньо, златно и бяло на двете ръце"}}, "svc": {"gel_mani": {"name": "Маникюр с гел лак", "min": 90, "p0": 25, "p1": 25, "kind": "fixed"}, "ext_short": {"name": "Изграждане с гел, къси нокти", "min": 90, "p0": 40, "p1": 40, "kind": "fixed"}, "ext_med": {"name": "Изграждане с гел, средни нокти", "min": 105, "p0": 45, "p1": 45, "kind": "fixed"}, "ext_long": {"name": "Изграждане с гел, дълги нокти", "min": 120, "p0": 50, "p1": 50, "kind": "fixed"}, "art": {"name": "Нейл арт, френски връхчета, хром", "min": 60, "p0": 0, "p1": 0, "kind": "request"}, "gel_pedi": {"name": "Педикюр с гел лак", "min": 90, "p0": 25, "p1": 30, "kind": "fixed"}}}</script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

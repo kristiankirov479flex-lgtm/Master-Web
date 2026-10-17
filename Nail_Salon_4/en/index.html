@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" data-skin="bubblegum">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF3F7">
+<title>Glossy – nail studio in Plovdiv: design your set</title>
+<meta name="description" content="Design your nail set online: pick the shape, length, colour and finish, see the price and the time, and book a free slot at a nail studio in Plovdiv.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Glossy – nail studio in Plovdiv: design your set">
+<meta property="og:description" content="Design your nail set online: pick the shape, length, colour and finish, see the price and the time, and book a free slot at a nail studio in Plovdiv.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/pink-selective-focus.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("glossySkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NailSalon","name":"Glossy Nail Studio","inLanguage":"en",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 09:00-20:00", "Sa-Su 10:00-18:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="brand" href="index.html"><i aria-hidden="true"></i>Glossy</a>
+    <button class="burger" id="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span></button>
+    <nav class="gnav" id="nav" aria-label="Main navigation">
+      <a href="#design">Design a set</a>
+      <a href="#gallery">Inspo</a>
+      <a href="#book">Book</a>
+      <a href="#visit">Visit</a>
+      <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+      <button class="btn btn-main btn-sm" type="button" data-go="book">Book now</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="pop-label">Nail studio · Plovdiv</p>
+        <h1 id="h1">Your nails. <em>Your rules.</em></h1>
+        <p class="lead">Play with shapes, colours and finishes, watch your set come to life, and book it in a minute. The price shows up before you decide.</p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#design">Design my set</a>
+          <a class="btn btn-line" href="#gallery">Get inspired</a>
+        </div>
+        <div class="live">
+          <p class="status off" id="openNow">Checking…</p>
+          <p class="nextfree" id="nextFree" hidden></p>
+        </div>
+      </div>
+      <div class="hero-pics">
+        <img class="p1" src="../images/stock/pink-selective-focus-800.jpg" width="800" height="533" alt="Pink and red nails with love lettering" fetchpriority="high" decoding="async">
+        <img class="p2" src="../images/stock/mauve-glitter-800.jpg" width="800" height="800" alt="Mauve, white and silver glitter nails" decoding="async">
+        <img class="p3" src="../images/stock/hand-on-pink-800.jpg" width="800" height="1200" alt="Rose pink nails against a pink background" decoding="async">
+        <span class="sticker" aria-hidden="true">Try it live</span>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track"><ul><li>Gel polish</li><li>Extensions</li><li>Nail art</li><li>French tips</li><li>Chrome</li><li>Glitter</li><li>Pedicure</li></ul><ul><li>Gel polish</li><li>Extensions</li><li>Nail art</li><li>French tips</li><li>Chrome</li><li>Glitter</li><li>Pedicure</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ============ Design your set ============ -->
+  <section class="block" id="design" aria-labelledby="design-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Set builder</p>
+        <h2 id="design-h">Design your set, see it live.</h2>
+        <p>Pick a length, a shape, a colour and a finish. The hand on the left updates as you go, and the price and time add up on the right.</p>
+      </header>
+      <div class="studio">
+        <div class="preview" aria-label="Preview of your nail set" role="img" id="previewWrap">
+          <div id="hand"></div>
+          <p class="prev-cap" id="prevCap" aria-live="polite"></p>
+        </div>
+        <div class="controls" id="controls">
+          <fieldset class="opt"><legend><b>1</b> Length</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="base" value="nat" data-svc="gel_mani" data-label="My own nails" checked><span>My own nails<small>gel polish</small></span></label><label class="pl"><input type="radio" name="base" value="short" data-svc="ext_short" data-label="Short"><span>Short<small>extensions</small></span></label><label class="pl"><input type="radio" name="base" value="med" data-svc="ext_med" data-label="Medium"><span>Medium<small>extensions</small></span></label><label class="pl"><input type="radio" name="base" value="long" data-svc="ext_long" data-label="Long"><span>Long<small>extensions</small></span></label></div>
+          </fieldset>
+          <fieldset class="opt"><legend><b>2</b> Shape</legend>
+            <div class="shapes"><label class="shp"><input type="radio" name="shape" value="round" data-label="Round"><svg viewBox="0 0 60 84" data-shape="round" aria-hidden="true"></svg><span>Round</span></label><label class="shp"><input type="radio" name="shape" value="square" data-label="Square"><svg viewBox="0 0 60 84" data-shape="square" aria-hidden="true"></svg><span>Square</span></label><label class="shp"><input type="radio" name="shape" value="almond" data-label="Almond" checked><svg viewBox="0 0 60 84" data-shape="almond" aria-hidden="true"></svg><span>Almond</span></label><label class="shp"><input type="radio" name="shape" value="coffin" data-label="Coffin"><svg viewBox="0 0 60 84" data-shape="coffin" aria-hidden="true"></svg><span>Coffin</span></label><label class="shp"><input type="radio" name="shape" value="stiletto" data-label="Stiletto"><svg viewBox="0 0 60 84" data-shape="stiletto" aria-hidden="true"></svg><span>Stiletto</span></label></div>
+          </fieldset>
+          <fieldset class="opt"><legend><b>3</b> Colour</legend>
+            <div class="swatch-grid"><label class="clr"><input type="radio" name="colour" value="#E9C5B5" data-label="Nude"><span class="dot" style="--c:#E9C5B5" aria-hidden="true"></span><span class="sr-only">Nude</span></label><label class="clr"><input type="radio" name="colour" value="#F4B6C2" data-label="Blush"><span class="dot" style="--c:#F4B6C2" aria-hidden="true"></span><span class="sr-only">Blush</span></label><label class="clr"><input type="radio" name="colour" value="#D6246E" data-label="Berry" checked><span class="dot" style="--c:#D6246E" aria-hidden="true"></span><span class="sr-only">Berry</span></label><label class="clr"><input type="radio" name="colour" value="#C8102E" data-label="Cherry"><span class="dot" style="--c:#C8102E" aria-hidden="true"></span><span class="sr-only">Cherry</span></label><label class="clr"><input type="radio" name="colour" value="#FF7A6B" data-label="Coral"><span class="dot" style="--c:#FF7A6B" aria-hidden="true"></span><span class="sr-only">Coral</span></label><label class="clr"><input type="radio" name="colour" value="#FFC49B" data-label="Peach"><span class="dot" style="--c:#FFC49B" aria-hidden="true"></span><span class="sr-only">Peach</span></label><label class="clr"><input type="radio" name="colour" value="#FFE08A" data-label="Butter"><span class="dot" style="--c:#FFE08A" aria-hidden="true"></span><span class="sr-only">Butter</span></label><label class="clr"><input type="radio" name="colour" value="#A8E6CF" data-label="Mint"><span class="dot" style="--c:#A8E6CF" aria-hidden="true"></span><span class="sr-only">Mint</span></label><label class="clr"><input type="radio" name="colour" value="#9EC9FF" data-label="Sky"><span class="dot" style="--c:#9EC9FF" aria-hidden="true"></span><span class="sr-only">Sky</span></label><label class="clr"><input type="radio" name="colour" value="#C7B2F5" data-label="Lilac"><span class="dot" style="--c:#C7B2F5" aria-hidden="true"></span><span class="sr-only">Lilac</span></label><label class="clr"><input type="radio" name="colour" value="#5B2A6B" data-label="Plum"><span class="dot" style="--c:#5B2A6B" aria-hidden="true"></span><span class="sr-only">Plum</span></label><label class="clr"><input type="radio" name="colour" value="#1A1A1A" data-label="Black"><span class="dot" style="--c:#1A1A1A" aria-hidden="true"></span><span class="sr-only">Black</span></label><label class="clr"><input type="radio" name="colour" value="#FFFFFF" data-label="Milk"><span class="dot" style="--c:#FFFFFF" aria-hidden="true"></span><span class="sr-only">Milk</span></label></div>
+          </fieldset>
+          <fieldset class="opt"><legend><b>4</b> Finish</legend>
+            <div class="pills"><label class="pl"><input type="radio" name="finish" value="gloss" data-label="Gloss" data-art="0" checked><span>Gloss</span></label><label class="pl"><input type="radio" name="finish" value="matte" data-label="Matte" data-art="0"><span>Matte</span></label><label class="pl"><input type="radio" name="finish" value="chrome" data-label="Chrome" data-art="1"><span>Chrome</span></label><label class="pl"><input type="radio" name="finish" value="glitter" data-label="Glitter" data-art="1"><span>Glitter</span></label></div>
+          </fieldset>
+          <fieldset class="opt"><legend><b>5</b> Extras</legend>
+            <div class="pills"><label class="pl"><input type="checkbox" name="extra" value="french" data-svc="art" data-label="French tips"><span>French tips</span></label><label class="pl"><input type="checkbox" name="extra" value="accent" data-svc="art" data-label="Accent nail art"><span>Accent nail art</span></label><label class="pl"><input type="checkbox" name="extra" value="removal" data-svc="removal" data-label="Remove old gel"><span>Remove old gel</span></label><label class="pl"><input type="checkbox" name="extra" value="pedi" data-svc="gel_pedi" data-label="Add a pedicure"><span>Add a pedicure</span></label></div>
+          </fieldset>
+        </div>
+        <section class="sumcard" aria-labelledby="sum-h">
+          <h3 id="sum-h">Your set</h3>
+          <ul class="sum-lines" id="sumLines"></ul>
+          <p class="sum-total"><span>Price</span><b id="sumPrice"></b></p>
+          <p class="sum-time"><span>Time</span><b id="sumTime"></b></p>
+          <p class="sum-note" id="sumNote"></p>
+          <button class="btn btn-main" type="button" data-go="book" id="useSet">Book this set</button>
+          <p class="fine">Sample prices. We confirm the final price and time when we reply.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="block tint" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Inspo</p>
+        <h2 id="gal-h">Need ideas?</h2>
+        <p>Real sets from the studio. Press a photo, then press I want this look and it travels with your booking.</p>
+      </header>
+      <div class="filters" role="group" aria-label="Filter photos">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="natural" aria-pressed="false">Natural</button>
+        <button class="chip" type="button" data-filter="art" aria-pressed="false">Nail art</button>
+        <button class="chip" type="button" data-filter="bold" aria-pressed="false">Bold</button>
+      </div>
+      <p class="sr-only" id="shown" role="status"></p>
+      <div class="gal" id="gal">
+        <button class="g-item" type="button" data-cat="natural" data-full="../images/stock/hero-light-pink.jpg" aria-label="Open photo: Soft nude pink gel nails on a white fur surface"><img src="../images/stock/hero-light-pink-800.jpg" width="800" height="1276" alt="Soft nude pink gel nails on a white fur surface" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="bold" data-full="../images/stock/black-tortoiseshell.jpg" aria-label="Open photo: Black and tortoiseshell nails with a gold ring"><img src="../images/stock/black-tortoiseshell-800.jpg" width="800" height="1200" alt="Black and tortoiseshell nails with a gold ring" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="art" data-full="../images/stock/blue-white-tree.jpg" aria-label="Open photo: Blue and white nails with a winter tree design"><img src="../images/stock/blue-white-tree-800.jpg" width="800" height="622" alt="Blue and white nails with a winter tree design" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="natural" data-full="../images/stock/pink-on-white.jpg" aria-label="Open photo: Soft pink almond nails on white textile"><img src="../images/stock/pink-on-white-800.jpg" width="800" height="1066" alt="Soft pink almond nails on white textile" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="art" data-full="../images/stock/navy-gold-white.jpg" aria-label="Open photo: Navy, gold and white nail art on both hands"><img src="../images/stock/navy-gold-white-800.jpg" width="800" height="1000" alt="Navy, gold and white nail art on both hands" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="natural" data-full="../images/stock/hand-with-flower.jpg" aria-label="Open photo: Metallic nude nails held among orange flowers"><img src="../images/stock/hand-with-flower-800.jpg" width="800" height="1200" alt="Metallic nude nails held among orange flowers" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="bold" data-full="../images/stock/black-silver-ring.jpg" aria-label="Open photo: Glossy black manicure with a silver ring"><img src="../images/stock/black-silver-ring-800.jpg" width="800" height="534" alt="Glossy black manicure with a silver ring" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="art" data-full="../images/stock/mauve-glitter.jpg" aria-label="Open photo: Mauve, white and silver glitter nails on a knit sweater"><img src="../images/stock/mauve-glitter-800.jpg" width="800" height="800" alt="Mauve, white and silver glitter nails on a knit sweater" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="art" data-full="../images/stock/pink-selective-focus.jpg" aria-label="Open photo: Pink and red nails with love lettering"><img src="../images/stock/pink-selective-focus-800.jpg" width="800" height="534" alt="Pink and red nails with love lettering" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="natural" data-full="../images/stock/hand-on-pink.jpg" aria-label="Open photo: Rose pink nails against a pink background"><img src="../images/stock/hand-on-pink-800.jpg" width="800" height="1200" alt="Rose pink nails against a pink background" loading="lazy" decoding="async"></button>
+        <button class="g-item" type="button" data-cat="natural" data-full="../images/stock/manicure-closeup.jpg" aria-label="Open photo: Close-up of a fresh manicure"><img src="../images/stock/manicure-closeup-800.jpg" width="800" height="1200" alt="Close-up of a fresh manicure" loading="lazy" decoding="async"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Reviews ============ -->
+  <section class="block" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Love notes</p>
+        <h2 id="rev-h">What clients say</h2>
+      </header>
+      <div class="revs">
+        <figure class="rev"><blockquote>Perfect gel manicure. It lasted three weeks without a single chip.</blockquote><figcaption><b>Gel polish manicure</b> · Example client</figcaption></figure>
+        <figure class="rev"><blockquote>I brought a photo and they made exactly that design.</blockquote><figcaption><b>Nail art</b> · Example client</figcaption></figure>
+        <figure class="rev"><blockquote>A calm studio, everything spotless, and the price was clear before I booked.</blockquote><figcaption><b>Gel polish pedicure</b> · Example client</figcaption></figure>
+      </div>
+      <p class="rev-note">Example reviews. Replace them with real Google reviews.</p>
+    </div>
+  </section>
+
+  <!-- ============ Book ============ -->
+  <section class="block book dark" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="kicker">Book</p>
+        <h2 id="book-h">Pick your day and time.</h2>
+        <p>Your set is ready. Choose a day, a free time, and tell us who you are.</p>
+      </header>
+      <form class="bk" id="bookForm" novalidate>
+        <div class="bk-set">
+          <h3>Your set</h3>
+          <div class="chosen-look" id="lookBox" hidden>
+            <img id="lookImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="56" height="56">
+            <div><b>Look you like</b><span id="lookText"></span></div>
+            <button type="button" id="lookRemove" aria-label="Remove">×</button>
+          </div>
+          <p class="bk-desc" id="bkDesc"></p>
+          <ul class="sum-lines" id="bkLines"></ul>
+          <p class="sum-total"><span>Price</span><b id="bkPrice"></b></p>
+          <p class="sum-time"><span>Time</span><b id="bkTime"></b></p>
+          <a class="edit-link" href="#design">Change my set</a>
+        </div>
+        <div class="bk-when">
+          <p class="bk-n"><b>A</b> Pick a day</p>
+          <div class="dchips" id="dchips" role="radiogroup" aria-label="Pick a day"></div>
+          <p class="bk-n"><b>B</b> Pick a time</p>
+          <p class="hint" id="slotHint" role="status">Checking free times…</p>
+          <div class="tchips" id="tchips" role="radiogroup" aria-label="Time"></div>
+          <p class="bk-n"><b>C</b> About you</p>
+          <div class="me-grid">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field"><label for="f-msg">Message (optional)</label><textarea id="f-msg" name="msg"></textarea></div>
+          <p class="demo-note" id="demoNote" hidden></p>
+          <p class="form-error" id="bkError" role="alert" hidden></p>
+          <div class="me-foot">
+            <button class="btn btn-main" type="submit" id="bkSend">Send the request</button>
+            <small class="hint">We use your details only to answer your request. <a href="privacy.html">Privacy notice</a></small>
+          </div>
+        </div>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Visit and questions ============ -->
+  <section class="block" id="visit" aria-labelledby="visit-h">
+    <div class="wrap visit-grid">
+      <div>
+        <p class="kicker">Visit</p>
+        <h2 id="visit-h">Find the studio</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Address</dt><dd>Primer St. 1, Plovdiv</dd>
+          <dt>Hours</dt><dd>Mon – Fri 09:00 – 20:00 · Sat – Sun 10:00 – 18:00</dd>
+          <dt>Phone</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map is from OpenStreetMap and loads only if you choose.</p>
+            <button class="btn btn-line btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Questions</p>
+        <h2 id="faq-h">Good to know</h2>
+        <div class="faq-list">
+          <details><summary>How long does a visit take?</summary><p>A gel polish manicure takes about 1 to 1.5 hours, and extensions 2 to 3 hours. The builder adds the time up for you.</p></details>
+          <details><summary>Can I bring a photo of the design I want?</summary><p>Yes. Pick a photo in the inspo gallery, or bring or send your own, and we will tell you how close we can get.</p></details>
+          <details><summary>Is removing my old gel included?</summary><p>Removal is a separate service. Tick Remove old gel in the builder so the old gel comes off safely.</p></details>
+          <details><summary>What if I need to cancel or I am late?</summary><p>Please tell us at least 24 hours ahead so we can offer your time to someone else. If you are more than 15 minutes late, the service may need to be shortened.</p></details>
+          <details><summary>Do I need to pay a deposit?</summary><p>For extensions and longer visits we may ask for a small deposit, which is deducted from the price.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot dark">
+  <div class="wrap">
+    <span class="foot-brand">Glossy</span>
+    <span>© <span id="year">2026</span> Glossy Nail Studio · Nail studio in Plovdiv</span>
+    <span class="foot-links"><a href="privacy.html">Privacy notice</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+  </div>
+</footer>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Bubblegum</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="bubblegum" data-name="Bubblegum" aria-label="Colour scheme: Bubblegum" title="Bubblegum" aria-pressed="true" style="--s1:#FFF3F7;--s2:#D6246E"></button>
+        <button class="sw" type="button" data-skin="lilac" data-name="Lilac Dream" aria-label="Colour scheme: Lilac Dream" title="Lilac Dream" aria-pressed="false" style="--s1:#F4EFFF;--s2:#6D3FD1"></button>
+        <button class="sw" type="button" data-skin="peach" data-name="Peach Fizz" aria-label="Colour scheme: Peach Fizz" title="Peach Fizz" aria-pressed="false" style="--s1:#FFF1E8;--s2:#C2410C"></button>
+        <button class="sw" type="button" data-skin="mint" data-name="Mint Chip" aria-label="Colour scheme: Mint Chip" title="Mint Chip" aria-pressed="false" style="--s1:#E9FBF4;--s2:#0A7C62"></button>
+        <button class="sw" type="button" data-skin="berry" data-name="Blueberry" aria-label="Colour scheme: Blueberry" title="Blueberry" aria-pressed="false" style="--s1:#EAF2FF;--s2:#1F5FE0"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+359000000000">Call</a>
+  <button type="button" data-go="book">Book · <b id="qTotal"></b></button>
+</nav>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo">
+  <div class="lb-inner">
+    <button class="lb-x" type="button" id="lbClose" aria-label="Close">×</button>
+    <button class="lb-prev" type="button" id="lbPrev" aria-label="Previous photo">‹</button>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <button class="lb-next" type="button" id="lbNext" aria-label="Next photo">›</button>
+    <button class="lb-act" type="button" id="lbRequest">I want this look</button>
+  </div>
+</dialog>
+
+<script type="application/json" id="svcData">{"gel_mani": {"name": "Gel polish manicure", "min": 90, "p0": 25, "p1": 25, "kind": "fixed"}, "ext_short": {"name": "Gel extensions, short", "min": 90, "p0": 40, "p1": 40, "kind": "fixed"}, "ext_med": {"name": "Gel extensions, medium", "min": 105, "p0": 45, "p1": 45, "kind": "fixed"}, "ext_long": {"name": "Gel extensions, long", "min": 120, "p0": 50, "p1": 50, "kind": "fixed"}, "art": {"name": "Nail art, French tips, chrome", "min": 60, "p0": 0, "p1": 0, "kind": "request"}, "removal": {"name": "Gel polish removal", "min": 30, "p0": 10, "p1": 10, "kind": "fixed"}, "gel_pedi": {"name": "Gel polish pedicure", "min": 90, "p0": 25, "p1": 30, "kind": "fixed"}}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

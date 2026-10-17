@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" data-skin="orchid">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0C0710">
+<title>Nocturne – a late-night nail bar in Plovdiv</title>
+<meta name="description" content="Open until 10 pm. Answer four quick questions, get the nail set that suits you with the price and time, and book a free slot at a late-night nail bar in Plovdiv.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nocturne – a late-night nail bar in Plovdiv">
+<meta property="og:description" content="Open until 10 pm. Answer four quick questions, get the nail set that suits you with the price and time, and book a free slot at a late-night nail bar in Plovdiv.">
+<meta property="og:locale" content="en">
+<!-- When the real address is known add, on BOTH language pages:
+     <link rel="canonical" href="https://YOUR-DOMAIN/ (or /en/)">
+     <link rel="alternate" hreflang="bg" href="https://YOUR-DOMAIN/">
+     <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+     <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+     and an og:image (images/stock/mauve-glitter.jpg is a placeholder) -->
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  /* Scroll animations only run when the browser supports them and the visitor has not asked for less motion. */
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-reveal");
+</script>
+<script>
+  /* Apply the saved colour scheme before the page paints, so it does not flash. */
+  try { var s = new URLSearchParams(location.search).get("skin") || localStorage.getItem("nocturneSkin"); if (s) document.documentElement.dataset.skin = s; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NailSalon","name":"Nocturne Nail Bar","inLanguage":"en",
+ "telephone":"+359000000000","email":"email@example.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Primer St. 1","addressLocality":"Plovdiv","addressCountry":"BG"},
+ "openingHours":["Mo-Fr 12:00-22:00", "Sa-Su 12:00-20:00"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" id="topbar">
+  <a class="brand" href="index.html">Nocturne<span>nail bar</span></a>
+  <div class="bar-r">
+    <a class="lang" href="../index.html" lang="bg" hreflang="bg" aria-label="Превключи на български">БГ</a>
+    <a class="btn btn-main btn-sm" href="#find">Find my set</a>
+  </div>
+</header>
+
+<!-- Dots on the right: where you are on the page -->
+<nav class="dots" id="dots" aria-label="Page sections">
+  <a href="#top" aria-label="Start" aria-current="true"><i></i></a>
+  <a href="#find" aria-label="Find your set"><i></i></a>
+  <a href="#book" aria-label="Book"><i></i></a>
+  <a href="#visit" aria-label="Visit"><i></i></a>
+</nav>
+
+<main id="main">
+
+  <!-- ============ Screen 1: after dark ============ -->
+  <section class="screen hero" id="top" aria-labelledby="h1">
+    <div class="hero-text">
+      <p class="eyebrow">Plovdiv · open until 10 pm</p>
+      <h1 id="h1">Nails <em>after dark.</em></h1>
+      <p class="lead">A late-night nail bar. Tell us your mood in four taps, and we will match you with a set, a price and a time.</p>
+      <div class="hero-actions">
+        <a class="btn btn-main" href="#find">Find my set · 60 seconds</a>
+        <a class="btn btn-ghost" href="#book">Skip to booking</a>
+      </div>
+      <div class="live">
+        <p class="status off" id="openNow">Checking…</p>
+        <p class="nextfree" id="nextFree" hidden></p>
+      </div>
+    </div>
+    <div class="reel" aria-hidden="true">
+      <div class="rcol c1"><div class="rtrack"><img src="../images/stock/pink-selective-focus-800.jpg" width="800" height="534" alt="" loading="eager" decoding="async"><img src="../images/stock/black-tortoiseshell-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><img src="../images/stock/hand-with-flower-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><img src="../images/stock/pink-selective-focus-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><img src="../images/stock/black-tortoiseshell-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"><img src="../images/stock/hand-with-flower-800.jpg" width="800" height="1200" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="rcol c2"><div class="rtrack"><img src="../images/stock/hero-light-pink-800.jpg" width="800" height="1276" alt="" loading="lazy" decoding="async"><img src="../images/stock/blue-white-tree-800.jpg" width="800" height="622" alt="" loading="lazy" decoding="async"><img src="../images/stock/black-silver-ring-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"><img src="../images/stock/hero-light-pink-800.jpg" width="800" height="1276" alt="" loading="lazy" decoding="async"><img src="../images/stock/blue-white-tree-800.jpg" width="800" height="622" alt="" loading="lazy" decoding="async"><img src="../images/stock/black-silver-ring-800.jpg" width="800" height="534" alt="" loading="lazy" decoding="async"></div></div>
+      <div class="rcol c3"><div class="rtrack"><img src="../images/stock/navy-gold-white-800.jpg" width="800" height="1000" alt="" loading="lazy" decoding="async"><img src="../images/stock/mauve-glitter-800.jpg" width="800" height="800" alt="" loading="lazy" decoding="async"><img src="../images/stock/pink-on-white-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"><img src="../images/stock/navy-gold-white-800.jpg" width="800" height="1000" alt="" loading="lazy" decoding="async"><img src="../images/stock/mauve-glitter-800.jpg" width="800" height="800" alt="" loading="lazy" decoding="async"><img src="../images/stock/pink-on-white-800.jpg" width="800" height="1066" alt="" loading="lazy" decoding="async"></div></div>
+    </div>
+    <div class="ticker" aria-label="Client quotes">
+      <div class="ticker-track" aria-hidden="true"><ul><li>“It lasted three weeks without a single chip.”</li><li>“I brought a photo and they made exactly that.”</li><li>“A calm studio and the price was clear before I booked.”</li><li>“Gentle with my weak nails.”</li></ul><ul><li>“It lasted three weeks without a single chip.”</li><li>“I brought a photo and they made exactly that.”</li><li>“A calm studio and the price was clear before I booked.”</li><li>“Gentle with my weak nails.”</li></ul></div>
+      <p class="sr-only">Example reviews: it lasted three weeks without a single chip; I brought a photo and they made exactly that; a calm studio and the price was clear before I booked.</p>
+    </div>
+  </section>
+
+  <!-- ============ Screen 2: find your set ============ -->
+  <section class="screen find" id="find" aria-labelledby="find-h">
+    <div class="find-in">
+      <header class="head">
+        <p class="eyebrow">Set finder</p>
+        <h2 id="find-h">Four taps. One set.</h2>
+        <p>Chat with our set finder. It picks the services, the price and the time for you, and you can still change everything.</p>
+      </header>
+      <div class="phone" id="quiz">
+        <div class="phone-top">
+          <span class="avatar" aria-hidden="true">N</span>
+          <div><b>Set finder</b><small id="quizStep">Four quick questions</small></div>
+          <button class="restart" type="button" id="restart" hidden>Start over</button>
+        </div>
+        <div class="chat" id="chat" role="log" aria-live="polite" aria-label="Conversation with the set finder"></div>
+        <div class="choices" id="choices"></div>
+      </div>
+      <section class="result" id="result" aria-labelledby="res-h" hidden tabindex="-1">
+        <img id="resImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="800" height="1000">
+        <div class="res-body">
+          <p class="eyebrow">Your set</p>
+          <h3 id="res-h"></h3>
+          <p class="res-desc" id="resDesc"></p>
+          <ul class="res-lines" id="resLines"></ul>
+          <p class="res-total"><span>Price</span><b id="resPrice"></b></p>
+          <p class="res-total"><span>Time</span><b id="resTime"></b></p>
+          <p class="res-note" id="resNote"></p>
+          <div class="res-actions">
+            <a class="btn btn-main" href="#book" id="resBook">Book this set</a>
+            <button class="btn btn-ghost" type="button" id="resAgain">Start over</button>
+          </div>
+        </div>
+      </section>
+      <p class="skip-quiz"><button type="button" id="skipQuiz">Not in the mood to chat? Book a simple gel manicure instead.</button></p>
+    </div>
+  </section>
+
+  <!-- ============ Screen 3: book ============ -->
+  <section class="screen book" id="book" aria-labelledby="book-h">
+    <div class="find-in">
+      <header class="head">
+        <p class="eyebrow">Book</p>
+        <h2 id="book-h">Pick the night.</h2>
+        <p>Choose a day on the calendar, a free time, and tell us who you are.</p>
+      </header>
+      <form class="bk" id="bookForm" novalidate>
+        <section class="bk-set" aria-labelledby="set-h">
+          <h3 id="set-h">Your set</h3>
+          <p class="bk-empty" id="bkEmpty">Nothing chosen yet. <a href="#find">Find my set</a></p>
+          <div id="bkSet" hidden>
+            <p class="bk-desc" id="bkDesc"></p>
+            <ul class="res-lines" id="bkLines"></ul>
+            <p class="res-total"><span>Price</span><b id="bkPrice"></b></p>
+            <p class="res-total"><span>Time</span><b id="bkTime"></b></p>
+            <a class="edit" href="#find">Change my set</a>
+          </div>
+        </section>
+        <div class="bk-when">
+          <div class="cal" id="cal">
+            <div class="cal-head">
+              <button class="rail-btn" type="button" id="calPrev" aria-label="Previous month">‹</button>
+              <b id="calTitle" aria-live="polite"></b>
+              <button class="rail-btn" type="button" id="calNext" aria-label="Next month">›</button>
+            </div>
+            <div class="cal-dow" id="calDow" aria-hidden="true"></div>
+            <div class="cal-grid" id="calGrid" role="group" aria-label="Pick a day"></div>
+          </div>
+          <div class="bk-side">
+            <p class="bk-n"><b>1</b> Pick a time</p>
+            <p class="hint" id="slotHint" role="status">Pick a day to see free times.</p>
+            <div class="tchips" id="tchips" role="radiogroup" aria-label="Time"></div>
+            <p class="bk-n"><b>2</b> About you</p>
+            <div class="me-grid">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div class="field"><label for="f-msg">Message (optional)</label><textarea id="f-msg" name="msg"></textarea></div>
+            <p class="demo-note" id="demoNote" hidden></p>
+            <p class="form-error" id="bkError" role="alert" hidden></p>
+            <div class="me-foot">
+              <button class="btn btn-main" type="submit" id="bkSend">Send the request</button>
+              <small class="hint">We use your details only to answer your request. <a href="privacy.html">Privacy notice</a></small>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="bk-done" id="bkDone" hidden tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- ============ Screen 4: visit and questions ============ -->
+  <section class="screen visit" id="visit" aria-labelledby="visit-h">
+    <div class="find-in visit-grid">
+      <div>
+        <p class="eyebrow">Visit</p>
+        <h2 id="visit-h">Find the bar</h2>
+        <!-- All contact details below are placeholders: replace phone, email, address and hours. -->
+        <dl class="info">
+          <dt>Address</dt><dd>Primer St. 1, Plovdiv</dd>
+          <dt>Hours</dt><dd>Mon – Fri 12:00 – 22:00 · Sat – Sun 12:00 – 20:00</dd>
+          <dt>Phone</dt><dd><a href="tel:+359000000000">+359 000 000 000</a></dd>
+          <dt>Email</dt><dd><a href="mailto:email@example.com">email@example.com</a></dd>
+        </dl>
+        <div class="map-box" id="mapBox" data-src="https://www.openstreetmap.org/export/embed.html?bbox=24.7353%2C42.1304%2C24.7553%2C42.1404&amp;layer=mapnik&amp;marker=42.1354%2C24.7453">
+          <div class="map-ph">
+            <p>The map is from OpenStreetMap and loads only if you choose.</p>
+            <button class="btn btn-ghost btn-sm" type="button" id="mapLoad">Show the map</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-h">Good to know</h2>
+        <div class="faq-list">
+          <details><summary>How long does a visit take?</summary><p>A gel polish manicure takes about 1 to 1.5 hours, and extensions 2 to 3 hours. The set finder adds the time up for you.</p></details>
+          <details><summary>Can I bring a photo of the design I want?</summary><p>Yes. Bring or send your own photo, and we will tell you how close we can get. Nail art is priced on request.</p></details>
+          <details><summary>Is removing my old gel included?</summary><p>Removal is a separate service. Tell us in your message and we will add it to your visit.</p></details>
+          <details><summary>What if I need to cancel or I am late?</summary><p>Please tell us at least 24 hours ahead so we can offer your time to someone else. If you are more than 15 minutes late, the service may need to be shortened.</p></details>
+          <details><summary>Do I need to pay a deposit?</summary><p>For extensions and longer visits we may ask for a small deposit, which is deducted from the price.</p></details>
+        </div>
+      </div>
+    </div>
+    <footer class="foot">
+      <span class="foot-brand">Nocturne</span>
+      <span>© <span id="year">2026</span> Nocturne Nail Bar · Nail bar in Plovdiv</span>
+      <span class="foot-links"><a href="privacy.html">Privacy notice</a> <a href="../admin.html?lang=en">Demo back office</a></span>
+    </footer>
+  </section>
+</main>
+
+<!-- Colour scheme buttons (template preview feature) -->
+<aside class="dock" aria-label="Colour scheme">
+  <div class="dock-label"><small>Colour scheme</small><b id="skinName">Orchid Night</b></div>
+  <div class="swatches">
+        <button class="sw" type="button" data-skin="orchid" data-name="Orchid Night" aria-label="Colour scheme: Orchid Night" title="Orchid Night" aria-pressed="true" style="--s1:#0C0710;--s2:#FF3DCB"></button>
+        <button class="sw" type="button" data-skin="acid" data-name="Acid Lime" aria-label="Colour scheme: Acid Lime" title="Acid Lime" aria-pressed="false" style="--s1:#0A0D08;--s2:#C8FF2E"></button>
+        <button class="sw" type="button" data-skin="ember" data-name="Ember" aria-label="Colour scheme: Ember" title="Ember" aria-pressed="false" style="--s1:#100806;--s2:#FF6A3D"></button>
+        <button class="sw" type="button" data-skin="ice" data-name="Ice Blue" aria-label="Colour scheme: Ice Blue" title="Ice Blue" aria-pressed="false" style="--s1:#060D12;--s2:#5CE1FF"></button>
+        <button class="sw" type="button" data-skin="pearl" data-name="Pearl Day" aria-label="Colour scheme: Pearl Day" title="Pearl Day" aria-pressed="false" style="--s1:#EEEAF3;--s2:#5B2EFF"></button>
+  </div>
+</aside>
+
+<nav class="actionbar" aria-label="Quick contact">
+  <a href="tel:+359000000000">Call</a>
+  <a href="#find">Find my set</a>
+</nav>
+
+<script type="application/json" id="quizData">{"intro": "Hi! I am the set finder. Four quick questions and I will find your set.", "done": "Done! Here is your set.", "occ": {"everyday": "for every day", "date": "for a date night", "event": "for a big event", "me": "just for you"}, "qs": [{"key": "occasion", "q": "What is the occasion?", "opts": [{"v": "everyday", "label": "Everyday"}, {"v": "date", "label": "Date night"}, {"v": "event", "label": "A big event"}, {"v": "me", "label": "Just for me"}]}, {"key": "length", "q": "How long do you like your nails?", "opts": [{"v": "nat", "label": "My own nails"}, {"v": "short", "label": "Short"}, {"v": "med", "label": "Medium"}, {"v": "long", "label": "Long"}]}, {"key": "style", "q": "Pick your finish.", "opts": [{"v": "nude", "label": "Soft nude"}, {"v": "colour", "label": "Glossy colour"}, {"v": "chrome", "label": "Chrome and shimmer"}, {"v": "art", "label": "Nail art"}]}, {"key": "pedi", "q": "A pedicure too?", "opts": [{"v": "yes", "label": "Yes, add one"}, {"v": "no", "label": "Not today"}]}], "looks": {"nude": {"src": "../images/stock/hero-light-pink-800.jpg", "w": 800, "h": 1276, "name": "Soft Nude", "alt": "Soft nude pink gel nails on a white fur surface"}, "colour": {"src": "../images/stock/hand-on-pink-800.jpg", "w": 800, "h": 1200, "name": "Candy Gloss", "alt": "Rose pink nails against a pink background"}, "chrome": {"src": "../images/stock/mauve-glitter-800.jpg", "w": 800, "h": 800, "name": "Chrome Mirror", "alt": "Mauve, white and silver glitter nails on a knit sweater"}, "art": {"src": "../images/stock/navy-gold-white-800.jpg", "w": 800, "h": 1000, "name": "Art Piece", "alt": "Navy, gold and white nail art on both hands"}}, "svc": {"gel_mani": {"name": "Gel polish manicure", "min": 90, "p0": 25, "p1": 25, "kind": "fixed"}, "ext_short": {"name": "Gel extensions, short", "min": 90, "p0": 40, "p1": 40, "kind": "fixed"}, "ext_med": {"name": "Gel extensions, medium", "min": 105, "p0": 45, "p1": 45, "kind": "fixed"}, "ext_long": {"name": "Gel extensions, long", "min": 120, "p0": 50, "p1": 50, "kind": "fixed"}, "art": {"name": "Nail art, French tips, chrome", "min": 60, "p0": 0, "p1": 0, "kind": "request"}, "gel_pedi": {"name": "Gel polish pedicure", "min": 90, "p0": 25, "p1": 30, "kind": "fixed"}}}</script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
