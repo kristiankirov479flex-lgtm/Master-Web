@@ -10,8 +10,6 @@ PAGE = '''<!doctype html>
 <title>[[title]]</title>
 <!-- Remove the line below once every yellow field on this page is filled in. -->
 <meta name="robots" content="noindex">
-<link rel="preload" href="[[root]]fonts/onest-[[script]].woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="[[root]]fonts/cormorant-garamond-600-[[script]].woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="[[root]]fonts/fonts.css">
 <link rel="stylesheet" href="[[root]]css/style.css">
 <script>

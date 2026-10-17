@@ -57,6 +57,10 @@
           <li data-i18n="hero.t2">Български и английски</li>
           <li data-i18n="hero.t3">Домейн и хостинг – уреждам ги аз</li>
         </ul>
+        <div class="kinds">
+          <span class="kinds-l" id="kindsL" data-i18n="hero.kinds">Примери за:</span>
+          <ul id="heroKinds" aria-labelledby="kindsL"></ul>
+        </div>
       </div>
 
       <div class="stage-col">
@@ -64,22 +68,22 @@
           <div class="win desktop">
             <div class="chrome">
               <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span>Вила Стефани</span>
+              <span>Motus · Физиотерапия</span>
             </div>
             <div class="screen">
-              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:1440px;height:900px" data-i18n-attr="title:stage.preview" title="Преглед на уебсайта на Вила Стефани на компютър" tabindex="-1" aria-hidden="true"></iframe>
+              <iframe src="Physio_1/index.html" style="width:1440px;height:900px" data-i18n-attr="title:stage.preview;src:stage.src" title="Преглед на уебсайта на Motus на компютър" tabindex="-1" aria-hidden="true"></iframe>
             </div>
           </div>
           <div class="win phone">
             <div class="screen">
-              <iframe src="Vila-Stefani-Devin-main/index.html" style="width:390px;height:780px" data-i18n-attr="title:stage.preview_m" title="Преглед на уебсайта на Вила Стефани на телефон" tabindex="-1" aria-hidden="true"></iframe>
+              <iframe src="Physio_1/index.html" style="width:390px;height:780px" data-i18n-attr="title:stage.preview_m;src:stage.src" title="Преглед на уебсайта на Motus на телефон" tabindex="-1" aria-hidden="true"></iframe>
             </div>
           </div>
-          <a class="stage-link" href="Vila-Stefani-Devin-main/index.html" data-i18n-attr="aria-label:stage.label" aria-label="Отвори уебсайта на Вила Стефани"></a>
-          <div class="float f1" aria-hidden="true"><span class="ok"></span><span><span data-i18n="float.1">Нова заявка</span><small data-i18n="float.1s">Пристигане 12 юли · 2 гости</small></span></div>
+          <a class="stage-link" href="Physio_1/index.html" data-i18n-attr="aria-label:stage.label;href:stage.src" aria-label="Отвори уебсайта на Motus"></a>
+          <div class="float f1" aria-hidden="true"><span class="ok"></span><span><span data-i18n="float.1">Нов час</span><small data-i18n="float.1s">Коляно · четвъртък, 10:30</small></span></div>
           <div class="float f2" aria-hidden="true"><span class="ok"></span><span><span data-i18n="float.2">Удобен за телефон</span><small data-i18n="float.2s">Проверен на малък екран</small></span></div>
         </div>
-        <p class="stage-cap"><span data-i18n="stage.cap">Реален проект: Вила Стефани, къща за гости в Девин</span> <a href="Vila-Stefani-Devin-main/index.html" data-i18n="stage.open">Отворете сайта</a></p>
+        <p class="stage-cap"><span data-i18n="stage.cap">Демо: Motus, кабинет по физиотерапия</span> <a href="Physio_1/index.html" data-i18n="stage.open" data-i18n-attr="href:stage.src">Отворете сайта</a></p>
       </div>
     </div>
   </section>
@@ -89,7 +93,7 @@
     <div class="wrap">
       <ul>
         <li><b data-i18n="facts.n">{n}</b><span data-i18n="facts.1">готови дизайна, които можете да пробвате</span></li>
-        <li><b>11</b><span data-i18n="facts.2">вида бизнес: къщи за гости, бръснарници, студия за нокти, цветарници, кафенета, гуми, ресторанти, стоматолози, детайлинг, ветеринари, физиотерапия и масаж</span></li>
+        <li><b>11</b><span data-i18n="facts.2">вида бизнес, от къщи за гости и ресторанти до клиники и детайлинг</span></li>
         <li><b>2</b><span data-i18n="facts.3">езика във всеки сайт: български и английски</span></li>
         <li><b>5–10</b><span data-i18n="facts.4">работни дни за шаблон без допълнителни функции</span></li>
       </ul>
@@ -191,7 +195,7 @@
         <h2 id="why-h" data-i18n="why.title">Спестявам ви време. Цената е честна.</h2>
       </div>
       <div class="why-grid">
-        <div class="me rv">
+        <div class="me rv" hidden><!-- Hidden for now: remove the "hidden" attribute to show the "About me" card again. -->
           <span class="avatar" aria-hidden="true">K</span>
           <h3 data-i18n="me.title">Аз съм Кристиан от Пловдив.</h3>
           <p data-i18n="me.text">Бакалавър съм по информатика и от няколко години правя уебсайтове. Работите директно с човека, който ги прави: без посредници и без чакане на екип.</p>
@@ -336,13 +340,13 @@
         { folder: "Cafe_3", admin: true, name: "Desk & Drip", note: ["Кафене за работа: план на салона, места на час, цена, която не надвишава дневната, и седмична програма.", "A café for working: a floor plan, seats by the hour, a price that never goes above the day price, and a weekly timetable."] },
         { folder: "Cafe_4", admin: true, name: "Kettle & Co", note: ["Класическо кафене: голяма снимка, истинско меню с цени, кратка история за мястото и проста резервация на маса.", "A traditional coffee house: one big photo, a proper menu with prices, a short story and a simple table reservation."] }] },
     { id: "tyre", name: ["Гуми и сервиз", "Tyre shop"],
-      desc: ["Сайт за гуми и сервиз: търсачка на размера, цена на смяната веднага, цени на услугите и запазване на час с реално време за работата.", "A website for a tyre and service workshop: a tyre size finder, the price of a swap at once, a price board and booking with the real time the job takes."],
+      desc: ["Сайт за гуми и сервиз в два варианта: тъмен със търсачка на размера и цена на смяната веднага, и семеен с ясен ценоразпис и форма „Поискай цена“.", "A website for a tyre and service workshop in two versions: a dark one with a size finder and an instant swap price, and a family one with a clear price list and an “ask for a price” form."],
       chips: [["5 цветови схеми", "5 colour schemes"], ["Търсачка на размера", "Tyre size finder"], ["Цена и време на живо", "Live price and time"], ["Демо админ панел", "Demo back office"]],
       designs: [
         { folder: "Tyre_Shop_1", admin: true, name: "Gripline", note: ["Тъмен и индустриален: размерът на гумата показва цената, а сметката и времето се променят със сервизните услуги.", "Dark and industrial: the tyre size shows the price, and the slip and the time change with the services you tick."] },
         { folder: "Tyre_Shop_2", admin: true, name: "Stoyanov Tyres", note: ["Семеен сервиз: голям телефон, ясен ценоразпис, видове нови гуми и форма „Поискай цена“.", "A family workshop: a big phone number, a clear price list, kinds of new tyres and an “ask for a price” form."] }] },
     { id: "restaurant", name: ["Ресторант", "Restaurant"],
-      desc: ["Сайт за ресторант: резервация на маса с часове според броя гости, меню с филтри по режим, обедно меню и тераса.", "A website for a restaurant: table reservations with times that fit the party size, a menu with diet filters, a lunch menu and a terrace."],
+      desc: ["Сайт за ресторант в четири варианта: резервация на маса с меню с филтри, механа с онлайн поръчка за доставка, ресторант за сватби и събития с оферта на човек и пицария с проста резервация.", "A website for a restaurant in four versions: table reservations with a diet-filter menu, a tavern with online delivery orders, an events restaurant with a per-guest estimate and a pizzeria with a simple reservation."],
       chips: [["5 цветови схеми", "5 colour schemes"], ["Резервация на маса", "Table reservations"], ["Меню с филтри", "Menu with filters"], ["Демо админ панел", "Demo back office"]],
       designs: [
         { folder: "Restaurant_1", admin: true, name: "Maslina", note: ["Спокоен и редакторски: резервационна лента на първия екран, меню с филтри, обяд с три хода и билет за резервацията.", "Calm and editorial: a booking bar on the first screen, a menu with filters, a three-course lunch and a reservation ticket."] },
@@ -385,11 +389,11 @@
     "hero.lead": "You choose a ready design from {n} live demos, I adapt it to your business and put it online. The first preview and the consultations are free.",
     "hero.cta": "Ask for a free preview", "hero.work": "See the examples",
     "hero.t1": "Free first preview", "hero.t2": "Bulgarian and English", "hero.t3": "Domain and hosting: I set them up",
-    "stage.preview": "Preview of the Vila Stefani website on a computer", "stage.preview_m": "Preview of the Vila Stefani website on a phone", "stage.label": "Open the Vila Stefani website",
-    "stage.cap": "Real project: Vila Stefani, a guest house in Devin", "stage.open": "Open the site",
-    "float.1": "New request", "float.1s": "Arrival 12 July · 2 guests", "float.2": "Made for phones", "float.2s": "Checked on a small screen",
+    "stage.preview": "Preview of the Motus website on a computer", "stage.preview_m": "Preview of the Motus website on a phone", "stage.label": "Open the Motus website", "stage.src": "Physio_1/en/index.html", "hero.kinds": "Examples for:",
+    "stage.cap": "Demo: Motus, a physiotherapy clinic", "stage.open": "Open the site",
+    "float.1": "New appointment", "float.1s": "Knee · Thursday 10:30", "float.2": "Made for phones", "float.2s": "Checked on a small screen",
     "facts.label": "At a glance", "facts.n": "{n}",
-    "facts.1": "ready designs you can try", "facts.2": "kinds of business: guest houses, barbershops, nail studios, flower shops, cafés, tyre shops, restaurants, dentists, detailing, vets, physiotherapy and massage", "facts.3": "languages in every site: Bulgarian and English", "facts.4": "working days for a template with no extra features",
+    "facts.1": "ready designs you can try", "facts.2": "kinds of business, from guest houses and restaurants to clinics and detailing", "facts.3": "languages in every site: Bulgarian and English", "facts.4": "working days for a template with no extra features",
     "work.eyebrow": "Live examples", "work.title": "Pick a kind of business. Look around. Try it.",
     "work.lead": "Every example is a working site with bookings or requests you can try. Nothing is sent: the data stays in your browser.",
     "sc.s1": "1 · Choose a kind of business", "sc.s2": "2 · Choose a design", "sc.tabs": "Kinds of business",
@@ -630,6 +634,15 @@
 
   /* ================= Language: Bulgarian (default, written in the HTML) and English ================= */
   const langBtn = $('lang');
+  /* Chips under the hero text: one per kind of business, they open that tab in the examples. */
+  function renderKinds() {
+    const ul = $('heroKinds'); ul.textContent = '';
+    PROJECTS.forEach((p, i) => {
+      const li = el('li'), a = el('a', '', p.name[idx()]); a.href = '#work';
+      a.addEventListener('click', () => selectTab(tabs[i], false));
+      li.appendChild(a); ul.appendChild(li);
+    });
+  }
   function setLang(lang) {
     const bg = lang === 'bg';
     document.documentElement.lang = lang;
@@ -641,6 +654,7 @@
       });
     });
     PROJECTS.forEach(updatePanel);
+    renderKinds();
     fillSelects();
     document.title = tr('title'); $('meta-desc').content = tr('desc');
     document.querySelector('meta[property="og:locale"]').content = bg ? 'bg_BG' : 'en_GB';
